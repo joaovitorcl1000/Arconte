@@ -1,0 +1,11 @@
+{
+  "degree_of_synthesis": "isolating",
+  "degree_of_fusion": "none",
+  "affix_position": "little_affixation",
+  "active_processes": [
+    "compounding",
+    "reduplication_full",
+    "tonal_morphology"
+  ],
+  "locus_of_marking": "no_marking"
+}

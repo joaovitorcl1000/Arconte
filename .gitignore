@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.cache/
+
+# Datasets pesados / temporários
+*.csv
+frontend/tools/conlang/ipa_database/phoible.csv
+frontend/tools/conlang/phonemic_inventory/.cache/
+
+# Ambientes virtuais
+venv/
+.venv/
+env/
+
+# IDEs e Sistema
+.vscode/
+.idea/
+.DS_Store
+__pycache__/
+*.py[cod]
+*$py.class
+.cache/
+*.csv
+frontend/tools/conlang/ipa_database/phoible.csv
+frontend/tools/conlang/phonemic_inventory/.cache/
+venv/
+.venv/
+.vscode/
+.idea/
+.DS_Store

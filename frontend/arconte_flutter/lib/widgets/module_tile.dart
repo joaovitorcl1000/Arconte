@@ -34,13 +34,13 @@ class _ModuleTileState extends State<ModuleTile> {
           boxShadow: hovering
               ? [
                   BoxShadow(
-                      color: ArconteColors.ink.withOpacity(.09),
+                      color: ArconteColors.ink.withValues(alpha: .09),
                       blurRadius: 19,
                       offset: const Offset(0, 7))
                 ]
               : [
                   BoxShadow(
-                      color: ArconteColors.ink.withOpacity(.025),
+                      color: ArconteColors.ink.withValues(alpha: .025),
                       blurRadius: 5,
                       offset: const Offset(0, 2))
                 ],

@@ -101,7 +101,7 @@ class _WorldHero extends StatelessWidget {
       return ClipRRect(
         borderRadius: BorderRadius.circular(19),
         child: Container(
-          height: compact ? 297 : 263,
+          width: double.infinity,
           decoration: const BoxDecoration(
             gradient: LinearGradient(
               begin: Alignment.topLeft,
@@ -109,49 +109,59 @@ class _WorldHero extends StatelessWidget {
               colors: [Color(0xFF23483F), Color(0xFF13282B), Color(0xFF102024)],
             ),
           ),
-          child: Stack(
-            children: [
-              const Positioned.fill(
-                  child: CustomPaint(painter: CitadelPainter())),
-              Positioned(
-                top: 14,
-                bottom: 14,
-                left: 14,
-                right: 14,
-                child: Container(
-                    decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(11),
-                  border: Border.all(
-                      color: ArconteColors.paleGold.withValues(alpha: .30)),
-                )),
-              ),
-              Padding(
-                padding: EdgeInsets.fromLTRB(compact ? 23 : 38, 35, 20, 26),
-                child: Align(
-                  alignment: Alignment.centerLeft,
+          // Altura mínima, nunca fixa: permite que texto e botão cresçam
+          // sem RenderFlex overflow quando há fontes grandes ou pouca largura.
+          child: ConstrainedBox(
+            constraints: BoxConstraints(minHeight: compact ? 297 : 263),
+            child: Stack(
+              alignment: Alignment.centerLeft,
+              children: [
+                const Positioned.fill(
+                    child: CustomPaint(painter: CitadelPainter())),
+                Positioned.fill(
+                  child: Padding(
+                    padding: const EdgeInsets.all(14),
+                    child: DecoratedBox(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(11),
+                        border: Border.all(
+                          color: ArconteColors.paleGold.withValues(alpha: .30),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                // Este é um filho NÃO posicionado, que determina a altura real
+                // do Stack e impede corte no banner em larguras intermediárias.
+                Padding(
+                  padding: EdgeInsets.fromLTRB(compact ? 23 : 38, 35, 20, 26),
                   child: ConstrainedBox(
                     constraints: const BoxConstraints(maxWidth: 480),
                     child: Column(
+                      mainAxisSize: MainAxisSize.min,
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         const SmallCaps('UM UNIVERSO À SUA ESPERA',
                             color: ArconteColors.paleGold),
                         const SizedBox(height: 11),
-                        Text('Escreva as lendas.\nGuarde os legados.',
-                            style: TextStyle(
-                                fontFamily: 'serif',
-                                fontSize: compact ? 28 : 33,
-                                height: 1.13,
-                                fontWeight: FontWeight.w600,
-                                color: ArconteColors.paper)),
+                        Text(
+                          'Escreva as lendas.\nGuarde os legados.',
+                          style: TextStyle(
+                            fontFamily: 'serif',
+                            fontSize: compact ? 28 : 33,
+                            height: 1.13,
+                            fontWeight: FontWeight.w600,
+                            color: ArconteColors.paper,
+                          ),
+                        ),
                         const SizedBox(height: 9),
                         Text(
-                            'Pessoas, casas, fés e instituições em um só códice.',
-                            style: TextStyle(
-                                fontSize: 12.5,
-                                color: ArconteColors.paper
-                                    .withValues(alpha: .78))),
+                          'Pessoas, casas, fés e instituições em um só códice.',
+                          style: TextStyle(
+                              fontSize: 12.5,
+                              color:
+                                  ArconteColors.paper.withValues(alpha: .78)),
+                        ),
                         const SizedBox(height: 19),
                         OutlinedButton.icon(
                           onPressed: onExplore,
@@ -173,8 +183,8 @@ class _WorldHero extends StatelessWidget {
                     ),
                   ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       );
@@ -342,8 +352,11 @@ class _CodexAside extends StatelessWidget {
             Icon(Icons.hourglass_empty_outlined,
                 size: 16, color: ArconteColors.brass),
             SizedBox(width: 9),
-            Text('Ano 67 depois da Unificação',
-                style: TextStyle(fontSize: 12, color: ArconteColors.text)),
+            Expanded(
+              child: Text('Ano 67 depois da Unificação',
+                  softWrap: true,
+                  style: TextStyle(fontSize: 12, color: ArconteColors.text)),
+            ),
           ]),
           const SizedBox(height: 18),
           Divider(color: ArconteColors.brass.withValues(alpha: .45)),

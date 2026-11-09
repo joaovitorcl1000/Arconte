@@ -44,21 +44,25 @@ class NavigationPanel extends StatelessWidget {
                         color: ArconteColors.paleGold, size: 30),
                   ),
                   const SizedBox(width: 12),
-                  const Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text('ARCONTE',
-                          style: TextStyle(
-                            fontFamily: 'serif',
-                            fontSize: 22,
-                            letterSpacing: 2.2,
-                            color: ArconteColors.paper,
-                            fontWeight: FontWeight.w700,
-                          )),
-                      SizedBox(height: 2),
-                      SmallCaps('ATELIÊ DE MUNDOS',
-                          color: ArconteColors.paleGold),
-                    ],
+                  const Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text('ARCONTE',
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                            style: TextStyle(
+                              fontFamily: 'serif',
+                              fontSize: 22,
+                              letterSpacing: 2.2,
+                              color: ArconteColors.paper,
+                              fontWeight: FontWeight.w700,
+                            )),
+                        SizedBox(height: 2),
+                        SmallCaps('ATELIÊ DE MUNDOS',
+                            color: ArconteColors.paleGold),
+                      ],
+                    ),
                   ),
                 ],
               ),

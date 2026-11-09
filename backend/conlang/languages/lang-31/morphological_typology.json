@@ -1,0 +1,11 @@
+{
+  "degree_of_synthesis": "synthetic",
+  "degree_of_fusion": "agglutinative",
+  "affix_position": "strongly_suffixing",
+  "active_processes": [
+    "affixation",
+    "compounding",
+    "reduplication_full"
+  ],
+  "locus_of_marking": "dependent_marking"
+}

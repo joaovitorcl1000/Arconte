@@ -1,0 +1,278 @@
+{
+  "syllable_complexity": "moderate",
+  "complexity_source": "sorteio condicionado a 24 consoantes (WALS 1A × 12A)",
+  "templates": {
+    "CV": 0.38,
+    "CVC": 0.195,
+    "V": 0.13,
+    "VC": 0.06,
+    "CCV": 0.154,
+    "CCVC": 0.08
+  },
+  "onset_required": false,
+  "allow_hiatus": true,
+  "min_sonority_distance": 2,
+  "sonority": {
+    "b": 1,
+    "p": 1,
+    "pʰ": 1,
+    "d": 1,
+    "t": 1,
+    "k": 1,
+    "kʰ": 1,
+    "kː": 1,
+    "ɡ": 1,
+    "s": 2,
+    "z": 2,
+    "ð": 2,
+    "ɬ": 2,
+    "ʃ": 2,
+    "θ": 2,
+    "h": 2,
+    "m": 3,
+    "n": 3,
+    "ɲ": 3,
+    "ŋ": 3,
+    "r": 4,
+    "l": 4,
+    "j": 5,
+    "w": 5,
+    "i": 6,
+    "u": 6,
+    "e": 6,
+    "o": 6,
+    "a": 6,
+    "ĩ": 6,
+    "iː": 6,
+    "uː": 6,
+    "aː": 6
+  },
+  "onsets": {
+    "clusters": [
+      [
+        "b",
+        "j"
+      ],
+      [
+        "b",
+        "l"
+      ],
+      [
+        "b",
+        "r"
+      ],
+      [
+        "d",
+        "j"
+      ],
+      [
+        "d",
+        "r"
+      ],
+      [
+        "d",
+        "w"
+      ],
+      [
+        "k",
+        "j"
+      ],
+      [
+        "k",
+        "l"
+      ],
+      [
+        "k",
+        "r"
+      ],
+      [
+        "k",
+        "w"
+      ],
+      [
+        "p",
+        "j"
+      ],
+      [
+        "p",
+        "l"
+      ],
+      [
+        "p",
+        "r"
+      ],
+      [
+        "s",
+        "j"
+      ],
+      [
+        "s",
+        "r"
+      ],
+      [
+        "t",
+        "j"
+      ],
+      [
+        "t",
+        "r"
+      ],
+      [
+        "t",
+        "w"
+      ],
+      [
+        "z",
+        "j"
+      ],
+      [
+        "z",
+        "r"
+      ],
+      [
+        "z",
+        "w"
+      ],
+      [
+        "ð",
+        "j"
+      ],
+      [
+        "ð",
+        "r"
+      ],
+      [
+        "ð",
+        "w"
+      ],
+      [
+        "ɡ",
+        "j"
+      ],
+      [
+        "ɡ",
+        "l"
+      ],
+      [
+        "ɡ",
+        "r"
+      ],
+      [
+        "ɡ",
+        "w"
+      ],
+      [
+        "ɬ",
+        "r"
+      ],
+      [
+        "ɬ",
+        "w"
+      ],
+      [
+        "ʃ",
+        "j"
+      ],
+      [
+        "ʃ",
+        "r"
+      ],
+      [
+        "ʃ",
+        "w"
+      ],
+      [
+        "θ",
+        "j"
+      ],
+      [
+        "θ",
+        "r"
+      ],
+      [
+        "θ",
+        "w"
+      ]
+    ],
+    "triple": [],
+    "word_initial_forbidden": []
+  },
+  "codas": {
+    "single": [
+      "l",
+      "m",
+      "n",
+      "r",
+      "ŋ",
+      "ɲ"
+    ],
+    "word_final": [
+      "l",
+      "m",
+      "n",
+      "r",
+      "ŋ",
+      "ɲ"
+    ],
+    "clusters": []
+  },
+  "syllable_contact": true,
+  "root": {
+    "shape": "syllabic",
+    "syllables": {
+      "1": 0.25,
+      "2": 0.5,
+      "3": 0.2,
+      "4": 0.05
+    }
+  },
+  "tone_bearing": false,
+  "metadata": {
+    "seed": 3251658994,
+    "morphology_requirements": {},
+    "notes": [
+      "encontros no ataque: obstruinte+líquida/glide",
+      "perfil de coda: sonorants"
+    ]
+  },
+  "samples": {
+    "roots": [
+      "pa",
+      "ni",
+      "ɡje.tiː.man",
+      "til",
+      "u.ja",
+      "pu.wo.ko",
+      "a.kwĩ.il",
+      "zuː",
+      "dju.ŋaː",
+      "ka.mam",
+      "kle.ba.wil.ku",
+      "kil.taɲ",
+      "di.kjo.ben",
+      "kla.ɡra",
+      "ku.ɲim.zriː",
+      "jel",
+      "biːn.mim",
+      "ɡwu",
+      "bu.iː.en",
+      "braːŋ"
+    ],
+    "suffixes": [
+      "-na",
+      "-an",
+      "-m",
+      "-aː",
+      "-wu",
+      "-am"
+    ],
+    "prefixes": [
+      "ni-",
+      "mi-",
+      "miŋ-",
+      "ri-",
+      "ju-",
+      "u-"
+    ]
+  }
+}

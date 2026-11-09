@@ -30,3 +30,29 @@ venv/
 .vscode/
 .idea/
 .DS_Store
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.cache/
+
+# Datasets pesados
+*.csv
+backend/conlang/ipa_database/phoible.csv
+
+# Flutter / Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+frontend/arconte_flutter/build/
+
+# Android / Gradle / IDEs
+.gradle/
+local.properties
+*.iml
+.idea/
+.vscode/
+.DS_Store

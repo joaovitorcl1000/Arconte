@@ -1,0 +1,160 @@
+{
+  "settings": {
+    "strategy": "locational",
+    "standard_case": "ablative",
+    "degree": {
+      "type": "affix",
+      "position": "suffix",
+      "comparative": [
+        "w",
+        "i"
+      ]
+    },
+    "superlative": {
+      "type": "affix",
+      "position": "suffix",
+      "form": [
+        "u",
+        "ŋ"
+      ]
+    },
+    "equative": {
+      "type": "particle",
+      "form": [
+        "ŋ",
+        "o",
+        "n"
+      ]
+    }
+  },
+  "forms": {
+    "positive": [
+      {
+        "written": "twaa",
+        "ipa": "twaː",
+        "pronunciation": "twaː",
+        "seg": "twaː",
+        "gloss": "big"
+      }
+    ],
+    "comparative": [
+      {
+        "written": "twaawi",
+        "ipa": "twaːwi",
+        "pronunciation": "ˈtwaːwi",
+        "seg": "twaː-wi",
+        "gloss": "big-COMPR"
+      }
+    ],
+    "superlative": [
+      {
+        "written": "twaauq",
+        "ipa": "twaːuŋ",
+        "pronunciation": "ˈtwaːuŋ",
+        "seg": "twaː-uŋ",
+        "gloss": "big-SUPL"
+      }
+    ]
+  },
+  "sentences": [
+    {
+      "key": "comparative",
+      "title": "Comparativo",
+      "words": [
+        {
+          "written": "plaa",
+          "ipa": "plaː",
+          "pronunciation": "plaː",
+          "seg": "plaː",
+          "gloss": "dog"
+        },
+        {
+          "written": "twukuubu",
+          "ipa": "twukuːbu",
+          "pronunciation": "ˈtwukuːbu",
+          "seg": "twukuː-bu",
+          "gloss": "fish-ABL"
+        },
+        {
+          "written": "twaawi",
+          "ipa": "twaːwi",
+          "pronunciation": "ˈtwaːwi",
+          "seg": "twaː-wi",
+          "gloss": "big-COMPR"
+        }
+      ],
+      "translation": "The dog is bigger than the fish.",
+      "literal": null
+    },
+    {
+      "key": "superlative",
+      "title": "Superlativo",
+      "words": [
+        {
+          "written": "plaa",
+          "ipa": "plaː",
+          "pronunciation": "plaː",
+          "seg": "plaː",
+          "gloss": "dog"
+        },
+        {
+          "written": "twaauq",
+          "ipa": "twaːuŋ",
+          "pronunciation": "ˈtwaːuŋ",
+          "seg": "twaː-uŋ",
+          "gloss": "big-SUPL"
+        }
+      ],
+      "translation": "The dog is the biggest.",
+      "literal": null
+    },
+    {
+      "key": "equative",
+      "title": "Equativo",
+      "words": [
+        {
+          "written": "plaa",
+          "ipa": "plaː",
+          "pronunciation": "plaː",
+          "seg": "plaː",
+          "gloss": "dog"
+        },
+        {
+          "written": "twukuu",
+          "ipa": "twukuː",
+          "pronunciation": "ˈtwukuː",
+          "seg": "twukuː",
+          "gloss": "fish"
+        },
+        {
+          "written": "qon",
+          "ipa": "ŋon",
+          "pronunciation": "ŋon",
+          "seg": "ŋon",
+          "gloss": "as"
+        },
+        {
+          "written": "twaa",
+          "ipa": "twaː",
+          "pronunciation": "twaː",
+          "seg": "twaː",
+          "gloss": "big"
+        }
+      ],
+      "translation": "The dog is as big as the fish.",
+      "literal": null
+    }
+  ],
+  "metadata": {
+    "seed": 1547307497,
+    "sources": {
+      "comparative": "WALS 121A|81A=1 (embutido)"
+    },
+    "notes": [],
+    "lexemes": {
+      "adjective": "big",
+      "compared": "dog",
+      "standard": "fish"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+analyzer:
+  errors:
+    invalid_annotation_target: ignore
+linter:
+  rules:
+    - avoid_print
+    - prefer_const_constructors
+    - prefer_final_fields
+    - use_key_in_widget_constructors

@@ -1,0 +1,670 @@
+{
+  "sandhi": {
+    "epenthetic_vowel": "i",
+    "cluster": "deletion",
+    "deletion_side": "right",
+    "hiatus": "elision",
+    "elision_side": "left",
+    "glides": {
+      "front": "j",
+      "back": "w"
+    },
+    "hiatus_consonant": "h",
+    "nasal_assimilation": true,
+    "voicing_assimilation": false
+  },
+  "harmony": {
+    "enabled": false
+  },
+  "affixes": {
+    "noun": [
+      {
+        "name": "number",
+        "categories": [
+          "number"
+        ],
+        "position": "suffix",
+        "realization": "affix",
+        "class_dependent": false,
+        "forms": {
+          "0": {
+            "number=singular": [],
+            "number=paucal": [
+              "n"
+            ],
+            "number=plural": [
+              "m",
+              "i"
+            ]
+          }
+        }
+      },
+      {
+        "name": "case",
+        "categories": [
+          "case"
+        ],
+        "position": "suffix",
+        "realization": "affix",
+        "class_dependent": false,
+        "forms": {
+          "0": {
+            "case=direct": [],
+            "case=genitive": [
+              "n"
+            ],
+            "case=locative": [
+              "u",
+              "n"
+            ],
+            "case=instrumental": [
+              "n",
+              "i"
+            ],
+            "case=ablative": [
+              "b",
+              "u"
+            ],
+            "case=allative": [
+              "k",
+              "a"
+            ],
+            "case=essive": [
+              "m"
+            ]
+          }
+        }
+      }
+    ],
+    "verb": [
+      {
+        "name": "negation",
+        "categories": [
+          "negation"
+        ],
+        "position": "suffix",
+        "realization": "affix",
+        "class_dependent": false,
+        "forms": {
+          "0": {
+            "negation=affirmative": [],
+            "negation=negative": [
+              "ɡ",
+              "u"
+            ]
+          }
+        }
+      },
+      {
+        "name": "aspect",
+        "categories": [
+          "aspect"
+        ],
+        "position": "suffix",
+        "realization": "affix",
+        "class_dependent": false,
+        "forms": {
+          "0": {
+            "aspect=perfective": [],
+            "aspect=imperfective": [
+              "ŋ",
+              "u"
+            ],
+            "aspect=progressive": [
+              "n"
+            ]
+          }
+        }
+      },
+      {
+        "name": "tense",
+        "categories": [
+          "tense"
+        ],
+        "position": "suffix",
+        "realization": "affix",
+        "class_dependent": false,
+        "forms": {
+          "0": {
+            "tense=present": [],
+            "tense=past": [
+              "p",
+              "u"
+            ],
+            "tense=future": [
+              "p",
+              "i"
+            ]
+          }
+        }
+      },
+      {
+        "name": "mood",
+        "categories": [
+          "mood"
+        ],
+        "position": "suffix",
+        "realization": "affix",
+        "class_dependent": false,
+        "forms": {
+          "0": {
+            "mood=indicative": [],
+            "mood=imperative": [
+              "a"
+            ],
+            "mood=potential": [
+              "ŋ"
+            ]
+          }
+        }
+      },
+      {
+        "name": "evidentiality",
+        "categories": [
+          "evidentiality"
+        ],
+        "position": "suffix",
+        "realization": "clitic",
+        "class_dependent": false,
+        "forms": {
+          "0": {
+            "evidentiality=direct": [],
+            "evidentiality=inferential": [
+              "m",
+              "u"
+            ],
+            "evidentiality=reportative": [
+              "i",
+              "m"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "nonlinear": {
+    "processes": {
+      "noun": [],
+      "verb": []
+    },
+    "patterns": {}
+  },
+  "free_markers": {},
+  "lexicon_sample": {
+    "nouns": [
+      {
+        "root": [
+          "ɡ",
+          "iː",
+          "b",
+          "a"
+        ],
+        "form": "ɡiː.ba",
+        "tones": [],
+        "class": 0
+      },
+      {
+        "root": [
+          "aː"
+        ],
+        "form": "aː",
+        "tones": [],
+        "class": 0
+      },
+      {
+        "root": [
+          "t",
+          "w",
+          "o",
+          "m",
+          "s",
+          "r",
+          "a",
+          "p",
+          "a",
+          "w",
+          "o",
+          "m"
+        ],
+        "form": "twom.sra.pa.wom",
+        "tones": [],
+        "class": 0
+      },
+      {
+        "root": [
+          "a",
+          "n",
+          "k",
+          "e",
+          "s",
+          "a"
+        ],
+        "form": "an.ke.sa",
+        "tones": [],
+        "class": 0
+      },
+      {
+        "root": [
+          "k",
+          "w",
+          "i",
+          "l"
+        ],
+        "form": "kwil",
+        "tones": [],
+        "class": 0
+      },
+      {
+        "root": [
+          "k",
+          "a",
+          "t",
+          "j",
+          "iː",
+          "ɲ",
+          "e"
+        ],
+        "form": "ka.tjiː.ɲe",
+        "tones": [],
+        "class": 0
+      }
+    ],
+    "verbs": [
+      {
+        "root": [
+          "p",
+          "r",
+          "i",
+          "n",
+          "r",
+          "i",
+          "m",
+          "n",
+          "i"
+        ],
+        "form": "prin.rim.ni",
+        "tones": [],
+        "class": 0
+      },
+      {
+        "root": [
+          "ð",
+          "i"
+        ],
+        "form": "ði",
+        "tones": [],
+        "class": 0
+      },
+      {
+        "root": [
+          "k",
+          "i",
+          "m",
+          "ʃ",
+          "w",
+          "iː"
+        ],
+        "form": "kim.ʃwiː",
+        "tones": [],
+        "class": 0
+      },
+      {
+        "root": [
+          "ɡ",
+          "u",
+          "l",
+          "a"
+        ],
+        "form": "ɡu.la",
+        "tones": [],
+        "class": 0
+      },
+      {
+        "root": [
+          "k",
+          "j",
+          "o",
+          "n",
+          "p",
+          "aː",
+          "b",
+          "a",
+          "ŋ"
+        ],
+        "form": "kjon.paː.baŋ",
+        "tones": [],
+        "class": 0
+      },
+      {
+        "root": [
+          "ɡ",
+          "e",
+          "m",
+          "l",
+          "e"
+        ],
+        "form": "ɡem.le",
+        "tones": [],
+        "class": 0
+      }
+    ]
+  },
+  "paradigms": {
+    "noun": {
+      "lexeme": "ɡiː.ba",
+      "rows": [
+        "case",
+        [
+          "direct",
+          "genitive",
+          "locative",
+          "instrumental",
+          "ablative",
+          "allative",
+          "essive"
+        ]
+      ],
+      "columns": [
+        "number",
+        [
+          "singular",
+          "paucal",
+          "plural"
+        ]
+      ],
+      "cells": [
+        [
+          {
+            "surface": "ɡiːba",
+            "underlying": "ɡiːba",
+            "phrase": "ɡiːba",
+            "gloss": "",
+            "valid": true,
+            "sandhi": []
+          },
+          {
+            "surface": "ɡiːban",
+            "underlying": "ɡiːba-n",
+            "phrase": "ɡiːban",
+            "gloss": "PAUC",
+            "valid": true,
+            "sandhi": []
+          },
+          {
+            "surface": "ɡiːbami",
+            "underlying": "ɡiːba-mi",
+            "phrase": "ɡiːbami",
+            "gloss": "PL",
+            "valid": true,
+            "sandhi": []
+          }
+        ],
+        [
+          {
+            "surface": "ɡiːban",
+            "underlying": "ɡiːba-n",
+            "phrase": "ɡiːban",
+            "gloss": "GEN",
+            "valid": true,
+            "sandhi": []
+          },
+          {
+            "surface": "ɡiːbanin",
+            "underlying": "ɡiːba-n-n",
+            "phrase": "ɡiːbanin",
+            "gloss": "PAUC.GEN",
+            "valid": true,
+            "sandhi": [
+              "sândi"
+            ]
+          },
+          {
+            "surface": "ɡiːbamin",
+            "underlying": "ɡiːba-mi-n",
+            "phrase": "ɡiːbamin",
+            "gloss": "PL.GEN",
+            "valid": true,
+            "sandhi": []
+          }
+        ],
+        [
+          {
+            "surface": "ɡiːbaun",
+            "underlying": "ɡiːba-un",
+            "phrase": "ɡiːbaun",
+            "gloss": "LOC",
+            "valid": true,
+            "sandhi": []
+          },
+          {
+            "surface": "ɡiːbanun",
+            "underlying": "ɡiːba-n-un",
+            "phrase": "ɡiːbanun",
+            "gloss": "PAUC.LOC",
+            "valid": true,
+            "sandhi": []
+          },
+          {
+            "surface": "ɡiːbamiun",
+            "underlying": "ɡiːba-mi-un",
+            "phrase": "ɡiːbamiun",
+            "gloss": "PL.LOC",
+            "valid": true,
+            "sandhi": []
+          }
+        ],
+        [
+          {
+            "surface": "ɡiːbani",
+            "underlying": "ɡiːba-ni",
+            "phrase": "ɡiːbani",
+            "gloss": "INS",
+            "valid": true,
+            "sandhi": []
+          },
+          {
+            "surface": "ɡiːbanni",
+            "underlying": "ɡiːba-n-ni",
+            "phrase": "ɡiːbanni",
+            "gloss": "PAUC.INS",
+            "valid": true,
+            "sandhi": []
+          },
+          {
+            "surface": "ɡiːbamini",
+            "underlying": "ɡiːba-mi-ni",
+            "phrase": "ɡiːbamini",
+            "gloss": "PL.INS",
+            "valid": true,
+            "sandhi": []
+          }
+        ],
+        [
+          {
+            "surface": "ɡiːbabu",
+            "underlying": "ɡiːba-bu",
+            "phrase": "ɡiːbabu",
+            "gloss": "ABL",
+            "valid": true,
+            "sandhi": []
+          },
+          {
+            "surface": "ɡiːbanbu",
+            "underlying": "ɡiːba-n-bu",
+            "phrase": "ɡiːbanbu",
+            "gloss": "PAUC.ABL",
+            "valid": true,
+            "sandhi": []
+          },
+          {
+            "surface": "ɡiːbamibu",
+            "underlying": "ɡiːba-mi-bu",
+            "phrase": "ɡiːbamibu",
+            "gloss": "PL.ABL",
+            "valid": true,
+            "sandhi": []
+          }
+        ],
+        [
+          {
+            "surface": "ɡiːbaka",
+            "underlying": "ɡiːba-ka",
+            "phrase": "ɡiːbaka",
+            "gloss": "ALL",
+            "valid": true,
+            "sandhi": []
+          },
+          {
+            "surface": "ɡiːbanka",
+            "underlying": "ɡiːba-n-ka",
+            "phrase": "ɡiːbanka",
+            "gloss": "PAUC.ALL",
+            "valid": true,
+            "sandhi": []
+          },
+          {
+            "surface": "ɡiːbamika",
+            "underlying": "ɡiːba-mi-ka",
+            "phrase": "ɡiːbamika",
+            "gloss": "PL.ALL",
+            "valid": true,
+            "sandhi": []
+          }
+        ],
+        [
+          {
+            "surface": "ɡiːbam",
+            "underlying": "ɡiːba-m",
+            "phrase": "ɡiːbam",
+            "gloss": "ESS",
+            "valid": true,
+            "sandhi": []
+          },
+          {
+            "surface": "ɡiːbanim",
+            "underlying": "ɡiːba-n-m",
+            "phrase": "ɡiːbanim",
+            "gloss": "PAUC.ESS",
+            "valid": true,
+            "sandhi": [
+              "sândi"
+            ]
+          },
+          {
+            "surface": "ɡiːbamim",
+            "underlying": "ɡiːba-mi-m",
+            "phrase": "ɡiːbamim",
+            "gloss": "PL.ESS",
+            "valid": true,
+            "sandhi": []
+          }
+        ]
+      ]
+    },
+    "verb": {
+      "lexeme": "prin.rim.ni",
+      "rows": [
+        "mood",
+        [
+          "indicative",
+          "imperative",
+          "potential"
+        ]
+      ],
+      "columns": [
+        "tense",
+        [
+          "present",
+          "past",
+          "future"
+        ]
+      ],
+      "cells": [
+        [
+          {
+            "surface": "prinrimni",
+            "underlying": "prinrimni",
+            "phrase": "prinrimni",
+            "gloss": "",
+            "valid": true,
+            "sandhi": []
+          },
+          {
+            "surface": "prinrimnipu",
+            "underlying": "prinrimni-pu",
+            "phrase": "prinrimnipu",
+            "gloss": "PST",
+            "valid": true,
+            "sandhi": []
+          },
+          {
+            "surface": "prinrimnipi",
+            "underlying": "prinrimni-pi",
+            "phrase": "prinrimnipi",
+            "gloss": "FUT",
+            "valid": true,
+            "sandhi": []
+          }
+        ],
+        [
+          {
+            "surface": "prinrimnia",
+            "underlying": "prinrimni-a",
+            "phrase": "prinrimnia",
+            "gloss": "IMP",
+            "valid": true,
+            "sandhi": []
+          },
+          {
+            "surface": "prinrimnipua",
+            "underlying": "prinrimni-pu-a",
+            "phrase": "prinrimnipua",
+            "gloss": "PST.IMP",
+            "valid": true,
+            "sandhi": []
+          },
+          {
+            "surface": "prinrimnipia",
+            "underlying": "prinrimni-pi-a",
+            "phrase": "prinrimnipia",
+            "gloss": "FUT.IMP",
+            "valid": true,
+            "sandhi": []
+          }
+        ],
+        [
+          {
+            "surface": "prinrimniŋ",
+            "underlying": "prinrimni-ŋ",
+            "phrase": "prinrimniŋ",
+            "gloss": "POT",
+            "valid": true,
+            "sandhi": []
+          },
+          {
+            "surface": "prinrimnipuŋ",
+            "underlying": "prinrimni-pu-ŋ",
+            "phrase": "prinrimnipuŋ",
+            "gloss": "PST.POT",
+            "valid": true,
+            "sandhi": []
+          },
+          {
+            "surface": "prinrimnipiŋ",
+            "underlying": "prinrimni-pi-ŋ",
+            "phrase": "prinrimnipiŋ",
+            "gloss": "FUT.POT",
+            "valid": true,
+            "sandhi": []
+          }
+        ]
+      ]
+    }
+  },
+  "metadata": {
+    "seed": 1555789955,
+    "fusion": "agglutinative",
+    "consonantal_roots": false,
+    "notes": []
+  }
+}

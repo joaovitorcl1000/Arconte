@@ -1,0 +1,68 @@
+{
+  "irregulars": [
+    {
+      "gloss": "GO",
+      "label": "go",
+      "pos": "verb",
+      "citation": "i",
+      "type": "ablaut",
+      "features": {
+        "tense": "past"
+      },
+      "label_gloss": "go-PST",
+      "regular": {
+        "written": "ipu",
+        "ipa": "ipu",
+        "pronunciation": "ˈipu"
+      },
+      "irregular": {
+        "written": "o",
+        "ipa": "o",
+        "pronunciation": "o"
+      },
+      "root": [
+        "o"
+      ],
+      "replaces_affix": true
+    },
+    {
+      "gloss": "PERSON",
+      "label": "person",
+      "pos": "noun",
+      "citation": "akiʃontaŋ",
+      "type": "zero",
+      "features": {
+        "number": "plural"
+      },
+      "label_gloss": "person-PL",
+      "regular": {
+        "written": "akixontaqmi",
+        "ipa": "akiʃontaŋmi",
+        "pronunciation": "aˌkiʃonˈtaŋmi"
+      },
+      "irregular": {
+        "written": "akixontaq",
+        "ipa": "akiʃontaŋ",
+        "pronunciation": "ˌakiˈʃontaŋ"
+      }
+    }
+  ],
+  "alternations": [],
+  "settings": {
+    "target": 2,
+    "verb_feature": [
+      "tense",
+      "past"
+    ],
+    "noun_feature": [
+      "number",
+      "plural"
+    ]
+  },
+  "metadata": {
+    "seed": 1421026700,
+    "notes": [],
+    "irregular_count": 2,
+    "alternation_count": 0
+  }
+}

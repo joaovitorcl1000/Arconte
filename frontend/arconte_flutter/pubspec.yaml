@@ -1,0 +1,19 @@
+name: arconte_app
+description: Interface visual do Arconte — ateliê de mundos fictícios.
+publish_to: none
+version: 0.1.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.6.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true

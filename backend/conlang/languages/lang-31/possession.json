@@ -1,0 +1,280 @@
+{
+  "settings": {
+    "pronominal": {
+      "strategy": "affix",
+      "position": "suffix",
+      "from_pronouns": false,
+      "forms": {
+        "1.singular": [
+          "l",
+          "o"
+        ],
+        "2.singular": [
+          "ŋ",
+          "a"
+        ],
+        "3.singular": [
+          "o",
+          "l"
+        ],
+        "1incl.paucal": [
+          "i",
+          "n"
+        ],
+        "1excl.paucal": [
+          "p",
+          "i"
+        ],
+        "2.paucal": [
+          "r",
+          "i"
+        ],
+        "3.paucal": [
+          "k",
+          "i"
+        ],
+        "1incl.plural": [
+          "s",
+          "u"
+        ],
+        "1excl.plural": [
+          "i",
+          "l"
+        ],
+        "2.plural": [
+          "p",
+          "uː"
+        ],
+        "3.plural": [
+          "t",
+          "i"
+        ]
+      }
+    },
+    "nominal": {
+      "locus": "dependent",
+      "possessor_position": "before"
+    },
+    "alienability": {
+      "classes": 2,
+      "inalienable_fields": [
+        "Kinship",
+        "The body"
+      ],
+      "alienable_marker": [
+        "p",
+        "aː",
+        "m"
+      ]
+    },
+    "articles": null
+  },
+  "examples": {
+    "pronominal": [
+      {
+        "cell": "1.singular",
+        "english": "my dog",
+        "written": "paamlo plaa",
+        "ipa": "paːmlo plaː",
+        "pronunciation": "ˈpaːmlo plaː",
+        "class": "alienable",
+        "plural": {
+          "written": "paamlo plaami",
+          "ipa": "paːmlo plaːmi",
+          "pronunciation": "ˈpaːmlo ˈplaːmi",
+          "class": "alienable",
+          "english": "my dogs"
+        }
+      },
+      {
+        "cell": "2.singular",
+        "english": "your dog",
+        "written": "paamqa plaa",
+        "ipa": "paːmŋa plaː",
+        "pronunciation": "ˈpaːmŋa plaː",
+        "class": "alienable",
+        "plural": {
+          "written": "paamqa plaami",
+          "ipa": "paːmŋa plaːmi",
+          "pronunciation": "ˈpaːmŋa ˈplaːmi",
+          "class": "alienable",
+          "english": "your dogs"
+        }
+      },
+      {
+        "cell": "3.singular",
+        "english": "his/her/its dog",
+        "written": "paamol plaa",
+        "ipa": "paːmol plaː",
+        "pronunciation": "ˈpaːmol plaː",
+        "class": "alienable",
+        "plural": {
+          "written": "paamol plaami",
+          "ipa": "paːmol plaːmi",
+          "pronunciation": "ˈpaːmol ˈplaːmi",
+          "class": "alienable",
+          "english": "his/her/its dogs"
+        }
+      },
+      {
+        "cell": "1incl.paucal",
+        "english": "our (incl.) (paucal) dog",
+        "written": "paamin plaa",
+        "ipa": "paːmin plaː",
+        "pronunciation": "ˈpaːmin plaː",
+        "class": "alienable",
+        "plural": {
+          "written": "paamin plaami",
+          "ipa": "paːmin plaːmi",
+          "pronunciation": "ˈpaːmin ˈplaːmi",
+          "class": "alienable",
+          "english": "our (incl.) (paucal) dogs"
+        }
+      },
+      {
+        "cell": "1excl.paucal",
+        "english": "our (excl.) (paucal) dog",
+        "written": "paampi plaa",
+        "ipa": "paːmpi plaː",
+        "pronunciation": "ˈpaːmpi plaː",
+        "class": "alienable",
+        "plural": {
+          "written": "paampi plaami",
+          "ipa": "paːmpi plaːmi",
+          "pronunciation": "ˈpaːmpi ˈplaːmi",
+          "class": "alienable",
+          "english": "our (excl.) (paucal) dogs"
+        }
+      },
+      {
+        "cell": "2.paucal",
+        "english": "your (paucal) dog",
+        "written": "paamri plaa",
+        "ipa": "paːmri plaː",
+        "pronunciation": "ˈpaːmri plaː",
+        "class": "alienable",
+        "plural": {
+          "written": "paamri plaami",
+          "ipa": "paːmri plaːmi",
+          "pronunciation": "ˈpaːmri ˈplaːmi",
+          "class": "alienable",
+          "english": "your (paucal) dogs"
+        }
+      },
+      {
+        "cell": "3.paucal",
+        "english": "their (paucal) dog",
+        "written": "paamki plaa",
+        "ipa": "paːmki plaː",
+        "pronunciation": "ˈpaːmki plaː",
+        "class": "alienable",
+        "plural": {
+          "written": "paamki plaami",
+          "ipa": "paːmki plaːmi",
+          "pronunciation": "ˈpaːmki ˈplaːmi",
+          "class": "alienable",
+          "english": "their (paucal) dogs"
+        }
+      },
+      {
+        "cell": "1incl.plural",
+        "english": "our (incl.) dog",
+        "written": "paamsu plaa",
+        "ipa": "paːmsu plaː",
+        "pronunciation": "ˈpaːmsu plaː",
+        "class": "alienable",
+        "plural": {
+          "written": "paamsu plaami",
+          "ipa": "paːmsu plaːmi",
+          "pronunciation": "ˈpaːmsu ˈplaːmi",
+          "class": "alienable",
+          "english": "our (incl.) dogs"
+        }
+      },
+      {
+        "cell": "1excl.plural",
+        "english": "our (excl.) dog",
+        "written": "paamil plaa",
+        "ipa": "paːmil plaː",
+        "pronunciation": "ˈpaːmil plaː",
+        "class": "alienable",
+        "plural": {
+          "written": "paamil plaami",
+          "ipa": "paːmil plaːmi",
+          "pronunciation": "ˈpaːmil ˈplaːmi",
+          "class": "alienable",
+          "english": "our (excl.) dogs"
+        }
+      },
+      {
+        "cell": "2.plural",
+        "english": "your (pl.) dog",
+        "written": "paampuu plaa",
+        "ipa": "paːmpuː plaː",
+        "pronunciation": "ˈpaːmpuː plaː",
+        "class": "alienable",
+        "plural": {
+          "written": "paampuu plaami",
+          "ipa": "paːmpuː plaːmi",
+          "pronunciation": "ˈpaːmpuː ˈplaːmi",
+          "class": "alienable",
+          "english": "your (pl.) dogs"
+        }
+      },
+      {
+        "cell": "3.plural",
+        "english": "their dog",
+        "written": "paamti plaa",
+        "ipa": "paːmti plaː",
+        "pronunciation": "ˈpaːmti plaː",
+        "class": "alienable",
+        "plural": {
+          "written": "paamti plaami",
+          "ipa": "paːmti plaːmi",
+          "pronunciation": "ˈpaːmti ˈplaːmi",
+          "class": "alienable",
+          "english": "their dogs"
+        }
+      }
+    ],
+    "alienability": [
+      {
+        "english": "my hand",
+        "written": "iiyugyuwilo",
+        "ipa": "iːjuɡjuwilo",
+        "pronunciation": "ˌiːjuˈɡjuwilo",
+        "class": "inalienable"
+      },
+      {
+        "english": "my dog",
+        "written": "paamlo plaa",
+        "ipa": "paːmlo plaː",
+        "pronunciation": "ˈpaːmlo plaː",
+        "class": "alienable"
+      }
+    ],
+    "nominal": {
+      "english": "the woman's dog",
+      "written": "ozwuun plaa",
+      "ipa": "ozwuːn plaː",
+      "pronunciation": "ˈozwuːn plaː"
+    }
+  },
+  "metadata": {
+    "seed": 3719709953,
+    "sources": {
+      "possessive_affixes": "WALS 57A|26A=2 (embutido)",
+      "nominal_locus": "WALS 24A (embutido)",
+      "possessive_classes": "WALS 59A (embutido)",
+      "obligatory_possession": "WALS 58A (embutido)"
+    },
+    "notes": [
+      "a língua não tem artigos livres; não há artigos para flexionar em número"
+    ],
+    "lexemes": {
+      "possessed": "dog",
+      "inalienable": "hand",
+      "possessor": "woman"
+    }
+  }
+}

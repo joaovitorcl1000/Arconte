@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Sarnília | Arconte</title>
+<style>
+  :root { font-family: system-ui,-apple-system,"Segoe UI",sans-serif; color:#e7edf5;
+          background:#0b1828; font-synthesis:none; }
+  * { box-sizing:border-box; }
+  body { margin:0; min-width:320px; }
+  button, input { font:inherit; }
+  button { cursor:pointer; }
+  button:focus-visible, input:focus-visible, [data-character-id]:focus-visible {
+    outline:3px solid #e7b765; outline-offset:3px;
+  }
+  .app { display:grid; grid-template-columns:330px minmax(0,1fr); height:100dvh; min-height:550px; }
+  .sidebar { display:flex; flex-direction:column; min-height:0; overflow:auto;
+             background:linear-gradient(160deg,#12263c 0%,#0b192a 85%);
+             border-right:1px solid rgba(255,255,255,.08); }
+  .brand { padding:29px 26px 20px; border-bottom:1px solid rgba(255,255,255,.1); }
+  .brand-mark { color:#efbb68; font-size:12px; letter-spacing:.22em; font-weight:750; }
+  h1 { font-size:23px; line-height:1.25; letter-spacing:-.03em; margin:17px 0 9px; overflow-wrap:anywhere; }
+  .subtitle { color:#b6c5d6; font-size:13px; line-height:1.5; margin:0; }
+  .tag { display:inline-block; margin-top:18px; border:1px solid #436078; border-radius:100px;
+         padding:5px 10px; color:#c9d7e4; font-size:10px; font-weight:650; letter-spacing:.12em; }
+  .search-area { padding:23px 22px 15px; border-bottom:1px solid rgba(255,255,255,.08); }
+  label { display:block; margin-bottom:10px; font-size:11px; color:#aac0d4;
+          letter-spacing:.10em; text-transform:uppercase; font-weight:700; }
+  #search { width:100%; background:#20364c; border:1px solid #445d74; color:#f6f9fd;
+            border-radius:11px; padding:13px 14px; font-size:14px; }
+  #search::placeholder { color:#a7b6c6; }
+  #result-count { margin:9px 0 0; color:#a6bed0; font-size:12px; }
+  #results { display:flex; flex-direction:column; gap:6px; max-height:180px;
+             margin-top:10px; overflow-y:auto; }
+  .result-button { width:100%; text-align:left; background:#20364c; color:#e9f1f9;
+                   border:1px solid transparent; border-radius:9px; padding:9px 12px;
+                   font-size:13px; overflow-wrap:anywhere; }
+  .result-button:hover { border-color:#cba366; background:#2b445d; }
+  .details { padding:24px 23px 32px; overflow:auto; flex:1; }
+  h2 { font-size:11px; letter-spacing:.12em; color:#b8c9d7; text-transform:uppercase;
+       margin:0 0 16px; }
+  .empty { color:#a7bac9; font-size:14px; line-height:1.7; }
+  #person-name { font-size:21px; color:#fff; line-height:1.3; margin:0 0 9px; overflow-wrap:anywhere; }
+  .meta { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:15px; }
+  .chip { display:inline-flex; align-items:center; background:#29415a; border-radius:7px;
+          color:#e8edf5; font-size:12px; padding:6px 9px; overflow-wrap:anywhere; }
+  .description { color:#d2dce7; font-size:13px; line-height:1.7; white-space:pre-wrap;
+                 overflow-wrap:anywhere; margin:11px 0 22px; }
+  .section-title { font-weight:700; font-size:11px; color:#e5b978; text-transform:uppercase;
+                   letter-spacing:.09em; margin:20px 0 8px; }
+  .linklist { display:flex; gap:6px; flex-wrap:wrap; }
+  .person-link { border:1px solid #4c6579; color:#e5edf4; background:transparent;
+                 border-radius:9px; font-size:12px; padding:7px 9px; text-align:left; }
+  .person-link:hover { background:#243e55; border-color:#e5b978; }
+  .workspace { position:relative; overflow:hidden; display:flex; flex-direction:column;
+               background:#f4f7fb; min-width:0; }
+  .toolbar { position:absolute; z-index:2; display:flex; gap:8px; flex-wrap:wrap;
+             align-items:center; top:19px; left:22px; right:22px; pointer-events:none; }
+  .toolbar button, .toolbar .hint { pointer-events:auto; }
+  .toolbar button { border:1px solid #d4dce7; border-radius:10px; background:#fff;
+                    color:#19324b; min-width:42px; height:40px; padding:0 12px;
+                    box-shadow:0 3px 16px #152a3e12; font-weight:700; }
+  .toolbar button:hover { background:#e8edf5; }
+  .hint { margin-left:auto; background:#fffdf5ed; color:#4a5d70; border:1px solid #e6e3d5;
+          border-radius:10px; padding:11px 13px; font-size:12px; }
+  #svg-area { flex:1; min-height:0; overflow:hidden; }
+  #svg-area svg { display:block; width:100%; height:100%; touch-action:none; cursor:grab; }
+  #svg-area svg.is-panning { cursor:grabbing; }
+  #svg-area [data-character-id] { cursor:pointer; transition:opacity 110ms ease; }
+  #svg-area [data-character-id].is-dimmed { opacity:.16; }
+  #svg-area [data-character-id].is-search-match rect:first-of-type {
+    stroke:#d79b27; stroke-width:3.5;
+  }
+  #svg-area [data-character-id].is-selected rect:first-of-type {
+    stroke:#c26740; stroke-width:4.3;
+  }
+  .footer { position:absolute; bottom:15px; right:19px; pointer-events:none;
+            color:#5e7186; font-size:11px; background:#ffffffd6; border-radius:8px;
+            padding:7px 9px; }
+  @media(max-width:840px) {
+    .app { display:flex; flex-direction:column; height:auto; min-height:100dvh; }
+    .workspace { height:60vh; min-height:390px; order:1; }
+    .sidebar { order:2; min-height:320px; max-height:none; overflow:visible; }
+    .brand { padding:19px 22px; }
+    .tag { margin-top:8px; }
+    .hint { display:none; }
+    .details { overflow:visible; }
+  }
+  @media(prefers-reduced-motion:reduce) {
+    #svg-area [data-character-id] { transition:none; }
+  }
+</style>
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar" aria-label="Busca e informações dos personagens">
+    <header class="brand">
+      <div class="brand-mark">✦ ARCONTE / GENEALOGIA</div>
+      <h1>Sarnília</h1>
+      <p class="subtitle">Explore personagens, gerações e conexões familiares.</p>
+      <span class="tag">EXPLORAÇÃO · SOMENTE LEITURA</span>
+    </header>
+    <div class="search-area">
+      <label for="search">Localizar personagem</label>
+      <input id="search" type="search" placeholder="Digite um nome..." autocomplete="off">
+      <p id="result-count" aria-live="polite"></p>
+      <div id="results" aria-label="Resultados da pesquisa"></div>
+    </div>
+    <section class="details" aria-label="Detalhes selecionados">
+      <h2>Ficha do personagem</h2>
+      <div id="details-body" aria-live="polite">
+        <p class="empty">Clique em um cartão para consultar dados, vínculos e famílias.</p>
+      </div>
+    </section>
+  </aside>
+  <main class="workspace" aria-label="Árvore genealógica">
+    <div class="toolbar" aria-label="Controles de visualização">
+      <button id="zoom-in" type="button" title="Aproximar" aria-label="Aproximar">+</button>
+      <button id="zoom-out" type="button" title="Afastar" aria-label="Afastar">−</button>
+      <button id="reset" type="button" title="Enquadrar toda a árvore">Enquadrar</button>
+      <span class="hint">Arraste para mover · Roda para zoom · Clique para selecionar</span>
+    </div>
+    <div id="svg-area"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="840.00" height="616.00" viewBox="0 0 840.00 616.00" role="img" aria-labelledby="arconte-title arconte-description" id="arconte-svg" tabindex="0"><title id="arconte-title">Sarnília</title><desc id="arconte-description">Genealogia com 6 personagens e 8 relações.</desc><defs><filter id="card-shadow" x="-20%" y="-30%" width="140%" height="170%"><feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#172943" flood-opacity="0.09" /></filter></defs><rect width="100%" height="100%" fill="#f4f7fb" /><text x="60.00" y="62.00" fill="#3a6ea5" font-size="11" font-weight="700" letter-spacing="2" font-family="system-ui, Arial, sans-serif">ARCONTE  /  GENEALOGIA</text><text x="60.00" y="96.00" fill="#172943" font-size="22" font-weight="700" font-family="system-ui, Arial, sans-serif">Sarnília</text><g id="arconte-edges"><path d="M 660.00 286.00 V 322.00 H 420.00 V 358.00" fill="none" stroke="#3a6ea5" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke" data-edge-id="ab65dfb7-7d00-4afd-84f3-f186e8d32598" data-relation="biological_parent" data-source="3ea29478-e141-4bb6-8937-3f91615ed69c" data-target="0e373083-61d2-413f-abf0-efa6d47ced74" data-directed="true"><title>biological_parent: 3ea29478-e141-4bb6-8937-3f91615ed69c → 0e373083-61d2-413f-abf0-efa6d47ced74</title></path><path d="M 660.00 286.00 V 322.00 H 180.00 V 358.00" fill="none" stroke="#3a6ea5" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke" data-edge-id="2637e831-6d31-421e-a980-ce2c2763b0d4" data-relation="biological_parent" data-source="3ea29478-e141-4bb6-8937-3f91615ed69c" data-target="792fee55-0624-4149-94e0-f0b6ba2dfcc0" data-directed="true"><title>biological_parent: 3ea29478-e141-4bb6-8937-3f91615ed69c → 792fee55-0624-4149-94e0-f0b6ba2dfcc0</title></path><path d="M 660.00 286.00 V 322.00 H 660.00 V 358.00" fill="none" stroke="#3a6ea5" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke" data-edge-id="ec591a60-8616-4542-b137-8a49ec1957b2" data-relation="biological_parent" data-source="3ea29478-e141-4bb6-8937-3f91615ed69c" data-target="7d2b6492-e128-40da-aeb0-2825e215397b" data-directed="true"><title>biological_parent: 3ea29478-e141-4bb6-8937-3f91615ed69c → 7d2b6492-e128-40da-aeb0-2825e215397b</title></path><path d="M 420.00 286.00 V 322.00 H 420.00 V 358.00" fill="none" stroke="#3a6ea5" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke" data-edge-id="450a2b63-3dbf-46dd-a932-8200959f2a0e" data-relation="biological_parent" data-source="99dd02e7-d3e4-4292-8fbb-eb0827f15b50" data-target="0e373083-61d2-413f-abf0-efa6d47ced74" data-directed="true"><title>biological_parent: 99dd02e7-d3e4-4292-8fbb-eb0827f15b50 → 0e373083-61d2-413f-abf0-efa6d47ced74</title></path><path d="M 420.00 286.00 V 322.00 H 180.00 V 358.00" fill="none" stroke="#3a6ea5" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke" data-edge-id="8ffdd886-3dde-492f-8c08-2e988e40321b" data-relation="biological_parent" data-source="99dd02e7-d3e4-4292-8fbb-eb0827f15b50" data-target="792fee55-0624-4149-94e0-f0b6ba2dfcc0" data-directed="true"><title>biological_parent: 99dd02e7-d3e4-4292-8fbb-eb0827f15b50 → 792fee55-0624-4149-94e0-f0b6ba2dfcc0</title></path><path d="M 420.00 286.00 V 322.00 H 660.00 V 358.00" fill="none" stroke="#3a6ea5" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke" data-edge-id="e093fb29-1e1a-43bc-82e8-b951d3e52d0b" data-relation="biological_parent" data-source="99dd02e7-d3e4-4292-8fbb-eb0827f15b50" data-target="7d2b6492-e128-40da-aeb0-2825e215397b" data-directed="true"><title>biological_parent: 99dd02e7-d3e4-4292-8fbb-eb0827f15b50 → 7d2b6492-e128-40da-aeb0-2825e215397b</title></path><path d="M 278.00 237.00 C 300.00 237.00, 300.00 407.00, 322.00 407.00" fill="none" stroke="#9c61aa" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke" data-edge-id="41435d29-000b-47a4-b6f4-7ac49af80189" data-relation="marriage" data-source="0e373083-61d2-413f-abf0-efa6d47ced74" data-target="3293b5ce-0de3-4829-bacb-b8fb909e26c1" data-directed="false"><title>marriage: 0e373083-61d2-413f-abf0-efa6d47ced74 → 3293b5ce-0de3-4829-bacb-b8fb909e26c1</title></path><path d="M 518.00 237.00 C 540.00 237.00, 540.00 237.00, 562.00 237.00" fill="none" stroke="#9c61aa" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke" data-edge-id="c1698921-23fd-41c6-a3a1-65aaa478b964" data-relation="marriage" data-source="3ea29478-e141-4bb6-8937-3f91615ed69c" data-target="99dd02e7-d3e4-4292-8fbb-eb0827f15b50" data-directed="false"><title>marriage: 3ea29478-e141-4bb6-8937-3f91615ed69c → 99dd02e7-d3e4-4292-8fbb-eb0827f15b50</title></path></g><g id="arconte-nodes"><g data-character-id="792fee55-0624-4149-94e0-f0b6ba2dfcc0" data-role="character" tabindex="0" role="button" aria-label="Abrir informações de Aioria Hauck"><title>Aioria Hauck</title><rect x="82.00" y="358.00" width="196.00" height="98.00" rx="15" fill="#ffffff" stroke="#d7e0eb" stroke-width="1.3" filter="url(#card-shadow)" /><rect x="82.00" y="372.00" width="4" height="70.00" rx="2" fill="#3a6ea5" /><text x="180.00" y="396.00" text-anchor="middle" fill="#172943" font-size="16" font-weight="650" font-family="system-ui, Arial, sans-serif">Aioria Hauck</text><text x="180.00" y="424.00" text-anchor="middle" fill="#60718a" font-size="12" font-family="system-ui, Arial, sans-serif">Nasc. 46</text><circle cx="264.00" cy="372.00" r="5" fill="#d4a84e" /></g><g data-character-id="0e373083-61d2-413f-abf0-efa6d47ced74" data-role="character" tabindex="0" role="button" aria-label="Abrir informações de Artuin Hauck"><title>Artuin Hauck</title><rect x="322.00" y="358.00" width="196.00" height="98.00" rx="15" fill="#ffffff" stroke="#d7e0eb" stroke-width="1.3" filter="url(#card-shadow)" /><rect x="322.00" y="372.00" width="4" height="70.00" rx="2" fill="#3a6ea5" /><text x="420.00" y="396.00" text-anchor="middle" fill="#172943" font-size="16" font-weight="650" font-family="system-ui, Arial, sans-serif">Artuin Hauck</text><text x="420.00" y="424.00" text-anchor="middle" fill="#60718a" font-size="12" font-family="system-ui, Arial, sans-serif">Nasc. 31</text><circle cx="504.00" cy="372.00" r="5" fill="#d4a84e" /></g><g data-character-id="3293b5ce-0de3-4829-bacb-b8fb909e26c1" data-role="character" tabindex="0" role="button" aria-label="Abrir informações de Ayla ÓFiachra Hauck"><title>Ayla ÓFiachra Hauck</title><rect x="82.00" y="188.00" width="196.00" height="98.00" rx="15" fill="#ffffff" stroke="#d7e0eb" stroke-width="1.3" filter="url(#card-shadow)" /><rect x="82.00" y="202.00" width="4" height="70.00" rx="2" fill="#3a6ea5" /><text x="180.00" y="226.00" text-anchor="middle" fill="#172943" font-size="16" font-weight="650" font-family="system-ui, Arial, sans-serif">Ayla ÓFiachra Hauck</text><text x="180.00" y="254.00" text-anchor="middle" fill="#60718a" font-size="12" font-family="system-ui, Arial, sans-serif">Nasc. 32</text><circle cx="264.00" cy="202.00" r="5" fill="#d4a84e" /></g><g data-character-id="99dd02e7-d3e4-4292-8fbb-eb0827f15b50" data-role="character" tabindex="0" role="button" aria-label="Abrir informações de Boros Hauck"><title>Boros Hauck</title><rect x="322.00" y="188.00" width="196.00" height="98.00" rx="15" fill="#ffffff" stroke="#d7e0eb" stroke-width="1.3" filter="url(#card-shadow)" /><rect x="322.00" y="202.00" width="4" height="70.00" rx="2" fill="#3a6ea5" /><text x="420.00" y="226.00" text-anchor="middle" fill="#172943" font-size="16" font-weight="650" font-family="system-ui, Arial, sans-serif">Boros Hauck</text><text x="420.00" y="254.00" text-anchor="middle" fill="#60718a" font-size="12" font-family="system-ui, Arial, sans-serif">2 — 61</text><circle cx="504.00" cy="202.00" r="5" fill="#d4a84e" /></g><g data-character-id="3ea29478-e141-4bb6-8937-3f91615ed69c" data-role="character" tabindex="0" role="button" aria-label="Abrir informações de Eilidh ÓCuillan Hauck"><title>Eilidh ÓCuillan Hauck
+Complicações durante o parto de Sofia Hauck.</title><rect x="562.00" y="188.00" width="196.00" height="98.00" rx="15" fill="#ffffff" stroke="#d7e0eb" stroke-width="1.3" filter="url(#card-shadow)" /><rect x="562.00" y="202.00" width="4" height="70.00" rx="2" fill="#3a6ea5" /><text x="660.00" y="226.00" text-anchor="middle" fill="#172943" font-size="16" font-weight="650" font-family="system-ui, Arial, sans-serif" textLength="171.00" lengthAdjust="spacingAndGlyphs">Eilidh ÓCuillan Hauck</text><text x="660.00" y="254.00" text-anchor="middle" fill="#60718a" font-size="12" font-family="system-ui, Arial, sans-serif">6 — 48</text><circle cx="744.00" cy="202.00" r="5" fill="#d4a84e" /></g><g data-character-id="7d2b6492-e128-40da-aeb0-2825e215397b" data-role="character" tabindex="0" role="button" aria-label="Abrir informações de Sofia Hauck"><title>Sofia Hauck</title><rect x="562.00" y="358.00" width="196.00" height="98.00" rx="15" fill="#ffffff" stroke="#d7e0eb" stroke-width="1.3" filter="url(#card-shadow)" /><rect x="562.00" y="372.00" width="4" height="70.00" rx="2" fill="#3a6ea5" /><text x="660.00" y="396.00" text-anchor="middle" fill="#172943" font-size="16" font-weight="650" font-family="system-ui, Arial, sans-serif">Sofia Hauck</text><text x="660.00" y="424.00" text-anchor="middle" fill="#60718a" font-size="12" font-family="system-ui, Arial, sans-serif">Nasc. 48</text><circle cx="744.00" cy="372.00" r="5" fill="#d4a84e" /></g></g><g id="arconte-legend"><line x1="60.00" x2="85.00" y1="561.00" y2="561.00" stroke="#3a6ea5" stroke-width="3" stroke-linecap="round" /><text x="92.00" y="565.00" fill="#60718a" font-size="11" font-family="system-ui, Arial, sans-serif">Filiação biológica</text><line x1="230.00" x2="255.00" y1="561.00" y2="561.00" stroke="#168973" stroke-width="3" stroke-linecap="round" stroke-dasharray="7 6" /><text x="262.00" y="565.00" fill="#60718a" font-size="11" font-family="system-ui, Arial, sans-serif">Filiação adotiva</text><line x1="400.00" x2="425.00" y1="561.00" y2="561.00" stroke="#9c61aa" stroke-width="3" stroke-linecap="round" /><text x="432.00" y="565.00" fill="#60718a" font-size="11" font-family="system-ui, Arial, sans-serif">Casamento</text><line x1="570.00" x2="595.00" y1="561.00" y2="561.00" stroke="#c78c42" stroke-width="3" stroke-linecap="round" stroke-dasharray="3 5" /><text x="602.00" y="565.00" fill="#60718a" font-size="11" font-family="system-ui, Arial, sans-serif">União</text></g></svg></div>
+    <div class="footer" id="scene-count"></div>
+  </main>
+</div>
+<script id="arconte-data" type="application/json">{"root_id":null,"direction":"all","nodes":[{"id":"792fee55-0624-4149-94e0-f0b6ba2dfcc0","name":"Aioria","surname":"Hauck","full_name":"Aioria Hauck","gender":"Masculino","birth_year":46,"death_year":null,"biography":null,"family_ids":["40fa1249-55e7-4725-b29e-1e7cd88fb57d"],"generation":1,"x":120.0,"y":255.0},{"id":"0e373083-61d2-413f-abf0-efa6d47ced74","name":"Artuin","surname":"Hauck","full_name":"Artuin Hauck","gender":"Masculino","birth_year":31,"death_year":null,"biography":null,"family_ids":["40fa1249-55e7-4725-b29e-1e7cd88fb57d"],"generation":1,"x":360.0,"y":255.0},{"id":"3293b5ce-0de3-4829-bacb-b8fb909e26c1","name":"Ayla","surname":"ÓFiachra Hauck","full_name":"Ayla ÓFiachra Hauck","gender":"Feminino","birth_year":32,"death_year":null,"biography":null,"family_ids":["40fa1249-55e7-4725-b29e-1e7cd88fb57d"],"generation":0,"x":120.0,"y":85.0},{"id":"99dd02e7-d3e4-4292-8fbb-eb0827f15b50","name":"Boros","surname":"Hauck","full_name":"Boros Hauck","gender":"Masculino","birth_year":2,"death_year":61,"biography":null,"family_ids":["40fa1249-55e7-4725-b29e-1e7cd88fb57d"],"generation":0,"x":360.0,"y":85.0},{"id":"3ea29478-e141-4bb6-8937-3f91615ed69c","name":"Eilidh","surname":"ÓCuillan Hauck","full_name":"Eilidh ÓCuillan Hauck","gender":"Feminino","birth_year":6,"death_year":48,"biography":"Complicações durante o parto de Sofia Hauck.","family_ids":["40fa1249-55e7-4725-b29e-1e7cd88fb57d"],"generation":0,"x":600.0,"y":85.0},{"id":"7d2b6492-e128-40da-aeb0-2825e215397b","name":"Sofia","surname":"Hauck","full_name":"Sofia Hauck","gender":"Feminino","birth_year":48,"death_year":null,"biography":null,"family_ids":["40fa1249-55e7-4725-b29e-1e7cd88fb57d"],"generation":1,"x":600.0,"y":255.0}],"edges":[{"id":"ab65dfb7-7d00-4afd-84f3-f186e8d32598","source_id":"3ea29478-e141-4bb6-8937-3f91615ed69c","target_id":"0e373083-61d2-413f-abf0-efa6d47ced74","type":"biological_parent","directed":true},{"id":"2637e831-6d31-421e-a980-ce2c2763b0d4","source_id":"3ea29478-e141-4bb6-8937-3f91615ed69c","target_id":"792fee55-0624-4149-94e0-f0b6ba2dfcc0","type":"biological_parent","directed":true},{"id":"ec591a60-8616-4542-b137-8a49ec1957b2","source_id":"3ea29478-e141-4bb6-8937-3f91615ed69c","target_id":"7d2b6492-e128-40da-aeb0-2825e215397b","type":"biological_parent","directed":true},{"id":"450a2b63-3dbf-46dd-a932-8200959f2a0e","source_id":"99dd02e7-d3e4-4292-8fbb-eb0827f15b50","target_id":"0e373083-61d2-413f-abf0-efa6d47ced74","type":"biological_parent","directed":true},{"id":"8ffdd886-3dde-492f-8c08-2e988e40321b","source_id":"99dd02e7-d3e4-4292-8fbb-eb0827f15b50","target_id":"792fee55-0624-4149-94e0-f0b6ba2dfcc0","type":"biological_parent","directed":true},{"id":"e093fb29-1e1a-43bc-82e8-b951d3e52d0b","source_id":"99dd02e7-d3e4-4292-8fbb-eb0827f15b50","target_id":"7d2b6492-e128-40da-aeb0-2825e215397b","type":"biological_parent","directed":true},{"id":"41435d29-000b-47a4-b6f4-7ac49af80189","source_id":"0e373083-61d2-413f-abf0-efa6d47ced74","target_id":"3293b5ce-0de3-4829-bacb-b8fb909e26c1","type":"marriage","directed":false},{"id":"c1698921-23fd-41c6-a3a1-65aaa478b964","source_id":"3ea29478-e141-4bb6-8937-3f91615ed69c","target_id":"99dd02e7-d3e4-4292-8fbb-eb0827f15b50","type":"marriage","directed":false}],"layout":{"width":720.0,"height":340.0},"families":{"40fa1249-55e7-4725-b29e-1e7cd88fb57d":"Casa Hauck"}}</script>
+<script>
+(function () {
+  'use strict';
+  const data = JSON.parse(document.getElementById('arconte-data').textContent);
+  const svg = document.getElementById('arconte-svg');
+  const nodes = data.nodes;
+  const byId = new Map(nodes.map(function(n) { return [n.id, n]; }));
+  const cards = new Map();
+  svg.querySelectorAll('[data-character-id]').forEach(function(el) {
+    cards.set(el.getAttribute('data-character-id'), el);
+  });
+  const search = document.getElementById('search');
+  const results = document.getElementById('results');
+  const resultCount = document.getElementById('result-count');
+  const details = document.getElementById('details-body');
+  document.getElementById('scene-count').textContent =
+    nodes.length + ' personagens · ' + data.edges.length + ' relações';
+
+  const original = svg.viewBox.baseVal;
+  const base = {x: original.x, y: original.y, width: original.width, height: original.height};
+  let view = Object.assign({}, base);
+  let selectedId = null;
+  let pointer = null;
+  let moved = false;
+
+  function setView(v) {
+    view = v;
+    svg.setAttribute('viewBox', [v.x, v.y, v.width, v.height].join(' '));
+  }
+  function screenToWorld(x, y) {
+    const matrix = svg.getScreenCTM();
+    if (!matrix) return null;
+    return new DOMPoint(x, y).matrixTransform(matrix.inverse());
+  }
+  function zoomAt(x, y, factor) {
+    const scale = Math.min(8, Math.max(0.35, base.width / view.width * factor));
+    const width = base.width / scale;
+    const height = base.height / scale;
+    const pivot = screenToWorld(x, y);
+    if (!pivot) return;
+    const ratio = width / view.width;
+    setView({x: pivot.x - (pivot.x - view.x) * ratio,
+             y: pivot.y - (pivot.y - view.y) * ratio, width:width, height:height});
+  }
+  function zoomButton(factor) {
+    const box = svg.getBoundingClientRect();
+    zoomAt(box.left + box.width / 2, box.top + box.height / 2, factor);
+  }
+  function fit() { setView(Object.assign({}, base)); }
+  document.getElementById('zoom-in').addEventListener('click', function() { zoomButton(1.25); });
+  document.getElementById('zoom-out').addEventListener('click', function() { zoomButton(1 / 1.25); });
+  document.getElementById('reset').addEventListener('click', fit);
+  svg.addEventListener('wheel', function(event) {
+    event.preventDefault();
+    zoomAt(event.clientX, event.clientY, Math.exp(-event.deltaY * 0.0015));
+  }, {passive:false});
+  svg.addEventListener('pointerdown', function(event) {
+    if (event.button !== 0 || pointer) return;
+    pointer = {id:event.pointerId, x:event.clientX, y:event.clientY};
+    moved = false;
+  });
+  window.addEventListener('pointermove', function(event) {
+    if (!pointer || pointer.id !== event.pointerId) return;
+    if (Math.hypot(event.clientX - pointer.x, event.clientY - pointer.y) < 3 && !moved) return;
+    moved = true;
+    svg.classList.add('is-panning');
+    const before = screenToWorld(pointer.x, pointer.y);
+    const after = screenToWorld(event.clientX, event.clientY);
+    if (before && after) setView({x:view.x + before.x - after.x,
+                                   y:view.y + before.y - after.y,
+                                   width:view.width, height:view.height});
+    pointer.x = event.clientX;
+    pointer.y = event.clientY;
+  });
+  function finishPointer(event) {
+    if (pointer && (event.pointerId === pointer.id || event.type === 'blur')) {
+      pointer = null;
+      svg.classList.remove('is-panning');
+      // Evita selecionar cartão imediatamente depois de arrastá-lo.
+      if (moved) window.setTimeout(function() { moved = false; }, 0);
+    }
+  }
+  window.addEventListener('pointerup', finishPointer);
+  window.addEventListener('pointercancel', finishPointer);
+  window.addEventListener('blur', finishPointer);
+
+  function normalize(value) {
+    return String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+      .toLocaleLowerCase('pt-BR').trim();
+  }
+  function newEl(tag, className, textValue) {
+    const element = document.createElement(tag);
+    if (className) element.className = className;
+    if (textValue !== undefined) element.textContent = String(textValue);
+    return element;
+  }
+  function focusNode(id) {
+    const element = cards.get(id);
+    if (!element) return;
+    const box = element.getBBox();
+    const scale = Math.max(1.3, Math.min(8, base.width / view.width));
+    const width = base.width / scale;
+    const height = base.height / scale;
+    setView({x:box.x + box.width / 2 - width / 2,
+             y:box.y + box.height / 2 - height / 2, width:width, height:height});
+  }
+  function addSection(container, title, names, interactive) {
+    if (!names.length) return;
+    container.appendChild(newEl('p', 'section-title', title));
+    const wrap = newEl('div', 'linklist');
+    names.forEach(function(idOrName) {
+      if (interactive && byId.has(idOrName)) {
+        const button = newEl('button', 'person-link', byId.get(idOrName).full_name);
+        button.type = 'button';
+        button.addEventListener('click', function() { selectNode(idOrName, true); });
+        wrap.appendChild(button);
+      } else {
+        wrap.appendChild(newEl('span', 'chip', idOrName));
+      }
+    });
+    container.appendChild(wrap);
+  }
+  function selectNode(id, focus) {
+    const node = byId.get(id);
+    if (!node) return;
+    selectedId = id;
+    cards.forEach(function(card, key) { card.classList.toggle('is-selected', key === id); });
+    details.replaceChildren();
+    details.appendChild(newEl('h3', '', node.full_name));
+    details.lastChild.id = 'person-name';
+    const meta = newEl('div', 'meta');
+    if (node.birth_year !== null) meta.appendChild(newEl('span', 'chip', 'Nasc. ' + node.birth_year));
+    if (node.death_year !== null) meta.appendChild(newEl('span', 'chip', 'Falec. ' + node.death_year));
+    if (node.gender) meta.appendChild(newEl('span', 'chip', node.gender));
+    details.appendChild(meta);
+    if (node.biography) details.appendChild(newEl('p', 'description', node.biography));
+    const families = node.family_ids.map(function(fid) { return data.families[fid] || fid; });
+    addSection(details, 'Famílias e casas', families, false);
+    const groups = [
+      ['Pais e responsáveis', data.edges.filter(function(e) { return e.directed && e.target_id === id; })
+       .map(function(e) { return e.source_id; })],
+      ['Filhos', data.edges.filter(function(e) { return e.directed && e.source_id === id; })
+       .map(function(e) { return e.target_id; })],
+      ['Casamentos e uniões', data.edges.filter(function(e) { return !e.directed && (e.source_id === id || e.target_id === id); })
+       .map(function(e) { return e.source_id === id ? e.target_id : e.source_id; })]
+    ];
+    groups.forEach(function(group) {
+      const unique = Array.from(new Set(group[1])).filter(function(value) { return byId.has(value); });
+      unique.sort(function(a,b) { return byId.get(a).full_name.localeCompare(byId.get(b).full_name, 'pt-BR'); });
+      addSection(details, group[0], unique, true);
+    });
+    if (focus) focusNode(id);
+  }
+  svg.addEventListener('click', function(event) {
+    if (moved) return;
+    const element = event.target.closest('[data-character-id]');
+    if (element) selectNode(element.getAttribute('data-character-id'), false);
+  });
+  svg.addEventListener('keydown', function(event) {
+    if (event.key !== 'Enter' && event.key !== ' ') return;
+    const element = event.target.closest('[data-character-id]');
+    if (element) {
+      event.preventDefault();
+      selectNode(element.getAttribute('data-character-id'), true);
+    }
+  });
+  function updateSearch() {
+    const query = normalize(search.value);
+    const found = query ? nodes.filter(function(n) { return normalize(n.full_name).includes(query); }) : [];
+    cards.forEach(function(card, id) {
+      const match = query && found.some(function(n) { return n.id === id; });
+      card.classList.toggle('is-search-match', Boolean(match));
+      card.classList.toggle('is-dimmed', Boolean(query) && !match);
+    });
+    results.replaceChildren();
+    resultCount.textContent = query ? (found.length + ' resultado(s)')
+      : (nodes.length + ' personagem(ns) no mapa');
+    found.slice(0, 30).forEach(function(node) {
+      const button = newEl('button', 'result-button', node.full_name);
+      button.type = 'button';
+      button.addEventListener('click', function() { selectNode(node.id, true); });
+      results.appendChild(button);
+    });
+    if (found.length > 30) results.appendChild(newEl('p', 'empty', 'Exibindo os primeiros 30 resultados.'));
+  }
+  search.addEventListener('input', updateSearch);
+  search.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+      const query = normalize(search.value);
+      const found = nodes.find(function(n) { return query && normalize(n.full_name).includes(query); });
+      if (found) selectNode(found.id, true);
+    }
+  });
+  document.addEventListener('keydown', function(event) {
+    if (event.target === search || event.target.tagName === 'BUTTON') return;
+    if (event.key === '+' || event.key === '=') { event.preventDefault(); zoomButton(1.25); }
+    else if (event.key === '-') { event.preventDefault(); zoomButton(1 / 1.25); }
+    else if (event.key === '0') { event.preventDefault(); fit(); }
+    else if (event.key === 'Escape') {
+      selectedId = null;
+      cards.forEach(function(card) { card.classList.remove('is-selected'); });
+      details.replaceChildren(newEl('p', 'empty', 'Clique em um cartão para consultar suas informações.'));
+    }
+  });
+  updateSearch();
+})();
+</script>
+</body>
+</html>
+

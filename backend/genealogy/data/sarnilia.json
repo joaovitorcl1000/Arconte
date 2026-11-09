@@ -1,0 +1,419 @@
+{
+  "format": "arconte.project",
+  "version": 1,
+  "metadata": {
+    "id": "5b8dd4e2-06b4-49b7-9746-b513840b4e97",
+    "name": "Sarnília",
+    "description": null
+  },
+  "data": {
+    "format": "arconte.genealogy",
+    "version": 3,
+    "characters": [
+      {
+        "id": "0e373083-61d2-413f-abf0-efa6d47ced74",
+        "name": "Artuin",
+        "surname": "Hauck",
+        "gender": "Masculino",
+        "birth_year": 31,
+        "death_year": null,
+        "biography": null,
+        "physical": {
+          "height_m": 1.68,
+          "weight_kg": 80.0,
+          "hair_color": "Ruivo",
+          "eye_color": null,
+          "skin_tone": null,
+          "body_type": "baixo e entroncado",
+          "distinctive_features": "Rosto de aspecto enferrujado",
+          "description": "Homem ruivo, de baixa estatura e constituição forte e entroncada. Possui 1,68 m de altura e pesa 80 kg.",
+          "custom_attributes": {}
+        },
+        "personality": {
+          "traits": [],
+          "virtues": [],
+          "flaws": [],
+          "ambitions": [],
+          "fears": [],
+          "desires": [],
+          "description": null,
+          "custom_attributes": {}
+        },
+        "social": {
+          "title": "Conde da Sarnília",
+          "occupation": "Governante do condado da Sarnília",
+          "residence": "Castelo no Morro do Falcão, Sarnília",
+          "nationality": "Secúrio",
+          "religion": null,
+          "social_status": "Nobreza",
+          "description": "Artuin Hauck é o conde da Sarnília e senhor do Morro do Falcão. Pertence à Casa Hauck, cujo emblema é um falcão vermelho e cujo lema é A Fortuna Favorece os Audazes.",
+          "custom_attributes": {}
+        },
+        "history": {
+          "biography": null,
+          "events": [],
+          "custom_attributes": {}
+        }
+      },
+      {
+        "id": "3293b5ce-0de3-4829-bacb-b8fb909e26c1",
+        "name": "Ayla",
+        "surname": "ÓFiachra Hauck",
+        "gender": "Feminino",
+        "birth_year": 32,
+        "death_year": null,
+        "biography": null,
+        "physical": {
+          "height_m": null,
+          "weight_kg": null,
+          "hair_color": null,
+          "eye_color": null,
+          "skin_tone": null,
+          "body_type": null,
+          "distinctive_features": null,
+          "description": null,
+          "custom_attributes": {}
+        },
+        "personality": {
+          "traits": [],
+          "virtues": [],
+          "flaws": [],
+          "ambitions": [],
+          "fears": [],
+          "desires": [],
+          "description": null,
+          "custom_attributes": {}
+        },
+        "social": {
+          "title": null,
+          "occupation": null,
+          "residence": null,
+          "nationality": null,
+          "religion": null,
+          "social_status": null,
+          "description": null,
+          "custom_attributes": {}
+        },
+        "history": {
+          "biography": null,
+          "events": [],
+          "custom_attributes": {}
+        }
+      },
+      {
+        "id": "3ea29478-e141-4bb6-8937-3f91615ed69c",
+        "name": "Eilidh",
+        "surname": "ÓCuillan Hauck",
+        "gender": "Feminino",
+        "birth_year": 6,
+        "death_year": 48,
+        "biography": "Complicações durante o parto de Sofia Hauck.",
+        "physical": {
+          "height_m": null,
+          "weight_kg": null,
+          "hair_color": null,
+          "eye_color": null,
+          "skin_tone": null,
+          "body_type": null,
+          "distinctive_features": null,
+          "description": null,
+          "custom_attributes": {}
+        },
+        "personality": {
+          "traits": [],
+          "virtues": [],
+          "flaws": [],
+          "ambitions": [],
+          "fears": [],
+          "desires": [],
+          "description": null,
+          "custom_attributes": {}
+        },
+        "social": {
+          "title": null,
+          "occupation": null,
+          "residence": null,
+          "nationality": null,
+          "religion": null,
+          "social_status": null,
+          "description": null,
+          "custom_attributes": {}
+        },
+        "history": {
+          "biography": "Complicações durante o parto de Sofia Hauck.",
+          "events": [],
+          "custom_attributes": {}
+        }
+      },
+      {
+        "id": "792fee55-0624-4149-94e0-f0b6ba2dfcc0",
+        "name": "Aioria",
+        "surname": "Hauck",
+        "gender": "Masculino",
+        "birth_year": 46,
+        "death_year": null,
+        "biography": null,
+        "physical": {
+          "height_m": null,
+          "weight_kg": null,
+          "hair_color": null,
+          "eye_color": null,
+          "skin_tone": null,
+          "body_type": null,
+          "distinctive_features": null,
+          "description": null,
+          "custom_attributes": {}
+        },
+        "personality": {
+          "traits": [],
+          "virtues": [],
+          "flaws": [],
+          "ambitions": [],
+          "fears": [],
+          "desires": [],
+          "description": null,
+          "custom_attributes": {}
+        },
+        "social": {
+          "title": null,
+          "occupation": null,
+          "residence": null,
+          "nationality": null,
+          "religion": null,
+          "social_status": null,
+          "description": null,
+          "custom_attributes": {}
+        },
+        "history": {
+          "biography": null,
+          "events": [],
+          "custom_attributes": {}
+        }
+      },
+      {
+        "id": "7d2b6492-e128-40da-aeb0-2825e215397b",
+        "name": "Sofia",
+        "surname": "Hauck",
+        "gender": "Feminino",
+        "birth_year": 48,
+        "death_year": null,
+        "biography": null,
+        "physical": {
+          "height_m": null,
+          "weight_kg": null,
+          "hair_color": null,
+          "eye_color": null,
+          "skin_tone": null,
+          "body_type": null,
+          "distinctive_features": null,
+          "description": null,
+          "custom_attributes": {}
+        },
+        "personality": {
+          "traits": [],
+          "virtues": [],
+          "flaws": [],
+          "ambitions": [],
+          "fears": [],
+          "desires": [],
+          "description": null,
+          "custom_attributes": {}
+        },
+        "social": {
+          "title": null,
+          "occupation": null,
+          "residence": null,
+          "nationality": null,
+          "religion": null,
+          "social_status": null,
+          "description": null,
+          "custom_attributes": {}
+        },
+        "history": {
+          "biography": null,
+          "events": [],
+          "custom_attributes": {}
+        }
+      },
+      {
+        "id": "99dd02e7-d3e4-4292-8fbb-eb0827f15b50",
+        "name": "Boros",
+        "surname": "Hauck",
+        "gender": "Masculino",
+        "birth_year": 2,
+        "death_year": 61,
+        "biography": null,
+        "physical": {
+          "height_m": null,
+          "weight_kg": null,
+          "hair_color": null,
+          "eye_color": null,
+          "skin_tone": null,
+          "body_type": null,
+          "distinctive_features": null,
+          "description": null,
+          "custom_attributes": {}
+        },
+        "personality": {
+          "traits": [],
+          "virtues": [],
+          "flaws": [],
+          "ambitions": [],
+          "fears": [],
+          "desires": [],
+          "description": null,
+          "custom_attributes": {}
+        },
+        "social": {
+          "title": null,
+          "occupation": null,
+          "residence": null,
+          "nationality": null,
+          "religion": null,
+          "social_status": null,
+          "description": null,
+          "custom_attributes": {}
+        },
+        "history": {
+          "biography": null,
+          "events": [],
+          "custom_attributes": {}
+        }
+      }
+    ],
+    "relationships": [
+      {
+        "id": "2637e831-6d31-421e-a980-ce2c2763b0d4",
+        "source_id": "3ea29478-e141-4bb6-8937-3f91615ed69c",
+        "target_id": "792fee55-0624-4149-94e0-f0b6ba2dfcc0",
+        "type": "biological_parent",
+        "start_year": null,
+        "end_year": null
+      },
+      {
+        "id": "41435d29-000b-47a4-b6f4-7ac49af80189",
+        "source_id": "0e373083-61d2-413f-abf0-efa6d47ced74",
+        "target_id": "3293b5ce-0de3-4829-bacb-b8fb909e26c1",
+        "type": "marriage",
+        "start_year": null,
+        "end_year": null
+      },
+      {
+        "id": "450a2b63-3dbf-46dd-a932-8200959f2a0e",
+        "source_id": "99dd02e7-d3e4-4292-8fbb-eb0827f15b50",
+        "target_id": "0e373083-61d2-413f-abf0-efa6d47ced74",
+        "type": "biological_parent",
+        "start_year": null,
+        "end_year": null
+      },
+      {
+        "id": "8ffdd886-3dde-492f-8c08-2e988e40321b",
+        "source_id": "99dd02e7-d3e4-4292-8fbb-eb0827f15b50",
+        "target_id": "792fee55-0624-4149-94e0-f0b6ba2dfcc0",
+        "type": "biological_parent",
+        "start_year": null,
+        "end_year": null
+      },
+      {
+        "id": "ab65dfb7-7d00-4afd-84f3-f186e8d32598",
+        "source_id": "3ea29478-e141-4bb6-8937-3f91615ed69c",
+        "target_id": "0e373083-61d2-413f-abf0-efa6d47ced74",
+        "type": "biological_parent",
+        "start_year": null,
+        "end_year": null
+      },
+      {
+        "id": "c1698921-23fd-41c6-a3a1-65aaa478b964",
+        "source_id": "3ea29478-e141-4bb6-8937-3f91615ed69c",
+        "target_id": "99dd02e7-d3e4-4292-8fbb-eb0827f15b50",
+        "type": "marriage",
+        "start_year": null,
+        "end_year": 48
+      },
+      {
+        "id": "e093fb29-1e1a-43bc-82e8-b951d3e52d0b",
+        "source_id": "99dd02e7-d3e4-4292-8fbb-eb0827f15b50",
+        "target_id": "7d2b6492-e128-40da-aeb0-2825e215397b",
+        "type": "biological_parent",
+        "start_year": null,
+        "end_year": null
+      },
+      {
+        "id": "ec591a60-8616-4542-b137-8a49ec1957b2",
+        "source_id": "3ea29478-e141-4bb6-8937-3f91615ed69c",
+        "target_id": "7d2b6492-e128-40da-aeb0-2825e215397b",
+        "type": "biological_parent",
+        "start_year": null,
+        "end_year": null
+      }
+    ],
+    "families": [
+      {
+        "id": "40fa1249-55e7-4725-b29e-1e7cd88fb57d",
+        "name": "Casa Hauck",
+        "type": "house",
+        "founder_id": null,
+        "founded_year": null,
+        "dissolved_year": null,
+        "motto": "A fortuna favorece os audazes",
+        "description": null
+      }
+    ],
+    "memberships": [
+      {
+        "id": "09f3db66-03ff-4604-8696-84ee1a808a1d",
+        "family_id": "40fa1249-55e7-4725-b29e-1e7cd88fb57d",
+        "character_id": "792fee55-0624-4149-94e0-f0b6ba2dfcc0",
+        "origin": "birth",
+        "start_year": null,
+        "end_year": null,
+        "role": null
+      },
+      {
+        "id": "16969ca1-7d46-422b-9f8d-1589f0dbd714",
+        "family_id": "40fa1249-55e7-4725-b29e-1e7cd88fb57d",
+        "character_id": "3293b5ce-0de3-4829-bacb-b8fb909e26c1",
+        "origin": "marriage",
+        "start_year": null,
+        "end_year": null,
+        "role": null
+      },
+      {
+        "id": "4a1cf65b-6719-475b-9c63-99c8497b2af5",
+        "family_id": "40fa1249-55e7-4725-b29e-1e7cd88fb57d",
+        "character_id": "99dd02e7-d3e4-4292-8fbb-eb0827f15b50",
+        "origin": "birth",
+        "start_year": null,
+        "end_year": null,
+        "role": null
+      },
+      {
+        "id": "53e5b6c0-7bed-4c81-bf73-9ef1da5f7469",
+        "family_id": "40fa1249-55e7-4725-b29e-1e7cd88fb57d",
+        "character_id": "3ea29478-e141-4bb6-8937-3f91615ed69c",
+        "origin": "marriage",
+        "start_year": null,
+        "end_year": null,
+        "role": null
+      },
+      {
+        "id": "def188cc-d9a0-4e08-84c9-6c16a5b3125f",
+        "family_id": "40fa1249-55e7-4725-b29e-1e7cd88fb57d",
+        "character_id": "7d2b6492-e128-40da-aeb0-2825e215397b",
+        "origin": "birth",
+        "start_year": null,
+        "end_year": null,
+        "role": null
+      },
+      {
+        "id": "e3b82b0d-5b09-42c8-b813-2534b1ae77fa",
+        "family_id": "40fa1249-55e7-4725-b29e-1e7cd88fb57d",
+        "character_id": "0e373083-61d2-413f-abf0-efa6d47ced74",
+        "origin": "birth",
+        "start_year": null,
+        "end_year": null,
+        "role": null
+      }
+    ]
+  }
+}

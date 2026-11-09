@@ -1,0 +1,525 @@
+{
+  "settings": {
+    "patronymic": {
+      "strategy": "suffix",
+      "morpheme": [
+        "a",
+        "m"
+      ]
+    },
+    "settlement_suffix": [
+      "l",
+      "a"
+    ],
+    "locative_case": "locative"
+  },
+  "people": [
+    {
+      "given": {
+        "name": "Nui",
+        "ipa": "nui",
+        "pronunciation": "ˈnui",
+        "meaning": "good stone",
+        "etymology": "good + stone",
+        "gender": "any"
+      },
+      "family": {
+        "name": "Azemam",
+        "ipa": "azemam",
+        "pronunciation": "ˈazemam",
+        "meaning": "child of Azem",
+        "type": "patronymic"
+      },
+      "full": "Nui Azemam"
+    },
+    {
+      "given": {
+        "name": "Nowo",
+        "ipa": "nowo",
+        "pronunciation": "ˈnowo",
+        "meaning": null,
+        "etymology": null,
+        "gender": "any"
+      },
+      "family": {
+        "name": "Liyoam",
+        "ipa": "lijoam",
+        "pronunciation": "ˈlijoam",
+        "meaning": "child of Liyo",
+        "type": "patronymic"
+      },
+      "full": "Nowo Liyoam"
+    },
+    {
+      "given": {
+        "name": "Miyum",
+        "ipa": "mijum",
+        "pronunciation": "ˈmijum",
+        "meaning": null,
+        "etymology": null,
+        "gender": "any"
+      },
+      "family": {
+        "name": "Neduam",
+        "ipa": "neduam",
+        "pronunciation": "ˈneduam",
+        "meaning": "child of Nedu",
+        "type": "patronymic"
+      },
+      "full": "Miyum Neduam"
+    },
+    {
+      "given": {
+        "name": "Ayaamqem",
+        "ipa": "ajaːmŋem",
+        "pronunciation": "aˈjaːmŋem",
+        "meaning": null,
+        "etymology": null,
+        "gender": "any"
+      },
+      "family": {
+        "name": "Yinyeam",
+        "ipa": "jiɲeam",
+        "pronunciation": "ˈjiɲeam",
+        "meaning": "child of Yinye",
+        "type": "patronymic"
+      },
+      "full": "Ayaamqem Yinyeam"
+    },
+    {
+      "given": {
+        "name": "Twisikyony",
+        "ipa": "twisikjoɲ",
+        "pronunciation": "ˈtwisikjoɲ",
+        "meaning": "sweet snow",
+        "etymology": "sweet + snow",
+        "gender": "any"
+      },
+      "family": {
+        "name": "Qaakyetwukuuam",
+        "ipa": "ŋaːkjetwukuːam",
+        "pronunciation": "ˌŋaːkjeˈtwukuːam",
+        "meaning": "child of Qaakyetwukuu",
+        "type": "patronymic"
+      },
+      "full": "Twisikyony Qaakyetwukuuam"
+    },
+    {
+      "given": {
+        "name": "Elogi",
+        "ipa": "eloɡi",
+        "pronunciation": "ˈeloɡi",
+        "meaning": null,
+        "etymology": null,
+        "gender": "any"
+      },
+      "family": {
+        "name": "Seqkluniam",
+        "ipa": "seŋkluniam",
+        "pronunciation": "seŋˈkluniam",
+        "meaning": "child of Seqkluni",
+        "type": "patronymic"
+      },
+      "full": "Elogi Seqkluniam"
+    },
+    {
+      "given": {
+        "name": "Niwum",
+        "ipa": "niwum",
+        "pronunciation": "ˈniwum",
+        "meaning": null,
+        "etymology": null,
+        "gender": "any"
+      },
+      "family": {
+        "name": "Woneam",
+        "ipa": "woneam",
+        "pronunciation": "ˈwoneam",
+        "meaning": "child of Wone",
+        "type": "patronymic"
+      },
+      "full": "Niwum Woneam"
+    },
+    {
+      "given": {
+        "name": "Ayii",
+        "ipa": "ajiː",
+        "pronunciation": "ˈajiː",
+        "meaning": null,
+        "etymology": null,
+        "gender": "any"
+      },
+      "family": {
+        "name": "Dyuuqerweam",
+        "ipa": "djuːŋerweam",
+        "pronunciation": "djuːˈŋerweam",
+        "meaning": "child of Dyuuqerwe",
+        "type": "patronymic"
+      },
+      "full": "Ayii Dyuuqerweam"
+    },
+    {
+      "given": {
+        "name": "Nuri",
+        "ipa": "nuri",
+        "pronunciation": "ˈnuri",
+        "meaning": null,
+        "etymology": null,
+        "gender": "any"
+      },
+      "family": {
+        "name": "Wiiriimam",
+        "ipa": "wiːriːmam",
+        "pronunciation": "ˈwiːriːmam",
+        "meaning": "child of Wiiriim",
+        "type": "patronymic"
+      },
+      "full": "Nuri Wiiriimam"
+    },
+    {
+      "given": {
+        "name": "Huumal",
+        "ipa": "huːmal",
+        "pronunciation": "ˈhuːmal",
+        "meaning": null,
+        "etymology": null,
+        "gender": "any"
+      },
+      "family": {
+        "name": "Qiiwuam",
+        "ipa": "ŋiːwuam",
+        "pronunciation": "ˈŋiːwuam",
+        "meaning": "child of Qiiwu",
+        "type": "patronymic"
+      },
+      "full": "Huumal Qiiwuam"
+    },
+    {
+      "given": {
+        "name": "Konkaplaa",
+        "ipa": "konkaplaː",
+        "pronunciation": "ˈkonkaplaː",
+        "meaning": "long dog",
+        "etymology": "long + dog",
+        "gender": "any"
+      },
+      "family": {
+        "name": "Nupioram",
+        "ipa": "nupioram",
+        "pronunciation": "nuˈpioram",
+        "meaning": "child of Nupior",
+        "type": "patronymic"
+      },
+      "full": "Konkaplaa Nupioram"
+    },
+    {
+      "given": {
+        "name": "Nuqerwe",
+        "ipa": "nuŋerwe",
+        "pronunciation": "nuˈŋerwe",
+        "meaning": "good feather",
+        "etymology": "good + feather",
+        "gender": "any"
+      },
+      "family": {
+        "name": "Umuyeam",
+        "ipa": "umujeam",
+        "pronunciation": "uˈmujeam",
+        "meaning": "child of Umuye",
+        "type": "patronymic"
+      },
+      "full": "Nuqerwe Umuyeam"
+    },
+    {
+      "given": {
+        "name": "Berphunyqo",
+        "ipa": "berpʰuɲŋo",
+        "pronunciation": "berˈpʰuɲŋo",
+        "meaning": "hard river",
+        "etymology": "hard + river",
+        "gender": "any"
+      },
+      "family": {
+        "name": "Mauuqerweam",
+        "ipa": "mauːŋerweam",
+        "pronunciation": "ˌmauːˈŋerweam",
+        "meaning": "child of Mauuqerwe",
+        "type": "patronymic"
+      },
+      "full": "Berphunyqo Mauuqerweam"
+    },
+    {
+      "given": {
+        "name": "Kronaxi",
+        "ipa": "kronaʃi",
+        "pronunciation": "ˈkronaʃi",
+        "meaning": "new sea",
+        "etymology": "new + sea",
+        "gender": "any"
+      },
+      "family": {
+        "name": "Nilepaqam",
+        "ipa": "nilepaŋam",
+        "pronunciation": "niˈlepaŋam",
+        "meaning": "child of Nilepaq",
+        "type": "patronymic"
+      },
+      "full": "Kronaxi Nilepaqam"
+    },
+    {
+      "given": {
+        "name": "Anim",
+        "ipa": "anim",
+        "pronunciation": "ˈanim",
+        "meaning": null,
+        "etymology": null,
+        "gender": "any"
+      },
+      "family": {
+        "name": "Iwiiqam",
+        "ipa": "iwiːŋam",
+        "pronunciation": "ˈiwiːŋam",
+        "meaning": "child of Iwiiq",
+        "type": "patronymic"
+      },
+      "full": "Anim Iwiiqam"
+    },
+    {
+      "given": {
+        "name": "Ipanii",
+        "ipa": "ipaniː",
+        "pronunciation": "ˈipaniː",
+        "meaning": null,
+        "etymology": null,
+        "gender": "any"
+      },
+      "family": {
+        "name": "Yomuuam",
+        "ipa": "jomuːam",
+        "pronunciation": "ˈjomuːam",
+        "meaning": "child of Yomuu",
+        "type": "patronymic"
+      },
+      "full": "Ipanii Yomuuam"
+    },
+    {
+      "given": {
+        "name": "Aru",
+        "ipa": "aru",
+        "pronunciation": "ˈaru",
+        "meaning": null,
+        "etymology": null,
+        "gender": "any"
+      },
+      "family": {
+        "name": "Puqĩnyanam",
+        "ipa": "puŋĩɲanam",
+        "pronunciation": "puˈŋĩɲanam",
+        "meaning": "child of Puqĩnyan",
+        "type": "patronymic"
+      },
+      "full": "Aru Puqĩnyanam"
+    },
+    {
+      "given": {
+        "name": "Qiwim",
+        "ipa": "ŋiwim",
+        "pronunciation": "ˈŋiwim",
+        "meaning": null,
+        "etymology": null,
+        "gender": "any"
+      },
+      "family": {
+        "name": "Qeqiam",
+        "ipa": "ŋeŋiam",
+        "pronunciation": "ˈŋeŋiam",
+        "meaning": "child of Qeqi",
+        "type": "patronymic"
+      },
+      "full": "Qiwim Qeqiam"
+    },
+    {
+      "given": {
+        "name": "Uniyum",
+        "ipa": "unijum",
+        "pronunciation": "ˈunijum",
+        "meaning": null,
+        "etymology": null,
+        "gender": "any"
+      },
+      "family": {
+        "name": "Dyuunaxiam",
+        "ipa": "djuːnaʃiam",
+        "pronunciation": "djuːˈnaʃiam",
+        "meaning": "child of Dyuunaxi",
+        "type": "patronymic"
+      },
+      "full": "Uniyum Dyuunaxiam"
+    },
+    {
+      "given": {
+        "name": "Omitil",
+        "ipa": "omitil",
+        "pronunciation": "ˈomitil",
+        "meaning": null,
+        "etymology": null,
+        "gender": "any"
+      },
+      "family": {
+        "name": "Nyoya·am",
+        "ipa": "ɲojaam",
+        "pronunciation": "ˈɲojaam",
+        "meaning": "child of Nyoya",
+        "type": "patronymic"
+      },
+      "full": "Omitil Nyoya·am"
+    }
+  ],
+  "places": [
+    {
+      "name": "Mukuzwin",
+      "ipa": "mukuzwin",
+      "pronunciation": "ˈmukuzwin",
+      "meaning": "wide lake",
+      "template": "compound"
+    },
+    {
+      "name": "Danla",
+      "ipa": "danla",
+      "pronunciation": "ˈdanla",
+      "meaning": "grass-town",
+      "template": "settlement"
+    },
+    {
+      "name": "Mowĩ",
+      "ipa": "mowĩ",
+      "pronunciation": "ˈmowĩ",
+      "meaning": null,
+      "template": "opaque"
+    },
+    {
+      "name": "Kiinaxi",
+      "ipa": "kiːnaʃi",
+      "pronunciation": "ˈkiːnaʃi",
+      "meaning": "sun sea",
+      "template": "compound"
+    },
+    {
+      "name": "I Konka",
+      "ipa": "i konka",
+      "pronunciation": "i ˈkonka",
+      "meaning": "long stone",
+      "template": "phrase"
+    },
+    {
+      "name": "Phunyqo Mauu",
+      "ipa": "pʰuɲŋo mauː",
+      "pronunciation": "ˈpʰuɲŋo ˈmauː",
+      "meaning": "warm river",
+      "template": "phrase"
+    },
+    {
+      "name": "Dyuuzwin",
+      "ipa": "djuːzwin",
+      "pronunciation": "ˈdjuːzwin",
+      "meaning": "white lake",
+      "template": "compound"
+    },
+    {
+      "name": "Huzyeun",
+      "ipa": "huzjeun",
+      "pronunciation": "ˈhuzjeun",
+      "meaning": "at the road",
+      "template": "locative"
+    },
+    {
+      "name": "Lewaa",
+      "ipa": "lewaː",
+      "pronunciation": "ˈlewaː",
+      "meaning": null,
+      "template": "opaque"
+    },
+    {
+      "name": "Bidan",
+      "ipa": "bidan",
+      "pronunciation": "ˈbidan",
+      "meaning": "narrow grass",
+      "template": "compound"
+    },
+    {
+      "name": "Aquu",
+      "ipa": "aŋuː",
+      "pronunciation": "ˈaŋuː",
+      "meaning": null,
+      "template": "opaque"
+    },
+    {
+      "name": "Kyonyquutyoq",
+      "ipa": "kjoɲŋuːtjoŋ",
+      "pronunciation": "ˈkjoɲŋuːtjoŋ",
+      "meaning": "snow sand",
+      "template": "compound"
+    },
+    {
+      "name": "Nyula",
+      "ipa": "ɲula",
+      "pronunciation": "ˈɲula",
+      "meaning": "star-town",
+      "template": "settlement"
+    },
+    {
+      "name": "Plaazwin",
+      "ipa": "plaːzwin",
+      "pronunciation": "ˈplaːzwin",
+      "meaning": "dog lake",
+      "template": "compound"
+    },
+    {
+      "name": "Zwin Iizreq",
+      "ipa": "zwin iːzreŋ",
+      "pronunciation": "zwin ˈiːzreŋ",
+      "meaning": "black lake",
+      "template": "phrase"
+    },
+    {
+      "name": "Morla",
+      "ipa": "morla",
+      "pronunciation": "ˈmorla",
+      "meaning": "ice-town",
+      "template": "settlement"
+    },
+    {
+      "name": "Upyonun",
+      "ipa": "upjonun",
+      "pronunciation": "ˈupjonun",
+      "meaning": "at the soil",
+      "template": "locative"
+    },
+    {
+      "name": "Kyonyla",
+      "ipa": "kjoɲla",
+      "pronunciation": "ˈkjoɲla",
+      "meaning": "snow-town",
+      "template": "settlement"
+    },
+    {
+      "name": "Mori",
+      "ipa": "mori",
+      "pronunciation": "ˈmori",
+      "meaning": "ice stone",
+      "template": "compound"
+    },
+    {
+      "name": "Kiila",
+      "ipa": "kiːla",
+      "pronunciation": "ˈkiːla",
+      "meaning": "sun-town",
+      "template": "settlement"
+    }
+  ],
+  "metadata": {
+    "seed": 3759128726,
+    "spelled": true,
+    "stressed": true
+  }
+}

@@ -53,7 +53,11 @@ DEFAULT_TYPOLOGY = ROOT / "morphological_typology" / "morphological_typology.jso
 DEFAULT_CONCEPTICON = ROOT / "concepticon-data"
 DEFAULT_OUTPUT = HERE / "lexicon.json"
 DEFAULT_DICTIONARY = HERE / "dictionary.md"
-
+# Os significados mais frequentes nas línguas do mundo: raízes de 1 ou 2 sílabas
+VERY_FREQUENT = {"GIVE", "GO", "COME", "SEE", "EAT", "DRINK", "SAY", "DO OR MAKE", "TAKE", "KNOW", "HEAR",
+                 "SLEEP", "DIE", "SIT", "STAND", "WATER", "FIRE", "HAND", "ARM OR HAND", "EYE", "HEAD",
+                 "MOTHER", "FATHER", "CHILD (YOUNG HUMAN)", "MALE PERSON", "WOMAN", "PERSON", "DOG", "HOUSE",
+                 "NAME", "DAY (NOT NIGHT)", "NIGHT", "SUN", "MOUTH", "TOOTH", "BLOOD", "STONE", "TREE", "GOOD", "BIG"}
 Segs = List[str]
 
 # ═══════════════════════════════════════════════════════════════════════════
@@ -434,12 +438,21 @@ class LexiconBuilder:
         self.gender = self.cats.get("gender", {})
 
     # ── formas ───────────────────────────────────────────────────────────
-    def _n_syllables(self, rank: Optional[int]) -> int:
+    def _n_syllables(self, rank: Optional[int], gloss: Optional[str] = None, lists: str = "") -> int:
+        """Lei de Zipf contínua: quanto mais básico o conceito, mais curta a raiz.
+        Basicidade: posição na Leipzig-Jakarta, presença na Swadesh e as palavras mais
+        frequentes nas línguas do mundo ('dar', 'ir', 'água', 'mão'...)."""
         dist = self.eng.rules["root"]["syllables"]
         n = int(self.rng.choices(list(dist), [dist[k] for k in dist])[0])
-        if rank is not None and rank <= 33 and n > 1 and self.rng.random() < 0.5:
-            n -= 1  # lei de Zipf: palavras mais básicas tendem a ser mais curtas
-        return n
+        basic = 0.0
+        if rank is not None:
+            basic = 1 - (rank - 1) / 100          # 1º da Leipzig-Jakarta = 1,0; 100º = 0,01
+        if "S" in (lists or ""):
+            basic = max(basic, 0.5)
+        if gloss in VERY_FREQUENT:
+            basic = max(basic, 0.9)
+        cap = 1 if basic >= 0.85 and self.rng.random() < 0.5 else 2 if basic >= 0.5 else None
+        return min(n, cap) if cap else n
 
     def _unique(self, make, accept=lambda r: True, tries: int = 60) -> Dict:
         r = make()
@@ -454,8 +467,9 @@ class LexiconBuilder:
         self.used.add(tuple(r["segments"]))
         return r
 
-    def content_root(self, rank: Optional[int], final: Optional[str] = None) -> Dict:
-        n = self._n_syllables(rank)
+    def content_root(self, rank: Optional[int], final: Optional[str] = None,
+                     gloss: Optional[str] = None, lists: str = "") -> Dict:
+        n = self._n_syllables(rank, gloss, lists)
         accept = (lambda r: r["segments"][-1] == final or self.rng.random() > 0.7) if final else (lambda r: True)
         return self._unique(lambda: self.ph.generate_root(n), accept)
 
@@ -636,17 +650,17 @@ class LexiconBuilder:
             if cat == "N":
                 gender = self.assign_gender(c)
                 final = gset.get("formal_finals", {}).get(gender)
-                root = self.content_root(c["rank"], final)
+                root = self.content_root(c["rank"], final, c["gloss"], c["lists"])
                 entries[gl] = self._entry(c, "noun", root, gender=gender,
                                           **{"class": self.assign_class("noun", gender)})
             elif cat == "V" or (cat == "A" and (adj == "verbal" or (adj == "mixed" and self.rng.random() < 0.5))):
                 trans = ("ditransitive" if gl in DITRANSITIVE else "transitive" if gl in TRANSITIVE
                          else "stative" if cat == "A" else "intransitive")
-                root = self.content_root(c["rank"])
+                root = self.content_root(c["rank"], None, c["gloss"], c["lists"])
                 entries[gl] = self._entry(c, "verb", root, transitivity=trans,
                                           **{"class": self.assign_class("verb", None)})
             elif cat == "A":
-                entries[gl] = self._entry(c, "adjective", self.content_root(c["rank"]))
+                entries[gl] = self._entry(c, "adjective", self.content_root(c["rank"], None, c["gloss"], c["lists"]))
             elif cat == "Q":
                 if gl == "ONE" and "definiteness" in fm and "indefinite" in fm["definiteness"]["forms"] \
                         and fm["definiteness"]["realization"]["indefinite"] == "numeral_one":

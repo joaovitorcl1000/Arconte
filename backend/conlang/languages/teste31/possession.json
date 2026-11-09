@@ -1,0 +1,279 @@
+{
+  "settings": {
+    "pronominal": {
+      "strategy": "affix",
+      "position": "suffix",
+      "from_pronouns": false,
+      "forms": {
+        "1.singular": [
+          "o",
+          "l"
+        ],
+        "2.singular": [
+          "i",
+          "n"
+        ],
+        "3.singular": [
+          "r",
+          "i"
+        ],
+        "1incl.paucal": [
+          "s",
+          "u"
+        ],
+        "1excl.paucal": [
+          "i",
+          "l"
+        ],
+        "2.paucal": [
+          "p",
+          "uː"
+        ],
+        "3.paucal": [
+          "t",
+          "i"
+        ],
+        "1incl.plural": [
+          "i"
+        ],
+        "1excl.plural": [
+          "l",
+          "u"
+        ],
+        "2.plural": [
+          "w",
+          "a"
+        ],
+        "3.plural": [
+          "t",
+          "e"
+        ]
+      }
+    },
+    "nominal": {
+      "locus": "dependent",
+      "possessor_position": "before"
+    },
+    "alienability": {
+      "classes": 2,
+      "inalienable_fields": [
+        "Kinship",
+        "The body"
+      ],
+      "alienable_marker": [
+        "p",
+        "o",
+        "m"
+      ]
+    },
+    "articles": null
+  },
+  "examples": {
+    "pronominal": [
+      {
+        "cell": "1.singular",
+        "english": "my dog",
+        "written": "pomol syun",
+        "ipa": "pomol sjun",
+        "pronunciation": "ˈpomol sjun",
+        "class": "alienable",
+        "plural": {
+          "written": "pomol syunmi",
+          "ipa": "pomol sjunmi",
+          "pronunciation": "ˈpomol ˈsjunmi",
+          "class": "alienable",
+          "english": "my dogs"
+        }
+      },
+      {
+        "cell": "2.singular",
+        "english": "your dog",
+        "written": "pomin syun",
+        "ipa": "pomin sjun",
+        "pronunciation": "ˈpomin sjun",
+        "class": "alienable",
+        "plural": {
+          "written": "pomin syunmi",
+          "ipa": "pomin sjunmi",
+          "pronunciation": "ˈpomin ˈsjunmi",
+          "class": "alienable",
+          "english": "your dogs"
+        }
+      },
+      {
+        "cell": "3.singular",
+        "english": "his/her/its dog",
+        "written": "pomri syun",
+        "ipa": "pomri sjun",
+        "pronunciation": "ˈpomri sjun",
+        "class": "alienable",
+        "plural": {
+          "written": "pomri syunmi",
+          "ipa": "pomri sjunmi",
+          "pronunciation": "ˈpomri ˈsjunmi",
+          "class": "alienable",
+          "english": "his/her/its dogs"
+        }
+      },
+      {
+        "cell": "1incl.paucal",
+        "english": "our (incl.) (paucal) dog",
+        "written": "pomsu syun",
+        "ipa": "pomsu sjun",
+        "pronunciation": "ˈpomsu sjun",
+        "class": "alienable",
+        "plural": {
+          "written": "pomsu syunmi",
+          "ipa": "pomsu sjunmi",
+          "pronunciation": "ˈpomsu ˈsjunmi",
+          "class": "alienable",
+          "english": "our (incl.) (paucal) dogs"
+        }
+      },
+      {
+        "cell": "1excl.paucal",
+        "english": "our (excl.) (paucal) dog",
+        "written": "pomil syun",
+        "ipa": "pomil sjun",
+        "pronunciation": "ˈpomil sjun",
+        "class": "alienable",
+        "plural": {
+          "written": "pomil syunmi",
+          "ipa": "pomil sjunmi",
+          "pronunciation": "ˈpomil ˈsjunmi",
+          "class": "alienable",
+          "english": "our (excl.) (paucal) dogs"
+        }
+      },
+      {
+        "cell": "2.paucal",
+        "english": "your (paucal) dog",
+        "written": "pompuu syun",
+        "ipa": "pompuː sjun",
+        "pronunciation": "ˈpompuː sjun",
+        "class": "alienable",
+        "plural": {
+          "written": "pompuu syunmi",
+          "ipa": "pompuː sjunmi",
+          "pronunciation": "ˈpompuː ˈsjunmi",
+          "class": "alienable",
+          "english": "your (paucal) dogs"
+        }
+      },
+      {
+        "cell": "3.paucal",
+        "english": "their (paucal) dog",
+        "written": "pomti syun",
+        "ipa": "pomti sjun",
+        "pronunciation": "ˈpomti sjun",
+        "class": "alienable",
+        "plural": {
+          "written": "pomti syunmi",
+          "ipa": "pomti sjunmi",
+          "pronunciation": "ˈpomti ˈsjunmi",
+          "class": "alienable",
+          "english": "their (paucal) dogs"
+        }
+      },
+      {
+        "cell": "1incl.plural",
+        "english": "our (incl.) dog",
+        "written": "pomi syun",
+        "ipa": "pomi sjun",
+        "pronunciation": "ˈpomi sjun",
+        "class": "alienable",
+        "plural": {
+          "written": "pomi syunmi",
+          "ipa": "pomi sjunmi",
+          "pronunciation": "ˈpomi ˈsjunmi",
+          "class": "alienable",
+          "english": "our (incl.) dogs"
+        }
+      },
+      {
+        "cell": "1excl.plural",
+        "english": "our (excl.) dog",
+        "written": "pomlu syun",
+        "ipa": "pomlu sjun",
+        "pronunciation": "ˈpomlu sjun",
+        "class": "alienable",
+        "plural": {
+          "written": "pomlu syunmi",
+          "ipa": "pomlu sjunmi",
+          "pronunciation": "ˈpomlu ˈsjunmi",
+          "class": "alienable",
+          "english": "our (excl.) dogs"
+        }
+      },
+      {
+        "cell": "2.plural",
+        "english": "your (pl.) dog",
+        "written": "pomwa syun",
+        "ipa": "pomwa sjun",
+        "pronunciation": "ˈpomwa sjun",
+        "class": "alienable",
+        "plural": {
+          "written": "pomwa syunmi",
+          "ipa": "pomwa sjunmi",
+          "pronunciation": "ˈpomwa ˈsjunmi",
+          "class": "alienable",
+          "english": "your (pl.) dogs"
+        }
+      },
+      {
+        "cell": "3.plural",
+        "english": "their dog",
+        "written": "pomte syun",
+        "ipa": "pomte sjun",
+        "pronunciation": "ˈpomte sjun",
+        "class": "alienable",
+        "plural": {
+          "written": "pomte syunmi",
+          "ipa": "pomte sjunmi",
+          "pronunciation": "ˈpomte ˈsjunmi",
+          "class": "alienable",
+          "english": "their dogs"
+        }
+      }
+    ],
+    "alienability": [
+      {
+        "english": "my hand",
+        "written": "twool",
+        "ipa": "twool",
+        "pronunciation": "ˈtwool",
+        "class": "inalienable"
+      },
+      {
+        "english": "my dog",
+        "written": "pomol syun",
+        "ipa": "pomol sjun",
+        "pronunciation": "ˈpomol sjun",
+        "class": "alienable"
+      }
+    ],
+    "nominal": {
+      "english": "the woman's dog",
+      "written": "tyulĩn syun",
+      "ipa": "tjulĩn sjun",
+      "pronunciation": "ˈtjulĩn sjun"
+    }
+  },
+  "metadata": {
+    "seed": 3719709953,
+    "sources": {
+      "possessive_affixes": "WALS 57A|26A=2 (embutido)",
+      "nominal_locus": "WALS 24A (embutido)",
+      "possessive_classes": "WALS 59A (embutido)",
+      "obligatory_possession": "WALS 58A (embutido)"
+    },
+    "notes": [
+      "a língua não tem artigos livres; não há artigos para flexionar em número"
+    ],
+    "lexemes": {
+      "possessed": "dog",
+      "inalienable": "hand",
+      "possessor": "woman"
+    }
+  }
+}

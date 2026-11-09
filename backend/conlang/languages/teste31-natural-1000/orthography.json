@@ -1,0 +1,106 @@
+{
+  "style": "economic",
+  "graphemes": {
+    "m": "m",
+    "i": "i",
+    "k": "k",
+    "j": "y",
+    "u": "u",
+    "a": "a",
+    "p": "p",
+    "w": "w",
+    "n": "n",
+    "t": "t",
+    "l": "l",
+    "s": "s",
+    "ŋ": "q",
+    "e": "e",
+    "b": "b",
+    "o": "o",
+    "ɡ": "g",
+    "h": "h",
+    "d": "d",
+    "r": "r",
+    "ɲ": "ny",
+    "ʃ": "x",
+    "iː": "ii",
+    "aː": "aa",
+    "uː": "uu",
+    "z": "z",
+    "ĩ": "ĩ",
+    "kʰ": "kh",
+    "pʰ": "ph",
+    "ð": "dh",
+    "θ": "c"
+  },
+  "vowels": [
+    "a",
+    "aː",
+    "e",
+    "i",
+    "iː",
+    "ĩ",
+    "o",
+    "u",
+    "uː"
+  ],
+  "tones": {},
+  "separator": "·",
+  "separator_pairs": [
+    [
+      "i",
+      "i"
+    ],
+    [
+      "i",
+      "iː"
+    ],
+    [
+      "i",
+      "ĩ"
+    ],
+    [
+      "k",
+      "h"
+    ],
+    [
+      "u",
+      "u"
+    ],
+    [
+      "u",
+      "uː"
+    ],
+    [
+      "a",
+      "a"
+    ],
+    [
+      "a",
+      "aː"
+    ],
+    [
+      "p",
+      "h"
+    ],
+    [
+      "n",
+      "j"
+    ],
+    [
+      "d",
+      "h"
+    ]
+  ],
+  "metadata": {
+    "seed": 4077180660,
+    "notes": [],
+    "checked_with_phonotactics": true
+  },
+  "language_name": {
+    "native": "kwunytwu",
+    "english": "Kwunytwun",
+    "ipa": "kwuɲtwu",
+    "literal": "person"
+  }
+}

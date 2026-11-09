@@ -1,0 +1,668 @@
+{
+  "settings": {
+    "passive": {
+      "present": true,
+      "type": "affix",
+      "form": [
+        "ɲ",
+        "a"
+      ],
+      "position": "suffix",
+      "agent": {
+        "type": "case",
+        "case": "instrumental"
+      }
+    },
+    "antipassive": {
+      "present": false
+    },
+    "reflexive": {
+      "type": "affix",
+      "form": [
+        "o",
+        "n"
+      ],
+      "position": "suffix"
+    },
+    "reciprocal": {
+      "type": "affix",
+      "form": [
+        "r"
+      ],
+      "position": "suffix"
+    },
+    "demonstratives": {
+      "terms": [
+        "proximal",
+        "distal"
+      ],
+      "forms": {
+        "proximal": [
+          "a",
+          "r"
+        ],
+        "distal": [
+          "l",
+          "i"
+        ]
+      },
+      "adverbs": {
+        "proximal": [
+          "p",
+          "j",
+          "i"
+        ],
+        "distal": [
+          "u",
+          "l",
+          "a",
+          "m"
+        ]
+      }
+    },
+    "imperative": {
+      "type": "affix",
+      "form": [
+        "uː",
+        "n"
+      ],
+      "position": "suffix",
+      "number": "singular"
+    },
+    "prohibitive": {
+      "type": "special",
+      "form": [
+        "w",
+        "a",
+        "ŋ"
+      ]
+    },
+    "connectives": {
+      "or": [
+        "θ",
+        "aː"
+      ],
+      "but": [
+        "k",
+        "l",
+        "iː"
+      ],
+      "if": [
+        "o",
+        "m"
+      ],
+      "because": [
+        "p",
+        "r",
+        "u"
+      ],
+      "when": [
+        "k",
+        "j",
+        "a"
+      ],
+      "and": [
+        "n",
+        "e"
+      ]
+    },
+    "complementizer": [
+      "h",
+      "e",
+      "m"
+    ],
+    "subordinator_position": "final",
+    "independent_possessive": {
+      "type": "base_affix",
+      "base": [
+        "k",
+        "i",
+        "l"
+      ],
+      "position": "suffix"
+    },
+    "adpositions": {
+      "position": "after",
+      "governed_case": "locative",
+      "forms": {
+        "under": [
+          "p",
+          "r",
+          "i",
+          "s",
+          "u",
+          "ŋ"
+        ],
+        "above": [
+          "j",
+          "a",
+          "n"
+        ],
+        "inside": [
+          "s",
+          "a",
+          "k",
+          "a"
+        ],
+        "behind": [
+          "ɡ",
+          "j",
+          "a",
+          "k",
+          "u",
+          "l"
+        ],
+        "in front of": [
+          "k",
+          "l",
+          "a",
+          "p",
+          "a"
+        ],
+        "near": [
+          "w",
+          "i",
+          "a"
+        ]
+      }
+    }
+  },
+  "tables": {
+    "demonstratives": [
+      {
+        "term": "proximal",
+        "demonstrative": "ar",
+        "adverb": "pyi",
+        "english": [
+          "this",
+          "here"
+        ]
+      },
+      {
+        "term": "distal",
+        "demonstrative": "li",
+        "adverb": "ulam",
+        "english": [
+          "that",
+          "there"
+        ]
+      }
+    ],
+    "connectives": {
+      "or": "caa",
+      "but": "klii",
+      "if": "om",
+      "because": "pru",
+      "when": "kya",
+      "and": "ne"
+    },
+    "adpositions": {
+      "under": "prisuq",
+      "above": "yan",
+      "inside": "saka",
+      "behind": "gyakul",
+      "in front of": "klapa",
+      "near": "wia"
+    },
+    "independent_possessives": [
+      {
+        "cell": "1.singular",
+        "written": "kilol",
+        "ipa": "kilol"
+      },
+      {
+        "cell": "2.singular",
+        "written": "kilin",
+        "ipa": "kilin"
+      },
+      {
+        "cell": "3.singular",
+        "written": "kilri",
+        "ipa": "kilri"
+      },
+      {
+        "cell": "1incl.paucal",
+        "written": "kilsu",
+        "ipa": "kilsu"
+      },
+      {
+        "cell": "1excl.paucal",
+        "written": "kilil",
+        "ipa": "kilil"
+      },
+      {
+        "cell": "2.paucal",
+        "written": "kilpuu",
+        "ipa": "kilpuː"
+      },
+      {
+        "cell": "3.paucal",
+        "written": "kilti",
+        "ipa": "kilti"
+      },
+      {
+        "cell": "1incl.plural",
+        "written": "kili",
+        "ipa": "kili"
+      },
+      {
+        "cell": "1excl.plural",
+        "written": "killu",
+        "ipa": "killu"
+      },
+      {
+        "cell": "2.plural",
+        "written": "kilwa",
+        "ipa": "kilwa"
+      },
+      {
+        "cell": "3.plural",
+        "written": "kilte",
+        "ipa": "kilte"
+      }
+    ]
+  },
+  "sentences": [
+    {
+      "key": "passive",
+      "title": "Passiva",
+      "words": [
+        {
+          "form": "bi",
+          "seg": "bi",
+          "gloss": "fish"
+        },
+        {
+          "form": "sjunni",
+          "seg": "sjun-ni",
+          "gloss": "dog-INS"
+        },
+        {
+          "form": "upjonɲa",
+          "seg": "upjon-ɲa",
+          "gloss": "eat-PASS"
+        }
+      ],
+      "translation": "The fish is eaten by the dog.",
+      "literal": null,
+      "written": "Bi syunni upyonnya",
+      "ipa": "bi sjunni upjonɲa"
+    },
+    {
+      "key": "reflexive",
+      "title": "Reflexivo",
+      "words": [
+        {
+          "form": "tjulĩ",
+          "seg": "tjulĩ",
+          "gloss": "woman"
+        },
+        {
+          "form": "djapjaon",
+          "seg": "djapja-on",
+          "gloss": "wash-REFL"
+        }
+      ],
+      "translation": "The woman washes herself.",
+      "literal": null,
+      "written": "Tyulĩ dyapyaon",
+      "ipa": "tjulĩ djapjaon"
+    },
+    {
+      "key": "reciprocal",
+      "title": "Recíproco",
+      "words": [
+        {
+          "form": "sjunmi",
+          "seg": "sjun-mi",
+          "gloss": "dog-PL"
+        },
+        {
+          "form": "alŋor",
+          "seg": "alŋo-r",
+          "gloss": "see-RECP"
+        }
+      ],
+      "translation": "The dogs see each other.",
+      "literal": null,
+      "written": "Syunmi alqor",
+      "ipa": "sjunmi alŋor"
+    },
+    {
+      "key": "demonstrative_proximal",
+      "title": "Demonstrativo (perto de quem fala)",
+      "words": [
+        {
+          "form": "sjun",
+          "seg": "sjun",
+          "gloss": "dog"
+        },
+        {
+          "form": "ar",
+          "seg": "ar",
+          "gloss": "DEM.PROX"
+        }
+      ],
+      "translation": "this dog",
+      "literal": null,
+      "written": "Syun ar",
+      "ipa": "sjun ar"
+    },
+    {
+      "key": "demonstrative_distal",
+      "title": "Demonstrativo (longe)",
+      "words": [
+        {
+          "form": "sjun",
+          "seg": "sjun",
+          "gloss": "dog"
+        },
+        {
+          "form": "li",
+          "seg": "li",
+          "gloss": "DEM.DIST"
+        }
+      ],
+      "translation": "that dog",
+      "literal": null,
+      "written": "Syun li",
+      "ipa": "sjun li"
+    },
+    {
+      "key": "imperative",
+      "title": "Imperativo",
+      "words": [
+        {
+          "form": "klaːmuːn",
+          "seg": "klaːm-uːn",
+          "gloss": "come-IMP"
+        }
+      ],
+      "translation": "Come!",
+      "literal": null,
+      "written": "Klaamuun",
+      "ipa": "klaːmuːn"
+    },
+    {
+      "key": "prohibitive",
+      "title": "Proibitivo",
+      "words": [
+        {
+          "form": "bi",
+          "seg": "bi",
+          "gloss": "fish"
+        },
+        {
+          "form": "waŋ",
+          "seg": "waŋ",
+          "gloss": "PROH"
+        },
+        {
+          "form": "upjonuːn",
+          "seg": "upjon-uːn",
+          "gloss": "eat-IMP"
+        }
+      ],
+      "translation": "Don't eat the fish!",
+      "literal": null,
+      "written": "Bi waq upyonuun",
+      "ipa": "bi waŋ upjonuːn"
+    },
+    {
+      "key": "coordination_and",
+      "title": "Coordenação ('e')",
+      "words": [
+        {
+          "form": "sjun",
+          "seg": "sjun",
+          "gloss": "dog"
+        },
+        {
+          "form": "lulim",
+          "seg": "lulim",
+          "gloss": "sleep"
+        },
+        {
+          "form": "ne",
+          "seg": "ne",
+          "gloss": "and"
+        },
+        {
+          "form": "am",
+          "seg": "am",
+          "gloss": "child"
+        },
+        {
+          "form": "bi",
+          "seg": "bi",
+          "gloss": "fish"
+        },
+        {
+          "form": "upjon",
+          "seg": "upjon",
+          "gloss": "eat"
+        }
+      ],
+      "translation": "The dog sleeps and the child eats the fish.",
+      "literal": null,
+      "written": "Syun lulim ne am bi upyon",
+      "ipa": "sjun lulim ne am bi upjon"
+    },
+    {
+      "key": "coordination_but",
+      "title": "Coordenação ('mas')",
+      "words": [
+        {
+          "form": "sjun",
+          "seg": "sjun",
+          "gloss": "dog"
+        },
+        {
+          "form": "lulim",
+          "seg": "lulim",
+          "gloss": "sleep"
+        },
+        {
+          "form": "kliː",
+          "seg": "kliː",
+          "gloss": "but"
+        },
+        {
+          "form": "am",
+          "seg": "am",
+          "gloss": "child"
+        },
+        {
+          "form": "bi",
+          "seg": "bi",
+          "gloss": "fish"
+        },
+        {
+          "form": "upjon",
+          "seg": "upjon",
+          "gloss": "eat"
+        }
+      ],
+      "translation": "The dog sleeps, but the child eats the fish.",
+      "literal": null,
+      "written": "Syun lulim klii am bi upyon",
+      "ipa": "sjun lulim kliː am bi upjon"
+    },
+    {
+      "key": "conditional",
+      "title": "Condicional ('se')",
+      "words": [
+        {
+          "form": "sjun",
+          "seg": "sjun",
+          "gloss": "dog"
+        },
+        {
+          "form": "lulim",
+          "seg": "lulim",
+          "gloss": "sleep"
+        },
+        {
+          "form": "om",
+          "seg": "om",
+          "gloss": "if"
+        },
+        {
+          "form": "am",
+          "seg": "am",
+          "gloss": "child"
+        },
+        {
+          "form": "bi",
+          "seg": "bi",
+          "gloss": "fish"
+        },
+        {
+          "form": "upjon",
+          "seg": "upjon",
+          "gloss": "eat"
+        }
+      ],
+      "translation": "If the dog sleeps, the child eats the fish.",
+      "literal": null,
+      "written": "Syun lulim om am bi upyon",
+      "ipa": "sjun lulim om am bi upjon"
+    },
+    {
+      "key": "causal",
+      "title": "Causal ('porque')",
+      "words": [
+        {
+          "form": "sjun",
+          "seg": "sjun",
+          "gloss": "dog"
+        },
+        {
+          "form": "lulim",
+          "seg": "lulim",
+          "gloss": "sleep"
+        },
+        {
+          "form": "pru",
+          "seg": "pru",
+          "gloss": "because"
+        },
+        {
+          "form": "am",
+          "seg": "am",
+          "gloss": "child"
+        },
+        {
+          "form": "bi",
+          "seg": "bi",
+          "gloss": "fish"
+        },
+        {
+          "form": "upjon",
+          "seg": "upjon",
+          "gloss": "eat"
+        }
+      ],
+      "translation": "The child eats the fish because the dog sleeps.",
+      "literal": null,
+      "written": "Syun lulim pru am bi upyon",
+      "ipa": "sjun lulim pru am bi upjon"
+    },
+    {
+      "key": "complement",
+      "title": "Completiva ('que')",
+      "words": [
+        {
+          "form": "ka",
+          "seg": "ka",
+          "gloss": "1SG"
+        },
+        {
+          "form": "sjun",
+          "seg": "sjun",
+          "gloss": "dog"
+        },
+        {
+          "form": "lulim",
+          "seg": "lulim",
+          "gloss": "sleep"
+        },
+        {
+          "form": "hem",
+          "seg": "hem",
+          "gloss": "COMP"
+        },
+        {
+          "form": "sjaŋ",
+          "seg": "sjaŋ",
+          "gloss": "know"
+        }
+      ],
+      "translation": "I know that the dog sleeps.",
+      "literal": null,
+      "written": "Ka syun lulim hem syaq",
+      "ipa": "ka sjun lulim hem sjaŋ"
+    },
+    {
+      "key": "independent_possessive",
+      "title": "Possessivo independente",
+      "words": [
+        {
+          "form": "sjun",
+          "seg": "sjun",
+          "gloss": "dog"
+        },
+        {
+          "form": "kilol",
+          "seg": "kil-ol",
+          "gloss": "1SG.POSS"
+        }
+      ],
+      "translation": "The dog is mine.",
+      "literal": null,
+      "written": "Syun kilol",
+      "ipa": "sjun kilol"
+    },
+    {
+      "key": "adposition",
+      "title": "Adposição espacial",
+      "words": [
+        {
+          "form": "sjun",
+          "seg": "sjun",
+          "gloss": "dog"
+        },
+        {
+          "form": "mimkjuun",
+          "seg": "mimkju-un",
+          "gloss": "tree-LOC"
+        },
+        {
+          "form": "prisuŋ",
+          "seg": "prisuŋ",
+          "gloss": "under"
+        },
+        {
+          "form": "lulim",
+          "seg": "lulim",
+          "gloss": "sleep"
+        }
+      ],
+      "translation": "The dog sleeps under the tree.",
+      "literal": null,
+      "written": "Syun mimkyu·un prisuq lulim",
+      "ipa": "sjun mimkjuun prisuŋ lulim"
+    }
+  ],
+  "metadata": {
+    "seed": 2830976648,
+    "sources": {
+      "107A": "WALS 107A (embutido)",
+      "106A": "WALS 106A (embutido)",
+      "41A": "WALS 41A (embutido)",
+      "70A": "WALS 70A (embutido)",
+      "71A": "WALS 71A (embutido)"
+    },
+    "notes": []
+  }
+}

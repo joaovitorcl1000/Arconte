@@ -1,6 +1,6 @@
 # Orquestrador — `generate_language.py`
 
-Gera uma **língua completa com uma única semente**: roda até quinze módulos em sequência, deriva a semente de cada um, salva tudo numa pasta própria da língua, valida a cadeia e monta um documento único (`grammar.md`) com fonologia, ortografia, acento, morfologia, paradigmas, posse, comparação, derivação, irregularidades, sintaxe, dicionário e nomes próprios — o equivalente à página de resultado do Vulgarlang.
+Gera uma **língua completa com uma única semente**: roda até dezoito módulos em sequência, deriva a semente de cada um, salva tudo numa pasta própria da língua, valida a cadeia e monta um documento único (`grammar.md`) com fonologia, ortografia, acento, morfologia, paradigmas, posse, comparação, derivação, irregularidades, numerais, sintaxe, orações, traduções, dicionário (com ~1.600 palavras) e nomes próprios — o equivalente à página de resultado do Vulgarlang. Opcionalmente, traduz frases e gera **línguas-filhas** e **famílias** com o módulo de evolução.
 
 ```
                               generate_language.py --seed 31
@@ -9,8 +9,11 @@ Gera uma **língua completa com uma única semente**: roda até quinze módulos 
   │ tipologia → inventário → fonotática → categorias → motor → léxico → sintaxe       │
   └───────────────────────────────────────────────────────────────────────────────────┘
   ┌─ módulos opcionais ───────────────────────────────────────────────────────────────┐
-  │ ortografia → acento → nomes → posse → comparação → derivação → mudanças sonoras   │
-  │ → irregularidades                                                                 │
+  │ ortografia → acento → nomes → posse → comparação → derivação → numerais           │
+  │ → vocabulário → orações → mudanças sonoras → irregularidades                      │
+  └───────────────────────────────────────────────────────────────────────────────────┘
+  ┌─ depois da língua pronta (opcional) ──────────────────────────────────────────────┐
+  │ tradutor (--translate) · línguas-filhas (--evolve) · família (--family)           │
   └───────────────────────────────────────────────────────────────────────────────────┘
                                            │
                               languages/lang-31/grammar.md
@@ -45,7 +48,12 @@ conlang/
 ├── comparison/                   │ a etapa é pulada sem erro
 ├── derivation/                   │
 ├── sound_changes/                │
-├── irregularity/                 ┘
+├── irregularity/                 │
+├── numerals/                     │
+├── vocabulary/                   │ (com o wold_1460.tsv dentro)
+├── clauses/                      │
+├── translator/                   │
+├── evolution/                    ┘
 │
 ├── wals/cldf/                     (opcional: distribuições do WALS atualizadas)
 ├── concepticon-data/              (opcional: outras listas de conceitos)
@@ -94,6 +102,29 @@ python generate_language/generate_language.py --seed 31 --sound-change "{p,t,k} 
 
 As regras usam a notação do Vulgarlang, em IPA. Veja o README do módulo `sound_changes/`.
 
+### Tradução
+
+```bash
+python generate_language/generate_language.py --seed 31 --translate frases.txt
+```
+
+O arquivo tem frases em inglês (uma por linha). As traduções vão para o `translations.md` e para a seção "Traduções" do `grammar.md`, com a grafia e a glosa interlinear. Para traduzir depois, de forma interativa, use `translator/translator.py` (veja o README do módulo).
+
+### Evolução: línguas-filhas e famílias
+
+```bash
+# a língua e uma filha românica de 1.500 anos
+python generate_language/generate_language.py --seed 31 --evolve romance:1500
+
+# várias filhas
+python generate_language/generate_language.py --seed 31 --evolve germanic:1200 --evolve celtic:2000
+
+# uma família com 3 ramos principais
+python generate_language/generate_language.py --seed 31 --family 3
+```
+
+Depois que a língua-mãe fica pronta, cada `--evolve PERFIL:ANOS` cria uma filha completa (etapas 1, 2 e 3 da evolução e todos os módulos, com `grammar.md`) em `languages/<nome>-<perfil>-<anos>/`, com o `evolution.md` contando a história. `--family N` cria uma família com N ramos e 2 sub-ramos e o `family.md` (árvore, cognatos, correspondências, distâncias); para ter a grafia e o `grammar.md` de cada língua da família, ou mais controle, use `evolution/family.py --rebuild`. Os perfis estão no README do módulo `evolution/`.
+
 ### Regerar a partir de uma etapa
 
 Gostou da fonologia, mas quer outro vocabulário? `--from` mantém as etapas anteriores e refaz só as seguintes:
@@ -121,10 +152,13 @@ As etapas, em ordem:
 | 11 | `possession` | possession | 6, 7 |
 | 12 | `comparison` | comparison | 7, 11 |
 | 13 | `derivation` | derivation | 6, 11, 12 |
-| 14 | `sound_changes` | sound_changes | 6, 10, 13 |
-| 15 | `irregularity` | irregularity | 12, 14 |
+| 14 | `numerals` | numerals | 6, 12, 13 |
+| 15 | `vocabulary` | vocabulary | 6, 13, 14 |
+| 16 | `clauses` | clauses | 7, 11, 15 |
+| 17 | `sound_changes` | sound_changes | 6, 10, 13 |
+| 18 | `irregularity` | irregularity | 12, 17 |
 
-A ordem das etapas 11 a 15 importa: cada módulo evita repetir formas criadas pelos anteriores (a comparação não reutiliza um possessivo como superlativo, por exemplo), e as mudanças sonoras alcançam as palavras derivadas e os nomes. A pasta da língua precisa existir (gerada antes sem `--from`). Se um módulo opcional não estiver instalado, a numeração das etapas se ajusta.
+A ordem das etapas 11 a 18 importa: cada módulo evita repetir formas criadas pelos anteriores (a comparação não reutiliza um possessivo como superlativo, o vocabulário não repete numerais, por exemplo), e as mudanças sonoras alcançam as palavras derivadas e os nomes. A pasta da língua precisa existir (gerada antes sem `--from`). Se um módulo opcional não estiver instalado, a numeração das etapas se ajusta.
 
 ### Opções
 
@@ -151,6 +185,15 @@ A ordem das etapas 11 a 15 importa: cada módulo evita repetir formas criadas pe
 | **Ortografia e acento** | | |
 | `--style` | sorteado | `english`, `diacritics`, `economic`, `romance` |
 | `--stress-rule` | sorteada | `penultimate`, `initial`, `ultimate`, `right_oriented`, `lexical`, `none`... |
+| **Numerais, vocabulário e tradução** | | |
+| `--number-base` | sorteada | `decimal`, `quinary`, `vigesimal`, `hybrid`, `restricted`, `body_part` |
+| `--numbers-upto N` | `20` | Lista os numerais de 1 até N |
+| `--include-modern` | — | Vocabulário do "mundo moderno" (carro, rádio...) |
+| `--translate PATH` | — | Arquivo de frases em inglês para traduzir |
+| **Evolução** | | |
+| `--evolve PERFIL:ANOS` | — | Gera uma língua-filha (repetível), ex: `romance:1500` |
+| `--no-evolve-grammar` | — | Filhas sem a evolução da gramática |
+| `--family N` | — | Gera uma família com N ramos principais |
 | **Nomes próprios** | | |
 | `--people N`, `--places N` | `20` | Quantidade de nomes de pessoa e de lugar |
 | **Derivação e mudanças sonoras** | | |
@@ -234,11 +277,14 @@ languages/lang-31/
 6. **Comparação:** formas do adjetivo, comparativo, superlativo e equativo
 7. **Derivação:** processos de formação de palavras, com exemplos
 8. **Irregularidades:** palavras irregulares e alternâncias das mudanças sonoras
-9. **Sintaxe:** decisões de ordem e as 12 frases, cada uma escrita na grafia e com glosa interlinear
-10. **Dicionário** no formato do Vulgarlang — **grafia** /pronúncia/ [pronúncia depois das mudanças sonoras] classe 'significado' —, incluindo as palavras derivadas (com a base de onde vêm) e as formas irregulares no lugar das regulares
-11. **Nomes próprios:** convenções, pessoas e lugares
-12. **Palavras do usuário** (só com `--custom`)
-13. **Validação**
+9. **Sistema numeral:** base, composição, numerais de 1 a 20 e exemplos maiores, ordinais
+10. **Sintaxe:** decisões de ordem e as 12 frases, cada uma escrita na grafia e com glosa interlinear
+11. **Orações:** voz (passiva, reflexivo, recíproco), demonstrativos, imperativo, orações complexas, possessivos independentes e adposições, com frases glosadas
+12. **Traduções** (só com `--translate`)
+13. **Dicionário** no formato do Vulgarlang — **grafia** /pronúncia/ [pronúncia depois das mudanças sonoras] classe 'significado' —, incluindo as palavras derivadas (com a base de onde vêm), o vocabulário ampliado (com a origem: derivação ou composto), os numerais e as formas irregulares no lugar das regulares
+14. **Nomes próprios:** convenções, pessoas e lugares
+15. **Palavras do usuário** (só com `--custom`)
+16. **Validação**
 
 As seções dos módulos opcionais só aparecem se eles estiverem instalados.
 
@@ -301,13 +347,16 @@ pasta = gl.generate(31, name="elfico", synthesis="isolating", order="SVO", tones
 lexicon = json.loads((pasta / "lexicon.json").read_text(encoding="utf-8"))
 ```
 
-As opções de `generate()` têm os mesmos nomes da linha de comando, com `_` no lugar de `-` (`affix_position`, `stress_rule`, `derive_per_process`, `start` para `--from`). Opções repetíveis, como `--sound-change`, ainda não são aceitas por `generate()`; use a linha de comando. A função devolve a pasta da língua. Cada etapa também está disponível isoladamente nos módulos, como descrito nos READMEs de cada um.
+As opções de `generate()` têm os mesmos nomes da linha de comando, com `_` no lugar de `-` (`affix_position`, `stress_rule`, `derive_per_process`, `start` para `--from`). Opções repetíveis recebem uma lista: `generate(31, sound_change=["a > e / _k"], evolve=["romance:1500"])`. A função devolve a pasta da língua. Cada etapa também está disponível isoladamente nos módulos, como descrito nos READMEs de cada um.
 
 ---
 
 ## Testes
 
-- geração completa (15 etapas) do zero, com e sem `--custom`, com regras de mudança sonora do usuário e `--reflect-spelling`;
+- geração completa (18 etapas) do zero, com `--translate` e `--evolve` (a filha também sai completa, com validação limpa), e `--family`;
+- sem o `wold_1460.tsv`, a etapa de vocabulário é pulada com um aviso, sem interromper a geração;
+- `generate()` com opções repetíveis (`sound_change=[...]`);
+- geração completa com e sem `--custom`, com regras de mudança sonora do usuário e `--reflect-spelling`;
 - os arquivos de cada módulo opcional saem idênticos aos do módulo rodado sozinho;
 - mesma semente → mesmos arquivos (os `grammar.md` só diferem no nome da pasta), mesmo com `PYTHONHASHSEED` diferente;
 - `--from` em cada etapa mantém intactos os arquivos das anteriores;
@@ -319,6 +368,7 @@ As opções de `generate()` têm os mesmos nomes da linha de comando, com `_` no
 ## Cuidados
 
 - **Versões dos módulos:** o orquestrador chama as funções públicas de cada módulo; mantenha todos na versão mais recente.
+- **Arquivos de dados grandes:** o `ipa_database/phoible.csv` e o `vocabulary/wold_1460.tsv` precisam estar nas suas pastas. Se o projeto usa git e eles estão no `.gitignore`, copie-os à mão em cada máquina. Sem o PHOIBLE, o inventário e a evolução não funcionam; sem o WOLD, o vocabulário ampliado é pulado.
 - **Cache do PHOIBLE:** a primeira execução processa o `phoible.csv` e cria `phonemic_inventory/.cache/`; as seguintes são rápidas.
 - **`--from` e restrições:** ao regerar a partir de uma etapa, as restrições das etapas mantidas são ignoradas (os arquivos já existem).
 - **`--from` e dependências:** como as etapas 11 a 15 dependem umas das outras, regerar uma delas regera também as seguintes.
@@ -329,6 +379,5 @@ As opções de `generate()` têm os mesmos nomes da linha de comando, com `_` no
 ## Próximos passos
 
 - [ ] Contrato com o frontend: entrada e saída em JSON (opções do formulário → língua inteira num único JSON)
-- [ ] Aceitar opções repetíveis em `generate()` (como as regras de mudança sonora)
 - [ ] Usar as formas irregulares também nos paradigmas e nas frases de exemplo
 - [ ] Exportar o `grammar.md` em HTML ou PDF

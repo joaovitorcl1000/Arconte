@@ -1,11 +1,14 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../models/character.dart';
 import '../../services/character_api.dart';
 import '../../theme/arconte_theme.dart';
 import '../../widgets/ornaments.dart';
+import 'character_form.dart';
+import 'character_relationships.dart';
 
 /// Ficha individual: busca sempre a versão completa via GET /api/characters/{id}.
 ///
@@ -19,11 +22,19 @@ class CharacterDetails extends StatefulWidget {
     required this.characterId,
     this.api,
     this.onBack,
+    this.genealogyBaseUrl = 'http://127.0.0.1:8000',
+    this.onOpenGenealogyUrl,
   });
 
   final String characterId;
   final CharacterApi? api;
   final VoidCallback? onBack;
+
+  /// Endereço do FastAPI; para emulador Android, use http://10.0.2.2:8000.
+  final String genealogyBaseUrl;
+
+  /// Permite simular a abertura da URL em testes, sem navegador externo.
+  final Future<bool> Function(Uri url)? onOpenGenealogyUrl;
 
   @override
   State<CharacterDetails> createState() => _CharacterDetailsState();
@@ -35,6 +46,7 @@ class _CharacterDetailsState extends State<CharacterDetails> {
   Character? _character;
   String? _error;
   bool _loading = true;
+  bool _editing = false;
   int _generation = 0;
 
   @override
@@ -48,7 +60,10 @@ class _CharacterDetailsState extends State<CharacterDetails> {
   @override
   void didUpdateWidget(covariant CharacterDetails oldWidget) {
     super.didUpdateWidget(oldWidget);
-    if (oldWidget.characterId != widget.characterId) _loadCharacter();
+    if (oldWidget.characterId != widget.characterId) {
+      _editing = false;
+      _loadCharacter();
+    }
   }
 
   @override
@@ -83,8 +98,64 @@ class _CharacterDetailsState extends State<CharacterDetails> {
     }
   }
 
+  Future<void> _openGenealogy(String characterId) async {
+    try {
+      final base = Uri.tryParse(widget.genealogyBaseUrl.trim());
+      if (base == null ||
+          (base.scheme != 'http' && base.scheme != 'https') ||
+          base.host.isEmpty ||
+          base.hasQuery ||
+          base.hasFragment ||
+          base.userInfo.isNotEmpty) {
+        throw const FormatException('Endereço da API inválido.');
+      }
+      final url = base.replace(pathSegments: [
+        ...base.pathSegments.where((segment) => segment.isNotEmpty),
+        'api',
+        'characters',
+        characterId,
+        'genealogy',
+      ]);
+      // No Flutter Web, a ação direta do botão permite abrir outra aba.
+      // No Linux, o navegador padrão é utilizado.
+      final opened = await (widget.onOpenGenealogyUrl?.call(url) ??
+          launchUrl(
+            url,
+            mode: LaunchMode.externalApplication,
+            webOnlyWindowName: '_blank',
+          ));
+      if (!opened) throw StateError('O navegador recusou a abertura.');
+    } catch (error) {
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text(
+            'Não foi possível abrir a genealogia. Verifique o FastAPI e o endereço da API.',
+          ),
+        ),
+      );
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
+    if (_editing && _character != null) {
+      return CharacterForm(
+        key: ValueKey('edit-character-${_character!.id}'),
+        api: _api,
+        initial: _character!,
+        onCancel: () => setState(() => _editing = false),
+        onSaved: (updated) {
+          if (!mounted) return;
+          setState(() {
+            _character = updated;
+            _error = null;
+            _loading = false;
+            _editing = false;
+          });
+        },
+      );
+    }
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -124,6 +195,36 @@ class _CharacterDetailsState extends State<CharacterDetails> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         _CharacterHero(character: person, onRefresh: _loadCharacter),
+        const SizedBox(height: 16),
+        Wrap(
+          spacing: 12,
+          runSpacing: 12,
+          children: [
+            FilledButton.icon(
+              onPressed: () => _openGenealogy(person.id),
+              icon: const Icon(Icons.account_tree_outlined, size: 19),
+              label: const Text('Explorar genealogia'),
+              style: FilledButton.styleFrom(
+                backgroundColor: ArconteColors.forest,
+                foregroundColor: ArconteColors.paleGold,
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+              ),
+            ),
+            OutlinedButton.icon(
+              key: const Key('edit-character-button'),
+              onPressed: () => setState(() => _editing = true),
+              icon: const Icon(Icons.edit_outlined, size: 19),
+              label: const Text('Editar personagem'),
+              style: OutlinedButton.styleFrom(
+                foregroundColor: ArconteColors.forest,
+                side: const BorderSide(color: ArconteColors.brass),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+              ),
+            ),
+          ],
+        ),
         const SizedBox(height: 27),
         const DecorativeRule(width: 115),
         const SizedBox(height: 27),
@@ -160,6 +261,13 @@ class _CharacterDetailsState extends State<CharacterDetails> {
             _history(person.history!, person.biography),
           ]);
         }),
+        const SizedBox(height: 17),
+        CharacterRelationships(
+          key: ValueKey('character-relationships-${person.id}'),
+          characterId: person.id,
+          characterName: person.fullName,
+          characterApi: _api,
+        ),
       ],
     );
   }

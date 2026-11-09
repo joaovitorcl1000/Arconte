@@ -21,7 +21,9 @@ O módulo **não altera nenhum outro**: lê os JSONs da língua e usa as funçõ
 conlang/
 ├── vocabulary/
 │   ├── vocabulary.py
-│   ├── wold_1460.tsv       ← a lista de conceitos (precisa ficar junto)
+│   ├── wold_1460.tsv       ← a lista de conceitos padrão (precisa ficar junto)
+│   ├── concepts.tsv        ← lista combinada (opcional, ver abaixo)
+│   ├── build_concept_list.py ← monta a lista combinada a partir do Concepticon
 │   └── README.md
 └── languages/lang-31/
     ├── vocabulary.json     ← gerado
@@ -47,6 +49,46 @@ python vocabulary/vocabulary.py --language languages/lang-31 --include-modern
 | `--seed N` | derivada | Semente; por padrão derivada da semente da língua |
 
 A pasta precisa ter inventário, fonotática, categorias, morfologia e léxico. Com `derivation.json`, as palavras derivadas usam os processos da língua; com `orthography.json` e `stress.json`, saem escritas e acentuadas. Rode este módulo **depois** da derivação e dos numerais.
+
+---
+
+## Lista combinada de conceitos (opcional)
+
+Além do `wold_1460.tsv`, a pasta pode ter uma **lista combinada**, montada a partir do Concepticon, que une as listas de conceitos mais usadas na linguística comparativa:
+
+| Lista | Conceitos | Referência |
+|---|---|---|
+| Swadesh | 200 | Swadesh (1952): o vocabulário básico clássico |
+| Leipzig-Jakarta | 100 | Tadmor, Haspelmath & Taylor (2010): os significados mais estáveis |
+| WOLD | 1.460 | Haspelmath & Tadmor (2009): vocabulário geral |
+| IDS | 1.310 | Key & Comrie (2016): Intercontinental Dictionary Series |
+| NorthEuraLex | 1.016 | Dellert et al. (2017) |
+
+Juntas, dão **1.850 conceitos únicos** (contra 1.460 do WOLD sozinho). Na língua 31, o vocabulário ampliado passa de 1.188 para 1.533 palavras novas.
+
+```bash
+# monta (ou atualiza) a lista, baixando do GitHub do Concepticon
+python vocabulary/build_concept_list.py
+
+# sem internet: a partir de um clone local do concepticon-data
+python vocabulary/build_concept_list.py --concepticon ../concepticon-data
+
+# só algumas listas
+python vocabulary/build_concept_list.py --lists wold,ids --out vocabulary/geral.tsv
+
+# usar no vocabulário
+python vocabulary/vocabulary.py --language languages/lang-31 --list vocabulary/concepts.tsv
+```
+
+O arquivo sai **no mesmo formato do `wold_1460.tsv`** (o módulo o lê com `--list`, sem nenhuma mudança), com colunas extras:
+
+| Coluna | Conteúdo |
+|---|---|
+| `LISTS`, `N_LISTS` | em quais listas o conceito aparece; um conceito presente nas cinco é mais básico do que um que só está numa |
+| `LEIPZIG_JAKARTA_RANK` | a posição na ordem de estabilidade, quando houver |
+| `PORTUGUESE` | a glosa em português do IDS (1.308 conceitos) |
+
+Classe de palavra e campo semântico vêm do WOLD; para os conceitos que não estão nele, do NorthEuraLex (classe) e do próprio Concepticon (categoria ontológica e campo semântico). O `concepts.tsv` já montado acompanha o módulo.
 
 ---
 

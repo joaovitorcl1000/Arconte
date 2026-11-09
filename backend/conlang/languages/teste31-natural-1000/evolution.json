@@ -1,0 +1,915 @@
+{
+  "parent": "teste31",
+  "daughter": "teste31-natural-1000",
+  "profile": "natural",
+  "profile_name": "natural",
+  "years": 1000,
+  "laws": [
+    {
+      "id": "apocope",
+      "order": 1,
+      "year": 250,
+      "name": "Apócope",
+      "family": "universal",
+      "description": "vogal final átona cai",
+      "example": "latim bene → francês bien; inglês antigo nama → name [neɪm]",
+      "words_affected": 21,
+      "examples": [
+        {
+          "label": "far",
+          "before": "usi",
+          "after": "us"
+        },
+        {
+          "label": "yesterday",
+          "before": "bjiːnu",
+          "after": "bjiːn"
+        },
+        {
+          "label": "smoke",
+          "before": "twuŋu",
+          "after": "twuŋ"
+        },
+        {
+          "label": "leaf",
+          "before": "paju",
+          "after": "paj"
+        }
+      ]
+    },
+    {
+      "id": "lenition_voicing",
+      "order": 2,
+      "year": 500,
+      "name": "Lenição: sonorização",
+      "family": "românica",
+      "description": "p t k → b d ɡ entre vogais",
+      "example": "latim lupus, vita → espanhol lobo, vida",
+      "words_affected": 4,
+      "examples": [
+        {
+          "label": "name",
+          "before": "japil",
+          "after": "jabil"
+        },
+        {
+          "label": "sand",
+          "before": "klikan",
+          "after": "kliɡan"
+        },
+        {
+          "label": "cloud",
+          "before": "mekuː",
+          "after": "meɡuː"
+        },
+        {
+          "label": "to smell",
+          "before": "iːkum",
+          "after": "iːɡum"
+        }
+      ]
+    },
+    {
+      "id": "diphthongization",
+      "order": 3,
+      "year": 750,
+      "name": "Ditongação",
+      "family": "românica",
+      "description": "e o tônicos → je we",
+      "example": "latim petra, porta → espanhol piedra, puerta",
+      "words_affected": 23,
+      "examples": [
+        {
+          "label": "to go",
+          "before": "senka",
+          "after": "sjenka"
+        },
+        {
+          "label": "wing",
+          "before": "zempja",
+          "after": "zjempja"
+        },
+        {
+          "label": "night",
+          "before": "kworzi",
+          "after": "kwwerzi"
+        },
+        {
+          "label": "bitter",
+          "before": "ʃejin",
+          "after": "ʃjejin"
+        }
+      ]
+    }
+  ],
+  "cognates": [
+    {
+      "gloss": "FIRE",
+      "label": "fire",
+      "before": "buiː",
+      "after": "buiː",
+      "cognate": true,
+      "change": null
+    },
+    {
+      "gloss": "WATER",
+      "label": "water",
+      "before": "kim",
+      "after": "kim",
+      "cognate": true,
+      "change": null
+    },
+    {
+      "gloss": "BLOOD",
+      "label": "blood",
+      "before": "e",
+      "after": "e",
+      "cognate": true,
+      "change": null
+    },
+    {
+      "gloss": "COME",
+      "label": "to come",
+      "before": "klaːm",
+      "after": "klaːm",
+      "cognate": true,
+      "change": null
+    },
+    {
+      "gloss": "NAME",
+      "label": "name",
+      "before": "japil",
+      "after": "jabil",
+      "cognate": true,
+      "change": null
+    },
+    {
+      "gloss": "NIGHT",
+      "label": "night",
+      "before": "kworzi",
+      "after": "kwwerzi",
+      "cognate": true,
+      "change": null
+    },
+    {
+      "gloss": "TOOTH",
+      "label": "tooth",
+      "before": "zal",
+      "after": "zal",
+      "cognate": true,
+      "change": null
+    },
+    {
+      "gloss": "BIG",
+      "label": "big",
+      "before": "hukla",
+      "after": "jaːp",
+      "cognate": false,
+      "change": "replacement"
+    },
+    {
+      "gloss": "FISH",
+      "label": "fish",
+      "before": "bi",
+      "after": "bi",
+      "cognate": true,
+      "change": null
+    },
+    {
+      "gloss": "DRINK",
+      "label": "to drink",
+      "before": "lo",
+      "after": "lo",
+      "cognate": true,
+      "change": null
+    },
+    {
+      "gloss": "GIVE",
+      "label": "to give",
+      "before": "maːm",
+      "after": "maːm",
+      "cognate": true,
+      "change": null
+    },
+    {
+      "gloss": "NEW",
+      "label": "new",
+      "before": "inɲa",
+      "after": "inɲa",
+      "cognate": true,
+      "change": null
+    },
+    {
+      "gloss": "GOOD",
+      "label": "good",
+      "before": "bun",
+      "after": "bun",
+      "cognate": true,
+      "change": null
+    },
+    {
+      "gloss": "KNOW",
+      "label": "know",
+      "before": "sjaŋ",
+      "after": "mu",
+      "cognate": false,
+      "change": "replacement"
+    },
+    {
+      "gloss": "HEAR",
+      "label": "to hear",
+      "before": "ɡuːa",
+      "after": "ɡuːa",
+      "cognate": true,
+      "change": null
+    },
+    {
+      "gloss": "OLD",
+      "label": "old",
+      "before": "upru",
+      "after": "upru",
+      "cognate": true,
+      "change": null
+    },
+    {
+      "gloss": "EAT",
+      "label": "to eat",
+      "before": "upjon",
+      "after": "upjon",
+      "cognate": true,
+      "change": null
+    },
+    {
+      "gloss": "EYE",
+      "label": "eye",
+      "before": "um",
+      "after": "um",
+      "cognate": true,
+      "change": null
+    },
+    {
+      "gloss": "DOG",
+      "label": "dog",
+      "before": "sjun",
+      "after": "sjun",
+      "cognate": true,
+      "change": null
+    },
+    {
+      "gloss": "SEE",
+      "label": "to see",
+      "before": "alŋo",
+      "after": "alŋo",
+      "cognate": true,
+      "change": null
+    },
+    {
+      "gloss": "BIRD",
+      "label": "bird",
+      "before": "sjikjem",
+      "after": "loɡ",
+      "cognate": false,
+      "change": "replacement"
+    },
+    {
+      "gloss": "SMALL",
+      "label": "small",
+      "before": "lewa",
+      "after": "lew",
+      "cognate": true,
+      "change": null
+    },
+    {
+      "gloss": "STAR",
+      "label": "star",
+      "before": "zuaŋ",
+      "after": "zuaŋ",
+      "cognate": true,
+      "change": null
+    },
+    {
+      "gloss": "CHILD (YOUNG HUMAN)",
+      "label": "child (young human)",
+      "before": "am",
+      "after": "am",
+      "cognate": true,
+      "change": null
+    },
+    {
+      "gloss": "DIE",
+      "label": "to die",
+      "before": "ku",
+      "after": "ku",
+      "cognate": true,
+      "change": null
+    },
+    {
+      "gloss": "FATHER",
+      "label": "father",
+      "before": "kji",
+      "after": "a",
+      "cognate": false,
+      "change": "replacement"
+    },
+    {
+      "gloss": "FOOT",
+      "label": "foot",
+      "before": "onsri",
+      "after": "wensri",
+      "cognate": true,
+      "change": null
+    },
+    {
+      "gloss": "HAND",
+      "label": "hand",
+      "before": "two",
+      "after": "krel",
+      "cognate": false,
+      "change": "replacement"
+    },
+    {
+      "gloss": "HEAD",
+      "label": "head",
+      "before": "je",
+      "after": "je",
+      "cognate": true,
+      "change": null
+    },
+    {
+      "gloss": "HEART",
+      "label": "heart",
+      "before": "uhen",
+      "after": "uhen",
+      "cognate": true,
+      "change": null
+    },
+    {
+      "gloss": "MOTHER",
+      "label": "mother",
+      "before": "nu",
+      "after": "nu",
+      "cognate": true,
+      "change": null
+    },
+    {
+      "gloss": "PERSON",
+      "label": "person",
+      "before": "kwuɲtwu",
+      "after": "kwuɲtwu",
+      "cognate": true,
+      "change": null
+    },
+    {
+      "gloss": "STONE",
+      "label": "stone",
+      "before": "tju",
+      "after": "ŋim",
+      "cognate": false,
+      "change": "replacement"
+    },
+    {
+      "gloss": "SUN",
+      "label": "sun",
+      "before": "juːl",
+      "after": "juːl",
+      "cognate": true,
+      "change": null
+    },
+    {
+      "gloss": "THREE",
+      "label": "three",
+      "before": "ʃwe",
+      "after": "ʃwe",
+      "cognate": true,
+      "change": null
+    },
+    {
+      "gloss": "TREE",
+      "label": "tree",
+      "before": "mimkju",
+      "after": "sjimdjil",
+      "cognate": false,
+      "change": "replacement"
+    },
+    {
+      "gloss": "TWO",
+      "label": "two",
+      "before": "ul",
+      "after": "ul",
+      "cognate": true,
+      "change": null
+    },
+    {
+      "gloss": "WOMAN",
+      "label": "woman",
+      "before": "tjulĩ",
+      "after": "tjul",
+      "cognate": true,
+      "change": null
+    }
+  ],
+  "lexical": {
+    "enabled": true,
+    "events": [
+      {
+        "type": "shift",
+        "gloss": "CLOUD",
+        "label": "cloud",
+        "source": "FOG",
+        "source_label": "fog",
+        "kind": "ampliação",
+        "example": "latim nebula 'névoa' → italiano nuvola 'nuvem'",
+        "old_form": "mekuː",
+        "year": 250,
+        "new_form": "puːn"
+      },
+      {
+        "type": "replacement",
+        "gloss": "ALL",
+        "label": "all",
+        "old_form": "ki",
+        "stability_rank": null,
+        "example": null,
+        "year": 650,
+        "new_form": "wu"
+      },
+      {
+        "type": "replacement",
+        "gloss": "AND",
+        "label": "and",
+        "old_form": "ne",
+        "stability_rank": null,
+        "example": null,
+        "year": 350,
+        "new_form": "do"
+      },
+      {
+        "type": "replacement",
+        "gloss": "ANIMAL",
+        "label": "animal",
+        "old_form": "kilŋa",
+        "stability_rank": null,
+        "example": null,
+        "year": 550,
+        "new_form": "jas"
+      },
+      {
+        "type": "replacement",
+        "gloss": "ARM OR HAND",
+        "label": "arm",
+        "old_form": "kwiː",
+        "stability_rank": 18,
+        "example": null,
+        "year": 700,
+        "new_form": "wa"
+      },
+      {
+        "type": "replacement",
+        "gloss": "BELLY",
+        "label": "belly",
+        "old_form": "kwau",
+        "stability_rank": null,
+        "example": null,
+        "year": 150,
+        "new_form": "nim"
+      },
+      {
+        "type": "replacement",
+        "gloss": "BIG",
+        "label": "big",
+        "old_form": "hukla",
+        "stability_rank": 31,
+        "example": null,
+        "year": 400,
+        "new_form": "jaːp"
+      },
+      {
+        "type": "replacement",
+        "gloss": "BIRD",
+        "label": "bird",
+        "old_form": "sjikjem",
+        "stability_rank": 92,
+        "example": null,
+        "year": 900,
+        "new_form": "loɡ"
+      },
+      {
+        "type": "replacement",
+        "gloss": "BREATHE",
+        "label": "to breathe",
+        "old_form": "mumju",
+        "stability_rank": null,
+        "example": null,
+        "year": 350,
+        "new_form": "kuːiːl"
+      },
+      {
+        "type": "replacement",
+        "gloss": "DO OR MAKE",
+        "label": "to do",
+        "old_form": "papjam",
+        "stability_rank": 24,
+        "example": null,
+        "year": 650,
+        "new_form": "mjeɲzjal"
+      },
+      {
+        "type": "replacement",
+        "gloss": "EARTH (SOIL)",
+        "label": "soil",
+        "old_form": "maŋ",
+        "stability_rank": 62,
+        "example": null,
+        "year": 600,
+        "new_form": "bel"
+      },
+      {
+        "type": "replacement",
+        "gloss": "FALL",
+        "label": "to fall",
+        "old_form": "nirol",
+        "stability_rank": 81,
+        "example": null,
+        "year": 100,
+        "new_form": "ak"
+      },
+      {
+        "type": "replacement",
+        "gloss": "FATHER",
+        "label": "father",
+        "old_form": "kji",
+        "stability_rank": null,
+        "example": null,
+        "year": 650,
+        "new_form": "a"
+      },
+      {
+        "type": "replacement",
+        "gloss": "GUTS",
+        "label": "guts",
+        "old_form": "mumti",
+        "stability_rank": null,
+        "example": null,
+        "year": 100,
+        "new_form": "zis"
+      },
+      {
+        "type": "replacement",
+        "gloss": "HAND",
+        "label": "hand",
+        "old_form": "two",
+        "stability_rank": null,
+        "example": null,
+        "year": 450,
+        "new_form": "krel"
+      },
+      {
+        "type": "replacement",
+        "gloss": "HARD",
+        "label": "hard",
+        "old_form": "bjuːmaːŋpul",
+        "stability_rank": 98,
+        "example": null,
+        "year": 200,
+        "new_form": "pjiŋmizwem"
+      },
+      {
+        "type": "replacement",
+        "gloss": "HEAVY",
+        "label": "heavy",
+        "old_form": "uːŋra",
+        "stability_rank": 71,
+        "example": null,
+        "year": 400,
+        "new_form": "ɡjuːd"
+      },
+      {
+        "type": "replacement",
+        "gloss": "HIDE",
+        "label": "to hide",
+        "old_form": "jirlĩum",
+        "stability_rank": 66,
+        "example": null,
+        "year": 50,
+        "new_form": "twiŋpim"
+      },
+      {
+        "type": "replacement",
+        "gloss": "KNOW",
+        "label": "know",
+        "old_form": "sjaŋ",
+        "stability_rank": 57,
+        "example": null,
+        "year": 700,
+        "new_form": "mu"
+      },
+      {
+        "type": "replacement",
+        "gloss": "KNOW (SOMETHING)",
+        "label": "know (something)",
+        "old_form": "ɡwiːnke",
+        "stability_rank": null,
+        "example": null,
+        "year": 700,
+        "new_form": "uk"
+      },
+      {
+        "type": "replacement",
+        "gloss": "LIVER",
+        "label": "liver",
+        "old_form": "lomo",
+        "stability_rank": 65,
+        "example": null,
+        "year": 450,
+        "new_form": "aŋkʰeɲ"
+      },
+      {
+        "type": "replacement",
+        "gloss": "MANY",
+        "label": "many",
+        "old_form": "ĩl",
+        "stability_rank": null,
+        "example": null,
+        "year": 200,
+        "new_form": "ĩ"
+      },
+      {
+        "type": "replacement",
+        "gloss": "NARROW",
+        "label": "narrow",
+        "old_form": "ɲolma",
+        "stability_rank": null,
+        "example": null,
+        "year": 750,
+        "new_form": "plurɡu"
+      },
+      {
+        "type": "replacement",
+        "gloss": "NAVEL",
+        "label": "navel",
+        "old_form": "matwaː",
+        "stability_rank": 43,
+        "example": null,
+        "year": 550,
+        "new_form": "aːnmi"
+      },
+      {
+        "type": "replacement",
+        "gloss": "NOSE",
+        "label": "nose",
+        "old_form": "ɡwim",
+        "stability_rank": 1,
+        "example": null,
+        "year": 400,
+        "new_form": "po"
+      },
+      {
+        "type": "replacement",
+        "gloss": "RED",
+        "label": "red",
+        "old_form": "etwi",
+        "stability_rank": 64,
+        "example": null,
+        "year": 550,
+        "new_form": "umni"
+      },
+      {
+        "type": "replacement",
+        "gloss": "RIVER",
+        "label": "river",
+        "old_form": "bu",
+        "stability_rank": null,
+        "example": null,
+        "year": 700,
+        "new_form": "djun"
+      },
+      {
+        "type": "replacement",
+        "gloss": "ROOT",
+        "label": "root",
+        "old_form": "le",
+        "stability_rank": 9,
+        "example": null,
+        "year": 250,
+        "new_form": "lu"
+      },
+      {
+        "type": "replacement",
+        "gloss": "SHADE",
+        "label": "shade",
+        "old_form": "binliːkro",
+        "stability_rank": 91,
+        "example": null,
+        "year": 700,
+        "new_form": "jaɡinjiː"
+      },
+      {
+        "type": "replacement",
+        "gloss": "SHORT",
+        "label": "short",
+        "old_form": "ma",
+        "stability_rank": null,
+        "example": null,
+        "year": 150,
+        "new_form": "tji"
+      },
+      {
+        "type": "replacement",
+        "gloss": "SKIN",
+        "label": "skin",
+        "old_form": "kʰin",
+        "stability_rank": 67,
+        "example": null,
+        "year": 350,
+        "new_form": "plo"
+      },
+      {
+        "type": "replacement",
+        "gloss": "SLEEP",
+        "label": "sleep",
+        "old_form": "lulim",
+        "stability_rank": null,
+        "example": null,
+        "year": 800,
+        "new_form": "kwip"
+      },
+      {
+        "type": "replacement",
+        "gloss": "SOME",
+        "label": "some",
+        "old_form": "to",
+        "stability_rank": null,
+        "example": null,
+        "year": 550,
+        "new_form": "poŋ"
+      },
+      {
+        "type": "replacement",
+        "gloss": "SPIT",
+        "label": "to spit",
+        "old_form": "ji",
+        "stability_rank": null,
+        "example": null,
+        "year": 400,
+        "new_form": "ŋe"
+      },
+      {
+        "type": "replacement",
+        "gloss": "STONE",
+        "label": "stone",
+        "old_form": "tju",
+        "stability_rank": null,
+        "example": null,
+        "year": 50,
+        "new_form": "ŋim"
+      },
+      {
+        "type": "replacement",
+        "gloss": "SUCK",
+        "label": "to suck",
+        "old_form": "pa",
+        "stability_rank": 68,
+        "example": null,
+        "year": 250,
+        "new_form": "lom"
+      },
+      {
+        "type": "replacement",
+        "gloss": "THAT",
+        "label": "that",
+        "old_form": "li",
+        "stability_rank": null,
+        "example": null,
+        "year": 550,
+        "new_form": "ɡje"
+      },
+      {
+        "type": "replacement",
+        "gloss": "THIN",
+        "label": "thin",
+        "old_form": "aki",
+        "stability_rank": null,
+        "example": null,
+        "year": 650,
+        "new_form": "mib"
+      },
+      {
+        "type": "replacement",
+        "gloss": "TREE",
+        "label": "tree",
+        "old_form": "mimkju",
+        "stability_rank": null,
+        "example": null,
+        "year": 900,
+        "new_form": "sjimdjil"
+      },
+      {
+        "type": "replacement",
+        "gloss": "WHAT",
+        "label": "what?",
+        "old_form": "twu",
+        "stability_rank": 49,
+        "example": null,
+        "year": 900,
+        "new_form": "klu"
+      },
+      {
+        "type": "replacement",
+        "gloss": "WHERE",
+        "label": "where?",
+        "old_form": "wi",
+        "stability_rank": null,
+        "example": null,
+        "year": 900,
+        "new_form": "bloɲ"
+      },
+      {
+        "type": "replacement",
+        "gloss": "WIND",
+        "label": "wind",
+        "old_form": "braĩ",
+        "stability_rank": 47,
+        "example": null,
+        "year": 350,
+        "new_form": "wiːɡuɲ"
+      },
+      {
+        "type": "replacement",
+        "gloss": "WIPE",
+        "label": "to wipe",
+        "old_form": "ʃi",
+        "stability_rank": null,
+        "example": null,
+        "year": 550,
+        "new_form": "ɲa"
+      }
+    ],
+    "retention": {
+      "list": "Leipzig-Jakarta",
+      "total": 100,
+      "retained": 80,
+      "percent": 80.0
+    },
+    "donor": null,
+    "borrowing": "none"
+  },
+  "inventory": {
+    "lost": [
+      "kː",
+      "ɬ"
+    ],
+    "gained": [],
+    "consonants": 22,
+    "vowels": 9,
+    "tones": 0
+  },
+  "phonotactics_changes": [
+    "hiato passa a ser permitido",
+    "moldes novos: CCCV, CCCVC, CCVC, CVC, VC",
+    "encontros no ataque novos: bj bjj bjw jj kww lw mj ml nj nl nr pr prw rj sr wj ðj ŋr ŋw ɡlj ɲw ʃj",
+    "codas novos: b d j k l m n p r s t w ŋ ɡ ɲ"
+  ],
+  "metadata": {
+    "seed": 1587526748,
+    "invalid_paradigm_forms": 0,
+    "variants": {}
+  },
+  "grammar": {
+    "events": [
+      {
+        "type": "irregular",
+        "year": 600,
+        "gloss": "EAT",
+        "label": "to eat",
+        "tag": "PST",
+        "regular": "upjonpu",
+        "irregular": "upjwenpu",
+        "note": "'to eat' PST: a forma antiga evoluiu inteira e ficou irregular",
+        "example": "inglês antigo fōt / fēt → foot / feet"
+      },
+      {
+        "type": "irregular",
+        "year": 650,
+        "gloss": "WOMAN",
+        "label": "woman",
+        "tag": "GEN",
+        "regular": "tjun",
+        "irregular": "tjulĩn",
+        "note": "'woman' GEN: a forma antiga evoluiu inteira e ficou irregular",
+        "example": "inglês antigo fōt / fēt → foot / feet"
+      },
+      {
+        "type": "irregular",
+        "year": 950,
+        "gloss": "TAKE",
+        "label": "to take",
+        "tag": "PST",
+        "regular": "jakpu",
+        "irregular": "jaɡep",
+        "note": "'to take' PST: a forma antiga evoluiu inteira e ficou irregular",
+        "example": "inglês antigo fōt / fēt → foot / feet"
+      }
+    ],
+    "seed": 178568558
+  }
+}

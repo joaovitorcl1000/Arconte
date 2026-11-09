@@ -36,7 +36,7 @@ import random
 import sys
 import unicodedata
 from pathlib import Path
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Tuple
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
@@ -232,6 +232,75 @@ def meaning(process: str, e: Dict) -> str:
 # Gerador
 # ═══════════════════════════════════════════════════════════════════════════
 
+# Trecho para colar em derivation/derivation.py, logo DEPOIS da função meaning()
+# e ANTES da linha de comentário '# Gerador' (a classe DerivationBuilder).
+
+# Sentidos lexicalizados: a derivada ganha o sentido que as línguas reais costumam dar
+# a ela, em vez do literal ('fazer ou usar água' → 'to water'; 'quem caça' → 'hunter').
+LEXICALIZED = {
+    ("agentive", "HUNT"): "hunter", ("agentive", "SING"): "singer", ("agentive", "FIGHT"): "warrior",
+    ("agentive", "KILL"): "killer", ("agentive", "SEW"): "tailor", ("agentive", "DIG"): "digger",
+    ("agentive", "PLAY"): "player", ("agentive", "RUN"): "runner", ("agentive", "SWIM"): "swimmer",
+    ("agentive", "STEAL"): "thief", ("agentive", "TEACH"): "teacher",
+    ("action", "EAT"): "meal", ("action", "SING"): "song", ("action", "FIGHT"): "battle", ("action", "DIE"): "death",
+    ("action", "LAUGH"): "laughter", ("action", "THINK"): "thought", ("action", "WALK"): "journey",
+    ("diminutive", "HOUSE"): "hut", ("diminutive", "DOG"): "puppy", ("diminutive", "BIRD"): "chick",
+    ("diminutive", "STONE"): "pebble", ("diminutive", "STONE OR ROCK"): "pebble", ("diminutive", "TREE"): "bush",
+    ("diminutive", "RIVER"): "stream", ("diminutive", "MOUNTAIN"): "hill", ("diminutive", "CHILD (YOUNG HUMAN)"): "baby",
+    ("augmentative", "STONE"): "boulder", ("augmentative", "STONE OR ROCK"): "boulder", ("augmentative", "HOUSE"): "hall",
+    ("augmentative", "RIVER"): "great river",
+    ("causative", "DIE"): "to kill", ("causative", "FALL"): "to drop", ("causative", "SLEEP"): "to put to sleep",
+    ("causative", "SIT"): "to seat", ("causative", "LAUGH"): "to amuse",
+    ("quality", "GOOD"): "goodness", ("quality", "BIG"): "size", ("quality", "LONG"): "length", ("quality", "OLD"): "old age",
+    ("quality", "WARM (OF WEATHER)"): "warmth", ("quality", "HEAVY"): "weight", ("quality", "WIDE"): "width",
+    ("quality", "STRONG"): "strength",
+    ("instrument", "CUT"): "knife", ("instrument", "DIG"): "spade", ("instrument", "SEW"): "needle", ("instrument", "TIE"): "cord",
+    ("instrument", "SCRATCH"): "rake", ("instrument", "HIT"): "club", ("instrument", "WASH"): "soap",
+    ("instrument", "WIPE"): "rag", ("instrument", "GRIND"): "millstone",
+    ("place", "SLEEP"): "bedroom", ("place", "SWIM"): "bathing place", ("place", "HUNT"): "hunting ground",
+    ("place", "SIT"): "seat", ("place", "PLAY"): "playground", ("place", "DIG"): "pit", ("place", "LIE (REST)"): "bed",
+    ("inchoative", "OLD"): "to age", ("inchoative", "BIG"): "to grow", ("inchoative", "WARM (OF WEATHER)"): "to warm up",
+    ("inchoative", "COLD (OF WEATHER)"): "to cool down", ("inchoative", "DRY"): "to dry up", ("inchoative", "RED"): "to blush",
+    ("factitive", "BIG"): "to enlarge", ("factitive", "WARM (OF WEATHER)"): "to heat", ("factitive", "COLD (OF WEATHER)"): "to chill",
+    ("factitive", "DRY"): "to dry", ("factitive", "STRAIGHT"): "to straighten",
+    ("proprietive", "STONE"): "stony", ("proprietive", "STONE OR ROCK"): "stony", ("proprietive", "SAND"): "sandy",
+    ("proprietive", "SALT"): "salty", ("proprietive", "TREE"): "wooded", ("proprietive", "FIRE"): "fiery",
+    ("proprietive", "HAIR"): "hairy", ("proprietive", "WATER"): "watery",
+    ("privative", "WATER"): "arid", ("privative", "TOOTH"): "toothless", ("privative", "HAIR"): "bald",
+    ("privative", "NAME"): "nameless", ("privative", "EYE"): "blind", ("privative", "HOUSE"): "homeless",
+    ("privative", "CHILD (DESCENDANT)"): "childless",
+    ("adverbial", "GOOD"): "well", ("adverbial", "BAD"): "badly", ("adverbial", "NEW"): "recently",
+    ("adverbial", "LONG"): "for a long time", ("adverbial", "STRAIGHT"): "directly",
+    ("denominal", "WATER"): "to water", ("denominal", "FIRE"): "to set on fire", ("denominal", "SALT"): "to salt",
+    ("denominal", "NAME"): "to name", ("denominal", "ROPE"): "to tie up", ("denominal", "STONE"): "to stone",
+    ("denominal", "STONE OR ROCK"): "to stone", ("denominal", "HAND"): "to hand over",
+    ("tendential", "LAUGH"): "cheerful", ("tendential", "CRY"): "tearful", ("tendential", "SLEEP"): "sleepy",
+    ("tendential", "FIGHT"): "quarrelsome", ("tendential", "PLAY"): "playful", ("tendential", "THINK"): "thoughtful",
+    ("product", "SEW"): "garment", ("product", "DIG"): "hole", ("product", "CUT"): "wound", ("product", "SPLIT"): "crack",
+    ("product", "GRIND"): "flour", ("product", "TIE"): "knot", ("product", "DO OR MAKE"): "deed",
+    ("product", "COUNT"): "number", ("product", "SAY"): "saying",
+    ("relational", "SEA"): "maritime", ("relational", "SUN"): "solar", ("relational", "MOON"): "lunar",
+    ("relational", "NIGHT"): "nocturnal", ("relational", "DAY (NOT NIGHT)"): "daily",
+}
+# Deriva de sentido: os desvios que cada afixo costuma sofrer nas línguas reais
+# (agentivo → instrumento, diminutivo → afeto, aumentativo → pejorativo...).
+DRIFT = {"agentive": (0.15, "thing that {3sg}"), "diminutive": (0.15, "dear {b}"),
+         "augmentative": (0.25, "nasty {b}"), "action": (0.15, "result of {ger}"),
+         "place": (0.10, "house of {ger}"), "quality": (0.10, "{b} thing")}
+
+
+def natural_meaning(process: str, e: Dict, seed: int) -> Tuple[str, Optional[str]]:
+    """Sentido da derivada: lexicalizado, desviado ou literal. Devolve (sentido, tipo)."""
+    lex = LEXICALIZED.get((process, e["gloss"]))
+    if lex:
+        return lex, "lexicalized"
+    if process in DRIFT:
+        p, tpl = DRIFT[process]
+        if random.Random(f"{seed}:{process}:{e['gloss']}").random() < p:  # determinístico por palavra
+            b = base_en(e)
+            return tpl.format(b=b, ger=en_gerund(b), **{"3sg": en_3sg(b)}), "drift"
+    return meaning(process, e), None
+
 class DerivationBuilder:
     def __init__(self, language_dir: Path, seed: Optional[int] = None):
         d = language_dir
@@ -395,6 +464,23 @@ class DerivationBuilder:
                 pos = "prefix" if prefixing else ("suffix" if not equal else self.rng.choice(["prefix", "suffix"]))
                 rule = {"type": "affix", "position": pos, "form": self.new_affix(pos)}
             rules[p] = {"from": spec["from"], "to": spec["to"], "gloss": spec["gloss"], **rule}
+        # alomorfia e afixos rivais (gerador próprio: as decisões acima não mudam)
+        rng3 = random.Random(self.seed + 13)
+        for p, rule in rules.items():
+            if rule["type"] != "affix":
+                continue
+            f, pos = rule["form"], rule["position"]
+            edge = f[0] if pos == "suffix" else f[-1]
+            if rng3.random() < 0.45 and len(f) >= 2:
+                if edge in self.vowels:  # -enu → -nu depois de vogal (como no Vulgarlang)
+                    rule["allomorph"] = {"env": "V", "form": f[1:] if pos == "suffix" else f[:-1]}
+                else:                    # -nu → -enu depois de consoante
+                    vs = sorted(self.inv["vowels"], key=lambda x: -x.get("frequency", 0))
+                    plain = [x["ipa"] for x in vs if len(x["ipa"]) == 1] or [x["ipa"] for x in vs]
+                    v = plain[0]  # vogal de apoio: a mais frequente e simples da língua
+                    rule["allomorph"] = {"env": "C", "form": [v] + f if pos == "suffix" else f + [v]}
+            if p in ("quality", "agentive", "action", "diminutive") and rng3.random() < 0.3:
+                rule["rival"] = self.new_affix(pos)  # dois afixos disputam as bases (-eza / -idade)
         self.rules_ = rules
         return rules
 
@@ -423,9 +509,16 @@ class DerivationBuilder:
         t = rule["type"]
         seg = None
         if t == "affix":
-            segs = self.attach(base, rule["form"], rule["position"])
+            form = rule["form"]
+            if rule.get("rival") and random.Random(f"{self.seed}:rival:{e['gloss']}").random() < 0.4:
+                form = rule["rival"]  # o afixo rival, escolhido palavra a palavra
+            al = rule.get("allomorph")
+            edge = (base[-1] if rule["position"] == "suffix" else base[0]) if base else ""
+            if al and form is rule["form"] and ((al["env"] == "V") == (edge in self.vowels)):
+                form = al["form"]
+            segs = self.attach(base, form, rule["position"])
             ipa = self.retone(segs, tones, rule["position"])
-            aff = "".join(rule["form"])
+            aff = "".join(form)
             seg = f"{aff}-{''.join(base)}" if rule["position"] == "prefix" else f"{''.join(base)}-{aff}"
         elif t == "reduplication":
             procs = set(self.typology.get("active_processes", []))
@@ -475,7 +568,11 @@ class DerivationBuilder:
         collision = tuple(self._segments(plain)) in self.words and " " not in plain
         out = {**self.show(ipa), "seg": seg, "process": process, "pos": rule["to"],
                "base": e["gloss"], "base_written": self.show(e["citation"])["written"],
-               "meaning": meaning(process, e), "gloss": f"{base_en(e).replace(' ', '.')}-{rule['gloss']}"}
+               "meaning": natural_meaning(process, e, self.seed)[0], "literal": meaning(process, e),
+               "gloss": f"{base_en(e).replace(' ', '.')}-{rule['gloss']}"}
+        kind = natural_meaning(process, e, self.seed)[1]
+        if kind:
+            out["semantics"] = kind
         if collision:
             out["homophone"] = True
         return out
@@ -484,13 +581,24 @@ class DerivationBuilder:
         rules = self.decide()
         derived: List[Dict] = []
         seen = set()
+        # palavras que já existem no léxico bloqueiam derivadas com o mesmo sentido ('to kill' ← KILL)
+        existing = {base_en(x).lower() for x in self.entries.values()} | \
+                   {"to " + base_en(x).lower() for x in self.entries.values()}
+        gaps = blocked = 0
         for p in rules:
             count = 0
             meanings = set()
-            for e in self.bases(p):
+            prod = random.Random(f"{self.seed}:prod:{p}").uniform(0.55, 0.95)  # produtividade do processo
+            for k, e in enumerate(self.bases(p)):
                 if per_process is not None and count >= per_process:
                     break
+                if k >= 3 and random.Random(f"{self.seed}:gap:{p}:{e['gloss']}").random() > prod:
+                    gaps += 1  # lacuna: nem toda base aceita o processo
+                    continue
                 d = self.derive(e, p)
+                if d and d.get("semantics") and d["meaning"].lower() in existing:
+                    blocked += 1  # bloqueio: a língua já tem a palavra
+                    continue
                 # sem formas repetidas e sem dois significados iguais (ex: 'stone' e 'stone/rock')
                 if not d or d["ipa"] in seen or d["meaning"] in meanings:
                     continue
@@ -498,6 +606,9 @@ class DerivationBuilder:
                 meanings.add(d["meaning"])
                 derived.append(d)
                 count += 1
+        if gaps or blocked:
+            self.notes.append(f"{gaps} lacuna(s) e {blocked} bloqueio(s): nem toda base aceita cada processo, "
+                              "e palavras que já existem impedem a derivada")                
         homophones = sum(1 for d in derived if d.get("homophone"))
         if homophones:
             self.notes.append(f"{homophones} derivada(s) coincidem com palavras do léxico (homofonia)")
@@ -515,7 +626,18 @@ def rule_text(r: Dict, sp, entries: Dict) -> str:
     t = r["type"]
     if t == "affix":
         f = sp("".join(r["form"]))
-        return f"sufixo -{f}" if r["position"] == "suffix" else f"prefixo {f}-"
+        suf = r["position"] == "suffix"
+        txt = f"sufixo -{f}" if suf else f"prefixo {f}-"
+        al = r.get("allomorph")
+        if al:
+            a = sp("".join(al["form"]))
+            where = ("depois de vogal" if suf else "antes de vogal") if al["env"] == "V" else \
+                    ("depois de consoante" if suf else "antes de consoante")
+            txt += f" ({where}: {'-' + a if suf else a + '-'})"
+        if r.get("rival"):
+            rv = sp("".join(r["rival"]))
+            txt += f"; rival: {'-' + rv if suf else rv + '-'}"
+        return txt
     if t == "reduplication":
         return "reduplicação"
     if t == "compound":

@@ -1,4 +1,4 @@
-/// Cliente HTTP de leitura dos personagens do Arconte.
+/// Cliente HTTP de consulta, criação e edição dos personagens do Arconte.
 ///
 /// O FastAPI deve estar em execução no backend:
 ///   cd ~/Arconte/backend/genealogy
@@ -79,6 +79,37 @@ class CharacterApi {
       throw ArgumentError.value(id, 'id', 'Informe o UUID do personagem.');
     }
     final payload = await _getJson(_endpoint(normalizedId));
+    return _parseDetails(payload);
+  }
+
+  /// POST /api/characters: cria um personagem e recebe a ficha completa (201).
+  Future<Character> createCharacter(Map<String, dynamic> data) async {
+    final payload = await _writeJson(
+      _endpoint(),
+      data,
+      create: true,
+    );
+    return _parseDetails(payload);
+  }
+
+  /// PATCH /api/characters/{id}: altera apenas os campos informados (200).
+  Future<Character> updateCharacter(
+    String id,
+    Map<String, dynamic> changes,
+  ) async {
+    final normalizedId = id.trim();
+    if (normalizedId.isEmpty) {
+      throw ArgumentError.value(id, 'id', 'Informe o UUID do personagem.');
+    }
+    final payload = await _writeJson(
+      _endpoint(normalizedId),
+      changes,
+      create: false,
+    );
+    return _parseDetails(payload);
+  }
+
+  Character _parseDetails(dynamic payload) {
     if (payload is! Map<String, dynamic>) {
       throw const CharacterApiException(
           'A ficha retornada pela API é inválida.');
@@ -148,12 +179,65 @@ class CharacterApi {
     }
   }
 
-  String _errorMessage(http.Response response) {
+  Future<dynamic> _writeJson(
+    Uri url,
+    Map<String, dynamic> data, {
+    required bool create,
+  }) async {
+    late final http.Response response;
+    try {
+      final body = jsonEncode(data);
+      final headers = <String, String>{
+        'Accept': 'application/json',
+        'Content-Type': 'application/json; charset=utf-8',
+      };
+      response = await (create
+              ? _client.post(url, headers: headers, body: body)
+              : _client.patch(url, headers: headers, body: body))
+          .timeout(requestTimeout);
+    } on TimeoutException {
+      throw const CharacterApiException(
+        'O salvamento demorou demais. Confira a ficha antes de tentar novamente.',
+      );
+    } on http.ClientException catch (error) {
+      throw CharacterApiException(
+        'Não foi possível conectar ao Arconte para salvar: $error',
+      );
+    }
+
+    final expectedStatus = create ? 201 : 200;
+    if (response.statusCode != expectedStatus) {
+      throw CharacterApiException(
+        _errorMessage(response, writing: true),
+        statusCode: response.statusCode,
+      );
+    }
+
+    try {
+      return jsonDecode(utf8.decode(response.bodyBytes));
+    } on FormatException {
+      throw const CharacterApiException(
+        'A API retornou JSON inválido após o salvamento.',
+      );
+    }
+  }
+
+  String _errorMessage(http.Response response, {bool writing = false}) {
     String? detail;
     try {
       final payload = jsonDecode(utf8.decode(response.bodyBytes));
-      if (payload is Map<String, dynamic> && payload['detail'] is String) {
-        detail = payload['detail'] as String;
+      if (payload is Map<String, dynamic>) {
+        if (payload['detail'] is String) {
+          detail = payload['detail'] as String;
+        } else if (payload['detail'] is List) {
+          // O FastAPI envia uma lista para erros de validação Pydantic.
+          final issues = payload['detail'] as List;
+          if (issues.isNotEmpty &&
+              issues.first is Map &&
+              (issues.first as Map)['msg'] is String) {
+            detail = (issues.first as Map)['msg'] as String;
+          }
+        }
       }
     } on FormatException {
       // Respostas HTTP de erro também podem vir sem JSON.
@@ -164,7 +248,9 @@ class CharacterApi {
       case 404:
         return 'Personagem não encontrado no projeto.';
       case 422:
-        return 'O identificador do personagem é inválido.';
+        return writing
+            ? 'Dados inválidos. Confira os campos enviados.'
+            : 'O identificador do personagem é inválido.';
       case 503:
         return 'O backend não conseguiu abrir o arquivo do projeto.';
       default:

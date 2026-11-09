@@ -1,0 +1,4020 @@
+{
+  "rules": [
+    {
+      "text": "{b,d,ɡ} > {β,ð,ɣ} / V_V",
+      "source": "natural",
+      "description": "espirantização entre vogais (como no espanhol: lado [laðo])",
+      "changed_words": 5,
+      "examples": [
+        {
+          "before": "jabil",
+          "after": "jaβil",
+          "word": "jabil",
+          "label": "name",
+          "before_written": "yabil",
+          "after_phonetic": "ˈjaβil"
+        },
+        {
+          "before": "wiːɡuɲ",
+          "after": "wiːɣuɲ",
+          "word": "wiːɡuɲ",
+          "label": "wind",
+          "before_written": "wiiguny",
+          "after_phonetic": "ˈwiːɣuɲ"
+        },
+        {
+          "before": "kliɡan",
+          "after": "kliɣan",
+          "word": "kliɡan",
+          "label": "sand",
+          "before_written": "kligan",
+          "after_phonetic": "ˈkliɣan"
+        },
+        {
+          "before": "jaɡinjiː",
+          "after": "jaɣinjiː",
+          "word": "jaɡinjiː",
+          "label": "shade/shadow",
+          "before_written": "yagin·yii",
+          "after_phonetic": "ˈjaɣinjiː"
+        }
+      ]
+    },
+    {
+      "text": "e > i / _#",
+      "source": "natural",
+      "description": "elevação de vogal final (e > i, como no português: leite [lejt͡ʃi])",
+      "changed_words": 10,
+      "examples": [
+        {
+          "before": "e",
+          "after": "i",
+          "word": "e",
+          "label": "blood",
+          "before_written": "e",
+          "after_phonetic": "i"
+        },
+        {
+          "before": "he",
+          "after": "hi",
+          "word": "he",
+          "label": "breast",
+          "before_written": "he",
+          "after_phonetic": "hi"
+        },
+        {
+          "before": "ke",
+          "after": "ki",
+          "word": "ke",
+          "label": "ear",
+          "before_written": "ke",
+          "after_phonetic": "ki"
+        },
+        {
+          "before": "ɡe",
+          "after": "ɡi",
+          "word": "ɡe",
+          "label": "who?",
+          "before_written": "ge",
+          "after_phonetic": "ɡi"
+        }
+      ]
+    },
+    {
+      "text": "o > u / _#",
+      "source": "natural",
+      "description": "elevação de vogal final (o > u, como no português: leite [lejt͡ʃi])",
+      "changed_words": 15,
+      "examples": [
+        {
+          "before": "po",
+          "after": "pu",
+          "word": "po",
+          "label": "nose",
+          "before_written": "po",
+          "after_phonetic": "pu"
+        },
+        {
+          "before": "o",
+          "after": "u",
+          "word": "o",
+          "label": "fly",
+          "before_written": "o",
+          "after_phonetic": "u"
+        },
+        {
+          "before": "jo",
+          "after": "ju",
+          "word": "jo",
+          "label": "to say",
+          "before_written": "yo",
+          "after_phonetic": "ju"
+        },
+        {
+          "before": "lo",
+          "after": "lu",
+          "word": "lo",
+          "label": "to drink",
+          "before_written": "lo",
+          "after_phonetic": "lu"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "gloss": "FIRE",
+      "label": "fire",
+      "pos": "noun",
+      "underlying": "buiː",
+      "changed": "buiː",
+      "rules": [],
+      "written": "buii",
+      "changed_written": "buii",
+      "phonetic": "ˈbuiː"
+    },
+    {
+      "gloss": "NOSE",
+      "label": "nose",
+      "pos": "noun",
+      "underlying": "po",
+      "changed": "pu",
+      "rules": [
+        2
+      ],
+      "written": "po",
+      "changed_written": "po",
+      "phonetic": "pu"
+    },
+    {
+      "gloss": "GO",
+      "label": "to go",
+      "pos": "verb",
+      "underlying": "sjenka",
+      "changed": "sjenka",
+      "rules": [],
+      "written": "syenka",
+      "changed_written": "syenka",
+      "phonetic": "ˈsjenka"
+    },
+    {
+      "gloss": "WATER",
+      "label": "water",
+      "pos": "noun",
+      "underlying": "kim",
+      "changed": "kim",
+      "rules": [],
+      "written": "kim",
+      "changed_written": "kim",
+      "phonetic": "kim"
+    },
+    {
+      "gloss": "MOUTH",
+      "label": "mouth",
+      "pos": "noun",
+      "underlying": "lapjiŋ",
+      "changed": "lapjiŋ",
+      "rules": [],
+      "written": "lapyiq",
+      "changed_written": "lapyiq",
+      "phonetic": "ˈlapjiŋ"
+    },
+    {
+      "gloss": "TONGUE",
+      "label": "tongue",
+      "pos": "noun",
+      "underlying": "kju",
+      "changed": "kju",
+      "rules": [],
+      "written": "kyu",
+      "changed_written": "kyu",
+      "phonetic": "kju"
+    },
+    {
+      "gloss": "BLOOD",
+      "label": "blood",
+      "pos": "noun",
+      "underlying": "e",
+      "changed": "i",
+      "rules": [
+        1
+      ],
+      "written": "e",
+      "changed_written": "e",
+      "phonetic": "i"
+    },
+    {
+      "gloss": "BONE",
+      "label": "bone",
+      "pos": "noun",
+      "underlying": "wiː",
+      "changed": "wiː",
+      "rules": [],
+      "written": "wii",
+      "changed_written": "wii",
+      "phonetic": "wiː"
+    },
+    {
+      "gloss": "THOU",
+      "label": "2sg pronoun",
+      "pos": "pronoun",
+      "underlying": "ɡwiɲ",
+      "changed": "ɡwiɲ",
+      "rules": [],
+      "written": "gwiny",
+      "changed_written": "gwiny",
+      "phonetic": "ɡwiɲ"
+    },
+    {
+      "gloss": "ROOT",
+      "label": "root",
+      "pos": "noun",
+      "underlying": "lu",
+      "changed": "lu",
+      "rules": [],
+      "written": "lu",
+      "changed_written": "lu",
+      "phonetic": "lu"
+    },
+    {
+      "gloss": "COME",
+      "label": "to come",
+      "pos": "verb",
+      "underlying": "klaːm",
+      "changed": "klaːm",
+      "rules": [],
+      "written": "klaam",
+      "changed_written": "klaam",
+      "phonetic": "klaːm"
+    },
+    {
+      "gloss": "BREAST",
+      "label": "breast",
+      "pos": "noun",
+      "underlying": "he",
+      "changed": "hi",
+      "rules": [
+        1
+      ],
+      "written": "he",
+      "changed_written": "he",
+      "phonetic": "hi"
+    },
+    {
+      "gloss": "RAIN (PRECIPITATION)",
+      "label": "rain",
+      "pos": "noun",
+      "underlying": "ŋumkjĩ",
+      "changed": "ŋumkjĩ",
+      "rules": [],
+      "written": "qumkyĩ",
+      "changed_written": "qumkyĩ",
+      "phonetic": "ˈŋumkjĩ"
+    },
+    {
+      "gloss": "I",
+      "label": "1sg pronoun",
+      "pos": "pronoun",
+      "underlying": "ka",
+      "changed": "ka",
+      "rules": [],
+      "written": "ka",
+      "changed_written": "ka",
+      "phonetic": "ka"
+    },
+    {
+      "gloss": "NAME",
+      "label": "name",
+      "pos": "noun",
+      "underlying": "jabil",
+      "changed": "jaβil",
+      "rules": [
+        0
+      ],
+      "written": "yabil",
+      "changed_written": "yabil",
+      "phonetic": "ˈjaβil"
+    },
+    {
+      "gloss": "LOUSE",
+      "label": "louse",
+      "pos": "noun",
+      "underlying": "tja",
+      "changed": "tja",
+      "rules": [],
+      "written": "tya",
+      "changed_written": "tya",
+      "phonetic": "tja"
+    },
+    {
+      "gloss": "WING",
+      "label": "wing",
+      "pos": "noun",
+      "underlying": "zjempja",
+      "changed": "zjempja",
+      "rules": [],
+      "written": "zyempya",
+      "changed_written": "zyempya",
+      "phonetic": "ˈzjempja"
+    },
+    {
+      "gloss": "FLESH OR MEAT",
+      "label": "flesh/meat",
+      "pos": "noun",
+      "underlying": "iːam",
+      "changed": "iːam",
+      "rules": [],
+      "written": "iiam",
+      "changed_written": "iiam",
+      "phonetic": "ˈiːam"
+    },
+    {
+      "gloss": "ARM OR HAND",
+      "label": "arm/hand",
+      "pos": "noun",
+      "underlying": "wa",
+      "changed": "wa",
+      "rules": [],
+      "written": "wa",
+      "changed_written": "wa",
+      "phonetic": "wa"
+    },
+    {
+      "gloss": "FLY (INSECT)",
+      "label": "fly",
+      "pos": "noun",
+      "underlying": "o",
+      "changed": "u",
+      "rules": [
+        2
+      ],
+      "written": "o",
+      "changed_written": "o",
+      "phonetic": "u"
+    },
+    {
+      "gloss": "NIGHT",
+      "label": "night",
+      "pos": "noun",
+      "underlying": "kwwerzi",
+      "changed": "kwwerzi",
+      "rules": [],
+      "written": "kwwerzi",
+      "changed_written": "kwwerzi",
+      "phonetic": "ˈkwwerzi"
+    },
+    {
+      "gloss": "EAR",
+      "label": "ear",
+      "pos": "noun",
+      "underlying": "ke",
+      "changed": "ki",
+      "rules": [
+        1
+      ],
+      "written": "ke",
+      "changed_written": "ke",
+      "phonetic": "ki"
+    },
+    {
+      "gloss": "NECK",
+      "label": "neck",
+      "pos": "noun",
+      "underlying": "mam",
+      "changed": "mam",
+      "rules": [],
+      "written": "mam",
+      "changed_written": "mam",
+      "phonetic": "mam"
+    },
+    {
+      "gloss": "FAR",
+      "label": "far",
+      "pos": "adjective",
+      "underlying": "us",
+      "changed": "us",
+      "rules": [],
+      "written": "us",
+      "changed_written": "us",
+      "phonetic": "us"
+    },
+    {
+      "gloss": "DO OR MAKE",
+      "label": "to do/make",
+      "pos": "verb",
+      "underlying": "mjeɲzjal",
+      "changed": "mjeɲzjal",
+      "rules": [],
+      "written": "myenyzyal",
+      "changed_written": "myenyzyal",
+      "phonetic": "ˈmjeɲzjal"
+    },
+    {
+      "gloss": "HOUSE",
+      "label": "house",
+      "pos": "noun",
+      "underlying": "ɡwaːŋum",
+      "changed": "ɡwaːŋum",
+      "rules": [],
+      "written": "gwaaqum",
+      "changed_written": "gwaaqum",
+      "phonetic": "ˈɡwaːŋum"
+    },
+    {
+      "gloss": "STONE OR ROCK",
+      "label": "stone/rock",
+      "pos": "noun",
+      "underlying": "palŋi",
+      "changed": "palŋi",
+      "rules": [],
+      "written": "palqi",
+      "changed_written": "palqi",
+      "phonetic": "ˈpalŋi"
+    },
+    {
+      "gloss": "BITTER",
+      "label": "bitter",
+      "pos": "adjective",
+      "underlying": "ʃjejin",
+      "changed": "ʃjejin",
+      "rules": [],
+      "written": "xyeyin",
+      "changed_written": "xyeyin",
+      "phonetic": "ˈʃjejin"
+    },
+    {
+      "gloss": "SAY",
+      "label": "to say",
+      "pos": "verb",
+      "underlying": "jo",
+      "changed": "ju",
+      "rules": [
+        2
+      ],
+      "written": "yo",
+      "changed_written": "yo",
+      "phonetic": "ju"
+    },
+    {
+      "gloss": "TOOTH",
+      "label": "tooth",
+      "pos": "noun",
+      "underlying": "zal",
+      "changed": "zal",
+      "rules": [],
+      "written": "zal",
+      "changed_written": "zal",
+      "phonetic": "zal"
+    },
+    {
+      "gloss": "HAIR",
+      "label": "hair",
+      "pos": "noun",
+      "underlying": "aːmbram",
+      "changed": "aːmbram",
+      "rules": [],
+      "written": "aambram",
+      "changed_written": "aambram",
+      "phonetic": "ˈaːmbram"
+    },
+    {
+      "gloss": "BIG",
+      "label": "big",
+      "pos": "adjective",
+      "underlying": "jaːp",
+      "changed": "jaːp",
+      "rules": [],
+      "written": "yaap",
+      "changed_written": "yaap",
+      "phonetic": "jaːp"
+    },
+    {
+      "gloss": "ONE",
+      "label": "one",
+      "pos": "numeral",
+      "underlying": "tjaː",
+      "changed": "tjaː",
+      "rules": [],
+      "written": "tyaa",
+      "changed_written": "tyaa",
+      "phonetic": "tjaː"
+    },
+    {
+      "gloss": "WHO",
+      "label": "who?",
+      "pos": "interrogative",
+      "underlying": "ɡe",
+      "changed": "ɡi",
+      "rules": [
+        1
+      ],
+      "written": "ge",
+      "changed_written": "ge",
+      "phonetic": "ɡi"
+    },
+    {
+      "gloss": "HE OR SHE OR IT",
+      "label": "3sg pronoun",
+      "pos": "pronoun",
+      "underlying": "u",
+      "changed": "u",
+      "rules": [],
+      "written": "u",
+      "changed_written": "u",
+      "phonetic": "u"
+    },
+    {
+      "gloss": "STRIKE OR BEAT",
+      "label": "to hit/beat",
+      "pos": "verb",
+      "underlying": "jam",
+      "changed": "jam",
+      "rules": [],
+      "written": "yam",
+      "changed_written": "yam",
+      "phonetic": "jam"
+    },
+    {
+      "gloss": "FOOT OR LEG",
+      "label": "leg/foot",
+      "pos": "noun",
+      "underlying": "sam",
+      "changed": "sam",
+      "rules": [],
+      "written": "sam",
+      "changed_written": "sam",
+      "phonetic": "sam"
+    },
+    {
+      "gloss": "HORN (ANATOMY)",
+      "label": "horn",
+      "pos": "noun",
+      "underlying": "mjempjum",
+      "changed": "mjempjum",
+      "rules": [],
+      "written": "myempyum",
+      "changed_written": "myempyum",
+      "phonetic": "ˈmjempjum"
+    },
+    {
+      "gloss": "THIS",
+      "label": "this",
+      "pos": "demonstrative",
+      "underlying": "ar",
+      "changed": "ar",
+      "rules": [],
+      "written": "ar",
+      "changed_written": "ar",
+      "phonetic": "ar"
+    },
+    {
+      "gloss": "FISH",
+      "label": "fish",
+      "pos": "noun",
+      "underlying": "bi",
+      "changed": "bi",
+      "rules": [],
+      "written": "bi",
+      "changed_written": "bi",
+      "phonetic": "bi"
+    },
+    {
+      "gloss": "YESTERDAY",
+      "label": "yesterday",
+      "pos": "adverb",
+      "underlying": "bjiːn",
+      "changed": "bjiːn",
+      "rules": [],
+      "written": "byiin",
+      "changed_written": "byiin",
+      "phonetic": "bjiːn"
+    },
+    {
+      "gloss": "DRINK",
+      "label": "to drink",
+      "pos": "verb",
+      "underlying": "lo",
+      "changed": "lu",
+      "rules": [
+        2
+      ],
+      "written": "lo",
+      "changed_written": "lo",
+      "phonetic": "lu"
+    },
+    {
+      "gloss": "BLACK",
+      "label": "black",
+      "pos": "adjective",
+      "underlying": "jintar",
+      "changed": "jintar",
+      "rules": [],
+      "written": "yintar",
+      "changed_written": "yintar",
+      "phonetic": "ˈjintar"
+    },
+    {
+      "gloss": "NAVEL",
+      "label": "navel",
+      "pos": "noun",
+      "underlying": "aːnmi",
+      "changed": "aːnmi",
+      "rules": [],
+      "written": "aanmi",
+      "changed_written": "aanmi",
+      "phonetic": "ˈaːnmi"
+    },
+    {
+      "gloss": "STAND",
+      "label": "to stand",
+      "pos": "verb",
+      "underlying": "ɡro",
+      "changed": "ɡru",
+      "rules": [
+        2
+      ],
+      "written": "gro",
+      "changed_written": "gro",
+      "phonetic": "ɡru"
+    },
+    {
+      "gloss": "BITE",
+      "label": "to bite",
+      "pos": "verb",
+      "underlying": "sasaɲ",
+      "changed": "sasaɲ",
+      "rules": [],
+      "written": "sasany",
+      "changed_written": "sasany",
+      "phonetic": "ˈsasaɲ"
+    },
+    {
+      "gloss": "BACK",
+      "label": "back",
+      "pos": "noun",
+      "underlying": "krai",
+      "changed": "krai",
+      "rules": [],
+      "written": "krai",
+      "changed_written": "krai",
+      "phonetic": "ˈkrai"
+    },
+    {
+      "gloss": "WIND",
+      "label": "wind",
+      "pos": "noun",
+      "underlying": "wiːɡuɲ",
+      "changed": "wiːɣuɲ",
+      "rules": [
+        0
+      ],
+      "written": "wiiguny",
+      "changed_written": "wiiguny",
+      "phonetic": "ˈwiːɣuɲ"
+    },
+    {
+      "gloss": "SMOKE (EXHAUST)",
+      "label": "smoke",
+      "pos": "noun",
+      "underlying": "twuŋ",
+      "changed": "twuŋ",
+      "rules": [],
+      "written": "twuq",
+      "changed_written": "twuq",
+      "phonetic": "twuŋ"
+    },
+    {
+      "gloss": "WHAT",
+      "label": "what?",
+      "pos": "interrogative",
+      "underlying": "klu",
+      "changed": "klu",
+      "rules": [],
+      "written": "klu",
+      "changed_written": "klu",
+      "phonetic": "klu"
+    },
+    {
+      "gloss": "CHILD (DESCENDANT)",
+      "label": "child (descendant)",
+      "pos": "noun",
+      "underlying": "tjuɲzon",
+      "changed": "tjuɲzon",
+      "rules": [],
+      "written": "tyunyzon",
+      "changed_written": "tyunyzon",
+      "phonetic": "ˈtjuɲzon"
+    },
+    {
+      "gloss": "EGG",
+      "label": "egg",
+      "pos": "noun",
+      "underlying": "iːŋ",
+      "changed": "iːŋ",
+      "rules": [],
+      "written": "iiq",
+      "changed_written": "iiq",
+      "phonetic": "iːŋ"
+    },
+    {
+      "gloss": "GIVE",
+      "label": "to give",
+      "pos": "verb",
+      "underlying": "maːm",
+      "changed": "maːm",
+      "rules": [],
+      "written": "maam",
+      "changed_written": "maam",
+      "phonetic": "maːm"
+    },
+    {
+      "gloss": "NEW",
+      "label": "new",
+      "pos": "adjective",
+      "underlying": "inɲa",
+      "changed": "inɲa",
+      "rules": [],
+      "written": "innya",
+      "changed_written": "innya",
+      "phonetic": "ˈinɲa"
+    },
+    {
+      "gloss": "BURNING",
+      "label": "to burn",
+      "pos": "verb",
+      "underlying": "jedjun",
+      "changed": "jedjun",
+      "rules": [],
+      "written": "yedyun",
+      "changed_written": "yedyun",
+      "phonetic": "ˈjedjun"
+    },
+    {
+      "gloss": "NOT",
+      "label": "not",
+      "pos": "negation",
+      "underlying": "ɡu",
+      "changed": "ɡu",
+      "rules": [],
+      "written": "gu",
+      "changed_written": "gu",
+      "phonetic": "ɡu"
+    },
+    {
+      "gloss": "GOOD",
+      "label": "good",
+      "pos": "adjective",
+      "underlying": "bun",
+      "changed": "bun",
+      "rules": [],
+      "written": "bun",
+      "changed_written": "bun",
+      "phonetic": "bun"
+    },
+    {
+      "gloss": "KNOW",
+      "label": "know",
+      "pos": "verb",
+      "underlying": "mu",
+      "changed": "mu",
+      "rules": [],
+      "written": "mu",
+      "changed_written": "mu",
+      "phonetic": "mu"
+    },
+    {
+      "gloss": "KNEE",
+      "label": "knee",
+      "pos": "noun",
+      "underlying": "tusaɲ",
+      "changed": "tusaɲ",
+      "rules": [],
+      "written": "tusany",
+      "changed_written": "tusany",
+      "phonetic": "ˈtusaɲ"
+    },
+    {
+      "gloss": "SAND",
+      "label": "sand",
+      "pos": "noun",
+      "underlying": "kliɡan",
+      "changed": "kliɣan",
+      "rules": [
+        0
+      ],
+      "written": "kligan",
+      "changed_written": "kligan",
+      "phonetic": "ˈkliɣan"
+    },
+    {
+      "gloss": "LAUGH",
+      "label": "to laugh",
+      "pos": "verb",
+      "underlying": "banuːɲ",
+      "changed": "banuːɲ",
+      "rules": [],
+      "written": "banuuny",
+      "changed_written": "banuuny",
+      "phonetic": "ˈbanuːɲ"
+    },
+    {
+      "gloss": "HEAR",
+      "label": "to hear",
+      "pos": "verb",
+      "underlying": "ɡuːa",
+      "changed": "ɡuːa",
+      "rules": [],
+      "written": "guua",
+      "changed_written": "guua",
+      "phonetic": "ˈɡuːa"
+    },
+    {
+      "gloss": "EARTH (SOIL)",
+      "label": "soil",
+      "pos": "noun",
+      "underlying": "bel",
+      "changed": "bel",
+      "rules": [],
+      "written": "bel",
+      "changed_written": "bel",
+      "phonetic": "bel"
+    },
+    {
+      "gloss": "LEAF",
+      "label": "leaf",
+      "pos": "noun",
+      "underlying": "paj",
+      "changed": "paj",
+      "rules": [],
+      "written": "pay",
+      "changed_written": "pay",
+      "phonetic": "paj"
+    },
+    {
+      "gloss": "RED",
+      "label": "red",
+      "pos": "adjective",
+      "underlying": "umni",
+      "changed": "umni",
+      "rules": [],
+      "written": "umni",
+      "changed_written": "umni",
+      "phonetic": "ˈumni"
+    },
+    {
+      "gloss": "LIVER",
+      "label": "liver",
+      "pos": "noun",
+      "underlying": "aŋkʰeɲ",
+      "changed": "aŋkʰeɲ",
+      "rules": [],
+      "written": "aqkheny",
+      "changed_written": "aqkheny",
+      "phonetic": "ˈaŋkʰeɲ"
+    },
+    {
+      "gloss": "HIDE",
+      "label": "to hide",
+      "pos": "verb",
+      "underlying": "twiŋpim",
+      "changed": "twiŋpim",
+      "rules": [],
+      "written": "twiqpim",
+      "changed_written": "twiqpim",
+      "phonetic": "ˈtwiŋpim"
+    },
+    {
+      "gloss": "SKIN",
+      "label": "skin/hide",
+      "pos": "noun",
+      "underlying": "plo",
+      "changed": "plu",
+      "rules": [
+        2
+      ],
+      "written": "plo",
+      "changed_written": "plo",
+      "phonetic": "plu"
+    },
+    {
+      "gloss": "SUCK",
+      "label": "to suck",
+      "pos": "verb",
+      "underlying": "lom",
+      "changed": "lom",
+      "rules": [],
+      "written": "lom",
+      "changed_written": "lom",
+      "phonetic": "lom"
+    },
+    {
+      "gloss": "CARRY",
+      "label": "to carry",
+      "pos": "verb",
+      "underlying": "kiɲkjiː",
+      "changed": "kiɲkjiː",
+      "rules": [],
+      "written": "kinykyii",
+      "changed_written": "kinykyii",
+      "phonetic": "ˈkiɲkjiː"
+    },
+    {
+      "gloss": "ANT",
+      "label": "ant",
+      "pos": "noun",
+      "underlying": "owiːjaŋuː",
+      "changed": "owiːjaŋuː",
+      "rules": [],
+      "written": "owiiyaquu",
+      "changed_written": "owiiyaquu",
+      "phonetic": "oˈwiːjaŋuː"
+    },
+    {
+      "gloss": "HEAVY",
+      "label": "heavy",
+      "pos": "adjective",
+      "underlying": "ɡjuːd",
+      "changed": "ɡjuːd",
+      "rules": [],
+      "written": "gyuud",
+      "changed_written": "gyuud",
+      "phonetic": "ɡjuːd"
+    },
+    {
+      "gloss": "TAKE",
+      "label": "to take",
+      "pos": "verb",
+      "underlying": "jak",
+      "changed": "jak",
+      "rules": [],
+      "written": "yak",
+      "changed_written": "yak",
+      "phonetic": "jak"
+    },
+    {
+      "gloss": "OLD",
+      "label": "old",
+      "pos": "adjective",
+      "underlying": "upru",
+      "changed": "upru",
+      "rules": [],
+      "written": "upru",
+      "changed_written": "upru",
+      "phonetic": "ˈupru"
+    },
+    {
+      "gloss": "EAT",
+      "label": "to eat",
+      "pos": "verb",
+      "underlying": "upjon",
+      "changed": "upjon",
+      "rules": [],
+      "written": "upyon",
+      "changed_written": "upyon",
+      "phonetic": "ˈupjon"
+    },
+    {
+      "gloss": "UPPER LEG (THIGH)",
+      "label": "thigh",
+      "pos": "noun",
+      "underlying": "sal",
+      "changed": "sal",
+      "rules": [],
+      "written": "sal",
+      "changed_written": "sal",
+      "phonetic": "sal"
+    },
+    {
+      "gloss": "THICK",
+      "label": "thick",
+      "pos": "adjective",
+      "underlying": "uː",
+      "changed": "uː",
+      "rules": [],
+      "written": "uu",
+      "changed_written": "uu",
+      "phonetic": "uː"
+    },
+    {
+      "gloss": "LONG",
+      "label": "long",
+      "pos": "adjective",
+      "underlying": "luʃju",
+      "changed": "luʃju",
+      "rules": [],
+      "written": "luxyu",
+      "changed_written": "luxyu",
+      "phonetic": "ˈluʃju"
+    },
+    {
+      "gloss": "BLOW (OF WIND)",
+      "label": "to blow",
+      "pos": "verb",
+      "underlying": "bjjezji",
+      "changed": "bjjezji",
+      "rules": [],
+      "written": "byyezyi",
+      "changed_written": "byyezyi",
+      "phonetic": "ˈbjjezji"
+    },
+    {
+      "gloss": "WOOD",
+      "label": "wood",
+      "pos": "noun",
+      "underlying": "mimkju",
+      "changed": "mimkju",
+      "rules": [],
+      "written": "mimkyu",
+      "changed_written": "mimkyu",
+      "phonetic": "ˈmimkju"
+    },
+    {
+      "gloss": "RUN",
+      "label": "to run",
+      "pos": "verb",
+      "underlying": "bjaːe",
+      "changed": "bjaːi",
+      "rules": [
+        1
+      ],
+      "written": "byaae",
+      "changed_written": "byaae",
+      "phonetic": "ˈbjaːi"
+    },
+    {
+      "gloss": "FALL",
+      "label": "to fall",
+      "pos": "verb",
+      "underlying": "ak",
+      "changed": "ak",
+      "rules": [],
+      "written": "ak",
+      "changed_written": "ak",
+      "phonetic": "ak"
+    },
+    {
+      "gloss": "EYE",
+      "label": "eye",
+      "pos": "noun",
+      "underlying": "um",
+      "changed": "um",
+      "rules": [],
+      "written": "um",
+      "changed_written": "um",
+      "phonetic": "um"
+    },
+    {
+      "gloss": "ASH",
+      "label": "ash",
+      "pos": "noun",
+      "underlying": "bantwa",
+      "changed": "bantwa",
+      "rules": [],
+      "written": "bantwa",
+      "changed_written": "bantwa",
+      "phonetic": "ˈbantwa"
+    },
+    {
+      "gloss": "TAIL",
+      "label": "tail",
+      "pos": "noun",
+      "underlying": "bakloŋ",
+      "changed": "bakloŋ",
+      "rules": [],
+      "written": "bakloq",
+      "changed_written": "bakloq",
+      "phonetic": "ˈbakloŋ"
+    },
+    {
+      "gloss": "DOG",
+      "label": "dog",
+      "pos": "noun",
+      "underlying": "sjun",
+      "changed": "sjun",
+      "rules": [],
+      "written": "syun",
+      "changed_written": "syun",
+      "phonetic": "sjun"
+    },
+    {
+      "gloss": "CRY",
+      "label": "to cry/weep",
+      "pos": "verb",
+      "underlying": "sweɲʃĩɡ",
+      "changed": "sweɲʃĩɡ",
+      "rules": [],
+      "written": "swenyxĩg",
+      "changed_written": "swenyxĩg",
+      "phonetic": "ˈsweɲʃĩɡ"
+    },
+    {
+      "gloss": "TIE",
+      "label": "to tie",
+      "pos": "verb",
+      "underlying": "ŋaː",
+      "changed": "ŋaː",
+      "rules": [],
+      "written": "qaa",
+      "changed_written": "qaa",
+      "phonetic": "ŋaː"
+    },
+    {
+      "gloss": "SEE",
+      "label": "to see",
+      "pos": "verb",
+      "underlying": "alŋo",
+      "changed": "alŋu",
+      "rules": [
+        2
+      ],
+      "written": "alqo",
+      "changed_written": "alqo",
+      "phonetic": "ˈalŋu"
+    },
+    {
+      "gloss": "SWEET",
+      "label": "sweet",
+      "pos": "adjective",
+      "underlying": "nuː",
+      "changed": "nuː",
+      "rules": [],
+      "written": "nuu",
+      "changed_written": "nuu",
+      "phonetic": "nuː"
+    },
+    {
+      "gloss": "ROPE",
+      "label": "rope",
+      "pos": "noun",
+      "underlying": "na",
+      "changed": "na",
+      "rules": [],
+      "written": "na",
+      "changed_written": "na",
+      "phonetic": "na"
+    },
+    {
+      "gloss": "SHADE",
+      "label": "shade/shadow",
+      "pos": "noun",
+      "underlying": "jaɡinjiː",
+      "changed": "jaɣinjiː",
+      "rules": [
+        0
+      ],
+      "written": "yagin·yii",
+      "changed_written": "yagin·yii",
+      "phonetic": "ˈjaɣinjiː"
+    },
+    {
+      "gloss": "BIRD",
+      "label": "bird",
+      "pos": "noun",
+      "underlying": "loɡ",
+      "changed": "loɡ",
+      "rules": [],
+      "written": "log",
+      "changed_written": "log",
+      "phonetic": "loɡ"
+    },
+    {
+      "gloss": "SALT",
+      "label": "salt",
+      "pos": "noun",
+      "underlying": "tjuiː",
+      "changed": "tjuiː",
+      "rules": [],
+      "written": "tyuii",
+      "changed_written": "tyuii",
+      "phonetic": "ˈtjuiː"
+    },
+    {
+      "gloss": "SMALL",
+      "label": "small",
+      "pos": "adjective",
+      "underlying": "lew",
+      "changed": "lew",
+      "rules": [],
+      "written": "lew",
+      "changed_written": "lew",
+      "phonetic": "lew"
+    },
+    {
+      "gloss": "WIDE",
+      "label": "wide",
+      "pos": "adjective",
+      "underlying": "kaɡrul",
+      "changed": "kaɡrul",
+      "rules": [],
+      "written": "kagrul",
+      "changed_written": "kagrul",
+      "phonetic": "ˈkaɡrul"
+    },
+    {
+      "gloss": "STAR",
+      "label": "star",
+      "pos": "noun",
+      "underlying": "zuaŋ",
+      "changed": "zuaŋ",
+      "rules": [],
+      "written": "zuaq",
+      "changed_written": "zuaq",
+      "phonetic": "ˈzuaŋ"
+    },
+    {
+      "gloss": "HARD",
+      "label": "hard",
+      "pos": "adjective",
+      "underlying": "pjiŋmizwem",
+      "changed": "pjiŋmizwem",
+      "rules": [],
+      "written": "pyiqmizwem",
+      "changed_written": "pyiqmizwem",
+      "phonetic": "ˈpjiŋmizwem"
+    },
+    {
+      "gloss": "GRIND",
+      "label": "to crush/grind",
+      "pos": "verb",
+      "underlying": "endanju",
+      "changed": "endanju",
+      "rules": [],
+      "written": "endan·yu",
+      "changed_written": "endan·yu",
+      "phonetic": "ˈendanju"
+    },
+    {
+      "gloss": "ALL",
+      "label": "all",
+      "pos": "quantifier",
+      "underlying": "wu",
+      "changed": "wu",
+      "rules": [],
+      "written": "wu",
+      "changed_written": "wu",
+      "phonetic": "wu"
+    },
+    {
+      "gloss": "AND",
+      "label": "and",
+      "pos": "conjunction",
+      "underlying": "do",
+      "changed": "du",
+      "rules": [
+        2
+      ],
+      "written": "do",
+      "changed_written": "do",
+      "phonetic": "du"
+    },
+    {
+      "gloss": "ANIMAL",
+      "label": "animal",
+      "pos": "noun",
+      "underlying": "jas",
+      "changed": "jas",
+      "rules": [],
+      "written": "yas",
+      "changed_written": "yas",
+      "phonetic": "jas"
+    },
+    {
+      "gloss": "BAD",
+      "label": "bad",
+      "pos": "adjective",
+      "underlying": "plaːr",
+      "changed": "plaːr",
+      "rules": [],
+      "written": "plaar",
+      "changed_written": "plaar",
+      "phonetic": "plaːr"
+    },
+    {
+      "gloss": "BARK",
+      "label": "bark",
+      "pos": "noun",
+      "underlying": "blĩo",
+      "changed": "blĩu",
+      "rules": [
+        2
+      ],
+      "written": "blĩo",
+      "changed_written": "blĩo",
+      "phonetic": "ˈblĩu"
+    },
+    {
+      "gloss": "BECAUSE",
+      "label": "because",
+      "pos": "conjunction",
+      "underlying": "pru",
+      "changed": "pru",
+      "rules": [],
+      "written": "pru",
+      "changed_written": "pru",
+      "phonetic": "pru"
+    },
+    {
+      "gloss": "BELLY",
+      "label": "belly",
+      "pos": "noun",
+      "underlying": "nim",
+      "changed": "nim",
+      "rules": [],
+      "written": "nim",
+      "changed_written": "nim",
+      "phonetic": "nim"
+    },
+    {
+      "gloss": "BERRY",
+      "label": "berry",
+      "pos": "noun",
+      "underlying": "bjwetwi",
+      "changed": "bjwetwi",
+      "rules": [],
+      "written": "bywetwi",
+      "changed_written": "bywetwi",
+      "phonetic": "ˈbjwetwi"
+    },
+    {
+      "gloss": "BREATHE",
+      "label": "to breathe",
+      "pos": "verb",
+      "underlying": "kuːiːl",
+      "changed": "kuːiːl",
+      "rules": [],
+      "written": "kuuiil",
+      "changed_written": "kuuiil",
+      "phonetic": "ˈkuːiːl"
+    },
+    {
+      "gloss": "CHILD (YOUNG HUMAN)",
+      "label": "child (young human)",
+      "pos": "noun",
+      "underlying": "am",
+      "changed": "am",
+      "rules": [],
+      "written": "am",
+      "changed_written": "am",
+      "phonetic": "am"
+    },
+    {
+      "gloss": "CLOUD",
+      "label": "cloud",
+      "pos": "noun",
+      "underlying": "puːn",
+      "changed": "puːn",
+      "rules": [],
+      "written": "puun",
+      "changed_written": "puun",
+      "phonetic": "puːn"
+    },
+    {
+      "gloss": "COLD (OF WEATHER)",
+      "label": "cold",
+      "pos": "adjective",
+      "underlying": "sjilŋu",
+      "changed": "sjilŋu",
+      "rules": [],
+      "written": "syilqu",
+      "changed_written": "syilqu",
+      "phonetic": "ˈsjilŋu"
+    },
+    {
+      "gloss": "COUNT",
+      "label": "to count",
+      "pos": "verb",
+      "underlying": "silsri",
+      "changed": "silsri",
+      "rules": [],
+      "written": "silsri",
+      "changed_written": "silsri",
+      "phonetic": "ˈsilsri"
+    },
+    {
+      "gloss": "CUT",
+      "label": "to cut",
+      "pos": "verb",
+      "underlying": "prwelklĩ",
+      "changed": "prwelklĩ",
+      "rules": [],
+      "written": "prwelklĩ",
+      "changed_written": "prwelklĩ",
+      "phonetic": "ˈprwelklĩ"
+    },
+    {
+      "gloss": "DAY (NOT NIGHT)",
+      "label": "day",
+      "pos": "noun",
+      "underlying": "ta",
+      "changed": "ta",
+      "rules": [],
+      "written": "ta",
+      "changed_written": "ta",
+      "phonetic": "ta"
+    },
+    {
+      "gloss": "DIE",
+      "label": "to die",
+      "pos": "verb",
+      "underlying": "ku",
+      "changed": "ku",
+      "rules": [],
+      "written": "ku",
+      "changed_written": "ku",
+      "phonetic": "ku"
+    },
+    {
+      "gloss": "DIG",
+      "label": "to dig",
+      "pos": "verb",
+      "underlying": "alɡa",
+      "changed": "alɡa",
+      "rules": [],
+      "written": "alga",
+      "changed_written": "alga",
+      "phonetic": "ˈalɡa"
+    },
+    {
+      "gloss": "DIRTY",
+      "label": "dirty",
+      "pos": "adjective",
+      "underlying": "unte",
+      "changed": "unti",
+      "rules": [
+        1
+      ],
+      "written": "unte",
+      "changed_written": "unte",
+      "phonetic": "ˈunti"
+    },
+    {
+      "gloss": "DRY",
+      "label": "dry",
+      "pos": "adjective",
+      "underlying": "pupru",
+      "changed": "pupru",
+      "rules": [],
+      "written": "pupru",
+      "changed_written": "pupru",
+      "phonetic": "ˈpupru"
+    },
+    {
+      "gloss": "BLUNT",
+      "label": "dull",
+      "pos": "adjective",
+      "underlying": "sjiːndu",
+      "changed": "sjiːndu",
+      "rules": [],
+      "written": "syiindu",
+      "changed_written": "syiindu",
+      "phonetic": "ˈsjiːndu"
+    },
+    {
+      "gloss": "DUST",
+      "label": "dust",
+      "pos": "noun",
+      "underlying": "wulŋuŋ",
+      "changed": "wulŋuŋ",
+      "rules": [],
+      "written": "wulquq",
+      "changed_written": "wulquq",
+      "phonetic": "ˈwulŋuŋ"
+    },
+    {
+      "gloss": "FAT (ORGANIC SUBSTANCE)",
+      "label": "fat",
+      "pos": "noun",
+      "underlying": "ðjil",
+      "changed": "ðjil",
+      "rules": [],
+      "written": "dhyil",
+      "changed_written": "dhyil",
+      "phonetic": "ðjil"
+    },
+    {
+      "gloss": "FATHER",
+      "label": "father",
+      "pos": "noun",
+      "underlying": "a",
+      "changed": "a",
+      "rules": [],
+      "written": "a",
+      "changed_written": "a",
+      "phonetic": "a"
+    },
+    {
+      "gloss": "FEAR (BE AFRAID)",
+      "label": "to fear",
+      "pos": "verb",
+      "underlying": "pʰu",
+      "changed": "pʰu",
+      "rules": [],
+      "written": "phu",
+      "changed_written": "phu",
+      "phonetic": "pʰu"
+    },
+    {
+      "gloss": "FEATHER",
+      "label": "feather",
+      "pos": "noun",
+      "underlying": "tihĩm",
+      "changed": "tihĩm",
+      "rules": [],
+      "written": "tihĩm",
+      "changed_written": "tihĩm",
+      "phonetic": "ˈtihĩm"
+    },
+    {
+      "gloss": "FEW",
+      "label": "few",
+      "pos": "quantifier",
+      "underlying": "ru",
+      "changed": "ru",
+      "rules": [],
+      "written": "ru",
+      "changed_written": "ru",
+      "phonetic": "ru"
+    },
+    {
+      "gloss": "FIGHT",
+      "label": "to fight",
+      "pos": "verb",
+      "underlying": "wjelpo",
+      "changed": "wjelpu",
+      "rules": [
+        2
+      ],
+      "written": "wyelpo",
+      "changed_written": "wyelpo",
+      "phonetic": "ˈwjelpu"
+    },
+    {
+      "gloss": "FIVE",
+      "label": "five",
+      "pos": "numeral",
+      "underlying": "sjebjaː",
+      "changed": "sjebjaː",
+      "rules": [],
+      "written": "syebyaa",
+      "changed_written": "syebyaa",
+      "phonetic": "ˈsjebjaː"
+    },
+    {
+      "gloss": "FLOAT",
+      "label": "to float",
+      "pos": "verb",
+      "underlying": "kʰamɲa",
+      "changed": "kʰamɲa",
+      "rules": [],
+      "written": "khamnya",
+      "changed_written": "khamnya",
+      "phonetic": "ˈkʰamɲa"
+    },
+    {
+      "gloss": "FLOW",
+      "label": "to flow",
+      "pos": "verb",
+      "underlying": "iːmja",
+      "changed": "iːmja",
+      "rules": [],
+      "written": "iimya",
+      "changed_written": "iimya",
+      "phonetic": "ˈiːmja"
+    },
+    {
+      "gloss": "FLOWER",
+      "label": "flower",
+      "pos": "noun",
+      "underlying": "suːwoŋ",
+      "changed": "suːwoŋ",
+      "rules": [],
+      "written": "suuwoq",
+      "changed_written": "suuwoq",
+      "phonetic": "ˈsuːwoŋ"
+    },
+    {
+      "gloss": "FLY (MOVE THROUGH AIR)",
+      "label": "to fly",
+      "pos": "verb",
+      "underlying": "ui",
+      "changed": "ui",
+      "rules": [],
+      "written": "ui",
+      "changed_written": "ui",
+      "phonetic": "ˈui"
+    },
+    {
+      "gloss": "FOG",
+      "label": "fog",
+      "pos": "noun",
+      "underlying": "puːn",
+      "changed": "puːn",
+      "rules": [],
+      "written": "puun",
+      "changed_written": "puun",
+      "phonetic": "puːn"
+    },
+    {
+      "gloss": "FOOT",
+      "label": "foot",
+      "pos": "noun",
+      "underlying": "wensri",
+      "changed": "wensri",
+      "rules": [],
+      "written": "wensri",
+      "changed_written": "wensri",
+      "phonetic": "ˈwensri"
+    },
+    {
+      "gloss": "FOUR",
+      "label": "four",
+      "pos": "numeral",
+      "underlying": "ŋo",
+      "changed": "ŋu",
+      "rules": [
+        2
+      ],
+      "written": "qo",
+      "changed_written": "qo",
+      "phonetic": "ŋu"
+    },
+    {
+      "gloss": "FREEZE",
+      "label": "to freeze",
+      "pos": "verb",
+      "underlying": "ɡlaɲ",
+      "changed": "ɡlaɲ",
+      "rules": [],
+      "written": "glany",
+      "changed_written": "glany",
+      "phonetic": "ɡlaɲ"
+    },
+    {
+      "gloss": "GRASS",
+      "label": "grass",
+      "pos": "noun",
+      "underlying": "ɡwa",
+      "changed": "ɡwa",
+      "rules": [],
+      "written": "gwa",
+      "changed_written": "gwa",
+      "phonetic": "ɡwa"
+    },
+    {
+      "gloss": "GREEN",
+      "label": "green",
+      "pos": "adjective",
+      "underlying": "lwemkru",
+      "changed": "lwemkru",
+      "rules": [],
+      "written": "lwemkru",
+      "changed_written": "lwemkru",
+      "phonetic": "ˈlwemkru"
+    },
+    {
+      "gloss": "GUTS",
+      "label": "guts",
+      "pos": "noun",
+      "underlying": "zis",
+      "changed": "zis",
+      "rules": [],
+      "written": "zis",
+      "changed_written": "zis",
+      "phonetic": "zis"
+    },
+    {
+      "gloss": "HAND",
+      "label": "hand",
+      "pos": "noun",
+      "underlying": "krel",
+      "changed": "krel",
+      "rules": [],
+      "written": "krel",
+      "changed_written": "krel",
+      "phonetic": "krel"
+    },
+    {
+      "gloss": "HE",
+      "label": "he",
+      "pos": "pronoun",
+      "underlying": "u",
+      "changed": "u",
+      "rules": [],
+      "written": "u",
+      "changed_written": "u",
+      "phonetic": "u"
+    },
+    {
+      "gloss": "HEAD",
+      "label": "head",
+      "pos": "noun",
+      "underlying": "je",
+      "changed": "ji",
+      "rules": [
+        1
+      ],
+      "written": "ye",
+      "changed_written": "ye",
+      "phonetic": "ji"
+    },
+    {
+      "gloss": "HEART",
+      "label": "heart",
+      "pos": "noun",
+      "underlying": "uhen",
+      "changed": "uhen",
+      "rules": [],
+      "written": "uhen",
+      "changed_written": "uhen",
+      "phonetic": "ˈuhen"
+    },
+    {
+      "gloss": "HERE",
+      "label": "here",
+      "pos": "adverb",
+      "underlying": "pji",
+      "changed": "pji",
+      "rules": [],
+      "written": "pyi",
+      "changed_written": "pyi",
+      "phonetic": "pji"
+    },
+    {
+      "gloss": "HIT",
+      "label": "to hit",
+      "pos": "verb",
+      "underlying": "sjom",
+      "changed": "sjom",
+      "rules": [],
+      "written": "syom",
+      "changed_written": "syom",
+      "phonetic": "sjom"
+    },
+    {
+      "gloss": "HOLD",
+      "label": "to hold",
+      "pos": "verb",
+      "underlying": "kwesil",
+      "changed": "kwesil",
+      "rules": [],
+      "written": "kwesil",
+      "changed_written": "kwesil",
+      "phonetic": "ˈkwesil"
+    },
+    {
+      "gloss": "HOW",
+      "label": "how",
+      "pos": "interrogative",
+      "underlying": "ɡeɲ",
+      "changed": "ɡeɲ",
+      "rules": [],
+      "written": "geny",
+      "changed_written": "geny",
+      "phonetic": "ɡeɲ"
+    },
+    {
+      "gloss": "HUNT",
+      "label": "to hunt",
+      "pos": "verb",
+      "underlying": "iŋ",
+      "changed": "iŋ",
+      "rules": [],
+      "written": "iq",
+      "changed_written": "iq",
+      "phonetic": "iŋ"
+    },
+    {
+      "gloss": "HUSBAND",
+      "label": "husband",
+      "pos": "noun",
+      "underlying": "kjoj",
+      "changed": "kjoj",
+      "rules": [],
+      "written": "kyoy",
+      "changed_written": "kyoy",
+      "phonetic": "kjoj"
+    },
+    {
+      "gloss": "ICE",
+      "label": "ice",
+      "pos": "noun",
+      "underlying": "kjam",
+      "changed": "kjam",
+      "rules": [],
+      "written": "kyam",
+      "changed_written": "kyam",
+      "phonetic": "kjam"
+    },
+    {
+      "gloss": "IF",
+      "label": "if",
+      "pos": "conjunction",
+      "underlying": "om",
+      "changed": "om",
+      "rules": [],
+      "written": "om",
+      "changed_written": "om",
+      "phonetic": "om"
+    },
+    {
+      "gloss": "KILL",
+      "label": "to kill",
+      "pos": "verb",
+      "underlying": "plik",
+      "changed": "plik",
+      "rules": [],
+      "written": "plik",
+      "changed_written": "plik",
+      "phonetic": "plik"
+    },
+    {
+      "gloss": "KNOW (SOMETHING)",
+      "label": "know (something)",
+      "pos": "verb",
+      "underlying": "uk",
+      "changed": "uk",
+      "rules": [],
+      "written": "uk",
+      "changed_written": "uk",
+      "phonetic": "uk"
+    },
+    {
+      "gloss": "LAKE",
+      "label": "lake",
+      "pos": "noun",
+      "underlying": "jir",
+      "changed": "jir",
+      "rules": [],
+      "written": "yir",
+      "changed_written": "yir",
+      "phonetic": "jir"
+    },
+    {
+      "gloss": "LEFT",
+      "label": "left",
+      "pos": "adjective",
+      "underlying": "ikluː",
+      "changed": "ikluː",
+      "rules": [],
+      "written": "ikluu",
+      "changed_written": "ikluu",
+      "phonetic": "ˈikluː"
+    },
+    {
+      "gloss": "LEG",
+      "label": "leg",
+      "pos": "noun",
+      "underlying": "tjemsum",
+      "changed": "tjemsum",
+      "rules": [],
+      "written": "tyemsum",
+      "changed_written": "tyemsum",
+      "phonetic": "ˈtjemsum"
+    },
+    {
+      "gloss": "LIE (REST)",
+      "label": "to lie",
+      "pos": "verb",
+      "underlying": "ŋwetjal",
+      "changed": "ŋwetjal",
+      "rules": [],
+      "written": "qwetyal",
+      "changed_written": "qwetyal",
+      "phonetic": "ˈŋwetjal"
+    },
+    {
+      "gloss": "BE ALIVE",
+      "label": "to live",
+      "pos": "verb",
+      "underlying": "pjerjo",
+      "changed": "pjerju",
+      "rules": [
+        2
+      ],
+      "written": "pyeryo",
+      "changed_written": "pyeryo",
+      "phonetic": "ˈpjerju"
+    },
+    {
+      "gloss": "MALE PERSON",
+      "label": "man",
+      "pos": "noun",
+      "underlying": "kwuɲtwu",
+      "changed": "kwuɲtwu",
+      "rules": [],
+      "written": "kwunytwu",
+      "changed_written": "kwunytwu",
+      "phonetic": "ˈkwuɲtwu"
+    },
+    {
+      "gloss": "MANY",
+      "label": "many",
+      "pos": "quantifier",
+      "underlying": "ĩ",
+      "changed": "ĩ",
+      "rules": [],
+      "written": "ĩ",
+      "changed_written": "ĩ",
+      "phonetic": "ĩ"
+    },
+    {
+      "gloss": "MOTHER",
+      "label": "mother",
+      "pos": "noun",
+      "underlying": "nu",
+      "changed": "nu",
+      "rules": [],
+      "written": "nu",
+      "changed_written": "nu",
+      "phonetic": "nu"
+    },
+    {
+      "gloss": "MOUNTAIN",
+      "label": "mountain",
+      "pos": "noun",
+      "underlying": "wiːrkraː",
+      "changed": "wiːrkraː",
+      "rules": [],
+      "written": "wiirkraa",
+      "changed_written": "wiirkraa",
+      "phonetic": "ˈwiːrkraː"
+    },
+    {
+      "gloss": "NARROW",
+      "label": "narrow",
+      "pos": "adjective",
+      "underlying": "plurɡu",
+      "changed": "plurɡu",
+      "rules": [],
+      "written": "plurgu",
+      "changed_written": "plurgu",
+      "phonetic": "ˈplurɡu"
+    },
+    {
+      "gloss": "NEAR",
+      "label": "near",
+      "pos": "adjective",
+      "underlying": "wia",
+      "changed": "wia",
+      "rules": [],
+      "written": "wia",
+      "changed_written": "wia",
+      "phonetic": "ˈwia"
+    },
+    {
+      "gloss": "OTHER",
+      "label": "other",
+      "pos": "quantifier",
+      "underlying": "nom",
+      "changed": "nom",
+      "rules": [],
+      "written": "nom",
+      "changed_written": "nom",
+      "phonetic": "nom"
+    },
+    {
+      "gloss": "PERSON",
+      "label": "person",
+      "pos": "noun",
+      "underlying": "kwuɲtwu",
+      "changed": "kwuɲtwu",
+      "rules": [],
+      "written": "kwunytwu",
+      "changed_written": "kwunytwu",
+      "phonetic": "ˈkwuɲtwu"
+    },
+    {
+      "gloss": "PLAY",
+      "label": "to play",
+      "pos": "verb",
+      "underlying": "anɡji",
+      "changed": "anɡji",
+      "rules": [],
+      "written": "angyi",
+      "changed_written": "angyi",
+      "phonetic": "ˈanɡji"
+    },
+    {
+      "gloss": "PULL",
+      "label": "to pull",
+      "pos": "verb",
+      "underlying": "dwiɲ",
+      "changed": "dwiɲ",
+      "rules": [],
+      "written": "dwiny",
+      "changed_written": "dwiny",
+      "phonetic": "dwiɲ"
+    },
+    {
+      "gloss": "PUSH",
+      "label": "to push",
+      "pos": "verb",
+      "underlying": "warɡji",
+      "changed": "warɡji",
+      "rules": [],
+      "written": "wargyi",
+      "changed_written": "wargyi",
+      "phonetic": "ˈwarɡji"
+    },
+    {
+      "gloss": "RAIN (RAINING)",
+      "label": "to rain",
+      "pos": "verb",
+      "underlying": "urŋol",
+      "changed": "urŋol",
+      "rules": [],
+      "written": "urqol",
+      "changed_written": "urqol",
+      "phonetic": "ˈurŋol"
+    },
+    {
+      "gloss": "CORRECT (RIGHT)",
+      "label": "correct (right)",
+      "pos": "adjective",
+      "underlying": "tunji",
+      "changed": "tunji",
+      "rules": [],
+      "written": "tun·yi",
+      "changed_written": "tun·yi",
+      "phonetic": "ˈtunji"
+    },
+    {
+      "gloss": "RIGHT",
+      "label": "right",
+      "pos": "adjective",
+      "underlying": "tunji",
+      "changed": "tunji",
+      "rules": [],
+      "written": "tun·yi",
+      "changed_written": "tun·yi",
+      "phonetic": "ˈtunji"
+    },
+    {
+      "gloss": "RIVER",
+      "label": "river",
+      "pos": "noun",
+      "underlying": "djun",
+      "changed": "djun",
+      "rules": [],
+      "written": "dyun",
+      "changed_written": "dyun",
+      "phonetic": "djun"
+    },
+    {
+      "gloss": "ROAD",
+      "label": "road",
+      "pos": "noun",
+      "underlying": "ɡjuw",
+      "changed": "ɡjuw",
+      "rules": [],
+      "written": "gyuw",
+      "changed_written": "gyuw",
+      "phonetic": "ɡjuw"
+    },
+    {
+      "gloss": "ROTTEN",
+      "label": "rotten",
+      "pos": "adjective",
+      "underlying": "jiːl",
+      "changed": "jiːl",
+      "rules": [],
+      "written": "yiil",
+      "changed_written": "yiil",
+      "phonetic": "jiːl"
+    },
+    {
+      "gloss": "RUB",
+      "label": "to rub",
+      "pos": "verb",
+      "underlying": "jultun",
+      "changed": "jultun",
+      "rules": [],
+      "written": "yultun",
+      "changed_written": "yultun",
+      "phonetic": "ˈjultun"
+    },
+    {
+      "gloss": "SCRATCH",
+      "label": "to scratch",
+      "pos": "verb",
+      "underlying": "ɡuoɲ",
+      "changed": "ɡuoɲ",
+      "rules": [],
+      "written": "guony",
+      "changed_written": "guony",
+      "phonetic": "ˈɡuoɲ"
+    },
+    {
+      "gloss": "SEA",
+      "label": "sea",
+      "pos": "noun",
+      "underlying": "jir",
+      "changed": "jir",
+      "rules": [],
+      "written": "yir",
+      "changed_written": "yir",
+      "phonetic": "jir"
+    },
+    {
+      "gloss": "SEED",
+      "label": "seed",
+      "pos": "noun",
+      "underlying": "siɡwiː",
+      "changed": "siɡwiː",
+      "rules": [],
+      "written": "sigwii",
+      "changed_written": "sigwii",
+      "phonetic": "ˈsiɡwiː"
+    },
+    {
+      "gloss": "SEW",
+      "label": "to sew",
+      "pos": "verb",
+      "underlying": "ĩp",
+      "changed": "ĩp",
+      "rules": [],
+      "written": "ĩp",
+      "changed_written": "ĩp",
+      "phonetic": "ĩp"
+    },
+    {
+      "gloss": "SHARP",
+      "label": "sharp",
+      "pos": "adjective",
+      "underlying": "la",
+      "changed": "la",
+      "rules": [],
+      "written": "la",
+      "changed_written": "la",
+      "phonetic": "la"
+    },
+    {
+      "gloss": "SHORT",
+      "label": "short",
+      "pos": "adjective",
+      "underlying": "tji",
+      "changed": "tji",
+      "rules": [],
+      "written": "tyi",
+      "changed_written": "tyi",
+      "phonetic": "tji"
+    },
+    {
+      "gloss": "SING",
+      "label": "to sing",
+      "pos": "verb",
+      "underlying": "maaː",
+      "changed": "maaː",
+      "rules": [],
+      "written": "ma·aa",
+      "changed_written": "ma·aa",
+      "phonetic": "ˈmaaː"
+    },
+    {
+      "gloss": "SIT",
+      "label": "sit",
+      "pos": "verb",
+      "underlying": "ɡla",
+      "changed": "ɡla",
+      "rules": [],
+      "written": "gla",
+      "changed_written": "gla",
+      "phonetic": "ɡla"
+    },
+    {
+      "gloss": "SKIN (HUMAN)",
+      "label": "skin",
+      "pos": "noun",
+      "underlying": "ɲumor",
+      "changed": "ɲumor",
+      "rules": [],
+      "written": "nyumor",
+      "changed_written": "nyumor",
+      "phonetic": "ˈɲumor"
+    },
+    {
+      "gloss": "SKY",
+      "label": "sky",
+      "pos": "noun",
+      "underlying": "jjeɲzji",
+      "changed": "jjeɲzji",
+      "rules": [],
+      "written": "yyenyzyi",
+      "changed_written": "yyenyzyi",
+      "phonetic": "ˈjjeɲzji"
+    },
+    {
+      "gloss": "SLEEP",
+      "label": "sleep",
+      "pos": "verb",
+      "underlying": "kwip",
+      "changed": "kwip",
+      "rules": [],
+      "written": "kwip",
+      "changed_written": "kwip",
+      "phonetic": "kwip"
+    },
+    {
+      "gloss": "SMELL (PERCEIVE)",
+      "label": "to smell",
+      "pos": "verb",
+      "underlying": "iːɡum",
+      "changed": "iːɣum",
+      "rules": [
+        0
+      ],
+      "written": "iigum",
+      "changed_written": "iigum",
+      "phonetic": "ˈiːɣum"
+    },
+    {
+      "gloss": "SMOOTH",
+      "label": "smooth",
+      "pos": "adjective",
+      "underlying": "lupjim",
+      "changed": "lupjim",
+      "rules": [],
+      "written": "lupyim",
+      "changed_written": "lupyim",
+      "phonetic": "ˈlupjim"
+    },
+    {
+      "gloss": "SNAKE",
+      "label": "snake",
+      "pos": "noun",
+      "underlying": "ŋa",
+      "changed": "ŋa",
+      "rules": [],
+      "written": "qa",
+      "changed_written": "qa",
+      "phonetic": "ŋa"
+    },
+    {
+      "gloss": "SNOW",
+      "label": "snow",
+      "pos": "noun",
+      "underlying": "pit",
+      "changed": "pit",
+      "rules": [],
+      "written": "pit",
+      "changed_written": "pit",
+      "phonetic": "pit"
+    },
+    {
+      "gloss": "SOME",
+      "label": "some",
+      "pos": "quantifier",
+      "underlying": "poŋ",
+      "changed": "poŋ",
+      "rules": [],
+      "written": "poq",
+      "changed_written": "poq",
+      "phonetic": "poŋ"
+    },
+    {
+      "gloss": "SPIT",
+      "label": "to spit",
+      "pos": "verb",
+      "underlying": "ŋe",
+      "changed": "ŋi",
+      "rules": [
+        1
+      ],
+      "written": "qe",
+      "changed_written": "qe",
+      "phonetic": "ŋi"
+    },
+    {
+      "gloss": "SPLIT",
+      "label": "to split",
+      "pos": "verb",
+      "underlying": "kwo",
+      "changed": "kwu",
+      "rules": [
+        2
+      ],
+      "written": "kwo",
+      "changed_written": "kwo",
+      "phonetic": "kwu"
+    },
+    {
+      "gloss": "SQUEEZE",
+      "label": "to squeeze",
+      "pos": "verb",
+      "underlying": "tijin",
+      "changed": "tijin",
+      "rules": [],
+      "written": "tiyin",
+      "changed_written": "tiyin",
+      "phonetic": "ˈtijin"
+    },
+    {
+      "gloss": "STAB",
+      "label": "to stab",
+      "pos": "verb",
+      "underlying": "ŋen",
+      "changed": "ŋen",
+      "rules": [],
+      "written": "qen",
+      "changed_written": "qen",
+      "phonetic": "ŋen"
+    },
+    {
+      "gloss": "STICK",
+      "label": "stick",
+      "pos": "noun",
+      "underlying": "kulno",
+      "changed": "kulnu",
+      "rules": [
+        2
+      ],
+      "written": "kulno",
+      "changed_written": "kulno",
+      "phonetic": "ˈkulnu"
+    },
+    {
+      "gloss": "STONE",
+      "label": "stone",
+      "pos": "noun",
+      "underlying": "ŋim",
+      "changed": "ŋim",
+      "rules": [],
+      "written": "qim",
+      "changed_written": "qim",
+      "phonetic": "ŋim"
+    },
+    {
+      "gloss": "STRAIGHT",
+      "label": "straight",
+      "pos": "adjective",
+      "underlying": "ɡljeɲɡjo",
+      "changed": "ɡljeɲɡju",
+      "rules": [
+        2
+      ],
+      "written": "glyenygyo",
+      "changed_written": "glyenygyo",
+      "phonetic": "ˈɡljeɲɡju"
+    },
+    {
+      "gloss": "SUN",
+      "label": "sun",
+      "pos": "noun",
+      "underlying": "juːl",
+      "changed": "juːl",
+      "rules": [],
+      "written": "yuul",
+      "changed_written": "yuul",
+      "phonetic": "juːl"
+    },
+    {
+      "gloss": "SWELL",
+      "label": "to swell",
+      "pos": "verb",
+      "underlying": "θuːr",
+      "changed": "θuːr",
+      "rules": [],
+      "written": "cuur",
+      "changed_written": "cuur",
+      "phonetic": "θuːr"
+    },
+    {
+      "gloss": "SWIM",
+      "label": "to swim",
+      "pos": "verb",
+      "underlying": "jaɡwam",
+      "changed": "jaɡwam",
+      "rules": [],
+      "written": "yagwam",
+      "changed_written": "yagwam",
+      "phonetic": "ˈjaɡwam"
+    },
+    {
+      "gloss": "THAT",
+      "label": "that",
+      "pos": "demonstrative",
+      "underlying": "ɡje",
+      "changed": "ɡji",
+      "rules": [
+        1
+      ],
+      "written": "gye",
+      "changed_written": "gye",
+      "phonetic": "ɡji"
+    },
+    {
+      "gloss": "THERE",
+      "label": "there",
+      "pos": "adverb",
+      "underlying": "ulam",
+      "changed": "ulam",
+      "rules": [],
+      "written": "ulam",
+      "changed_written": "ulam",
+      "phonetic": "ˈulam"
+    },
+    {
+      "gloss": "THEY",
+      "label": "they",
+      "pos": "pronoun",
+      "underlying": "sa",
+      "changed": "sa",
+      "rules": [],
+      "written": "sa",
+      "changed_written": "sa",
+      "phonetic": "sa"
+    },
+    {
+      "gloss": "THIN",
+      "label": "thin",
+      "pos": "adjective",
+      "underlying": "mib",
+      "changed": "mib",
+      "rules": [],
+      "written": "mib",
+      "changed_written": "mib",
+      "phonetic": "mib"
+    },
+    {
+      "gloss": "THINK",
+      "label": "to think",
+      "pos": "verb",
+      "underlying": "ɡwaŋmi",
+      "changed": "ɡwaŋmi",
+      "rules": [],
+      "written": "gwaqmi",
+      "changed_written": "gwaqmi",
+      "phonetic": "ˈɡwaŋmi"
+    },
+    {
+      "gloss": "THREE",
+      "label": "three",
+      "pos": "numeral",
+      "underlying": "ʃwe",
+      "changed": "ʃwi",
+      "rules": [
+        1
+      ],
+      "written": "xwe",
+      "changed_written": "xwe",
+      "phonetic": "ʃwi"
+    },
+    {
+      "gloss": "THROW",
+      "label": "to throw",
+      "pos": "verb",
+      "underlying": "waːmtju",
+      "changed": "waːmtju",
+      "rules": [],
+      "written": "waamtyu",
+      "changed_written": "waamtyu",
+      "phonetic": "ˈwaːmtju"
+    },
+    {
+      "gloss": "TREE",
+      "label": "tree",
+      "pos": "noun",
+      "underlying": "sjimdjil",
+      "changed": "sjimdjil",
+      "rules": [],
+      "written": "syimdyil",
+      "changed_written": "syimdyil",
+      "phonetic": "ˈsjimdjil"
+    },
+    {
+      "gloss": "TURN AROUND",
+      "label": "to turn",
+      "pos": "verb",
+      "underlying": "em",
+      "changed": "em",
+      "rules": [],
+      "written": "em",
+      "changed_written": "em",
+      "phonetic": "em"
+    },
+    {
+      "gloss": "TWO",
+      "label": "two",
+      "pos": "numeral",
+      "underlying": "ul",
+      "changed": "ul",
+      "rules": [],
+      "written": "ul",
+      "changed_written": "ul",
+      "phonetic": "ul"
+    },
+    {
+      "gloss": "VOMIT",
+      "label": "to vomit",
+      "pos": "verb",
+      "underlying": "kʰimpu",
+      "changed": "kʰimpu",
+      "rules": [],
+      "written": "khimpu",
+      "changed_written": "khimpu",
+      "phonetic": "ˈkʰimpu"
+    },
+    {
+      "gloss": "WALK",
+      "label": "to walk",
+      "pos": "verb",
+      "underlying": "sil",
+      "changed": "sil",
+      "rules": [],
+      "written": "sil",
+      "changed_written": "sil",
+      "phonetic": "sil"
+    },
+    {
+      "gloss": "WARM (OF WEATHER)",
+      "label": "warm",
+      "pos": "adjective",
+      "underlying": "ɡinlum",
+      "changed": "ɡinlum",
+      "rules": [],
+      "written": "ginlum",
+      "changed_written": "ginlum",
+      "phonetic": "ˈɡinlum"
+    },
+    {
+      "gloss": "WASH",
+      "label": "to wash",
+      "pos": "verb",
+      "underlying": "djapja",
+      "changed": "djapja",
+      "rules": [],
+      "written": "dyapya",
+      "changed_written": "dyapya",
+      "phonetic": "ˈdjapja"
+    },
+    {
+      "gloss": "WE",
+      "label": "we",
+      "pos": "pronoun",
+      "underlying": "wĩ",
+      "changed": "wĩ",
+      "rules": [],
+      "written": "wĩ",
+      "changed_written": "wĩ",
+      "phonetic": "wĩ"
+    },
+    {
+      "gloss": "WET",
+      "label": "wet",
+      "pos": "adjective",
+      "underlying": "am",
+      "changed": "am",
+      "rules": [],
+      "written": "am",
+      "changed_written": "am",
+      "phonetic": "am"
+    },
+    {
+      "gloss": "WHEN",
+      "label": "when?",
+      "pos": "interrogative",
+      "underlying": "kja",
+      "changed": "kja",
+      "rules": [],
+      "written": "kya",
+      "changed_written": "kya",
+      "phonetic": "kja"
+    },
+    {
+      "gloss": "WHERE",
+      "label": "where?",
+      "pos": "interrogative",
+      "underlying": "bloɲ",
+      "changed": "bloɲ",
+      "rules": [],
+      "written": "blony",
+      "changed_written": "blony",
+      "phonetic": "bloɲ"
+    },
+    {
+      "gloss": "WHITE",
+      "label": "white",
+      "pos": "adjective",
+      "underlying": "tu",
+      "changed": "tu",
+      "rules": [],
+      "written": "tu",
+      "changed_written": "tu",
+      "phonetic": "tu"
+    },
+    {
+      "gloss": "WIFE",
+      "label": "wife",
+      "pos": "noun",
+      "underlying": "hudji",
+      "changed": "hudji",
+      "rules": [],
+      "written": "hudyi",
+      "changed_written": "hudyi",
+      "phonetic": "ˈhudji"
+    },
+    {
+      "gloss": "WIPE",
+      "label": "to wipe",
+      "pos": "verb",
+      "underlying": "ɲa",
+      "changed": "ɲa",
+      "rules": [],
+      "written": "nya",
+      "changed_written": "nya",
+      "phonetic": "ɲa"
+    },
+    {
+      "gloss": "WOMAN",
+      "label": "woman",
+      "pos": "noun",
+      "underlying": "tjul",
+      "changed": "tjul",
+      "rules": [],
+      "written": "tyul",
+      "changed_written": "tyul",
+      "phonetic": "tjul"
+    },
+    {
+      "gloss": "FOREST",
+      "label": "woods",
+      "pos": "noun",
+      "underlying": "jiːbji",
+      "changed": "jiːbji",
+      "rules": [],
+      "written": "yiibyi",
+      "changed_written": "yiibyi",
+      "phonetic": "ˈjiːbji"
+    },
+    {
+      "gloss": "WORM",
+      "label": "worm",
+      "pos": "noun",
+      "underlying": "klunuɲ",
+      "changed": "klunuɲ",
+      "rules": [],
+      "written": "klununy",
+      "changed_written": "klununy",
+      "phonetic": "ˈklunuɲ"
+    },
+    {
+      "gloss": "YOU",
+      "label": "ye",
+      "pos": "pronoun",
+      "underlying": "an",
+      "changed": "an",
+      "rules": [],
+      "written": "an",
+      "changed_written": "an",
+      "phonetic": "an"
+    },
+    {
+      "gloss": "YEAR",
+      "label": "year",
+      "pos": "noun",
+      "underlying": "pi",
+      "changed": "pi",
+      "rules": [],
+      "written": "pi",
+      "changed_written": "pi",
+      "phonetic": "pi"
+    },
+    {
+      "gloss": "YELLOW",
+      "label": "yellow",
+      "pos": "adjective",
+      "underlying": "dju",
+      "changed": "dju",
+      "rules": [],
+      "written": "dyu",
+      "changed_written": "dyu",
+      "phonetic": "dju"
+    }
+  ],
+  "derived": [
+    {
+      "underlying": "iŋkwuɲtwu",
+      "changed": "iŋkwuɲtwu",
+      "label": "hunter",
+      "rules": [],
+      "written": "iqkwunytwu",
+      "changed_written": "iqkwunytwu",
+      "phonetic": "iŋkˈwuɲtwu"
+    },
+    {
+      "underlying": "maaːkwuɲtwu",
+      "changed": "maaːkwuɲtwu",
+      "label": "singer",
+      "rules": [],
+      "written": "ma·aakwunytwu",
+      "changed_written": "ma·aakwunytwu",
+      "phonetic": "ˌmaaːkˈwuɲtwu"
+    },
+    {
+      "underlying": "wjelpokwuɲtwu",
+      "changed": "wjelpokwuɲtwu",
+      "label": "warrior",
+      "rules": [],
+      "written": "wyelpokwunytwu",
+      "changed_written": "wyelpokwunytwu",
+      "phonetic": "ˌwjelpokˈwuɲtwu"
+    },
+    {
+      "underlying": "upjonkwuɲtwu",
+      "changed": "upjonkwuɲtwu",
+      "label": "one who eats",
+      "rules": [],
+      "written": "upyonkwunytwu",
+      "changed_written": "upyonkwunytwu",
+      "phonetic": "ˌupjonkˈwuɲtwu"
+    },
+    {
+      "underlying": "ĩpkwuɲtwu",
+      "changed": "ĩpkwuɲtwu",
+      "label": "tailor",
+      "rules": [],
+      "written": "ĩpkwunytwu",
+      "changed_written": "ĩpkwunytwu",
+      "phonetic": "ĩpkˈwuɲtwu"
+    },
+    {
+      "underlying": "alɡakwuɲtwu",
+      "changed": "alɡakwuɲtwu",
+      "label": "digger",
+      "rules": [],
+      "written": "algakwunytwu",
+      "changed_written": "algakwunytwu",
+      "phonetic": "ˌalɡakˈwuɲtwu"
+    },
+    {
+      "underlying": "anɡjikwuɲtwu",
+      "changed": "anɡjikwuɲtwu",
+      "label": "player",
+      "rules": [],
+      "written": "angyikwunytwu",
+      "changed_written": "angyikwunytwu",
+      "phonetic": "ˌanɡjikˈwuɲtwu"
+    },
+    {
+      "underlying": "bjaːekwuɲtwu",
+      "changed": "bjaːekwuɲtwu",
+      "label": "runner",
+      "rules": [],
+      "written": "byaaekwunytwu",
+      "changed_written": "byaaekwunytwu",
+      "phonetic": "ˌbjaːekˈwuɲtwu"
+    },
+    {
+      "underlying": "jaɡwamkwuɲtwu",
+      "changed": "jaɡwamkwuɲtwu",
+      "label": "swimmer",
+      "rules": [],
+      "written": "yagwamkwunytwu",
+      "changed_written": "yagwamkwunytwu",
+      "phonetic": "ˌjaɡwamkˈwuɲtwu"
+    },
+    {
+      "underlying": "ɡwaŋmikwuɲtwu",
+      "changed": "ɡwaŋmikwuɲtwu",
+      "label": "one who thinks",
+      "rules": [],
+      "written": "gwaqmikwunytwu",
+      "changed_written": "gwaqmikwunytwu",
+      "phonetic": "ˌɡwaŋmikˈwuɲtwu"
+    },
+    {
+      "underlying": "waːmtjukwuɲtwu",
+      "changed": "waːmtjukwuɲtwu",
+      "label": "thing that throws",
+      "rules": [],
+      "written": "waamtyukwunytwu",
+      "changed_written": "waamtyukwunytwu",
+      "phonetic": "ˌwaːmtjukˈwuɲtwu"
+    },
+    {
+      "underlying": "djapjakwuɲtwu",
+      "changed": "djapjakwuɲtwu",
+      "label": "thing that washes",
+      "rules": [],
+      "written": "dyapyakwunytwu",
+      "changed_written": "dyapyakwunytwu",
+      "phonetic": "ˌdjapjakˈwuɲtwu"
+    },
+    {
+      "underlying": "upjonɡo",
+      "changed": "upjonɡu",
+      "label": "meal",
+      "rules": [
+        2
+      ],
+      "written": "upyongo",
+      "changed_written": "upyongo",
+      "phonetic": "upˈjonɡu"
+    },
+    {
+      "underlying": "maaːɡo",
+      "changed": "maaːɣu",
+      "label": "song",
+      "rules": [
+        0,
+        2
+      ],
+      "written": "ma·aago",
+      "changed_written": "ma·aago",
+      "phonetic": "ˈmaaːɣu"
+    },
+    {
+      "underlying": "kwipɡo",
+      "changed": "kwipɡu",
+      "label": "act of sleeping",
+      "rules": [
+        2
+      ],
+      "written": "kwipgo",
+      "changed_written": "kwipgo",
+      "phonetic": "ˈkwipɡu"
+    },
+    {
+      "underlying": "wjelpoɡo",
+      "changed": "wjelpoɣu",
+      "label": "battle",
+      "rules": [
+        0,
+        2
+      ],
+      "written": "wyelpogo",
+      "changed_written": "wyelpogo",
+      "phonetic": "ˈwjelpoɣu"
+    },
+    {
+      "underlying": "bjaːeɡo",
+      "changed": "bjaːeɣu",
+      "label": "result of running",
+      "rules": [
+        0,
+        2
+      ],
+      "written": "byaaego",
+      "changed_written": "byaaego",
+      "phonetic": "ˈbjaːeɣu"
+    },
+    {
+      "underlying": "kuɡo",
+      "changed": "kuɣu",
+      "label": "death",
+      "rules": [
+        0,
+        2
+      ],
+      "written": "kugo",
+      "changed_written": "kugo",
+      "phonetic": "ˈkuɣu"
+    },
+    {
+      "underlying": "banuːɲɡo",
+      "changed": "banuːɲɡu",
+      "label": "laughter",
+      "rules": [
+        2
+      ],
+      "written": "banuunygo",
+      "changed_written": "banuunygo",
+      "phonetic": "baˈnuːɲɡu"
+    },
+    {
+      "underlying": "sweɲʃĩɡɡo",
+      "changed": "sweɲʃĩɡɡu",
+      "label": "act of crying",
+      "rules": [
+        2
+      ],
+      "written": "swenyxĩggo",
+      "changed_written": "swenyxĩggo",
+      "phonetic": "sweɲˈʃĩɡɡu"
+    },
+    {
+      "underlying": "anɡjiɡo",
+      "changed": "anɡjiɣu",
+      "label": "act of playing",
+      "rules": [
+        0,
+        2
+      ],
+      "written": "angyigo",
+      "changed_written": "angyigo",
+      "phonetic": "ˈanɡjiɣu"
+    },
+    {
+      "underlying": "uiɡo",
+      "changed": "uiɣu",
+      "label": "result of flying",
+      "rules": [
+        0,
+        2
+      ],
+      "written": "uigo",
+      "changed_written": "uigo",
+      "phonetic": "ˈuiɣu"
+    },
+    {
+      "underlying": "kuːiːlɡo",
+      "changed": "kuːiːlɡu",
+      "label": "act of breathing",
+      "rules": [
+        2
+      ],
+      "written": "kuuiilgo",
+      "changed_written": "kuuiilgo",
+      "phonetic": "kuːˈiːlɡu"
+    },
+    {
+      "underlying": "pjerjoɡo",
+      "changed": "pjerjoɣu",
+      "label": "result of living",
+      "rules": [
+        0,
+        2
+      ],
+      "written": "pyeryogo",
+      "changed_written": "pyeryogo",
+      "phonetic": "ˈpjerjoɣu"
+    },
+    {
+      "underlying": "bunji",
+      "changed": "bunji",
+      "label": "goodness",
+      "rules": [],
+      "written": "bun·yi",
+      "changed_written": "bun·yi",
+      "phonetic": "ˈbunji"
+    },
+    {
+      "underlying": "jaːpji",
+      "changed": "jaːpji",
+      "label": "size",
+      "rules": [],
+      "written": "yaapyi",
+      "changed_written": "yaapyi",
+      "phonetic": "ˈjaːpji"
+    },
+    {
+      "underlying": "luʃjuji",
+      "changed": "luʃjuji",
+      "label": "length",
+      "rules": [],
+      "written": "luxyuyi",
+      "changed_written": "luxyuyi",
+      "phonetic": "ˈluʃjuji"
+    },
+    {
+      "underlying": "upruji",
+      "changed": "upruji",
+      "label": "old age",
+      "rules": [],
+      "written": "upruyi",
+      "changed_written": "upruyi",
+      "phonetic": "ˈupruji"
+    },
+    {
+      "underlying": "inɲaji",
+      "changed": "inɲaji",
+      "label": "newness",
+      "rules": [],
+      "written": "innyayi",
+      "changed_written": "innyayi",
+      "phonetic": "ˈinɲaji"
+    },
+    {
+      "underlying": "ɡinlumji",
+      "changed": "ɡinlumji",
+      "label": "warmth",
+      "rules": [],
+      "written": "ginlumyi",
+      "changed_written": "ginlumyi",
+      "phonetic": "ˈɡinlumji"
+    },
+    {
+      "underlying": "sjilŋuji",
+      "changed": "sjilŋuji",
+      "label": "coldness",
+      "rules": [],
+      "written": "syilquyi",
+      "changed_written": "syilquyi",
+      "phonetic": "ˈsjilŋuji"
+    },
+    {
+      "underlying": "kaɡrulji",
+      "changed": "kaɡrulji",
+      "label": "width",
+      "rules": [],
+      "written": "kagrulyi",
+      "changed_written": "kagrulyi",
+      "phonetic": "kaɡˈrulji"
+    },
+    {
+      "underlying": "lewji",
+      "changed": "lewji",
+      "label": "small thing",
+      "rules": [],
+      "written": "lewyi",
+      "changed_written": "lewyi",
+      "phonetic": "ˈlewji"
+    },
+    {
+      "underlying": "laji",
+      "changed": "laji",
+      "label": "sharpness",
+      "rules": [],
+      "written": "layi",
+      "changed_written": "layi",
+      "phonetic": "ˈlaji"
+    },
+    {
+      "underlying": "nuːji",
+      "changed": "nuːji",
+      "label": "sweetness",
+      "rules": [],
+      "written": "nuuyi",
+      "changed_written": "nuuyi",
+      "phonetic": "ˈnuːji"
+    },
+    {
+      "underlying": "jintarji",
+      "changed": "jintarji",
+      "label": "blackness",
+      "rules": [],
+      "written": "yintaryi",
+      "changed_written": "yintaryi",
+      "phonetic": "ˈjintarji"
+    },
+    {
+      "underlying": "upruad",
+      "changed": "upruad",
+      "label": "to age",
+      "rules": [],
+      "written": "upruad",
+      "changed_written": "upruad",
+      "phonetic": "ˈupruad"
+    },
+    {
+      "underlying": "jaːpad",
+      "changed": "jaːpad",
+      "label": "to grow",
+      "rules": [],
+      "written": "yaapad",
+      "changed_written": "yaapad",
+      "phonetic": "ˈjaːpad"
+    },
+    {
+      "underlying": "ɡinlumad",
+      "changed": "ɡinlumad",
+      "label": "to warm up",
+      "rules": [],
+      "written": "ginlumad",
+      "changed_written": "ginlumad",
+      "phonetic": "ˈɡinlumad"
+    },
+    {
+      "underlying": "sjilŋuad",
+      "changed": "sjilŋuad",
+      "label": "to cool down",
+      "rules": [],
+      "written": "syilquad",
+      "changed_written": "syilquad",
+      "phonetic": "ˈsjilŋuad"
+    },
+    {
+      "underlying": "pupruad",
+      "changed": "pupruad",
+      "label": "to dry up",
+      "rules": [],
+      "written": "pupruad",
+      "changed_written": "pupruad",
+      "phonetic": "ˈpupruad"
+    },
+    {
+      "underlying": "amad",
+      "changed": "amad",
+      "label": "to become wet",
+      "rules": [],
+      "written": "amad",
+      "changed_written": "amad",
+      "phonetic": "ˈamad"
+    },
+    {
+      "underlying": "umniad",
+      "changed": "umniad",
+      "label": "to blush",
+      "rules": [],
+      "written": "umniad",
+      "changed_written": "umniad",
+      "phonetic": "ˈumniad"
+    },
+    {
+      "underlying": "tuad",
+      "changed": "tuad",
+      "label": "to become white",
+      "rules": [],
+      "written": "tuad",
+      "changed_written": "tuad",
+      "phonetic": "ˈtuad"
+    },
+    {
+      "underlying": "plaːrad",
+      "changed": "plaːrad",
+      "label": "to become bad",
+      "rules": [],
+      "written": "plaarad",
+      "changed_written": "plaarad",
+      "phonetic": "ˈplaːrad"
+    },
+    {
+      "underlying": "luʃjuad",
+      "changed": "luʃjuad",
+      "label": "to become long",
+      "rules": [],
+      "written": "luxyuad",
+      "changed_written": "luxyuad",
+      "phonetic": "ˈluʃjuad"
+    },
+    {
+      "underlying": "ɡjuːdad",
+      "changed": "ɡjuːðad",
+      "label": "to become heavy",
+      "rules": [
+        0
+      ],
+      "written": "gyuudad",
+      "changed_written": "gyuudad",
+      "phonetic": "ˈɡjuːðad"
+    },
+    {
+      "underlying": "tunjiad",
+      "changed": "tunjiad",
+      "label": "to become correct (right)",
+      "rules": [],
+      "written": "tun·yiad",
+      "changed_written": "tun·yiad",
+      "phonetic": "ˈtunjiad"
+    },
+    {
+      "underlying": "jaːpizi",
+      "changed": "jaːpizi",
+      "label": "to enlarge",
+      "rules": [],
+      "written": "yaapizi",
+      "changed_written": "yaapizi",
+      "phonetic": "ˈjaːpizi"
+    },
+    {
+      "underlying": "ɡinlumizi",
+      "changed": "ɡinlumizi",
+      "label": "to heat",
+      "rules": [],
+      "written": "ginlumizi",
+      "changed_written": "ginlumizi",
+      "phonetic": "ɡinˈlumizi"
+    },
+    {
+      "underlying": "sjilŋuzi",
+      "changed": "sjilŋuzi",
+      "label": "to chill",
+      "rules": [],
+      "written": "syilquzi",
+      "changed_written": "syilquzi",
+      "phonetic": "ˈsjilŋuzi"
+    },
+    {
+      "underlying": "amizi",
+      "changed": "amizi",
+      "label": "to make wet",
+      "rules": [],
+      "written": "amizi",
+      "changed_written": "amizi",
+      "phonetic": "ˈamizi"
+    },
+    {
+      "underlying": "lazi",
+      "changed": "lazi",
+      "label": "to make sharp",
+      "rules": [],
+      "written": "lazi",
+      "changed_written": "lazi",
+      "phonetic": "ˈlazi"
+    },
+    {
+      "underlying": "kaɡrulizi",
+      "changed": "kaɡrulizi",
+      "label": "to make wide",
+      "rules": [],
+      "written": "kagrulizi",
+      "changed_written": "kagrulizi",
+      "phonetic": "kaɡˈrulizi"
+    },
+    {
+      "underlying": "tuzi",
+      "changed": "tuzi",
+      "label": "to make white",
+      "rules": [],
+      "written": "tuzi",
+      "changed_written": "tuzi",
+      "phonetic": "ˈtuzi"
+    },
+    {
+      "underlying": "jintarizi",
+      "changed": "jintarizi",
+      "label": "to make black",
+      "rules": [],
+      "written": "yintarizi",
+      "changed_written": "yintarizi",
+      "phonetic": "jinˈtarizi"
+    },
+    {
+      "underlying": "inɲazi",
+      "changed": "inɲazi",
+      "label": "to make new",
+      "rules": [],
+      "written": "innyazi",
+      "changed_written": "innyazi",
+      "phonetic": "ˈinɲazi"
+    },
+    {
+      "underlying": "ʃjejinizi",
+      "changed": "ʃjejinizi",
+      "label": "to make bitter",
+      "rules": [],
+      "written": "xyeyinizi",
+      "changed_written": "xyeyinizi",
+      "phonetic": "ʃjeˈjinizi"
+    },
+    {
+      "underlying": "sjiːnduzi",
+      "changed": "sjiːnduzi",
+      "label": "to make dull",
+      "rules": [],
+      "written": "syiinduzi",
+      "changed_written": "syiinduzi",
+      "phonetic": "ˈsjiːnduzi"
+    },
+    {
+      "underlying": "tunjizi",
+      "changed": "tunjizi",
+      "label": "to make correct (right)",
+      "rules": [],
+      "written": "tun·yizi",
+      "changed_written": "tun·yizi",
+      "phonetic": "ˈtunjizi"
+    },
+    {
+      "underlying": "ŋimuj",
+      "changed": "ŋimuj",
+      "label": "stony",
+      "rules": [],
+      "written": "qimuy",
+      "changed_written": "qimuy",
+      "phonetic": "ˈŋimuj"
+    },
+    {
+      "underlying": "kimuj",
+      "changed": "kimuj",
+      "label": "watery",
+      "rules": [],
+      "written": "kimuy",
+      "changed_written": "kimuy",
+      "phonetic": "ˈkimuj"
+    },
+    {
+      "underlying": "kliɡanuj",
+      "changed": "kliɣanuj",
+      "label": "sandy",
+      "rules": [
+        0
+      ],
+      "written": "kliganuy",
+      "changed_written": "kliganuy",
+      "phonetic": "ˈkliɣanuj"
+    },
+    {
+      "underlying": "sjimdjiluj",
+      "changed": "sjimdjiluj",
+      "label": "wooded",
+      "rules": [],
+      "written": "syimdyiluy",
+      "changed_written": "syimdyiluy",
+      "phonetic": "ˈsjimdjiluj"
+    },
+    {
+      "underlying": "buiːuj",
+      "changed": "buiːuj",
+      "label": "fiery",
+      "rules": [],
+      "written": "buiiuy",
+      "changed_written": "buiiuy",
+      "phonetic": "ˈbuiːuj"
+    },
+    {
+      "underlying": "wulŋuŋuj",
+      "changed": "wulŋuŋuj",
+      "label": "full of dust",
+      "rules": [],
+      "written": "wulququy",
+      "changed_written": "wulququy",
+      "phonetic": "ˈwulŋuŋuj"
+    },
+    {
+      "underlying": "ɡwauj",
+      "changed": "ɡwauj",
+      "label": "full of grass",
+      "rules": [],
+      "written": "gwauy",
+      "changed_written": "gwauy",
+      "phonetic": "ˈɡwauj"
+    },
+    {
+      "underlying": "luuj",
+      "changed": "luuj",
+      "label": "full of root",
+      "rules": [],
+      "written": "lu·uy",
+      "changed_written": "lu·uy",
+      "phonetic": "ˈluuj"
+    },
+    {
+      "underlying": "ðjiluj",
+      "changed": "ðjiluj",
+      "label": "full of fat",
+      "rules": [],
+      "written": "dhyiluy",
+      "changed_written": "dhyiluy",
+      "phonetic": "ˈðjiluj"
+    },
+    {
+      "underlying": "wiːɡuɲuj",
+      "changed": "wiːɣuɲuj",
+      "label": "full of wind",
+      "rules": [
+        0
+      ],
+      "written": "wiigunyuy",
+      "changed_written": "wiigunyuy",
+      "phonetic": "ˈwiːɣuɲuj"
+    },
+    {
+      "underlying": "jasuj",
+      "changed": "jasuj",
+      "label": "full of animal",
+      "rules": [],
+      "written": "yasuy",
+      "changed_written": "yasuy",
+      "phonetic": "ˈjasuj"
+    },
+    {
+      "underlying": "owiːjaŋuːuj",
+      "changed": "owiːjaŋuːuj",
+      "label": "full of ant",
+      "rules": [],
+      "written": "owiiyaquuuy",
+      "changed_written": "owiiyaquuuy",
+      "phonetic": "ˌowiːˈjaŋuːuj"
+    },
+    {
+      "underlying": "banuːɲwe",
+      "changed": "banuːɲwi",
+      "label": "cheerful",
+      "rules": [
+        1
+      ],
+      "written": "banuunywe",
+      "changed_written": "banuunywe",
+      "phonetic": "ˈbanuːɲwi"
+    },
+    {
+      "underlying": "sweɲʃĩɡwe",
+      "changed": "sweɲʃĩɡwi",
+      "label": "tearful",
+      "rules": [
+        1
+      ],
+      "written": "swenyxĩgwe",
+      "changed_written": "swenyxĩgwe",
+      "phonetic": "ˈsweɲʃĩɡwi"
+    },
+    {
+      "underlying": "kwipwe",
+      "changed": "kwipwi",
+      "label": "sleepy",
+      "rules": [
+        1
+      ],
+      "written": "kwipwe",
+      "changed_written": "kwipwe",
+      "phonetic": "ˈkwipwi"
+    },
+    {
+      "underlying": "maaːwe",
+      "changed": "maaːwi",
+      "label": "tending to sing",
+      "rules": [
+        1
+      ],
+      "written": "ma·aawe",
+      "changed_written": "ma·aawe",
+      "phonetic": "ˈmaaːwi"
+    },
+    {
+      "underlying": "bjaːewe",
+      "changed": "bjaːewi",
+      "label": "tending to run",
+      "rules": [
+        1
+      ],
+      "written": "byaaewe",
+      "changed_written": "byaaewe",
+      "phonetic": "ˈbjaːewi"
+    },
+    {
+      "underlying": "sasaɲwe",
+      "changed": "sasaɲwi",
+      "label": "tending to bite",
+      "rules": [
+        1
+      ],
+      "written": "sasanywe",
+      "changed_written": "sasanywe",
+      "phonetic": "ˈsasaɲwi"
+    },
+    {
+      "underlying": "jowe",
+      "changed": "jowi",
+      "label": "tending to say",
+      "rules": [
+        1
+      ],
+      "written": "yowe",
+      "changed_written": "yowe",
+      "phonetic": "ˈjowi"
+    },
+    {
+      "underlying": "upjonwe",
+      "changed": "upjonwi",
+      "label": "tending to eat",
+      "rules": [
+        1
+      ],
+      "written": "upyonwe",
+      "changed_written": "upyonwe",
+      "phonetic": "upˈjonwi"
+    },
+    {
+      "underlying": "lowe",
+      "changed": "lowi",
+      "label": "tending to drink",
+      "rules": [
+        1
+      ],
+      "written": "lowe",
+      "changed_written": "lowe",
+      "phonetic": "ˈlowi"
+    },
+    {
+      "underlying": "silwe",
+      "changed": "silwi",
+      "label": "tending to walk",
+      "rules": [
+        1
+      ],
+      "written": "silwe",
+      "changed_written": "silwe",
+      "phonetic": "ˈsilwi"
+    },
+    {
+      "underlying": "iŋwe",
+      "changed": "iŋwi",
+      "label": "tending to hunt",
+      "rules": [
+        1
+      ],
+      "written": "iqwe",
+      "changed_written": "iqwe",
+      "phonetic": "ˈiŋwi"
+    },
+    {
+      "underlying": "pjerjowe",
+      "changed": "pjerjowi",
+      "label": "tending to live",
+      "rules": [
+        1
+      ],
+      "written": "pyeryowe",
+      "changed_written": "pyeryowe",
+      "phonetic": "ˈpjerjowi"
+    },
+    {
+      "underlying": "ĩpiso",
+      "changed": "ĩpisu",
+      "label": "garment",
+      "rules": [
+        2
+      ],
+      "written": "ĩpiso",
+      "changed_written": "ĩpiso",
+      "phonetic": "ˈĩpisu"
+    },
+    {
+      "underlying": "alɡaso",
+      "changed": "alɡasu",
+      "label": "hole",
+      "rules": [
+        2
+      ],
+      "written": "algaso",
+      "changed_written": "algaso",
+      "phonetic": "ˈalɡasu"
+    },
+    {
+      "underlying": "prwelklĩso",
+      "changed": "prwelklĩsu",
+      "label": "wound",
+      "rules": [
+        2
+      ],
+      "written": "prwelklĩso",
+      "changed_written": "prwelklĩso",
+      "phonetic": "ˈprwelklĩsu"
+    },
+    {
+      "underlying": "kwoso",
+      "changed": "kwosu",
+      "label": "crack",
+      "rules": [
+        2
+      ],
+      "written": "kwoso",
+      "changed_written": "kwoso",
+      "phonetic": "ˈkwosu"
+    },
+    {
+      "underlying": "endanjuso",
+      "changed": "endanjusu",
+      "label": "flour",
+      "rules": [
+        2
+      ],
+      "written": "endan·yuso",
+      "changed_written": "endan·yuso",
+      "phonetic": "enˈdanjusu"
+    },
+    {
+      "underlying": "ŋaːso",
+      "changed": "ŋaːsu",
+      "label": "knot",
+      "rules": [
+        2
+      ],
+      "written": "qaaso",
+      "changed_written": "qaaso",
+      "phonetic": "ˈŋaːsu"
+    },
+    {
+      "underlying": "mjeɲzjaliso",
+      "changed": "mjeɲzjalisu",
+      "label": "deed",
+      "rules": [
+        2
+      ],
+      "written": "myenyzyaliso",
+      "changed_written": "myenyzyaliso",
+      "phonetic": "mjeɲzˈjalisu"
+    },
+    {
+      "underlying": "silsriso",
+      "changed": "silsrisu",
+      "label": "number",
+      "rules": [
+        2
+      ],
+      "written": "silsriso",
+      "changed_written": "silsriso",
+      "phonetic": "ˈsilsrisu"
+    },
+    {
+      "underlying": "joso",
+      "changed": "josu",
+      "label": "saying",
+      "rules": [
+        2
+      ],
+      "written": "yoso",
+      "changed_written": "yoso",
+      "phonetic": "ˈjosu"
+    },
+    {
+      "underlying": "maaːso",
+      "changed": "maaːsu",
+      "label": "what is sung",
+      "rules": [
+        2
+      ],
+      "written": "ma·aaso",
+      "changed_written": "ma·aaso",
+      "phonetic": "ˈmaaːsu"
+    },
+    {
+      "underlying": "ŋeso",
+      "changed": "ŋesu",
+      "label": "what is spited",
+      "rules": [
+        2
+      ],
+      "written": "qeso",
+      "changed_written": "qeso",
+      "phonetic": "ˈŋesu"
+    },
+    {
+      "underlying": "ɡwaŋmiso",
+      "changed": "ɡwaŋmisu",
+      "label": "what is thought",
+      "rules": [
+        2
+      ],
+      "written": "gwaqmiso",
+      "changed_written": "gwaqmiso",
+      "phonetic": "ˈɡwaŋmisu"
+    }
+  ],
+  "names": [
+    {
+      "underlying": "umniŋa",
+      "changed": "umniŋa",
+      "label": "given name",
+      "rules": [],
+      "written": "umniqa",
+      "changed_written": "umniqa",
+      "phonetic": "ˈumniŋa"
+    },
+    {
+      "underlying": "aɲa",
+      "changed": "aɲa",
+      "label": "given name",
+      "rules": [],
+      "written": "anya",
+      "changed_written": "anya",
+      "phonetic": "ˈaɲa"
+    },
+    {
+      "underlying": "umnidjun",
+      "changed": "umnidjun",
+      "label": "given name",
+      "rules": [],
+      "written": "umnidyun",
+      "changed_written": "umnidyun",
+      "phonetic": "ˈumnidjun"
+    },
+    {
+      "underlying": "emani",
+      "changed": "emani",
+      "label": "given name",
+      "rules": [],
+      "written": "emani",
+      "changed_written": "emani",
+      "phonetic": "ˈemani"
+    },
+    {
+      "underlying": "wupanul",
+      "changed": "wupanul",
+      "label": "given name",
+      "rules": [],
+      "written": "wupanul",
+      "changed_written": "wupanul",
+      "phonetic": "ˈwupanul"
+    },
+    {
+      "underlying": "wĩnu",
+      "changed": "wĩnu",
+      "label": "given name",
+      "rules": [],
+      "written": "wĩnu",
+      "changed_written": "wĩnu",
+      "phonetic": "ˈwĩnu"
+    },
+    {
+      "underlying": "sewiŋ",
+      "changed": "sewiŋ",
+      "label": "given name",
+      "rules": [],
+      "written": "sewiq",
+      "changed_written": "sewiq",
+      "phonetic": "ˈsewiŋ"
+    },
+    {
+      "underlying": "ijaː",
+      "changed": "ijaː",
+      "label": "given name",
+      "rules": [],
+      "written": "iyaa",
+      "changed_written": "iyaa",
+      "phonetic": "ˈijaː"
+    },
+    {
+      "underlying": "ŋime",
+      "changed": "ŋimi",
+      "label": "given name",
+      "rules": [
+        1
+      ],
+      "written": "qime",
+      "changed_written": "qime",
+      "phonetic": "ˈŋimi"
+    },
+    {
+      "underlying": "weruː",
+      "changed": "weruː",
+      "label": "given name",
+      "rules": [],
+      "written": "weruu",
+      "changed_written": "weruu",
+      "phonetic": "ˈweruː"
+    },
+    {
+      "underlying": "loɲino",
+      "changed": "loɲinu",
+      "label": "given name",
+      "rules": [
+        2
+      ],
+      "written": "lonyino",
+      "changed_written": "lonyino",
+      "phonetic": "ˈloɲinu"
+    },
+    {
+      "underlying": "miri",
+      "changed": "miri",
+      "label": "given name",
+      "rules": [],
+      "written": "miri",
+      "changed_written": "miri",
+      "phonetic": "ˈmiri"
+    },
+    {
+      "underlying": "juŋal",
+      "changed": "juŋal",
+      "label": "given name",
+      "rules": [],
+      "written": "yuqal",
+      "changed_written": "yuqal",
+      "phonetic": "ˈjuŋal"
+    },
+    {
+      "underlying": "inɲatihĩm",
+      "changed": "inɲatihĩm",
+      "label": "given name",
+      "rules": [],
+      "written": "innyatihĩm",
+      "changed_written": "innyatihĩm",
+      "phonetic": "inˈɲatihĩm"
+    },
+    {
+      "underlying": "ulaː",
+      "changed": "ulaː",
+      "label": "given name",
+      "rules": [],
+      "written": "ulaa",
+      "changed_written": "ulaa",
+      "phonetic": "ˈulaː"
+    },
+    {
+      "underlying": "niːta",
+      "changed": "niːta",
+      "label": "given name",
+      "rules": [],
+      "written": "niita",
+      "changed_written": "niita",
+      "phonetic": "ˈniːta"
+    },
+    {
+      "underlying": "ili",
+      "changed": "ili",
+      "label": "given name",
+      "rules": [],
+      "written": "ili",
+      "changed_written": "ili",
+      "phonetic": "ˈili"
+    },
+    {
+      "underlying": "jaːpjir",
+      "changed": "jaːpjir",
+      "label": "given name",
+      "rules": [],
+      "written": "yaapyir",
+      "changed_written": "yaapyir",
+      "phonetic": "ˈjaːpjir"
+    },
+    {
+      "underlying": "djujuːl",
+      "changed": "djujuːl",
+      "label": "given name",
+      "rules": [],
+      "written": "dyuyuul",
+      "changed_written": "dyuyuul",
+      "phonetic": "ˈdjujuːl"
+    },
+    {
+      "underlying": "nuːbi",
+      "changed": "nuːβi",
+      "label": "given name",
+      "rules": [
+        0
+      ],
+      "written": "nuubi",
+      "changed_written": "nuubi",
+      "phonetic": "ˈnuːβi"
+    },
+    {
+      "underlying": "pitla",
+      "changed": "pitla",
+      "label": "snow-town",
+      "rules": [],
+      "written": "pitla",
+      "changed_written": "pitla",
+      "phonetic": "ˈpitla"
+    },
+    {
+      "underlying": "nama",
+      "changed": "nama",
+      "label": "place",
+      "rules": [],
+      "written": "nama",
+      "changed_written": "nama",
+      "phonetic": "ˈnama"
+    },
+    {
+      "underlying": "uskim",
+      "changed": "uskim",
+      "label": "far water",
+      "rules": [],
+      "written": "uskim",
+      "changed_written": "uskim",
+      "phonetic": "ˈuskim"
+    },
+    {
+      "underlying": "imi",
+      "changed": "imi",
+      "label": "place",
+      "rules": [],
+      "written": "imi",
+      "changed_written": "imi",
+      "phonetic": "ˈimi"
+    },
+    {
+      "underlying": "jirun",
+      "changed": "jirun",
+      "label": "at the lake",
+      "rules": [],
+      "written": "yirun",
+      "changed_written": "yirun",
+      "phonetic": "ˈjirun"
+    },
+    {
+      "underlying": "miji",
+      "changed": "miji",
+      "label": "place",
+      "rules": [],
+      "written": "miyi",
+      "changed_written": "miyi",
+      "phonetic": "ˈmiji"
+    },
+    {
+      "underlying": "ŋama",
+      "changed": "ŋama",
+      "label": "place",
+      "rules": [],
+      "written": "qama",
+      "changed_written": "qama",
+      "phonetic": "ˈŋama"
+    },
+    {
+      "underlying": "amdjun",
+      "changed": "amdjun",
+      "label": "wet river",
+      "rules": [],
+      "written": "amdyun",
+      "changed_written": "amdyun",
+      "phonetic": "ˈamdjun"
+    },
+    {
+      "underlying": "aju",
+      "changed": "aju",
+      "label": "place",
+      "rules": [],
+      "written": "ayu",
+      "changed_written": "ayu",
+      "phonetic": "ˈaju"
+    },
+    {
+      "underlying": "bila",
+      "changed": "bila",
+      "label": "fish-town",
+      "rules": [],
+      "written": "bila",
+      "changed_written": "bila",
+      "phonetic": "ˈbila"
+    },
+    {
+      "underlying": "inɲaɡwa",
+      "changed": "inɲaɡwa",
+      "label": "new grass",
+      "rules": [],
+      "written": "innyagwa",
+      "changed_written": "innyagwa",
+      "phonetic": "ˈinɲaɡwa"
+    },
+    {
+      "underlying": "amjir",
+      "changed": "amjir",
+      "label": "wet sea",
+      "rules": [],
+      "written": "amyir",
+      "changed_written": "amyir",
+      "phonetic": "ˈamjir"
+    },
+    {
+      "underlying": "ŋimun",
+      "changed": "ŋimun",
+      "label": "at the stone",
+      "rules": [],
+      "written": "qimun",
+      "changed_written": "qimun",
+      "phonetic": "ˈŋimun"
+    },
+    {
+      "underlying": "pitkim",
+      "changed": "pitkim",
+      "label": "snow water",
+      "rules": [],
+      "written": "pitkim",
+      "changed_written": "pitkim",
+      "phonetic": "ˈpitkim"
+    },
+    {
+      "underlying": "loɡla",
+      "changed": "loɡla",
+      "label": "bird-town",
+      "rules": [],
+      "written": "logla",
+      "changed_written": "logla",
+      "phonetic": "ˈloɡla"
+    },
+    {
+      "underlying": "puːnjir",
+      "changed": "puːnjir",
+      "label": "fog sea",
+      "rules": [],
+      "written": "puun·yir",
+      "changed_written": "puun·yir",
+      "phonetic": "ˈpuːnjir"
+    },
+    {
+      "underlying": "ŋuɲu",
+      "changed": "ŋuɲu",
+      "label": "place",
+      "rules": [],
+      "written": "qunyu",
+      "changed_written": "qunyu",
+      "phonetic": "ˈŋuɲu"
+    },
+    {
+      "underlying": "wuɲa",
+      "changed": "wuɲa",
+      "label": "place",
+      "rules": [],
+      "written": "wunya",
+      "changed_written": "wunya",
+      "phonetic": "ˈwuɲa"
+    },
+    {
+      "underlying": "memi",
+      "changed": "memi",
+      "label": "place",
+      "rules": [],
+      "written": "memi",
+      "changed_written": "memi",
+      "phonetic": "ˈmemi"
+    }
+  ],
+  "new_sounds": [
+    "ɣ",
+    "β"
+  ],
+  "new_graphemes": {},
+  "settings": {
+    "natural": true,
+    "reflect_spelling": false
+  },
+  "metadata": {
+    "seed": 597691935,
+    "changed_words": 30,
+    "total_words": 228,
+    "errors": [],
+    "warnings": []
+  }
+}

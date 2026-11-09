@@ -1,0 +1,329 @@
+{
+  "settings": {
+    "word_order": {
+      "clause": "SOV",
+      "free": false,
+      "object_before_verb": true
+    },
+    "adpositions": "postpositions",
+    "noun_phrase": {
+      "genitive": "before",
+      "adjective": "after",
+      "demonstrative": "after",
+      "numeral": "after",
+      "relative_clause": "internally_headed"
+    },
+    "polar_questions": {
+      "strategy": "particle",
+      "position": "final"
+    },
+    "content_questions": "initial",
+    "pro_drop": false,
+    "copula": "zero",
+    "negation": {
+      "realization": "affix",
+      "position": "suffix"
+    },
+    "compounds": {
+      "head": "final",
+      "harmonic_with_genitive": true
+    }
+  },
+  "function_words": {
+    "question_particle": [
+      "t",
+      "j",
+      "u",
+      "m"
+    ]
+  },
+  "examples": [
+    {
+      "key": "intransitive",
+      "title": "Oração intransitiva",
+      "words": [
+        {
+          "form": "am",
+          "seg": "am",
+          "gloss": "child"
+        },
+        {
+          "form": "kwip",
+          "seg": "kwip",
+          "gloss": "sleep"
+        }
+      ],
+      "translation": "The child sleeps."
+    },
+    {
+      "key": "transitive",
+      "title": "Oração transitiva",
+      "words": [
+        {
+          "form": "tjul",
+          "seg": "tjul",
+          "gloss": "woman"
+        },
+        {
+          "form": "bi",
+          "seg": "bi",
+          "gloss": "fish"
+        },
+        {
+          "form": "alŋo",
+          "seg": "alŋo",
+          "gloss": "see"
+        }
+      ],
+      "translation": "The woman sees the fish."
+    },
+    {
+      "key": "past",
+      "title": "Passado, objeto plural",
+      "words": [
+        {
+          "form": "sjun",
+          "seg": "sjun",
+          "gloss": "dog"
+        },
+        {
+          "form": "bimi",
+          "seg": "bi-mi",
+          "gloss": "fish-PL"
+        },
+        {
+          "form": "upjonpu",
+          "seg": "upjon-pu",
+          "gloss": "eat-PST"
+        }
+      ],
+      "translation": "The dog ate the fish."
+    },
+    {
+      "key": "ditransitive",
+      "title": "Oração bitransitiva",
+      "words": [
+        {
+          "form": "tjul",
+          "seg": "tjul",
+          "gloss": "woman"
+        },
+        {
+          "form": "amka",
+          "seg": "am-ka",
+          "gloss": "child-ALL"
+        },
+        {
+          "form": "bi",
+          "seg": "bi",
+          "gloss": "fish"
+        },
+        {
+          "form": "maːm",
+          "seg": "maːm",
+          "gloss": "give"
+        }
+      ],
+      "translation": "The woman gives the fish to the child."
+    },
+    {
+      "key": "pronouns",
+      "title": "Pronomes",
+      "words": [
+        {
+          "form": "ka",
+          "seg": "ka",
+          "gloss": "1SG"
+        },
+        {
+          "form": "ɡwiɲ",
+          "seg": "ɡwiɲ",
+          "gloss": "2SG"
+        },
+        {
+          "form": "alŋo",
+          "seg": "alŋo",
+          "gloss": "see"
+        }
+      ],
+      "translation": "I see you."
+    },
+    {
+      "key": "noun_phrase",
+      "title": "Sintagma nominal (demonstrativo, numeral, adjetivo)",
+      "words": [
+        {
+          "form": "sjunmi",
+          "seg": "sjun-mi",
+          "gloss": "dog-PL"
+        },
+        {
+          "form": "jaːp",
+          "seg": "jaːp",
+          "gloss": "big"
+        },
+        {
+          "form": "ul",
+          "seg": "ul",
+          "gloss": "two"
+        },
+        {
+          "form": "ar",
+          "seg": "ar",
+          "gloss": "this"
+        },
+        {
+          "form": "klaːm",
+          "seg": "klaːm",
+          "gloss": "come"
+        }
+      ],
+      "translation": "These two big dogs come."
+    },
+    {
+      "key": "possession",
+      "title": "Posse (genitivo)",
+      "words": [
+        {
+          "form": "tjun",
+          "seg": "tjul-n",
+          "gloss": "woman-GEN"
+        },
+        {
+          "form": "sjun",
+          "seg": "sjun",
+          "gloss": "dog"
+        },
+        {
+          "form": "kwip",
+          "seg": "kwip",
+          "gloss": "sleep"
+        }
+      ],
+      "translation": "The woman's dog sleeps."
+    },
+    {
+      "key": "location",
+      "title": "Adjunto locativo",
+      "words": [
+        {
+          "form": "am",
+          "seg": "am",
+          "gloss": "child"
+        },
+        {
+          "form": "ɡwaːŋumun",
+          "seg": "ɡwaːŋum-un",
+          "gloss": "house-LOC"
+        },
+        {
+          "form": "kwip",
+          "seg": "kwip",
+          "gloss": "sleep"
+        }
+      ],
+      "translation": "The child sleeps in the house."
+    },
+    {
+      "key": "predicate_adjective",
+      "title": "Predicado adjetival (cópula zero)",
+      "words": [
+        {
+          "form": "bi",
+          "seg": "bi",
+          "gloss": "fish"
+        },
+        {
+          "form": "jaːp",
+          "seg": "jaːp",
+          "gloss": "big"
+        }
+      ],
+      "translation": "The fish is big."
+    },
+    {
+      "key": "negation",
+      "title": "Negação",
+      "words": [
+        {
+          "form": "am",
+          "seg": "am",
+          "gloss": "child"
+        },
+        {
+          "form": "kwipɡu",
+          "seg": "kwip-ɡu",
+          "gloss": "sleep-NEG"
+        }
+      ],
+      "translation": "The child does not sleep."
+    },
+    {
+      "key": "polar_question",
+      "title": "Pergunta sim/não",
+      "words": [
+        {
+          "form": "tjul",
+          "seg": "tjul",
+          "gloss": "woman"
+        },
+        {
+          "form": "bi",
+          "seg": "bi",
+          "gloss": "fish"
+        },
+        {
+          "form": "alŋo",
+          "seg": "alŋo",
+          "gloss": "see"
+        },
+        {
+          "form": "tjum",
+          "seg": "tjum",
+          "gloss": "Q"
+        }
+      ],
+      "translation": "Does the woman see the fish?"
+    },
+    {
+      "key": "content_question",
+      "title": "Pergunta de conteúdo (palavra interrogativa no início)",
+      "words": [
+        {
+          "form": "klu",
+          "seg": "klu",
+          "gloss": "what"
+        },
+        {
+          "form": "tjul",
+          "seg": "tjul",
+          "gloss": "woman"
+        },
+        {
+          "form": "alŋo",
+          "seg": "alŋo",
+          "gloss": "see"
+        }
+      ],
+      "translation": "What does the woman see?"
+    }
+  ],
+  "metadata": {
+    "seed": 3984286124,
+    "sources": {
+      "word_order": "WALS 81A|26A=2 (embutido)",
+      "adpositions": "WALS 85A|81A=1 (embutido)",
+      "genitive": "WALS 86A|81A=1 (embutido)",
+      "adjective": "WALS 87A|81A=1 (embutido)",
+      "demonstrative": "WALS 88A|81A=1 (embutido)",
+      "numeral": "WALS 89A|81A=1 (embutido)",
+      "relative": "WALS 90A|81A=1 (embutido)",
+      "polar_questions": "WALS 116A (embutido)",
+      "question_particle": "WALS 92A|81A=1 (embutido)",
+      "content_questions": "WALS 93A|81A=1 (embutido)",
+      "pro_drop": "concordância de sujeito no verbo (Dryer 2013, WALS 101A)"
+    },
+    "notes": [],
+    "wals": "embutido"
+  }
+}

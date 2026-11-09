@@ -27,6 +27,7 @@ import hashlib
 import json
 import random
 import shutil
+import re
 import sys
 import unicodedata
 import warnings
@@ -49,7 +50,8 @@ ROOT = _find_root()
 SCRIPT = Path(__file__).resolve().relative_to(ROOT).as_posix()
 for folder in ("morphological_typology", "phonemic_inventory", "phonotactics",
                "grammatical_categories", "morphological_engine", "lexicon", "syntax", "custom_input",
-               "orthography", "stress", "names", "possession", "comparison", "derivation", "sound_changes", "irregularity"):
+               "orthography", "stress", "names", "possession", "comparison", "derivation", "sound_changes", "irregularity",
+               "numerals", "vocabulary", "clauses", "translator", "evolution"):
     sys.path.insert(0, str(ROOT / folder))
 
 import phonemic_inventory as inv_mod  # noqa: E402
@@ -93,6 +95,22 @@ try:
     import irregularity as irregularity_mod  # noqa: E402
 except ImportError:
     irregularity_mod = None
+try:
+    import numerals as numerals_mod  # noqa: E402
+except ImportError:
+    numerals_mod = None
+try:
+    import vocabulary as vocabulary_mod  # noqa: E402
+except ImportError:
+    vocabulary_mod = None
+try:
+    import clauses as clauses_mod  # noqa: E402
+except ImportError:
+    clauses_mod = None
+try:
+    import translator as translator_mod  # noqa: E402
+except ImportError:
+    translator_mod = None
 
 STEPS = ["typology", "inventory", "phonotactics", "categories", "morphology", "lexicon", "syntax"]
 if ortho_mod:
@@ -107,6 +125,12 @@ if comparison_mod:  # depois da posse: evita repetir as formas que ela criou
     STEPS.append("comparison")
 if derivation_mod:  # depois da posse e da comparação, pelo mesmo motivo
     STEPS.append("derivation")
+if numerals_mod:  # numerais 6, 7... 100: depois da derivação, para não repetir formas
+    STEPS.append("numerals")
+if vocabulary_mod:  # usa a derivação e os numerais
+    STEPS.append("vocabulary")
+if clauses_mod:  # usa o vocabulário (conectivos, adposições) e a posse
+    STEPS.append("clauses")
 if sound_mod:  # muda também as palavras derivadas e os nomes
     STEPS.append("sound_changes")
 if irregularity_mod:  # por último: usa a comparação e as mudanças sonoras
@@ -127,6 +151,9 @@ FILES = {
     "derivation": "derivation.json",
     "sound_changes": "sound_changes.json",
     "irregularity": "irregularity.json",
+    "numerals": "numerals.json",
+    "vocabulary": "vocabulary.json",
+    "clauses": "clauses.json",
 }
 STEP_LABELS = {"typology": "Tipologia morfológica", "inventory": "Inventário fonêmico",
                "phonotactics": "Fonotática", "categories": "Categorias gramaticais",
@@ -134,7 +161,8 @@ STEP_LABELS = {"typology": "Tipologia morfológica", "inventory": "Inventário f
                "orthography": "Ortografia", "stress": "Acento", "names": "Nomes próprios",
                "possession": "Posse e determinantes", "comparison": "Comparação",
                "derivation": "Derivação", "sound_changes": "Mudanças sonoras",
-               "irregularity": "Irregularidades"}
+               "irregularity": "Irregularidades", "numerals": "Sistema numeral",
+               "vocabulary": "Vocabulário ampliado", "clauses": "Orações"}
 
 DEFAULT_LANGUAGES = ROOT / "languages"
 DEFAULT_WALS = ROOT / "wals" / "cldf"
@@ -421,6 +449,38 @@ class LanguageBuilder:
                 f"{'es' if m['irregular_count'] != 1 else ''}, {m['alternation_count']} alternância"
                 f"{'s' if m['alternation_count'] != 1 else ''}")
 
+    def run_numerals(self) -> str:
+        self._ensure_manifest()
+        b = numerals_mod.NumeralBuilder(self.out, seed=self.seeds["numerals"], wals_dir=self.wals_dir)
+        data = json.loads(json.dumps(b.build(self.o.number_base, self.o.numbers_upto)))
+        self.save("numerals", data)
+        numerals_mod.write_markdown(self.out / "numerals.md", data, self.spell)
+        return f"{numerals_mod.BASE_PT[data['settings']['base']]}, {data['metadata']['new_words']} palavras novas"
+
+    def run_vocabulary(self) -> str:
+        self._ensure_manifest()
+        if not vocabulary_mod.DEFAULT_LIST.exists():  # a lista do WOLD vem num arquivo à parte
+            self.save("vocabulary", {"entries": [], "stats": {"total": 0, "root": 0, "derived": 0, "compound": 0,
+                                                              "by_field": {}},
+                                     "metadata": {"missing_list": str(vocabulary_mod.DEFAULT_LIST)}})
+            return f"pulado: falta {vocabulary_mod.DEFAULT_LIST.name} na pasta vocabulary/"
+        b = vocabulary_mod.VocabularyBuilder(self.out, seed=self.seeds["vocabulary"])
+        data = json.loads(json.dumps(b.build(self.o.include_modern)))
+        self.save("vocabulary", data)
+        vocabulary_mod.write_markdown(self.out / "vocabulary.md", data)
+        st = data["stats"]
+        return f"{st['total']} palavras ({st['derived']} derivadas, {st['compound']} compostas, {st['root']} raízes)"
+
+    def run_clauses(self) -> str:
+        self._ensure_manifest()
+        b = clauses_mod.ClauseBuilder(self.out, seed=self.seeds["clauses"], wals_dir=self.wals_dir)
+        data = json.loads(json.dumps(b.build()))
+        self.save("clauses", data)
+        clauses_mod.write_markdown(self.out / "clauses.md", data, self.spell)
+        s = data["settings"]
+        return (f"passiva: {'sim' if s['passive']['present'] else 'não'}; "
+                f"{len(s['demonstratives']['terms'])} grau(s) de demonstrativo; {len(data['sentences'])} frases")
+
     def irregulars(self) -> Dict[str, Dict]:
         """Conceito → forma irregular, para o dicionário."""
         data = self.data.get("irregularity")
@@ -488,7 +548,8 @@ class LanguageBuilder:
             "orthography": self.run_orthography, "stress": self.run_stress, "names": self.run_names,
             "possession": self.run_possession, "comparison": self.run_comparison,
             "derivation": self.run_derivation, "sound_changes": self.run_sound_changes,
-            "irregularity": self.run_irregularity,
+            "irregularity": self.run_irregularity, "numerals": self.run_numerals,
+            "vocabulary": self.run_vocabulary, "clauses": self.run_clauses,
         }
         first = STEPS.index(start)
         for step in STEPS[:first]:
@@ -520,6 +581,9 @@ class LanguageBuilder:
             notes += [f"Derivação: {n}" for n in self.data["derivation"]["metadata"].get("notes", [])]
         if self.data.get("irregularity"):
             notes += [f"Irregularidades: {n}" for n in self.data["irregularity"]["metadata"].get("notes", [])]
+        for step, label in (("numerals", "Numerais"), ("clauses", "Orações")):
+            if self.data.get(step):
+                notes += [f"{label}: {n}" for n in self.data[step]["metadata"].get("notes", [])]
         if self.data.get("sound_changes"):
             m = self.data["sound_changes"]["metadata"]
             notes += [f"Mudanças sonoras: regra ignorada — {e}" for e in m.get("errors", [])]
@@ -792,6 +856,22 @@ def names_section(b: LanguageBuilder) -> List[str]:
     out += ["", "### Lugares", ""] + md_table(["Nome", "Pronúncia", "Tipo", "Significado"], rows)
     return out
 
+def verb_stem(b: LanguageBuilder, e: Dict) -> Optional[str]:
+    """Radical do verbo para o verbete ('-diinplunung-'), quando a língua marca pessoa no verbo.
+    Como nos dicionários de suaíli ou georgiano, o verbo é citado pelo radical, e a forma
+    flexionada vira uma das formas principais. Nas demais línguas, devolve None."""
+    if e.get("pos") != "verb" or e.get("skeleton") or not e.get("root"):
+        return None
+    slots = b.data["morphology"]["affixes"].get("verb", [])
+    person = [s for s in slots if any(c.startswith("agreement") for c in s.get("categories", []))]
+    if not person:
+        return None
+    root = "".join(e["root"])
+    if root == "".join(ch for ch in e["citation"] if ch not in "˥˦˧˨˩."):
+        return None
+    pre = any(s.get("position") == "prefix" for s in slots)
+    suf = any(s.get("position") == "suffix" for s in slots)
+    return ("-" if pre else "") + root + ("-" if suf else "")
 
 def dictionary_line(b: LanguageBuilder, e: Dict) -> str:
     """Formato do Vulgarlang: grafia /pronúncia com acento/ classe 'significado' ..."""
@@ -816,6 +896,16 @@ def dictionary_line(b: LanguageBuilder, e: Dict) -> str:
         old = next((f"{i['gloss']}: {b.spell(i['form'])}" for i in e.get("inflections", [])
                     if i["gloss"] == tag), None)
         rest = rest.replace(old, new, 1) if old and old in rest else rest + f" — {new}"
+
+    stem = verb_stem(b, e)
+    if stem:  # verbo citado pelo radical; a forma flexionada vira a primeira forma principal
+        bare = stem.strip("-")
+        written = "-" * stem.startswith("-") + b.spell(bare) + "-" * stem.endswith("-")
+        rest = re.sub(r" \[raiz [^\]]*\]", "", rest, count=1)
+        lab = f"'{lex_mod.label(e)}'"
+        cit = f"citação: {head} /{b.pron(e['citation'])}/{phon}"
+        rest = rest.replace(lab + " — ", f"{lab} — {cit}; ", 1) if lab + " — " in rest else rest.replace(lab, f"{lab} — {cit}", 1)
+        return f"**{written}** /{b.pron(bare)}/" + rest
     return f"**{head}** /{b.pron(e['citation'])}/{phon}" + rest
 
 
@@ -861,6 +951,8 @@ def write_grammar(b: LanguageBuilder, name: str, auto: Dict, validation: Dict) -
         lines += ["## Derivação", ""] + embedded_section(b, "derivation.md", "## Palavras derivadas") + [""]
     if b.data.get("irregularity"):
         lines += ["## Irregularidades", ""] + embedded_section(b, "irregularity.md") + [""]
+    if b.data.get("numerals"):  # como o "List numbers" do Vulgarlang
+        lines += ["## Sistema numeral", ""] + embedded_section(b, "numerals.md") + [""]
     lines += ["## Sintaxe", ""] + [f"- {l}" for l in syn_mod.describe(b.data["syntax"]["settings"])]
     for i, ex in enumerate(b.data["syntax"]["examples"], 1):
         lines += ["", f"### {i}. {ex['title']}", ""]
@@ -868,20 +960,42 @@ def write_grammar(b: LanguageBuilder, name: str, auto: Dict, validation: Dict) -
             written = " ".join(b.spell(w["form"]) for w in ex["words"])
             lines += [f"**{written[:1].upper() + written[1:]}.**", ""]
         lines += ["```"] + syn_mod.interlinear(ex) + ["```"]
+    if b.data.get("clauses"):  # voz, demonstrativos, imperativo, orações complexas
+        lines += ["", "## Orações", ""] + embedded_section(b, "clauses.md")
+    if getattr(b, "translations", None):
+        lines += ["", "## Traduções", ""]
+        for r in b.translations:
+            lines += [f"### {r['english']}", "", f"**{r['written']}**", "", "```"] + syn_mod.interlinear(r) + ["```", ""]
+            if r["unknown"]:
+                lines += [f"Sem tradução: {', '.join(r['unknown'])}", ""]
 
     lex = b.data["lexicon"]
     derived = b.data.get("derivation", {}).get("derived", [])
+    vocab = b.data.get("vocabulary", {}).get("entries", [])
+    num_atoms = [(int(n), a) for n, a in b.data.get("numerals", {}).get("atoms", {}).items() if a.get("from") == "new"]
+    extras = [f"{len(derived)} palavras derivadas" if derived else "",
+              f"{len(vocab)} do vocabulário ampliado (WOLD)" if vocab else "",
+              f"{len(num_atoms)} numerais" if num_atoms else ""]
+    extras = [x for x in extras if x]
     lines += ["", "## Dicionário", "",
               f"{len(lex['entries'])} entradas, lista `{lex['metadata']['list']}` do Concepticon"
-              + (f", mais {len(derived)} palavras derivadas" if derived else "") + ".", ""]
+              + (", mais " + ", ".join(extras) if extras else "") + ".", ""]
     if b.ortho() or b.stresser():
         fmt = "Formato: **grafia** /pronúncia/"
         if b.data.get("sound_changes"):
             fmt += " [pronúncia depois das mudanças sonoras, quando muda]"
         lines += [fmt + " classe 'significado'" + (" ← base, nas derivadas" if derived else ""), ""]
-    rows = [(nfd(b.spell(e["citation"])).lower(), dictionary_line(b, e))
+    rows = [(nfd(b.spell(verb_stem(b, e).strip("-") if verb_stem(b, e) else e["citation"])).lower(),
+             dictionary_line(b, e))
             for e in lex["entries"] if e["citation"]]
     rows += [(nfd(d["written"]).lower(), derived_line(b, d)) for d in derived]
+    for e in vocab:  # vocabulário ampliado: palavras novas, com a origem (← base, = partes)
+        pos = {"noun": "n.", "verb": "v.", "adjective": "adj.", "adverb": "adv.", "particle": "part."}.get(e["pos"], e["pos"])
+        rows.append((nfd(e["written"]).lower(), f"**{e['written']}** /{e['pronunciation']}/ *{pos}* "
+                     f"'{e['label']}'{vocabulary_mod.origin(e)}"))
+    for n, a in num_atoms:
+        rows.append((nfd(a["written"]).lower(), f"**{a['written']}** /{a['pronunciation']}/ *num.* "
+                     f"'{numerals_mod.EN_NUMBERS.get(n, str(n))}'"))
     lines += [f"- {line}" for _, line in sorted(rows, key=lambda r: r[0])]
     bound = [e for e in lex["entries"] if not e["citation"]]
     if bound:
@@ -955,6 +1069,19 @@ def parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
     g.add_argument("--no-natural-changes", action="store_true", help="não sorteia mudanças sonoras naturais")
     g.add_argument("--reflect-spelling", action="store_true", help="a grafia segue a pronúncia depois das mudanças")
 
+    g = ap.add_argument_group("numerais, vocabulário e tradução")
+    g.add_argument("--number-base", choices=["decimal", "quinary", "vigesimal", "hybrid", "restricted", "body_part"],
+                   help="base dos numerais (sorteada se omitida)")
+    g.add_argument("--numbers-upto", type=int, default=20, help="lista os numerais de 1 até N")
+    g.add_argument("--include-modern", action="store_true", help="vocabulário do 'mundo moderno' (carro, rádio...)")
+    g.add_argument("--translate", type=Path, help="arquivo de frases em inglês para traduzir (uma por linha)")
+
+    g = ap.add_argument_group("evolução")
+    g.add_argument("--evolve", action="append", default=[], metavar="PERFIL:ANOS",
+                   help="gera uma língua-filha, ex: romance:1500 (pode repetir)")
+    g.add_argument("--no-evolve-grammar", action="store_true", help="filhas sem a etapa 3 (gramática)")
+    g.add_argument("--family", type=int, metavar="RAMOS", help="gera uma família com N ramos principais")
+
     g = ap.add_argument_group("nomes próprios")
     g.add_argument("--people", type=int, default=20, help="quantidade de nomes de pessoa")
     g.add_argument("--places", type=int, default=20, help="quantidade de nomes de lugar")
@@ -985,6 +1112,9 @@ def generate(seed: Optional[int] = None, name: Optional[str] = None, **options) 
         flag = "--from" if key == "start" else "--" + key.replace("_", "-")
         if key == "tones" and value is False:
             argv.append("--no-tones")
+        elif isinstance(value, (list, tuple)):  # opções repetíveis: --sound-change, --evolve
+            for v in value:
+                argv += [flag, str(v)]
         elif value is True:
             argv.append(flag)
         elif value not in (None, False):
@@ -1011,7 +1141,20 @@ def run(args: argparse.Namespace) -> Path:
         raise
     validation = b.validate()
     auto = b.autonym()
+    if b.data.get("vocabulary", {}).get("metadata", {}).get("missing_list"):
+        validation["notes"].append("Vocabulário: falta vocabulary/wold_1460.tsv; o vocabulário ampliado não foi gerado")
+    if args.translate and translator_mod:
+        t = translator_mod.Translator(out_dir)
+        sentences = [x.strip() for l in Path(args.translate).read_text(encoding="utf-8").splitlines()
+                     for x in re.split(r"(?<=[.!?])\s+", l) if x.strip()]
+        b.translations = [t.translate(x) for x in sentences]
+        (out_dir / "translations.md").unlink(missing_ok=True)
+        translator_mod.save(out_dir / "translations.md", b.translations)
+        print(f"  Traduções: {len(b.translations)} frases (translations.md)")
     grammar = write_grammar(b, name, auto, validation)
+    dest = ROOT / "LLM_refinement" / name
+    dest.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(grammar, dest / "grammar.md")
 
     manifest = {
         "name": name, "seed": seed, "seeds": b.seeds, "autonym": auto,
@@ -1025,7 +1168,11 @@ def run(args: argparse.Namespace) -> Path:
                  + (["comparison.md"] if "comparison" in STEPS else [])
                  + (["derivation.md"] if "derivation" in STEPS else [])
                  + (["sound_changes.md"] if "sound_changes" in STEPS else [])
-                 + (["irregularity.md"] if "irregularity" in STEPS else []),
+                 + (["irregularity.md"] if "irregularity" in STEPS else [])
+                 + (["numerals.md"] if "numerals" in STEPS else [])
+                 + (["vocabulary.md"] if "vocabulary" in STEPS else [])
+                 + (["clauses.md"] if "clauses" in STEPS else [])
+                 + (["translations.md"] if getattr(b, "translations", None) else []),
         "language_name": b.data.get("orthography", {}).get("language_name"),
         "validation": validation,
         "custom": ({"file": "custom.txt", "policy": args.custom_policy, "report": b.custom_report,
@@ -1056,7 +1203,59 @@ def run(args: argparse.Namespace) -> Path:
         for w in b.custom["warnings"]:
             print(f"    [!] {w}")
     print(f"\n[OK] Língua completa em {out_dir}/ — comece por {grammar.name}")
+    if args.evolve or args.family:
+        evolve_after(args, seed, name, out_dir)
     return out_dir
+
+
+def evolve_after(args: argparse.Namespace, seed: int, name: str, out_dir: Path) -> None:
+    """Línguas-filhas (--evolve) e famílias (--family), depois da língua-mãe pronta."""
+    sys.path.insert(0, str(ROOT / "evolution"))
+    try:
+        import evolution as evo_mod
+        import grammar_evolution as gram_mod
+    except ImportError:
+        print("  [!] Pasta evolution/ não encontrada: --evolve e --family foram ignorados")
+        return
+    for spec in args.evolve:
+        profile, _, years = spec.partition(":")
+        years = int(years or 1000)
+        daughter = f"{name}-{profile}-{years}"
+        print(f"\nEvoluindo '{name}' → '{daughter}' ({profile}, {years} anos)")
+        ev = evo_mod.Evolver(out_dir, profile, years)
+        result = ev.build(args.out / daughter)
+        if not args.no_evolve_grammar:
+            result = gram_mod.GrammarEvolver(args.out / daughter).run()
+        generate(seed, name=daughter, out=args.out, start="orthography", no_wals=args.no_wals,
+                 translate=args.translate)
+        spell = lambda d: (__import__("orthography").Orthography(json.loads((d / "orthography.json").read_text(  # noqa: E731
+            encoding="utf-8"))).spell if (d / "orthography.json").exists() else None)
+        evo_mod.write_markdown(args.out / daughter / "evolution.md", result, spell(args.out / daughter), spell(out_dir))
+        if not args.no_evolve_grammar:
+            gram_mod.write_markdown(args.out / daughter, result, spell(args.out / daughter))
+        laws = ", ".join(x["name"] for x in result["laws"])
+        print(f"  Leis: {laws}")
+    if args.family:
+        import family as fam_mod
+        print(f"\nFamília de '{name}' ({args.family} ramos)")
+        fb = fam_mod.FamilyBuilder(out_dir, branches=args.family, grammar=not args.no_evolve_grammar)
+        root = fb.build(rebuild=False)
+        cmp = fam_mod.Comparison(root)
+        data = {"cognates": cmp.cognate_table(fam_mod.CORE), "correspondences": cmp.correspondences(),
+                "distances": cmp.distances()}
+        fam_dir = args.out / f"{name}-familia"
+        fam_dir.mkdir(exist_ok=True)
+        fam_mod.write_family(fam_dir / "family.md", root, cmp, data)
+        tree = [{"name": n.name, "parent": n.parent.name if n.parent else None, "profile": n.profile,
+                 "years": n.years, "folder": n.dir.name, "laws": [x["id"] for x in (n.evo or {}).get("laws", [])]}
+                for n in root.all()]
+        (fam_dir / "family.json").write_text(json.dumps(
+            {"proto": root.name, "seed": fb.seed, "tree": tree, "cognates": data["cognates"],
+             "correspondences": {"languages": data["correspondences"][0], "rows": data["correspondences"][1]},
+             "distances": {"languages": data["distances"][0], "matrix": data["distances"][1]}},
+            ensure_ascii=False, indent=2), encoding="utf-8")
+        print("\n".join("  " + l for l in fam_mod.ascii_tree(root)))
+        print(f"  Família em {fam_dir}/ (para a grafia e o grammar.md de cada língua, use evolution/family.py --rebuild)")
 
 
 if __name__ == "__main__":

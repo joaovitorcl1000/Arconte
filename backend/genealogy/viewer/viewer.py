@@ -455,6 +455,11 @@ _HTML = Template(r'''<!doctype html>
     }
   });
   updateSearch();
+  // Ao abrir a página, seleciona e centraliza o personagem solicitado.
+  // Uma árvore global (sem foco) mantém o enquadramento original.
+  if (data.focus_id && byId.has(data.focus_id)) {
+    selectNode(data.focus_id, true);
+  }
 })();
 </script>
 </body>
@@ -467,11 +472,14 @@ def render_html(
     *,
     options: ViewerOptions | None = None,
     project: Project | None = None,
+    focus_id: UUID | None = None,
 ) -> str:
     """Devolve um HTML autocontido a partir do ``TreeLayout`` existente.
 
     ``project`` é opcional e serve somente para exibir nomes de famílias.
-    O arquivo pode ser aberto diretamente no navegador, sem servidor.
+    ``focus_id`` escolhe o personagem inicialmente selecionado e centralizado.
+    Por padrão, usa ``layout.graph.root_id``; árvores globais sem raiz
+    continuam abrindo com a vista completa. O HTML funciona também offline.
     """
     if options is None:
         options = ViewerOptions()
@@ -479,11 +487,21 @@ def render_html(
         raise TypeError("options deve ser ViewerOptions ou None.")
     if project is not None and not isinstance(project, Project):
         raise TypeError("project deve ser Project ou None.")
+    if focus_id is not None and not isinstance(focus_id, UUID):
+        raise TypeError("focus_id deve ser UUID ou None.")
 
     # render_svg faz validação integral do layout (IDs, posições, arestas,
     # coordenadas finitas e textos XML) antes de gerar conteúdo.
     svg = _interactive_svg(layout, options)
     data = layout.to_dict()
+    initial_focus = focus_id if focus_id is not None else layout.graph.root_id
+    if initial_focus is not None:
+        focus_value = str(initial_focus)
+        if focus_value not in {node["id"] for node in data["nodes"]}:
+            raise ValueError("focus_id não pertence aos personagens deste layout.")
+        data["focus_id"] = focus_value
+    else:
+        data["focus_id"] = None
     family_names: dict[str, str] = {}
     if project is not None:
         project.validate_integrity()
@@ -509,9 +527,10 @@ def save_html(
     *,
     options: ViewerOptions | None = None,
     project: Project | None = None,
+    focus_id: UUID | None = None,
 ) -> Path:
     """Grava o visualizador em UTF-8, substituindo o destino atomicamente."""
-    html = render_html(layout, options=options, project=project)
+    html = render_html(layout, options=options, project=project, focus_id=focus_id)
     destination = Path(path)
     destination.parent.mkdir(parents=True, exist_ok=True)
     temporary: Path | None = None

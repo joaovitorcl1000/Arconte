@@ -62,7 +62,7 @@ try:
 except ImportError:
     deriv_mod = None
 
-DEFAULT_LIST = HERE / "wold_1460.tsv"
+DEFAULT_LIST = HERE / "concepts.tsv" #"wold_1460.tsv"
 TONE_LETTERS = "˥˦˧˨˩"
 
 WOLD_FIELDS = {

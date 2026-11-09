@@ -1,0 +1,411 @@
+{
+  "settings": {
+    "base": "decimal",
+    "multiplier_first": true,
+    "high_first": false,
+    "connective": [
+      "d",
+      "o"
+    ],
+    "compound": false,
+    "ordinal_code": "5",
+    "ordinal": {
+      "type": "derived",
+      "affix": [
+        "u"
+      ],
+      "position": "suffix",
+      "first": [
+        "k",
+        "o",
+        "n",
+        "l",
+        "a"
+      ]
+    }
+  },
+  "atoms": {
+    "1": {
+      "form": "tjaː",
+      "from": "lexicon",
+      "written": "tyaa",
+      "ipa": "tjaː",
+      "pronunciation": "tjaː"
+    },
+    "2": {
+      "form": "ul",
+      "from": "lexicon",
+      "written": "ul",
+      "ipa": "ul",
+      "pronunciation": "ul"
+    },
+    "3": {
+      "form": "ʃwe",
+      "from": "lexicon",
+      "written": "xwe",
+      "ipa": "ʃwe",
+      "pronunciation": "ʃwe"
+    },
+    "4": {
+      "form": "ŋo",
+      "from": "lexicon",
+      "written": "qo",
+      "ipa": "ŋo",
+      "pronunciation": "ŋo"
+    },
+    "5": {
+      "form": "sjebjaː",
+      "from": "lexicon",
+      "written": "syebyaa",
+      "ipa": "sjebjaː",
+      "pronunciation": "ˈsjebjaː"
+    },
+    "6": {
+      "form": "sre",
+      "from": "new",
+      "written": "sre",
+      "ipa": "sre",
+      "pronunciation": "sre"
+    },
+    "7": {
+      "form": "sra",
+      "from": "new",
+      "written": "sra",
+      "ipa": "sra",
+      "pronunciation": "sra"
+    },
+    "8": {
+      "form": "mo",
+      "from": "new",
+      "written": "mo",
+      "ipa": "mo",
+      "pronunciation": "mo"
+    },
+    "9": {
+      "form": "du",
+      "from": "new",
+      "written": "du",
+      "ipa": "du",
+      "pronunciation": "du"
+    },
+    "10": {
+      "form": "i",
+      "from": "new",
+      "written": "i",
+      "ipa": "i",
+      "pronunciation": "i"
+    },
+    "100": {
+      "form": "bak",
+      "from": "new",
+      "written": "bak",
+      "ipa": "bak",
+      "pronunciation": "bak"
+    },
+    "1000": {
+      "form": "okjal",
+      "from": "new",
+      "written": "okyal",
+      "ipa": "okjal",
+      "pronunciation": "ˈokjal"
+    }
+  },
+  "cardinals": [
+    {
+      "n": 1,
+      "written": "tyaa",
+      "ipa": "tjaː",
+      "pronunciation": "tjaː",
+      "gloss": "1",
+      "parts": 1
+    },
+    {
+      "n": 2,
+      "written": "ul",
+      "ipa": "ul",
+      "pronunciation": "ul",
+      "gloss": "2",
+      "parts": 1
+    },
+    {
+      "n": 3,
+      "written": "xwe",
+      "ipa": "ʃwe",
+      "pronunciation": "ʃwe",
+      "gloss": "3",
+      "parts": 1
+    },
+    {
+      "n": 4,
+      "written": "qo",
+      "ipa": "ŋo",
+      "pronunciation": "ŋo",
+      "gloss": "4",
+      "parts": 1
+    },
+    {
+      "n": 5,
+      "written": "syebyaa",
+      "ipa": "sjebjaː",
+      "pronunciation": "ˈsjebjaː",
+      "gloss": "5",
+      "parts": 1
+    },
+    {
+      "n": 6,
+      "written": "sre",
+      "ipa": "sre",
+      "pronunciation": "sre",
+      "gloss": "6",
+      "parts": 1
+    },
+    {
+      "n": 7,
+      "written": "sra",
+      "ipa": "sra",
+      "pronunciation": "sra",
+      "gloss": "7",
+      "parts": 1
+    },
+    {
+      "n": 8,
+      "written": "mo",
+      "ipa": "mo",
+      "pronunciation": "mo",
+      "gloss": "8",
+      "parts": 1
+    },
+    {
+      "n": 9,
+      "written": "du",
+      "ipa": "du",
+      "pronunciation": "du",
+      "gloss": "9",
+      "parts": 1
+    },
+    {
+      "n": 10,
+      "written": "i",
+      "ipa": "i",
+      "pronunciation": "i",
+      "gloss": "10",
+      "parts": 1
+    },
+    {
+      "n": 11,
+      "written": "tyaa do i",
+      "ipa": "tjaː do i",
+      "pronunciation": "tjaː do i",
+      "gloss": "1 + 10",
+      "parts": 3
+    },
+    {
+      "n": 12,
+      "written": "ul do i",
+      "ipa": "ul do i",
+      "pronunciation": "ul do i",
+      "gloss": "2 + 10",
+      "parts": 3
+    },
+    {
+      "n": 13,
+      "written": "xwe do i",
+      "ipa": "ʃwe do i",
+      "pronunciation": "ʃwe do i",
+      "gloss": "3 + 10",
+      "parts": 3
+    },
+    {
+      "n": 14,
+      "written": "qo do i",
+      "ipa": "ŋo do i",
+      "pronunciation": "ŋo do i",
+      "gloss": "4 + 10",
+      "parts": 3
+    },
+    {
+      "n": 15,
+      "written": "syebyaa do i",
+      "ipa": "sjebjaː do i",
+      "pronunciation": "ˈsjebjaː do i",
+      "gloss": "5 + 10",
+      "parts": 3
+    },
+    {
+      "n": 16,
+      "written": "sre do i",
+      "ipa": "sre do i",
+      "pronunciation": "sre do i",
+      "gloss": "6 + 10",
+      "parts": 3
+    },
+    {
+      "n": 17,
+      "written": "sra do i",
+      "ipa": "sra do i",
+      "pronunciation": "sra do i",
+      "gloss": "7 + 10",
+      "parts": 3
+    },
+    {
+      "n": 18,
+      "written": "mo do i",
+      "ipa": "mo do i",
+      "pronunciation": "mo do i",
+      "gloss": "8 + 10",
+      "parts": 3
+    },
+    {
+      "n": 19,
+      "written": "du do i",
+      "ipa": "du do i",
+      "pronunciation": "du do i",
+      "gloss": "9 + 10",
+      "parts": 3
+    },
+    {
+      "n": 20,
+      "written": "ul i",
+      "ipa": "ul i",
+      "pronunciation": "ul i",
+      "gloss": "2×10",
+      "parts": 2
+    },
+    {
+      "n": 30,
+      "written": "xwe i",
+      "ipa": "ʃwe i",
+      "pronunciation": "ʃwe i",
+      "gloss": "3×10",
+      "parts": 2
+    },
+    {
+      "n": 37,
+      "written": "sra do xwe i",
+      "ipa": "sra do ʃwe i",
+      "pronunciation": "sra do ʃwe i",
+      "gloss": "7 + 3×10",
+      "parts": 4
+    },
+    {
+      "n": 40,
+      "written": "qo i",
+      "ipa": "ŋo i",
+      "pronunciation": "ŋo i",
+      "gloss": "4×10",
+      "parts": 2
+    },
+    {
+      "n": 50,
+      "written": "syebyaa i",
+      "ipa": "sjebjaː i",
+      "pronunciation": "ˈsjebjaː i",
+      "gloss": "5×10",
+      "parts": 2
+    },
+    {
+      "n": 60,
+      "written": "sre i",
+      "ipa": "sre i",
+      "pronunciation": "sre i",
+      "gloss": "6×10",
+      "parts": 2
+    },
+    {
+      "n": 80,
+      "written": "mo i",
+      "ipa": "mo i",
+      "pronunciation": "mo i",
+      "gloss": "8×10",
+      "parts": 2
+    },
+    {
+      "n": 90,
+      "written": "du i",
+      "ipa": "du i",
+      "pronunciation": "du i",
+      "gloss": "9×10",
+      "parts": 2
+    },
+    {
+      "n": 99,
+      "written": "du do du i",
+      "ipa": "du do du i",
+      "pronunciation": "du do du i",
+      "gloss": "9 + 9×10",
+      "parts": 4
+    },
+    {
+      "n": 100,
+      "written": "bak",
+      "ipa": "bak",
+      "pronunciation": "bak",
+      "gloss": "100",
+      "parts": 1
+    },
+    {
+      "n": 256,
+      "written": "sre do syebyaa i do ul bak",
+      "ipa": "sre do sjebjaː i do ul bak",
+      "pronunciation": "sre do ˈsjebjaː i do ul bak",
+      "gloss": "6 + 5×10 + 2×100",
+      "parts": 7
+    },
+    {
+      "n": 1000,
+      "written": "okyal",
+      "ipa": "okjal",
+      "pronunciation": "ˈokjal",
+      "gloss": "1000",
+      "parts": 1
+    }
+  ],
+  "ordinals": [
+    {
+      "n": 1,
+      "written": "konla",
+      "ipa": "konla",
+      "pronunciation": "ˈkonla",
+      "gloss": "first (supletivo)"
+    },
+    {
+      "n": 2,
+      "written": "ulu",
+      "ipa": "ulu",
+      "pronunciation": "ˈulu",
+      "gloss": "2-ORD"
+    },
+    {
+      "n": 3,
+      "written": "xweu",
+      "ipa": "ʃweu",
+      "pronunciation": "ˈʃweu",
+      "gloss": "3-ORD"
+    },
+    {
+      "n": 4,
+      "written": "qou",
+      "ipa": "ŋou",
+      "pronunciation": "ˈŋou",
+      "gloss": "4-ORD"
+    },
+    {
+      "n": 5,
+      "written": "syebyaau",
+      "ipa": "sjebjaːu",
+      "pronunciation": "ˈsjebjaːu",
+      "gloss": "5-ORD"
+    }
+  ],
+  "metadata": {
+    "seed": 1113153202,
+    "sources": {
+      "131A": "WALS 131A (embutido)",
+      "53A": "WALS 53A (embutido)"
+    },
+    "notes": [
+      "conectivo obrigatório na soma, para distinguir 13 de 30"
+    ],
+    "new_words": 7
+  }
+}

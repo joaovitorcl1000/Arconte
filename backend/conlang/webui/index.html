@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arconte — gerador de línguas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@400;700&family=Noto+Sans:wght@400;500;600&family=Noto+Sans+Mono&display=swap">
+<style>
+:root{--ground:#EEF1EE;--card:#FFFFFF;--ink:#1D2523;--muted:#3F4B48;--faint:#4D5B57;--line:#DCE2DF;--field:#9AA8A4;
+  --accent:#0B5E52;--accent-ink:#FFFFFF;--soft:#F6F8F7;--dark:#12302B;--dark-ink:#E8F1EE;--dark-muted:#BFD9D2;--err:#9A2B1E;
+  --serif:'Gentium Book Plus',Georgia,serif;--sans:'Noto Sans',system-ui,sans-serif;--mono:'Noto Sans Mono',ui-monospace,monospace}
+@media (prefers-color-scheme: dark){:root{--ground:#121816;--card:#1A2220;--ink:#E4ECE9;--muted:#B3C2BD;--faint:#A3B3AE;--line:#2C3835;
+  --field:#5E6E69;--accent:#4FB3A2;--accent-ink:#0B1513;--soft:#222C29;--dark:#0B1513;--dark-ink:#E4ECE9;--dark-muted:#9FC4BA;--err:#F08A7A}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.55}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:3px solid #2C6FD1;outline-offset:2px}
+.wrap{max-width:1180px;margin:0 auto;padding:40px 20px 96px;display:flex;flex-direction:column;gap:28px}
+header{display:flex;flex-wrap:wrap;gap:16px 32px;align-items:flex-end;justify-content:space-between}
+h1{margin:0;font-family:var(--serif);font-size:48px;line-height:1.05}
+h2{margin:0;font-family:var(--serif);font-size:28px}
+h3{margin:0;font-size:17px;font-weight:600}
+p{margin:0}
+.lede{color:var(--muted);font-size:17px;max-width:60ch}
+nav.tabs{display:flex;flex-wrap:wrap;gap:8px}
+nav.tabs button{min-height:44px;padding:0 18px;border-radius:22px;border:1.5px solid var(--accent);background:transparent;color:var(--accent);font-weight:600;cursor:pointer}
+nav.tabs button[aria-selected="true"]{background:var(--accent);color:var(--accent-ink)}
+.card{background:var(--card);border-radius:14px;padding:26px;display:flex;flex-direction:column;gap:20px}
+.intro{color:var(--muted);max-width:70ch}
+.choice{display:flex;flex-direction:column;gap:10px;padding-top:18px;border-top:1px solid var(--line)}
+.choice-head{display:flex;flex-wrap:wrap;gap:6px 16px;align-items:baseline;justify-content:space-between}
+.flag{font-family:var(--mono);font-size:13px;color:var(--faint)}
+.pills{display:flex;flex-wrap:wrap;gap:8px}
+.pill{min-height:44px;padding:8px 14px;border-radius:12px;border:1.5px solid var(--field);background:var(--soft);text-align:left;cursor:pointer}
+.pill[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.pill b{display:block;font-weight:600;font-size:15px}
+.pill small{display:block;font-size:13px;opacity:.85}
+.row{display:flex;flex-wrap:wrap;gap:16px;align-items:flex-end}
+.field{flex:1 1 200px;display:flex;flex-direction:column;gap:6px}
+.field label,.label{font-weight:600}
+input[type=text],input[type=number],select,textarea{min-height:44px;padding:8px 12px;border:1.5px solid var(--field);border-radius:10px;background:var(--card);width:100%}
+textarea{resize:vertical;line-height:1.5}
+.ipa{font-family:var(--serif);font-size:19px}
+.check{display:inline-flex;align-items:center;gap:10px;min-height:44px}
+.check input{width:20px;height:20px;accent-color:var(--accent)}
+.btn{min-height:48px;padding:0 24px;border-radius:24px;border:none;background:var(--accent);color:var(--accent-ink);font-weight:600;font-size:16px;cursor:pointer}
+.btn:disabled{opacity:.6;cursor:progress}
+.btn.ghost{background:transparent;color:var(--accent);border:1.5px solid var(--accent);min-height:44px;padding:0 18px;font-size:15px}
+.cmd{background:var(--dark);color:var(--dark-ink);border-radius:14px;padding:20px 24px;display:flex;flex-direction:column;gap:10px}
+.cmd pre{margin:0;font-family:var(--mono);font-size:14px;white-space:pre-wrap;word-break:break-word}
+.cmd .meta{color:var(--dark-muted);font-size:14px}
+.kb{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.kb span{min-width:90px;font-size:14px;color:var(--faint)}
+.kb button{min-width:44px;min-height:44px;border:1.5px solid var(--field);background:var(--soft);border-radius:10px;font-family:var(--serif);font-size:19px;cursor:pointer}
+table.words{width:100%;min-width:680px;border-collapse:collapse}
+table.words th{text-align:left;font-weight:600;color:var(--muted);padding:8px}
+table.words td{padding:6px 8px;border-top:1px solid var(--line)}
+.scroll{overflow-x:auto}
+.status{font-weight:600}
+.status.err{color:var(--err)}
+.layout{display:flex;flex-wrap:wrap;gap:28px;align-items:flex-start}
+.side{flex:1 1 260px;max-width:340px;display:flex;flex-direction:column;gap:8px}
+.main{flex:999 1 560px;min-width:0;display:flex;flex-direction:column;gap:20px}
+.lang{display:flex;flex-direction:column;gap:2px;padding:12px 14px;border-radius:10px;border:1.5px solid var(--line);background:var(--card);text-align:left;cursor:pointer}
+.lang[aria-current="true"]{border-color:var(--accent)}
+.lang b{font-size:16px}
+.lang small{color:var(--faint);font-size:13px}
+.doc{background:var(--card);border-radius:14px;padding:28px;overflow-x:auto}
+.doc h1{font-size:38px;margin:0 0 16px}.doc h2{font-size:28px;margin:32px 0 12px}.doc h3{font-size:19px;margin:24px 0 8px}.doc h4{margin:18px 0 6px}
+.doc p{margin:10px 0;max-width:80ch}.doc ul{margin:8px 0;padding-left:22px}
+.doc table{border-collapse:collapse;margin:12px 0;font-size:15px}
+.doc th,.doc td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}
+.doc th{background:var(--soft)}
+.doc pre{background:var(--soft);padding:14px;border-radius:10px;overflow-x:auto;font-family:var(--mono);font-size:14px;line-height:1.5}
+.doc code{font-family:var(--mono);font-size:.92em}
+.doc strong{font-weight:600}
+.files{display:flex;flex-wrap:wrap;gap:8px}
+.files a{font-size:14px;color:var(--accent)}
+.doctabs{display:flex;flex-wrap:wrap;gap:8px}
+.logbox{max-height:340px;overflow:auto}
+fieldset{margin:0;padding:12px 14px;border:1.5px solid var(--line);border-radius:12px;flex:1 1 240px}
+legend{font-weight:600;padding:0 6px}
+.law{display:flex;align-items:center;gap:10px;min-height:38px}
+.law input{width:18px;height:18px;accent-color:var(--accent)}
+.law small{margin-left:auto;color:var(--faint)}
+.tr{display:flex;flex-direction:column;gap:6px;padding:16px;border-radius:12px;background:var(--soft)}
+.tr .w{font-family:var(--serif);font-size:22px}
+.tr pre{margin:0;font-family:var(--mono);font-size:14px;white-space:pre;overflow-x:auto}
+[hidden]{display:none!important}
+@media (prefers-reduced-motion: reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<div style="display:flex;flex-direction:column;gap:10px">
+<h1>Arconte</h1>
+<p class="lede">Crie línguas completas a partir de dados de línguas reais. Tudo que você não escolher é sorteado.</p>
+</div>
+<nav class="tabs" role="tablist" aria-label="Seções">
+<button role="tab" data-tab="criar" aria-selected="true">Criar língua</button>
+<button role="tab" data-tab="linguas" aria-selected="false">Minhas línguas</button>
+<button role="tab" data-tab="evoluir" aria-selected="false">Evoluir</button>
+<button role="tab" data-tab="familia" aria-selected="false">Família</button>
+<button role="tab" data-tab="traduzir" aria-selected="false">Traduzir</button>
+</nav>
+</header>
+
+<!-- ═══ CRIAR ═══ -->
+<section id="tab-criar" role="tabpanel" style="display:flex;flex-direction:column;gap:24px">
+<div class="cmd"><span class="meta">Comando equivalente</span><pre id="cmd-criar"></pre><span class="meta" id="sum-criar"></span></div>
+<div class="card">
+<h2>Identidade</h2>
+<div class="row">
+<div class="field"><label for="c-name">Nome da pasta</label><input id="c-name" type="text" placeholder="lang-semente"></div>
+<div class="field"><label for="c-seed">Semente</label><input id="c-seed" type="number" placeholder="aleatória"></div>
+</div>
+</div>
+<div id="groups" style="display:flex;flex-direction:column;gap:24px"></div>
+
+<div class="card">
+<h2>Seus sons e palavras</h2>
+<p class="intro">Opcional. Em IPA, separados por espaço. Se preencher os sons, a língua usa exatamente esses; as palavras entram no dicionário e o resto é criado em volta delas.</p>
+<div class="row">
+<div class="field" style="flex:2 1 320px"><label for="u-cons">Consoantes</label><input id="u-cons" class="ipa" type="text" placeholder="p t k b d ɡ m n s ʃ l r j w"></div>
+<div class="field"><label for="u-vows">Vogais</label><input id="u-vows" class="ipa" type="text" placeholder="a e i o u"></div>
+<div class="field" style="flex:1 1 140px"><label for="u-tones">Tons</label><input id="u-tones" class="ipa" type="text" placeholder="˥ ˩"></div>
+</div>
+<div id="keyboard" style="display:flex;flex-direction:column;gap:8px"></div>
+<div class="scroll"><table class="words"><thead><tr><th scope="col">Forma (IPA)</th><th scope="col">Significado (inglês)</th><th scope="col">Classe</th><th scope="col">Gênero ou transitividade</th><th scope="col"><span hidden>Remover</span></th></tr></thead><tbody id="words"></tbody></table></div>
+<div class="row"><button type="button" class="btn ghost" id="add-word">Acrescentar palavra</button></div>
+<div class="choice"><div class="choice-head"><h3>Quando uma palavra fere as regras da língua</h3><span class="flag">--custom-policy</span></div><div class="pills" id="policy"></div></div>
+</div>
+
+<div class="card">
+<h2>Mudanças sonoras</h2>
+<p class="intro">Regras em IPA, uma por linha, na notação do Vulgarlang: <span class="ipa">a &gt; e / _k</span>, <span class="ipa">C &gt; ∅ / _#</span>, <span class="ipa">{p,t,k} &gt; {b,d,ɡ} / V_V</span>.</p>
+<div class="field"><label for="c-rules">Regras próprias</label><textarea id="c-rules" class="ipa" rows="3"></textarea></div>
+<div class="row">
+<label class="check"><input type="checkbox" id="c-natural" checked> Sortear mudanças naturais</label>
+<label class="check"><input type="checkbox" id="c-reflect"> A grafia segue a pronúncia nova</label>
+</div>
+</div>
+
+<div class="card">
+<h2>Quantidades e dados</h2>
+<div class="row">
+<div class="field"><label for="c-people">Nomes de pessoas</label><input id="c-people" type="number" min="0" value="20"></div>
+<div class="field"><label for="c-places">Nomes de lugares</label><input id="c-places" type="number" min="0" value="20"></div>
+<div class="field"><label for="c-upto">Numerais listados até</label><input id="c-upto" type="number" min="1" value="20"></div>
+<div class="field"><label for="c-deriv">Derivadas por processo</label><input id="c-deriv" type="number" min="1" value="12"></div>
+</div>
+<div class="row">
+<label class="check"><input type="checkbox" id="c-derive-all"> Derivar de todas as bases</label>
+<label class="check"><input type="checkbox" id="c-modern"> Vocabulário do mundo moderno</label>
+<label class="check"><input type="checkbox" id="c-nowals"> Só distribuições embutidas (sem WALS local)</label>
+</div>
+</div>
+
+<div class="card">
+<h2>Depois de criar</h2>
+<p class="intro">Opcional: línguas-filhas criadas logo em seguida e frases traduzidas para a língua (e para cada filha).</p>
+<div id="daughters" style="display:flex;flex-direction:column;gap:12px"></div>
+<div class="row"><button type="button" class="btn ghost" id="add-daughter">Acrescentar língua-filha</button>
+<label class="check"><input type="checkbox" id="c-evgram" checked> A gramática das filhas evolui junto</label></div>
+<div class="field"><label for="c-family">Família com quantos ramos (0 = nenhuma)</label><input id="c-family" type="number" min="0" max="8" value="0"></div>
+<div class="field"><label for="c-sentences">Frases em inglês para traduzir (uma por linha)</label><textarea id="c-sentences" rows="3" placeholder="The woman sees the big dog."></textarea></div>
+</div>
+
+<div class="row"><button type="button" class="btn" id="run-criar">Criar língua</button><span class="status" id="st-criar" role="status" aria-live="polite"></span></div>
+<details class="card" id="log-criar-box" hidden><summary class="label">Saída do gerador</summary><pre class="logbox" id="log-criar"></pre></details>
+</section>
+
+<!-- ═══ MINHAS LÍNGUAS ═══ -->
+<section id="tab-linguas" role="tabpanel" hidden>
+<div class="layout">
+<div class="side"><div class="row"><h2 style="flex:1">Línguas</h2><button type="button" class="btn ghost" id="refresh">Atualizar</button></div><div id="langlist" style="display:flex;flex-direction:column;gap:8px"></div></div>
+<div class="main">
+<div class="row" id="docbar" hidden><div class="doctabs" id="doctabs"></div></div>
+<article class="doc" id="doc"><p>Escolha uma língua para ver o documento completo.</p></article>
+<div class="card" id="filesbox" hidden><h3>Arquivos</h3><div class="files" id="files"></div></div>
+</div>
+</div>
+</section>
+
+<!-- ═══ EVOLUIR ═══ -->
+<section id="tab-evoluir" role="tabpanel" hidden style="display:flex;flex-direction:column;gap:24px">
+<div class="card">
+<h2>Língua-filha</h2>
+<p class="intro">A língua escolhida envelhece por leis fonéticas reais, troca palavras e muda a gramática. A filha sai completa, com o documento de gramática e a história da evolução.</p>
+<div class="row">
+<div class="field"><label for="e-lang">Língua-mãe</label><select id="e-lang" class="langsel"></select></div>
+<div class="field"><label for="e-name">Nome da filha (opcional)</label><input id="e-name" type="text" placeholder="automático"></div>
+</div>
+<div class="choice"><div class="choice-head"><h3>Perfil</h3><span class="flag">--profile</span></div><div class="pills" id="e-profile"></div></div>
+<div class="row"><div class="field"><label for="e-years">Anos de evolução</label><input id="e-years" type="number" min="100" step="100" value="1500"></div>
+<label class="check"><input type="checkbox" id="e-grammar" checked> A gramática evolui junto</label>
+<label class="check"><input type="checkbox" id="e-nolex"> Só sons (sem trocar palavras)</label></div>
+</div>
+<div class="card">
+<h2>Leis escolhidas à mão</h2>
+<p class="intro">Opcional: se marcar leis, elas substituem o perfil e o tempo e são aplicadas na ordem em que foram marcadas.</p>
+<div class="row" id="laws" style="align-items:stretch"></div>
+</div>
+<div class="card">
+<h2>Empréstimos</h2>
+<div class="row"><div class="field"><label for="e-donor">Língua doadora</label><select id="e-donor" class="langsel" data-empty="nenhuma"></select></div></div>
+<div class="pills" id="e-borrow"></div>
+</div>
+<div class="row"><button type="button" class="btn" id="run-evoluir">Criar língua-filha</button><span class="status" id="st-evoluir" role="status" aria-live="polite"></span></div>
+<details class="card" id="log-evoluir-box" hidden><summary class="label">Saída do motor</summary><pre class="logbox" id="log-evoluir"></pre></details>
+</section>
+
+<!-- ═══ FAMÍLIA ═══ -->
+<section id="tab-familia" role="tabpanel" hidden style="display:flex;flex-direction:column;gap:24px">
+<div class="card">
+<h2>Família de línguas</h2>
+<p class="intro">A língua vira protolíngua e se divide em ramos e sub-ramos. O resultado traz a árvore, a tabela de cognatos, as correspondências sonoras e as distâncias.</p>
+<div class="row">
+<div class="field"><label for="f-lang">Protolíngua</label><select id="f-lang" class="langsel"></select></div>
+<div class="field"><label for="f-br">Ramos</label><input id="f-br" type="number" min="1" max="8" value="3"></div>
+<div class="field"><label for="f-sub">Sub-ramos</label><input id="f-sub" type="number" min="0" max="5" value="2"></div>
+<div class="field"><label for="f-depth">Níveis</label><select id="f-depth"><option>1</option><option selected>2</option><option>3</option></select></div>
+<div class="field"><label for="f-years">Anos por divisão</label><input id="f-years" type="number" min="100" step="100" value="1500"></div>
+</div>
+<div class="choice"><div class="choice-head"><h3>Perfis dos ramos principais (opcional)</h3><span class="flag">--profiles</span></div><div class="pills" id="f-profiles"></div></div>
+<div class="row"><label class="check"><input type="checkbox" id="f-grammar" checked> A gramática evolui</label>
+<label class="check"><input type="checkbox" id="f-rebuild"> Grafia e gramática completas de cada língua (demora mais)</label></div>
+</div>
+<div class="row"><button type="button" class="btn" id="run-familia">Criar família</button><span class="status" id="st-familia" role="status" aria-live="polite"></span></div>
+<details class="card" id="log-familia-box" hidden><summary class="label">Saída do motor</summary><pre class="logbox" id="log-familia"></pre></details>
+</section>
+
+<!-- ═══ TRADUZIR ═══ -->
+<section id="tab-traduzir" role="tabpanel" hidden style="display:flex;flex-direction:column;gap:24px">
+<div class="card">
+<h2>Traduzir</h2>
+<div class="row"><div class="field"><label for="t-lang">Língua</label><select id="t-lang" class="langsel"></select></div></div>
+<div class="field"><label for="t-text">Frases em inglês</label><textarea id="t-text" rows="4">The woman sees the big dog. Did the dog eat the fish? I know that the dog sleeps.</textarea></div>
+<div class="row"><button type="button" class="btn" id="run-traduzir">Traduzir</button><span class="status" id="st-traduzir" role="status" aria-live="polite"></span></div>
+</div>
+<div id="tr-out" style="display:flex;flex-direction:column;gap:12px"></div>
+</section>
+</div>
+
+<script>
+// ─── dados das escolhas ───────────────────────────────────────────────
+const GROUPS = [
+ {title:'Estrutura das palavras', intro:'Como as palavras se formam.', choices:[
+  {key:'synthesis', label:'Síntese', flag:'--synthesis', opts:[['isolating','Isolante','mandarim'],['synthetic','Sintética','português'],['polysynthetic','Polissintética','groenlandês']]},
+  {key:'fusion', label:'Fusão', flag:'--fusion', opts:[['none','Nenhuma','isolantes'],['agglutinative','Aglutinante','turco'],['fusional','Fusional','latim']]},
+  {key:'affix_position', label:'Posição dos afixos', flag:'--affix-position', opts:[['little_affixation','Pouca afixação',''],['strongly_suffixing','Fortemente sufixante','turco'],['weakly_suffixing','Fracamente sufixante',''],['equal','Equilibrada',''],['weakly_prefixing','Fracamente prefixante',''],['strongly_prefixing','Fortemente prefixante','suaíli']]},
+  {key:'locus', label:'Onde a relação é marcada', flag:'--locus', opts:[['head_marking','No núcleo','o verbo concorda'],['dependent_marking','No dependente','casos'],['double_marking','Nos dois',''],['no_marking','Nenhum','ordem das palavras']]}]},
+ {title:'Sons', intro:'Inventário a partir do PHOIBLE (~2.000 línguas).', choices:[
+  {key:'inventory_mode', label:'Origem do inventário', flag:'--inventory-mode', fixed:'feature', opts:[['feature','Por traços','padrão'],['real','Língua real','com mutações']]},
+  {key:'consonants', label:'Consoantes', flag:'--consonants', number:[6,60]},
+  {key:'vowels', label:'Vogais', flag:'--vowels', number:[2,20]},
+  {key:'tones', label:'Tons', flag:'--tones / --no-tones', opts:[['yes','Com tons','mandarim'],['no','Sem tons','português']]},
+  {key:'complexity', label:'Sílabas', flag:'--complexity', opts:[['simple','Simples','CV'],['moderate','Moderada','CVC, CCV'],['complex','Complexa','CCCVCC']]}]},
+ {title:'Escrita e acento', intro:'Grafia com o alfabeto latino e posição do acento.', choices:[
+  {key:'style', label:'Estilo da grafia', flag:'--style', opts:[['english','Inglês','sh ch ng'],['diacritics','Diacríticos','š č ŋ'],['economic','Econômico','x c q'],['romance','Românico','x ch nh lh']]},
+  {key:'stress_rule', label:'Acento', flag:'--stress-rule', opts:[['initial','Inicial','finlandês'],['second','Segunda',''],['third','Terceira',''],['antepenultimate','Antepenúltima',''],['penultimate','Penúltima','polonês'],['ultimate','Última','francês'],['left_edge','Borda esquerda','peso'],['left_oriented','Orientado à esquerda','peso'],['right_edge','Borda direita','peso'],['right_oriented','Regra do latim','peso'],['unbounded_left','Primeira pesada','peso'],['unbounded_right','Última pesada','peso'],['combined','Combinado','peso'],['lexical','Lexical','russo'],['none','Sem acento','tonais']]}]},
+ {title:'Gramática', intro:'As outras decisões (casos, gênero, tempo, artigos, posse, comparação) seguem as correlações do WALS.', choices:[
+  {key:'order', label:'Ordem das palavras', flag:'--order', opts:[['SOV','SOV','japonês'],['SVO','SVO','português'],['VSO','VSO','galês'],['VOS','VOS','malgaxe'],['OVS','OVS','hixkaryana'],['OSV','OSV','raríssima']]},
+  {key:'number_base', label:'Base numeral', flag:'--number-base', opts:[['decimal','Decimal','base 10'],['quinary','Quinária','7 = 5+2'],['vigesimal','Vigesimal','maia'],['hybrid','Híbrida','quatre-vingt'],['restricted','Restrita','1, 2, 3, muitos'],['body_part','Partes do corpo','Nova Guiné']]}]},
+ {title:'Vocabulário', intro:'A lista básica do Concepticon. O vocabulário ampliado (WOLD) e as derivadas entram sempre.', choices:[
+  {key:'list', label:'Lista básica', flag:'--list', fixed:'all', opts:[['all','Completa','231'],['swadesh-200','Swadesh','200'],['leipzig-jakarta','Leipzig-Jakarta','100']]}]}
+];
+const PROFILES = [['natural','Natural','mudanças comuns'],['germanic','Germânico','pater ~ father'],['english','Inglês','mīs → mice'],['romance','Românico','lupus → lobo'],['celtic','Céltico','pater ~ athair'],['slavic','Eslavo','*kelo → čelo'],['indo_iranian','Indo-iraniano','sapta ~ hapta'],['hellenic','Grego','septem ~ hepta'],['polynesian','Polinésio','*waka → waʻa'],['sinitic','Chinês','tonogênese']];
+const LAWS = [["grimm","Lei de Grimm","germânica"],["verner","Lei de Verner","germânica"],["umlaut","Metafonia (umlaut)","germânica"],["final_devoicing","Ensurdecimento final","germânica"],["great_vowel_shift","Grande Mudança Vocálica","inglesa"],["lenition_voicing","Lenição: sonorização","românica"],["lenition_spirant","Lenição: espirantização","românica"],["lenition_loss","Lenição: queda","românica"],["palatalization","Palatalização românica","românica"],["nasalization","Nasalização","românica"],["kt_cluster","Mudança de kt","românica"],["diphthongization","Ditongação","românica"],["final_vowel_raising","Elevação de vogal final","românica"],["length_loss","Perda da quantidade vocálica","românica"],["rhotacism","Rotacismo","românica"],["first_palatalization","Primeira palatalização eslava","eslava"],["open_syllables","Lei das sílabas abertas","eslava"],["celtic_p_loss","Perda do p céltico","céltica"],["celtic_lenition","Lenição céltica","céltica"],["grassmann","Lei de Grassmann","indo-iraniana e grega"],["ruki","Regra ruki","indo-iraniana e grega"],["s_to_h","s → h","indo-iraniana e grega"],["final_consonant_loss","Queda de consoantes finais","polinésia"],["k_to_glottal","k → ʔ","polinésia"],["glottal_loss","Queda de ʔ","polinésia"],["liquid_merger","Fusão de líquidas","polinésia"],["obstruent_devoicing","Perda da sonoridade","polinésia"],["coda_glottalization","Glotalização de codas","chinesa"],["tonogenesis","Tonogênese","chinesa"],["vowel_reduction","Redução de átonas","universal"],["syncope","Síncope","universal"],["apocope","Apócope","universal"],["degemination","Degeminação","universal"],["monophthongization","Monotongação","universal"],["h_loss","Queda de h","universal"],["nasal_assimilation","Assimilação nasal","universal"],["aspiration_loss","Perda da aspiração","universal"],["cluster_simplification","Simplificação de encontros","universal"]];
+const KEYBOARD = [['Consoantes','u-cons','ʃ ʒ θ ð ŋ ɲ ʎ x ɣ χ ʁ ħ ʔ ɾ ɹ ɬ t̠ʃ d̠ʒ ts ʈ ɖ ɓ ɗ kʼ pʰ kʷ'],['Vogais','u-vows','ɛ ɔ ə ɨ ʉ ɯ y ø æ ɑ ɪ ʊ aː ã'],['Tons','u-tones','˥ ˦ ˧ ˨ ˩ ˥˩ ˩˥']];
+
+// ─── estado ──────────────────────────────────────────────────────────
+const sel = {};               // escolhas de pílula da aba Criar
+let policy = 'adapt', borrowing = 'medium', evProfile = 'romance';
+const famProfiles = new Set(), laws = [];
+let words = [{form:'',meaning:'',pos:'noun',extra:''}];
+let daughters = [];
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+function pills(container, options, current, onPick) {
+  container.innerHTML = '';
+  options.forEach(([v, label, note]) => {
+    const b = document.createElement('button');
+    b.type = 'button'; b.className = 'pill';
+    b.setAttribute('aria-pressed', String(current(v)));
+    b.innerHTML = `<b>${esc(label)}</b>${note ? `<small>${esc(note)}</small>` : ''}`;
+    b.onclick = () => { onPick(v); };
+    container.appendChild(b);
+  });
+}
+
+// ─── aba Criar ───────────────────────────────────────────────────────
+function renderGroups() {
+  const root = $('groups'); root.innerHTML = '';
+  GROUPS.forEach((g) => {
+    const card = document.createElement('div'); card.className = 'card';
+    card.innerHTML = `<div style="display:flex;flex-direction:column;gap:6px"><h2>${esc(g.title)}</h2><p class="intro">${esc(g.intro)}</p></div>`;
+    g.choices.forEach((c) => {
+      const box = document.createElement('div'); box.className = 'choice';
+      box.innerHTML = `<div class="choice-head"><h3>${esc(c.label)}</h3><span class="flag">${esc(c.flag)}</span></div>`;
+      if (c.number) {
+        const id = 'n-' + c.key;
+        box.innerHTML += `<div class="row"><div class="field" style="max-width:260px"><label for="${id}">Quantidade (vazio = sortear)</label><input id="${id}" type="number" min="${c.number[0]}" max="${c.number[1]}" placeholder="sortear"></div></div>`;
+        card.appendChild(box);
+        box.querySelector('input').oninput = (e) => { sel[c.key] = e.target.value; updateCommand(); };
+        return;
+      }
+      const p = document.createElement('div'); p.className = 'pills'; box.appendChild(p);
+      const opts = (c.fixed ? [] : [['random','Sortear','pelos dados']]).concat(c.opts);
+      const draw = () => pills(p, opts, (v) => (sel[c.key] || c.fixed || 'random') === v, (v) => { sel[c.key] = v; draw(); updateCommand(); });
+      draw();
+      card.appendChild(box);
+    });
+    root.appendChild(card);
+  });
+}
+
+function renderKeyboard() {
+  const root = $('keyboard'); root.innerHTML = '';
+  KEYBOARD.forEach(([label, target, keys]) => {
+    const row = document.createElement('div'); row.className = 'kb'; row.setAttribute('role', 'group'); row.setAttribute('aria-label', label);
+    row.innerHTML = `<span>${esc(label)}</span>`;
+    keys.split(' ').forEach((k) => {
+      const b = document.createElement('button'); b.type = 'button'; b.textContent = k; b.setAttribute('aria-label', 'Acrescentar ' + k);
+      b.onclick = () => { const f = $(target); f.value = (f.value.trim() ? f.value.trim() + ' ' : '') + k; updateCommand(); };
+      row.appendChild(b);
+    });
+    root.appendChild(row);
+  });
+}
+
+function renderWords() {
+  const tb = $('words'); tb.innerHTML = '';
+  words.forEach((w, i) => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `<td><input class="ipa" type="text" aria-label="Forma" value="${esc(w.form)}"></td>
+      <td><input type="text" aria-label="Significado" value="${esc(w.meaning)}" placeholder="dog"></td>
+      <td><select aria-label="Classe">${[['noun','Substantivo'],['verb','Verbo'],['adjective','Adjetivo'],['other','Outra']].map(([v,l]) => `<option value="${v}" ${w.pos===v?'selected':''}>${l}</option>`).join('')}</select></td>
+      <td><input type="text" aria-label="Gênero ou transitividade" value="${esc(w.extra)}" placeholder="masculino, transitivo, pronome..."></td>
+      <td><button type="button" class="btn ghost" aria-label="Remover palavra">Remover</button></td>`;
+    const [f, m, s, x] = tr.querySelectorAll('input, select');
+    f.oninput = (e) => { w.form = e.target.value; updateCommand(); };
+    m.oninput = (e) => { w.meaning = e.target.value; updateCommand(); };
+    s.onchange = (e) => { w.pos = e.target.value; updateCommand(); };
+    x.oninput = (e) => { w.extra = e.target.value; updateCommand(); };
+    tr.querySelector('button').onclick = () => { words.splice(i, 1); renderWords(); updateCommand(); };
+    tb.appendChild(tr);
+  });
+}
+
+function renderDaughters() {
+  const root = $('daughters'); root.innerHTML = '';
+  daughters.forEach((d, i) => {
+    const row = document.createElement('div'); row.className = 'row';
+    row.innerHTML = `<div class="field"><label for="d-p-${i}">Perfil da filha ${i + 1}</label><select id="d-p-${i}">${PROFILES.map(([v,l]) => `<option value="${v}" ${d.profile===v?'selected':''}>${l}</option>`).join('')}</select></div>
+      <div class="field"><label for="d-y-${i}">Anos</label><input id="d-y-${i}" type="number" min="100" step="100" value="${d.years}"></div>
+      <button type="button" class="btn ghost">Remover</button>`;
+    row.querySelector('select').onchange = (e) => { d.profile = e.target.value; updateCommand(); };
+    row.querySelector('input').oninput = (e) => { d.years = e.target.value; updateCommand(); };
+    row.querySelector('button').onclick = () => { daughters.splice(i, 1); renderDaughters(); updateCommand(); };
+    root.appendChild(row);
+  });
+}
+
+function createOptions() {
+  const o = { name: $('c-name').value.trim(), seed: $('c-seed').value.trim() };
+  GROUPS.forEach((g) => g.choices.forEach((c) => { if (sel[c.key] !== undefined) o[c.key] = sel[c.key]; }));
+  o.sound_change = $('c-rules').value.split('\n').map((x) => x.trim()).filter(Boolean);
+  o.no_natural_changes = !$('c-natural').checked;
+  o.reflect_spelling = $('c-reflect').checked;
+  o.people = $('c-people').value; o.places = $('c-places').value; o.numbers_upto = $('c-upto').value;
+  o.derive_all = $('c-derive-all').checked; o.derive_per_process = o.derive_all ? '' : $('c-deriv').value;
+  o.include_modern = $('c-modern').checked; o.no_wals = $('c-nowals').checked;
+  o.custom = { phonemes: { consonants: $('u-cons').value, vowels: $('u-vows').value, tones: $('u-tones').value }, words };
+  o.custom_policy = policy === 'exception' ? 'exception' : '';
+  o.evolve = daughters.map((d) => ({ profile: d.profile, years: d.years }));
+  o.no_evolve_grammar = daughters.length > 0 && !$('c-evgram').checked;
+  o.family = Number($('c-family').value) > 0 ? $('c-family').value : '';
+  o.sentences = $('c-sentences').value.split('\n').filter((x) => x.trim());
+  // valores iguais ao padrão não precisam ir para o comando
+  if (o.people == 20) delete o.people; if (o.places == 20) delete o.places; if (o.numbers_upto == 20) delete o.numbers_upto;
+  if (o.derive_per_process == 12) delete o.derive_per_process;
+  if (o.inventory_mode === 'feature') delete o.inventory_mode; if (o.list === 'all') delete o.list;
+  return o;
+}
+
+function updateCommand() {
+  const o = createOptions();
+  const parts = ['python generate_language/generate_language.py'];
+  let fixed = 0;
+  const flag = (k) => '--' + k.replace(/_/g, '-');
+  ['name','seed','synthesis','fusion','affix_position','locus','inventory_mode','consonants','vowels','complexity','list','order','style','stress_rule','number_base','numbers_upto','people','places','derive_per_process','custom_policy','family']
+    .forEach((k) => { if (o[k] && o[k] !== 'random') { parts.push(flag(k) + ' ' + o[k]); fixed++; } });
+  if (o.tones === 'yes') { parts.push('--tones'); fixed++; } if (o.tones === 'no') { parts.push('--no-tones'); fixed++; }
+  ['include_modern','derive_all','no_natural_changes','reflect_spelling','no_wals','no_evolve_grammar'].forEach((k) => { if (o[k]) parts.push(flag(k)); });
+  o.sound_change.forEach((r) => parts.push(`--sound-change "${r}"`));
+  const hasCustom = o.custom.words.some((w) => w.form && w.meaning) || o.custom.phonemes.consonants || o.custom.phonemes.vowels;
+  if (hasCustom) parts.push('--custom minha_lingua.txt');
+  o.evolve.forEach((d) => parts.push(`--evolve ${d.profile}:${d.years}`));
+  if (o.sentences.length) parts.push('--translate frases.txt');
+  $('cmd-criar').textContent = parts.join(' \\\n    ');
+  $('sum-criar').textContent = fixed ? `${fixed} ${fixed === 1 ? 'escolha fixada' : 'escolhas fixadas'}; o resto será sorteado.` : 'Nada fixado: a língua inteira será sorteada.';
+}
+
+// ─── chamadas ao servidor ────────────────────────────────────────────
+async function api(path, body) {
+  const r = await fetch(path, body ? { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) } : {});
+  const data = await r.json().catch(() => ({ ok: false, error: 'resposta inválida do servidor' }));
+  if (!r.ok && data.ok === undefined) data.ok = false;
+  return data;
+}
+
+async function runTask(btn, status, logId, path, body, after) {
+  btn.disabled = true;
+  status.className = 'status'; status.textContent = 'Rodando os motores... isso pode levar alguns minutos.';
+  try {
+    const r = await api(path, body);
+    if (logId) { $(logId + '-box').hidden = false; $(logId).textContent = r.log || r.error || ''; }
+    if (r.ok) { status.textContent = 'Pronto: ' + (r.name || ''); if (after) after(r); }
+    else { status.className = 'status err'; status.textContent = 'Não deu certo: ' + (r.error || 'veja a saída do motor abaixo.'); }
+    await loadLanguages();
+  } catch (e) {
+    status.className = 'status err'; status.textContent = 'O servidor não respondeu. Ele está rodando (python webui/server.py)?';
+  } finally { btn.disabled = false; }
+}
+
+// ─── Minhas línguas ──────────────────────────────────────────────────
+let langs = [], current = null, currentDoc = null;
+async function loadLanguages() {
+  try { langs = await api('/api/languages'); } catch (e) { langs = []; }
+  const list = $('langlist'); list.innerHTML = '';
+  if (!langs.length) list.innerHTML = '<p class="intro">Nenhuma língua ainda. Crie uma na aba Criar língua.</p>';
+  langs.forEach((l) => {
+    const b = document.createElement('button'); b.type = 'button'; b.className = 'lang';
+    b.setAttribute('aria-current', String(l.name === current));
+    const sub = l.family ? 'família' : l.evolved_from ? `filha de ${l.evolved_from} · ${l.profile || ''} ${l.years || ''} anos` : (l.seed != null ? `semente ${l.seed}` : '');
+    b.innerHTML = `<b>${esc(l.title || l.name)}</b><small>${esc(l.name)}${sub ? ' · ' + esc(sub) : ''}</small>`;
+    b.onclick = () => openLanguage(l.name);
+    list.appendChild(b);
+  });
+  document.querySelectorAll('.langsel').forEach((s) => {
+    const cur = s.value;
+    const real = langs.filter((l) => !l.family);
+    s.innerHTML = (s.dataset.empty ? `<option value="">${esc(s.dataset.empty)}</option>` : '') + real.map((l) => `<option value="${esc(l.name)}">${esc(l.title ? l.title + ' (' + l.name + ')' : l.name)}</option>`).join('');
+    if (cur && real.some((l) => l.name === cur)) s.value = cur;
+  });
+}
+
+async function openLanguage(name, doc) {
+  current = name; selectTab('linguas');
+  const r = await api('/api/language?name=' + encodeURIComponent(name));
+  if (r.ok === false) { $('doc').innerHTML = `<p class="status err">${esc(r.error)}</p>`; return; }
+  const docs = Object.keys(r.docs);
+  currentDoc = doc && r.docs[doc] ? doc : docs[0];
+  $('docbar').hidden = docs.length < 2;
+  $('doctabs').innerHTML = '';
+  const names = { 'grammar.md': 'Gramática', 'evolution.md': 'Evolução', 'family.md': 'Família', 'translations.md': 'Traduções' };
+  docs.forEach((d) => {
+    const b = document.createElement('button'); b.type = 'button'; b.className = 'pill'; b.setAttribute('aria-pressed', String(d === currentDoc));
+    b.innerHTML = `<b>${names[d] || d}</b>`; b.onclick = () => openLanguage(name, d); $('doctabs').appendChild(b);
+  });
+  $('doc').innerHTML = currentDoc ? markdown(r.docs[currentDoc], name) : '<p>Esta pasta não tem documento.</p>';
+  $('filesbox').hidden = false;
+  $('files').innerHTML = r.files.map((f) => `<a href="/api/file?name=${encodeURIComponent(name)}&file=${encodeURIComponent(f)}">${esc(f)}</a>`).join('');
+  loadLanguages();
+}
+
+// Markdown simples: títulos, parágrafos, listas, tabelas, código, negrito, itálico, links
+function inline(s, lang) {
+  return esc(s)
+    .replace(/`([^`]+)`/g, '<code>$1</code>')
+    .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+    .replace(/~~([^~]+)~~/g, '<del>$1</del>')
+    .replace(/(^|[^*])\*([^*\s][^*]*)\*/g, '$1<em>$2</em>')
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, (m, t, u) => {
+      const folder = u.match(/^\.\.\/([^/]+)\/?$/);
+      return folder ? `<a href="#" data-open="${esc(folder[1])}">${t}</a>` : `<a href="${u}" target="_blank" rel="noopener">${t}</a>`;
+    });
+}
+function markdown(src, lang) {
+  const lines = src.split('\n'); const out = []; let i = 0;
+  while (i < lines.length) {
+    const l = lines[i];
+    if (l.startsWith('```')) { const buf = []; i++; while (i < lines.length && !lines[i].startsWith('```')) buf.push(lines[i++]); i++; out.push(`<pre>${esc(buf.join('\n'))}</pre>`); continue; }
+    const h = l.match(/^(#{1,4})\s+(.*)/); if (h) { const n = h[1].length; out.push(`<h${n}>${inline(h[2], lang)}</h${n}>`); i++; continue; }
+    if (l.trim().startsWith('|')) {
+      const rows = []; while (i < lines.length && lines[i].trim().startsWith('|')) rows.push(lines[i++]);
+      const cells = (r) => r.trim().replace(/^\||\|$/g, '').split('|').map((c) => c.trim());
+      const head = cells(rows[0]); const rest = rows.slice(1).filter((r) => !/^\s*\|(\s*:?-+:?\s*\|)+\s*$/.test(r));
+      out.push('<div style="overflow-x:auto"><table><thead><tr>' + head.map((c) => `<th>${inline(c, lang)}</th>`).join('') + '</tr></thead><tbody>' +
+        rest.map((r) => '<tr>' + cells(r).map((c) => `<td>${inline(c, lang)}</td>`).join('') + '</tr>').join('') + '</tbody></table></div>');
+      continue;
+    }
+    if (/^\s*[-*]\s+/.test(l)) { const items = []; while (i < lines.length && /^\s*[-*]\s+/.test(lines[i])) items.push(lines[i++].replace(/^\s*[-*]\s+/, '')); out.push('<ul>' + items.map((x) => `<li>${inline(x, lang)}</li>`).join('') + '</ul>'); continue; }
+    if (!l.trim()) { i++; continue; }
+    const buf = []; while (i < lines.length && lines[i].trim() && !/^(#|```|\s*\||\s*[-*]\s)/.test(lines[i])) buf.push(lines[i++]);
+    out.push(`<p>${inline(buf.join(' '), lang)}</p>`);
+  }
+  return out.join('\n');
+}
+document.addEventListener('click', (e) => { const a = e.target.closest('a[data-open]'); if (a) { e.preventDefault(); openLanguage(a.dataset.open); } });
+
+// ─── Evoluir, Família, Traduzir ──────────────────────────────────────
+function renderEvolve() {
+  const draw = () => pills($('e-profile'), PROFILES, (v) => v === evProfile, (v) => { evProfile = v; draw(); });
+  draw();
+  const drawB = () => pills($('e-borrow'), [['none','Nenhum',''],['low','Poucos','5%'],['medium','Médio','15%'],['high','Muitos','30%']], (v) => v === borrowing, (v) => { borrowing = v; drawB(); });
+  drawB();
+  const root = $('laws'); root.innerHTML = '';
+  const fams = [...new Set(LAWS.map((l) => l[2]))];
+  fams.forEach((fam) => {
+    const fs = document.createElement('fieldset'); fs.innerHTML = `<legend>${esc(fam)}</legend>`;
+    LAWS.filter((l) => l[2] === fam).forEach(([id, name]) => {
+      const lab = document.createElement('label'); lab.className = 'law';
+      lab.innerHTML = `<input type="checkbox" value="${id}"><span>${esc(name)}</span><small></small>`;
+      lab.querySelector('input').onchange = (e) => { const k = laws.indexOf(id); if (e.target.checked && k < 0) laws.push(id); if (!e.target.checked && k >= 0) laws.splice(k, 1); numberLaws(); };
+      fs.appendChild(lab);
+    });
+    root.appendChild(fs);
+  });
+  const drawF = () => pills($('f-profiles'), PROFILES.filter((p) => p[0] !== 'natural'), (v) => famProfiles.has(v), (v) => { famProfiles.has(v) ? famProfiles.delete(v) : famProfiles.add(v); drawF(); });
+  drawF();
+}
+function numberLaws() { document.querySelectorAll('#laws input').forEach((i) => { const k = laws.indexOf(i.value); i.parentElement.querySelector('small').textContent = k >= 0 ? String(k + 1) : ''; }); }
+
+function selectTab(name) {
+  document.querySelectorAll('nav.tabs button').forEach((b) => b.setAttribute('aria-selected', String(b.dataset.tab === name)));
+  document.querySelectorAll('[role=tabpanel]').forEach((p) => { p.hidden = p.id !== 'tab-' + name; });
+}
+document.querySelectorAll('nav.tabs button').forEach((b) => b.onclick = () => { selectTab(b.dataset.tab); if (b.dataset.tab === 'linguas') loadLanguages(); });
+
+$('add-word').onclick = () => { words.push({form:'',meaning:'',pos:'noun',extra:''}); renderWords(); };
+$('add-daughter').onclick = () => { daughters.push({profile:'romance', years:1500}); renderDaughters(); updateCommand(); };
+$('refresh').onclick = loadLanguages;
+document.querySelectorAll('#tab-criar input, #tab-criar textarea').forEach((el) => el.addEventListener('input', updateCommand));
+document.querySelectorAll('#tab-criar input[type=checkbox]').forEach((el) => el.addEventListener('change', updateCommand));
+
+$('run-criar').onclick = () => runTask($('run-criar'), $('st-criar'), 'log-criar', '/api/generate', createOptions(), (r) => r.name && openLanguage(r.name));
+$('run-evoluir').onclick = () => runTask($('run-evoluir'), $('st-evoluir'), 'log-evoluir', '/api/evolve', {
+  language: $('e-lang').value, name: $('e-name').value.trim(), profile: evProfile, years: $('e-years').value,
+  laws, grammar: $('e-grammar').checked, no_lexical: $('e-nolex').checked, donor: $('e-donor').value, borrowing }, (r) => r.name && openLanguage(r.name, 'evolution.md'));
+$('run-familia').onclick = () => runTask($('run-familia'), $('st-familia'), 'log-familia', '/api/family', {
+  language: $('f-lang').value, branches: $('f-br').value, sub_branches: $('f-sub').value, depth: $('f-depth').value,
+  years: $('f-years').value, profiles: [...famProfiles], no_grammar: !$('f-grammar').checked, rebuild: $('f-rebuild').checked }, (r) => openLanguage(r.name));
+$('run-traduzir').onclick = async () => {
+  const btn = $('run-traduzir'), st = $('st-traduzir'); btn.disabled = true; st.className = 'status'; st.textContent = 'Traduzindo...';
+  try {
+    const r = await api('/api/translate', { language: $('t-lang').value, sentences: $('t-text').value.split('\n') });
+    if (!r.ok) { st.className = 'status err'; st.textContent = 'Não deu certo: ' + r.error; return; }
+    st.textContent = `${r.results.length} ${r.results.length === 1 ? 'frase traduzida' : 'frases traduzidas'}.`;
+    $('tr-out').innerHTML = r.results.map((x) => `<div class="tr"><p class="w">${esc(x.written)}</p><pre>${esc(x.interlinear.join('\n'))}</pre>${x.unknown.length ? `<p>Sem tradução: ${esc(x.unknown.join(', '))}</p>` : ''}${x.notes.map((n) => `<p class="intro">Nota: ${esc(n)}</p>`).join('')}</div>`).join('');
+  } catch (e) { st.className = 'status err'; st.textContent = 'O servidor não respondeu.'; }
+  finally { btn.disabled = false; }
+};
+
+// ─── início ──────────────────────────────────────────────────────────
+renderGroups(); renderKeyboard(); renderWords(); renderDaughters(); renderEvolve();
+const drawPolicy = () => pills($('policy'), [['adapt','Adaptar a língua','as regras aprendem com as suas palavras'],['exception','Manter como exceção','as regras não mudam']], (v) => v === policy, (v) => { policy = v; drawPolicy(); updateCommand(); });
+drawPolicy(); updateCommand(); loadLanguages();
+</script>
+</body>
+</html>

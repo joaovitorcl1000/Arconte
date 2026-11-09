@@ -1,0 +1,412 @@
+{
+  "settings": {
+    "base": "decimal",
+    "multiplier_first": true,
+    "high_first": false,
+    "connective": [
+      "n",
+      "e"
+    ],
+    "compound": false,
+    "ordinal_code": "5",
+    "ordinal": {
+      "type": "derived",
+      "affix": [
+        "u"
+      ],
+      "position": "suffix",
+      "first": [
+        "k",
+        "o",
+        "n",
+        "h",
+        "uː",
+        "n"
+      ]
+    }
+  },
+  "atoms": {
+    "1": {
+      "form": "tjaː",
+      "from": "lexicon",
+      "written": "tyaa",
+      "ipa": "tjaː",
+      "pronunciation": "tjaː"
+    },
+    "2": {
+      "form": "ul",
+      "from": "lexicon",
+      "written": "ul",
+      "ipa": "ul",
+      "pronunciation": "ul"
+    },
+    "3": {
+      "form": "ʃwe",
+      "from": "lexicon",
+      "written": "xwe",
+      "ipa": "ʃwe",
+      "pronunciation": "ʃwe"
+    },
+    "4": {
+      "form": "ŋo",
+      "from": "lexicon",
+      "written": "qo",
+      "ipa": "ŋo",
+      "pronunciation": "ŋo"
+    },
+    "5": {
+      "form": "sebjaː",
+      "from": "lexicon",
+      "written": "sebyaa",
+      "ipa": "sebjaː",
+      "pronunciation": "ˈsebjaː"
+    },
+    "6": {
+      "form": "som",
+      "from": "new",
+      "written": "som",
+      "ipa": "som",
+      "pronunciation": "som"
+    },
+    "7": {
+      "form": "ŋu",
+      "from": "new",
+      "written": "qu",
+      "ipa": "ŋu",
+      "pronunciation": "ŋu"
+    },
+    "8": {
+      "form": "tam",
+      "from": "new",
+      "written": "tam",
+      "ipa": "tam",
+      "pronunciation": "tam"
+    },
+    "9": {
+      "form": "zo",
+      "from": "new",
+      "written": "zo",
+      "ipa": "zo",
+      "pronunciation": "zo"
+    },
+    "10": {
+      "form": "siː",
+      "from": "new",
+      "written": "sii",
+      "ipa": "siː",
+      "pronunciation": "siː"
+    },
+    "100": {
+      "form": "ɡon",
+      "from": "new",
+      "written": "gon",
+      "ipa": "ɡon",
+      "pronunciation": "ɡon"
+    },
+    "1000": {
+      "form": "ɲaɲbjin",
+      "from": "new",
+      "written": "nyanybyin",
+      "ipa": "ɲaɲbjin",
+      "pronunciation": "ˈɲaɲbjin"
+    }
+  },
+  "cardinals": [
+    {
+      "n": 1,
+      "written": "tyaa",
+      "ipa": "tjaː",
+      "pronunciation": "tjaː",
+      "gloss": "1",
+      "parts": 1
+    },
+    {
+      "n": 2,
+      "written": "ul",
+      "ipa": "ul",
+      "pronunciation": "ul",
+      "gloss": "2",
+      "parts": 1
+    },
+    {
+      "n": 3,
+      "written": "xwe",
+      "ipa": "ʃwe",
+      "pronunciation": "ʃwe",
+      "gloss": "3",
+      "parts": 1
+    },
+    {
+      "n": 4,
+      "written": "qo",
+      "ipa": "ŋo",
+      "pronunciation": "ŋo",
+      "gloss": "4",
+      "parts": 1
+    },
+    {
+      "n": 5,
+      "written": "sebyaa",
+      "ipa": "sebjaː",
+      "pronunciation": "ˈsebjaː",
+      "gloss": "5",
+      "parts": 1
+    },
+    {
+      "n": 6,
+      "written": "som",
+      "ipa": "som",
+      "pronunciation": "som",
+      "gloss": "6",
+      "parts": 1
+    },
+    {
+      "n": 7,
+      "written": "qu",
+      "ipa": "ŋu",
+      "pronunciation": "ŋu",
+      "gloss": "7",
+      "parts": 1
+    },
+    {
+      "n": 8,
+      "written": "tam",
+      "ipa": "tam",
+      "pronunciation": "tam",
+      "gloss": "8",
+      "parts": 1
+    },
+    {
+      "n": 9,
+      "written": "zo",
+      "ipa": "zo",
+      "pronunciation": "zo",
+      "gloss": "9",
+      "parts": 1
+    },
+    {
+      "n": 10,
+      "written": "sii",
+      "ipa": "siː",
+      "pronunciation": "siː",
+      "gloss": "10",
+      "parts": 1
+    },
+    {
+      "n": 11,
+      "written": "tyaa ne sii",
+      "ipa": "tjaː ne siː",
+      "pronunciation": "tjaː ne siː",
+      "gloss": "1 + 10",
+      "parts": 3
+    },
+    {
+      "n": 12,
+      "written": "ul ne sii",
+      "ipa": "ul ne siː",
+      "pronunciation": "ul ne siː",
+      "gloss": "2 + 10",
+      "parts": 3
+    },
+    {
+      "n": 13,
+      "written": "xwe ne sii",
+      "ipa": "ʃwe ne siː",
+      "pronunciation": "ʃwe ne siː",
+      "gloss": "3 + 10",
+      "parts": 3
+    },
+    {
+      "n": 14,
+      "written": "qo ne sii",
+      "ipa": "ŋo ne siː",
+      "pronunciation": "ŋo ne siː",
+      "gloss": "4 + 10",
+      "parts": 3
+    },
+    {
+      "n": 15,
+      "written": "sebyaa ne sii",
+      "ipa": "sebjaː ne siː",
+      "pronunciation": "ˈsebjaː ne siː",
+      "gloss": "5 + 10",
+      "parts": 3
+    },
+    {
+      "n": 16,
+      "written": "som ne sii",
+      "ipa": "som ne siː",
+      "pronunciation": "som ne siː",
+      "gloss": "6 + 10",
+      "parts": 3
+    },
+    {
+      "n": 17,
+      "written": "qu ne sii",
+      "ipa": "ŋu ne siː",
+      "pronunciation": "ŋu ne siː",
+      "gloss": "7 + 10",
+      "parts": 3
+    },
+    {
+      "n": 18,
+      "written": "tam ne sii",
+      "ipa": "tam ne siː",
+      "pronunciation": "tam ne siː",
+      "gloss": "8 + 10",
+      "parts": 3
+    },
+    {
+      "n": 19,
+      "written": "zo ne sii",
+      "ipa": "zo ne siː",
+      "pronunciation": "zo ne siː",
+      "gloss": "9 + 10",
+      "parts": 3
+    },
+    {
+      "n": 20,
+      "written": "ul sii",
+      "ipa": "ul siː",
+      "pronunciation": "ul siː",
+      "gloss": "2×10",
+      "parts": 2
+    },
+    {
+      "n": 30,
+      "written": "xwe sii",
+      "ipa": "ʃwe siː",
+      "pronunciation": "ʃwe siː",
+      "gloss": "3×10",
+      "parts": 2
+    },
+    {
+      "n": 37,
+      "written": "qu ne xwe sii",
+      "ipa": "ŋu ne ʃwe siː",
+      "pronunciation": "ŋu ne ʃwe siː",
+      "gloss": "7 + 3×10",
+      "parts": 4
+    },
+    {
+      "n": 40,
+      "written": "qo sii",
+      "ipa": "ŋo siː",
+      "pronunciation": "ŋo siː",
+      "gloss": "4×10",
+      "parts": 2
+    },
+    {
+      "n": 50,
+      "written": "sebyaa sii",
+      "ipa": "sebjaː siː",
+      "pronunciation": "ˈsebjaː siː",
+      "gloss": "5×10",
+      "parts": 2
+    },
+    {
+      "n": 60,
+      "written": "som sii",
+      "ipa": "som siː",
+      "pronunciation": "som siː",
+      "gloss": "6×10",
+      "parts": 2
+    },
+    {
+      "n": 80,
+      "written": "tam sii",
+      "ipa": "tam siː",
+      "pronunciation": "tam siː",
+      "gloss": "8×10",
+      "parts": 2
+    },
+    {
+      "n": 90,
+      "written": "zo sii",
+      "ipa": "zo siː",
+      "pronunciation": "zo siː",
+      "gloss": "9×10",
+      "parts": 2
+    },
+    {
+      "n": 99,
+      "written": "zo ne zo sii",
+      "ipa": "zo ne zo siː",
+      "pronunciation": "zo ne zo siː",
+      "gloss": "9 + 9×10",
+      "parts": 4
+    },
+    {
+      "n": 100,
+      "written": "gon",
+      "ipa": "ɡon",
+      "pronunciation": "ɡon",
+      "gloss": "100",
+      "parts": 1
+    },
+    {
+      "n": 256,
+      "written": "som ne sebyaa sii ne ul gon",
+      "ipa": "som ne sebjaː siː ne ul ɡon",
+      "pronunciation": "som ne ˈsebjaː siː ne ul ɡon",
+      "gloss": "6 + 5×10 + 2×100",
+      "parts": 7
+    },
+    {
+      "n": 1000,
+      "written": "nyanybyin",
+      "ipa": "ɲaɲbjin",
+      "pronunciation": "ˈɲaɲbjin",
+      "gloss": "1000",
+      "parts": 1
+    }
+  ],
+  "ordinals": [
+    {
+      "n": 1,
+      "written": "konhuun",
+      "ipa": "konhuːn",
+      "pronunciation": "ˈkonhuːn",
+      "gloss": "first (supletivo)"
+    },
+    {
+      "n": 2,
+      "written": "ulu",
+      "ipa": "ulu",
+      "pronunciation": "ˈulu",
+      "gloss": "2-ORD"
+    },
+    {
+      "n": 3,
+      "written": "xweu",
+      "ipa": "ʃweu",
+      "pronunciation": "ˈʃweu",
+      "gloss": "3-ORD"
+    },
+    {
+      "n": 4,
+      "written": "qou",
+      "ipa": "ŋou",
+      "pronunciation": "ˈŋou",
+      "gloss": "4-ORD"
+    },
+    {
+      "n": 5,
+      "written": "sebyaau",
+      "ipa": "sebjaːu",
+      "pronunciation": "ˈsebjaːu",
+      "gloss": "5-ORD"
+    }
+  ],
+  "metadata": {
+    "seed": 1113153202,
+    "sources": {
+      "131A": "WALS 131A (embutido)",
+      "53A": "WALS 53A (embutido)"
+    },
+    "notes": [
+      "conectivo obrigatório na soma, para distinguir 13 de 30"
+    ],
+    "new_words": 7
+  }
+}

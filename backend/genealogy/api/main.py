@@ -9,7 +9,7 @@ O arquivo padrão é ``data/sarnilia.json``. Para selecionar outro projeto::
     ARCONTE_PROJECT_FILE=data/outro_projeto.json python3 -m uvicorn api.main:app --reload
 
 Caminhos relativos são resolvidos a partir de ``backend/genealogy``, não da
-pasta em que o terminal foi aberto. A API não modifica o projeto JSON.
+pasta em que o terminal foi aberto. As rotas POST e PATCH salvam o JSON completo de modo atômico.
 """
 
 from __future__ import annotations
@@ -21,6 +21,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from api.characters import router as characters_router
+from api.relationships import router as relationships_router
 
 GENEALOGY_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_PROJECT_FILE = GENEALOGY_ROOT / "data" / "sarnilia.json"
@@ -36,7 +37,7 @@ def create_app(project_file: str | os.PathLike[str] | None = None) -> FastAPI:
 
     app = FastAPI(
         title="Arconte — API de Personagens",
-        description="Leitura de personagens do projeto salvo, para o frontend Flutter.",
+        description="Consulta, criação e edição de personagens para o Flutter.",
         version="0.1.0",
     )
     app.state.project_file = path
@@ -46,11 +47,12 @@ def create_app(project_file: str | os.PathLike[str] | None = None) -> FastAPI:
     app.add_middleware(
         CORSMiddleware,
         allow_origin_regex=r"^https?://(?:localhost|127\.0\.0\.1)(?::[0-9]{1,5})?$",
-        allow_methods=["GET"],
+        allow_methods=["GET", "POST", "PATCH", "DELETE"],
         allow_headers=["*"],
         allow_credentials=False,
     )
     app.include_router(characters_router)
+    app.include_router(relationships_router)
 
     @app.get("/health", tags=["Sistema"], summary="Verificar se a API está ativa")
     def health() -> dict[str, str]:

@@ -1,6 +1,11 @@
 analyzer:
   errors:
     invalid_annotation_target: ignore
+  exclude:
+    - build/**
+    - android/**
+    - web/**
+    - linux/**
 linter:
   rules:
     - avoid_print

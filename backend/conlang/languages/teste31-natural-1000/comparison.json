@@ -1,0 +1,160 @@
+{
+  "settings": {
+    "strategy": "locational",
+    "standard_case": "ablative",
+    "degree": {
+      "type": "affix",
+      "position": "suffix",
+      "comparative": [
+        "w",
+        "i"
+      ]
+    },
+    "superlative": {
+      "type": "affix",
+      "position": "suffix",
+      "form": [
+        "i",
+        "l"
+      ]
+    },
+    "equative": {
+      "type": "particle",
+      "form": [
+        "k",
+        "e",
+        "p"
+      ]
+    }
+  },
+  "forms": {
+    "positive": [
+      {
+        "written": "yaap",
+        "ipa": "jaːp",
+        "pronunciation": "jaːp",
+        "seg": "jaːp",
+        "gloss": "big"
+      }
+    ],
+    "comparative": [
+      {
+        "written": "yaapwi",
+        "ipa": "jaːpwi",
+        "pronunciation": "ˈjaːpwi",
+        "seg": "jaːp-wi",
+        "gloss": "big-COMPR"
+      }
+    ],
+    "superlative": [
+      {
+        "written": "yaapil",
+        "ipa": "jaːpil",
+        "pronunciation": "ˈjaːpil",
+        "seg": "jaːp-il",
+        "gloss": "big-SUPL"
+      }
+    ]
+  },
+  "sentences": [
+    {
+      "key": "comparative",
+      "title": "Comparativo",
+      "words": [
+        {
+          "written": "syun",
+          "ipa": "sjun",
+          "pronunciation": "sjun",
+          "seg": "sjun",
+          "gloss": "dog"
+        },
+        {
+          "written": "bibu",
+          "ipa": "bibu",
+          "pronunciation": "ˈbibu",
+          "seg": "bi-bu",
+          "gloss": "fish-ABL"
+        },
+        {
+          "written": "yaapwi",
+          "ipa": "jaːpwi",
+          "pronunciation": "ˈjaːpwi",
+          "seg": "jaːp-wi",
+          "gloss": "big-COMPR"
+        }
+      ],
+      "translation": "The dog is bigger than the fish.",
+      "literal": null
+    },
+    {
+      "key": "superlative",
+      "title": "Superlativo",
+      "words": [
+        {
+          "written": "syun",
+          "ipa": "sjun",
+          "pronunciation": "sjun",
+          "seg": "sjun",
+          "gloss": "dog"
+        },
+        {
+          "written": "yaapil",
+          "ipa": "jaːpil",
+          "pronunciation": "ˈjaːpil",
+          "seg": "jaːp-il",
+          "gloss": "big-SUPL"
+        }
+      ],
+      "translation": "The dog is the biggest.",
+      "literal": null
+    },
+    {
+      "key": "equative",
+      "title": "Equativo",
+      "words": [
+        {
+          "written": "syun",
+          "ipa": "sjun",
+          "pronunciation": "sjun",
+          "seg": "sjun",
+          "gloss": "dog"
+        },
+        {
+          "written": "bi",
+          "ipa": "bi",
+          "pronunciation": "bi",
+          "seg": "bi",
+          "gloss": "fish"
+        },
+        {
+          "written": "kep",
+          "ipa": "kep",
+          "pronunciation": "kep",
+          "seg": "kep",
+          "gloss": "as"
+        },
+        {
+          "written": "yaap",
+          "ipa": "jaːp",
+          "pronunciation": "jaːp",
+          "seg": "jaːp",
+          "gloss": "big"
+        }
+      ],
+      "translation": "The dog is as big as the fish.",
+      "literal": null
+    }
+  ],
+  "metadata": {
+    "seed": 1547307497,
+    "sources": {
+      "comparative": "WALS 121A|81A=1 (embutido)"
+    },
+    "notes": [],
+    "lexemes": {
+      "adjective": "big",
+      "compared": "dog",
+      "standard": "fish"
+    }
+  }
+}

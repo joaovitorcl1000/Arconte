@@ -5,6 +5,7 @@ import '../../services/character_api.dart';
 import '../../theme/arconte_theme.dart';
 import '../../widgets/ornaments.dart';
 import 'character_details.dart';
+import 'character_form.dart';
 
 /// Biblioteca de personagens do mundo selecionado.
 ///
@@ -36,6 +37,7 @@ class _CharactersScreenState extends State<CharactersScreen> {
   String _search = '';
   String? _error;
   String? _selectedId;
+  bool _creating = false;
   bool _loading = true;
   int _generation = 0;
 
@@ -79,6 +81,21 @@ class _CharactersScreenState extends State<CharactersScreen> {
 
   @override
   Widget build(BuildContext context) {
+    if (_creating) {
+      return CharacterForm(
+        api: _api,
+        onCancel: () => setState(() => _creating = false),
+        onSaved: (person) {
+          setState(() {
+            _creating = false;
+            _selectedId = person.id;
+          });
+          // Recarrega os registros para incluir o personagem recém-criado.
+          _loadCharacters();
+        },
+      );
+    }
+
     if (_selectedId != null) {
       return CharacterDetails(
         key: ValueKey(_selectedId),
@@ -191,7 +208,7 @@ class _CharactersScreenState extends State<CharactersScreen> {
 
   Widget _libraryToolbar() {
     return LayoutBuilder(builder: (context, constraints) {
-      final narrow = constraints.maxWidth < 570;
+      final narrow = constraints.maxWidth < 760;
       final search = TextField(
         controller: _searchController,
         onChanged: (value) => setState(() => _search = value),
@@ -222,6 +239,17 @@ class _CharactersScreenState extends State<CharactersScreen> {
           padding: const EdgeInsets.symmetric(horizontal: 17, vertical: 17),
         ),
       );
+      final create = FilledButton.icon(
+        key: const Key('new-character-button'),
+        onPressed: () => setState(() => _creating = true),
+        icon: const Icon(Icons.person_add_alt_1_outlined, size: 18),
+        label: const Text('Novo personagem'),
+        style: FilledButton.styleFrom(
+          backgroundColor: ArconteColors.forest,
+          foregroundColor: ArconteColors.paleGold,
+          padding: const EdgeInsets.symmetric(horizontal: 17, vertical: 17),
+        ),
+      );
       return narrow
           ? Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -229,12 +257,16 @@ class _CharactersScreenState extends State<CharactersScreen> {
                 search,
                 const SizedBox(height: 12),
                 refresh,
+                const SizedBox(height: 12),
+                create,
               ],
             )
           : Row(children: [
               Expanded(child: search),
               const SizedBox(width: 13),
               refresh,
+              const SizedBox(width: 13),
+              create,
             ]);
     });
   }

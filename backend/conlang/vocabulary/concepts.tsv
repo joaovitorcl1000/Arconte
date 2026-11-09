@@ -1,0 +1,1851 @@
+NUMBER	CONCEPTICON_ID	CONCEPTICON_GLOSS	ENGLISH	PART_OF_SPEECH	SEMANTIC_FIELD	SIMPLICITY_SCORE	AGE_SCORE	PORTUGUESE	LISTS	N_LISTS	LEIPZIG_JAKARTA_RANK
+1	98	ALL	all	Function word	13	0.9	0.858260869565	cada, tudo	swadesh,wold,ids,northeuralex	4	
+2	1577	AND	and	Function word	17	0.988929889299	0.864206642066	e	swadesh,wold,ids,northeuralex	4	
+3	619	ANIMAL	the animal	Noun	3	0.897660818713	0.82962962963	animal, bicho	swadesh,wold,ids,northeuralex	4	
+4	646	ASH	the ash	Noun	1	0.920588235294	0.872941176471	cinzas	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	84
+5	1461	AT	at	Function word	12	1.0	0.885427135678		swadesh,wold	2	
+6	1291	BACK	the back	Noun	4	0.923728813559	0.857062146893	costas	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	46
+7	1292	BAD	bad	Adjective	16	0.863957597173	0.804240282686	mau	swadesh,wold,ids,northeuralex	4	
+8	1204	BARK	the bark	Noun	8	0.87323943662	0.805633802817	casca	swadesh,wold,ids,northeuralex	4	
+9	1157	BECAUSE	because	Function word	17	0.839805825243	0.801941747573	porque	swadesh,wold,ids	3	
+10	1251	BELLY	the belly	Noun	4	0.972157772622	0.880742459397		swadesh,wold,northeuralex	3	
+11	904	BERRY	berry (or fruit)	Noun	8				swadesh,northeuralex	2	
+12	1202	BIG	big	Adjective	12	0.980434782609	0.88	grande	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	32
+13	937	BIRD	the bird	Noun	3	0.961818181818	0.804727272727	pássaro, ave	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	91
+14	1403	BITE	to bite	Verb	4	0.887372013652	0.901706484642	morder	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	46
+15	163	BLACK	black	Adjective	15	0.899390243902	0.867073170732	preto, negro	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	42
+16	946	BLOOD	the blood	Noun	4	1.0	0.895744680851	sangue	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	7
+17	175	BLOW (OF WIND)	to blow	Verb	10	0.877906976744	0.813953488372	soprar	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	79
+18	1394	BONE	the bone	Noun	4	0.970588235294	0.88	osso	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	7
+19	1407	BREATHE	to breathe	Verb	4	0.7	0.787692307692		swadesh,wold,northeuralex	3	
+20	1428	BURNING	to burn(2)	Verb	1	0.888888888889	0.850617283951	queimar, arder	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	53
+21	1304	CHILD (YOUNG HUMAN)	the child(1)	Noun	2	0.892950391645	0.848563968668	criança, menino	swadesh,wold,ids,northeuralex	4	
+22	1489	CLOUD	the cloud	Noun	1	0.941176470588	0.892941176471	nuvem	swadesh,wold,ids,northeuralex	4	
+23	2483	COLD (OF WEATHER)	cold (of weather)	Adjective	15				swadesh,northeuralex	2	
+24	1446	COME	to come	Verb	10	0.939655172414	0.880603448276	vir	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	11
+25	1420	COUNT	to count	Verb	13	0.851351351351	0.835135135135	contar	swadesh,wold,ids,northeuralex	4	
+26	1432	CUT	to cut	Verb	9	0.9132718014	0.791597708466	cortar	swadesh,wold,ids,northeuralex	4	
+27	1225	DAY (NOT NIGHT)	the day(2)	Noun	14	0.911504424779	0.898230088496	dia	swadesh,wold,ids,northeuralex	4	
+28	1494	DIE	to die	Verb	4	0.895454545455	0.826363636364		swadesh,wold,northeuralex	3	
+29	1418	DIG	to dig	Verb	8	0.89165329053	0.834349919743	cavar, escavar	swadesh,wold,ids,northeuralex	4	
+30	1230	DIRTY	dirty	Adjective	15	0.824840764331	0.796815286624	sujo	swadesh,wold,ids,northeuralex	4	
+31	2009	DOG	the dog	Noun	3	0.959595959596	0.879797979798	cão, cachorro	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	84
+32	1401	DRINK	to drink	Verb	5	0.934262948207	0.864940239044	beber, tomar	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	42
+33	1398	DRY	dry	Adjective	15	0.837078651685	0.844943820225	seco	swadesh,wold,ids,northeuralex	4	
+34	379	BLUNT	blunt	Adjective	15	0.867088607595	0.76835443038	embotado, rombudo	swadesh,wold,ids,northeuralex	4	
+35	2	DUST	the dust	Noun	1	0.931818181818	0.894480519481	pó	swadesh,wold,ids,northeuralex	4	
+36	1247	EAR	the ear	Noun	4	0.960674157303	0.858426966292	orelha	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	22
+37	1228	EARTH (SOIL)	the soil	Noun	1	0.95422842197	0.880993897123	solo, chão	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	63
+38	1336	EAT	to eat	Verb	5	0.924528301887	0.898113207547	comer	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	75
+39	744	EGG	the egg	Noun	5	0.945278969957	0.899570815451	ovo	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	52
+40	1248	EYE	the eye	Noun	4	0.918032786885	0.873536299766	olho	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	83
+41	1280	FALL	to fall	Verb	10	0.902527075812	0.858122743682	cair	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	81
+42	1406	FAR	far	Adverb	12	0.94776119403	0.818407960199	longe	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	23
+43	323	FAT (ORGANIC SUBSTANCE)	the grease or fat	Noun	5	0.921739130435	0.879565217391	gordura	swadesh,wold,ids,northeuralex	4	
+44	1217	FATHER	the father	Noun	2	0.963775258748	0.855101034993	pai	swadesh,wold,ids,northeuralex	4	
+45	1419	FEAR (BE AFRAID)	to fear	Verb	16				swadesh,northeuralex	2	
+46	1201	FEATHER	the feather	Noun	4	0.876543209877	0.862368541381	pena	swadesh,wold,ids,northeuralex	4	
+47	1242	FEW	few	Function word	13	0.864970645793	0.799217221135	pouco, poucos	swadesh,wold,ids	3	
+48	1423	FIGHT	to fight	Verb	20	0.721362229102	0.818885448916	lutar	swadesh,wold,ids	3	
+49	221	FIRE	the fire	Noun	1	0.994746979513	0.940903519524	fogo	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	1
+50	227	FISH	the fish	Noun	3	0.983870967742	0.85376344086	peixe	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	38
+51	493	FIVE	five	Function word	13	0.951086956522	0.863043478261	cinco	swadesh,wold,ids,northeuralex	4	
+52	1574	FLOAT	to float	Verb	10	0.808295964126	0.804932735426	flutuar	swadesh,wold,ids	3	
+53	2003	FLOW	to flow	Verb	10	0.839160839161	0.848951048951	fluir	swadesh,wold,ids,northeuralex	4	
+54	239	FLOWER	the flower	Noun	8	0.959798994975	0.882412060302	flor	swadesh,wold,ids,northeuralex	4	
+55	1441	FLY (MOVE THROUGH AIR)	to fly	Verb	10	0.912572855953	0.847626977519	voar	swadesh,wold,ids,northeuralex	4	
+56	249	FOG	the fog	Noun	1	0.90625	0.855514705882	nevoeiro, névoa	swadesh,wold,ids,northeuralex	4	
+57	1301	FOOT	the foot	Noun	4	0.964821763602	0.861632270169	pé	swadesh,wold,ids,northeuralex	4	
+58	1500	FOUR	four	Function word	13	0.961956521739	0.863043478261	quatro	swadesh,wold,ids,northeuralex	4	
+59	1431	FREEZE	to freeze	Verb	1	0.77397260274	0.835616438356		swadesh,wold,northeuralex	3	
+60	1447	GIVE	to give	Verb	11	0.907024793388	0.885123966942	dar	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	53
+61	1035	GOOD	good	Adjective	16	0.945419103314	0.869005847953	bom	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	56
+62	606	GRASS	the grass	Noun	8	0.973273942094	0.86013363029	erva, grama, relva	swadesh,wold,ids,northeuralex	4	
+63	1425	GREEN	green	Adjective	15	0.82825203252	0.779268292683	verde	swadesh,wold,ids,northeuralex	4	
+64	1334	GUTS	guts	Noun	4				swadesh	1	
+65	1040	HAIR	hair	Noun	4				swadesh,leipzig_jakarta,northeuralex	3	31
+66	1277	HAND	the hand	Noun	4	0.992647058824	0.874019607843	mão	swadesh,wold,ids,northeuralex	4	
+67	1211	HE	he	Function word	2	0.967273431448	0.919442292796		swadesh,wold,northeuralex	3	
+68	1256	HEAD	the head	Noun	4	0.966542750929	0.853903345725	cabeça	swadesh,wold,ids,northeuralex	4	
+69	1408	HEAR	to hear	Verb	15	0.894643759474	0.815058110157	ouvir	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	61
+70	1223	HEART	the heart	Noun	4	0.958737864078	0.832362459547	coração	swadesh,wold,ids,northeuralex	4	
+71	1210	HEAVY	heavy	Adjective	15	0.900662251656	0.883443708609	pesado	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	71
+72	136	HERE	here	Function word	24	0.787781350482	0.816720257235		swadesh,wold,northeuralex	3	
+73	1433	HIT	to hit	Verb	9				swadesh	1	
+74	1448	HOLD	to hold	Verb	11	0.878897550111	0.850779510022	segurar, agarrar	swadesh,wold,ids,northeuralex	4	
+75	1239	HOW	how?	Function word	17	0.812256809339	0.803891050584	como?	swadesh,wold,ids,northeuralex	4	
+76	1435	HUNT	to hunt	Verb	20	0.833128583129	0.772645372645	caçar	swadesh,wold,ids,northeuralex	4	
+77	1200	HUSBAND	the husband	Noun	2	0.899047128509	0.876693278393	marido	swadesh,wold,ids,northeuralex	4	
+78	1209	I	I	Function word	2	0.936440677966	0.876271186441	eu	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	14
+79	617	ICE	the ice	Noun	1	0.904858299595	0.82995951417	gelo	swadesh,wold,ids,northeuralex	4	
+80	1459	IF	if	Function word	17	0.940983606557	0.810163934426	se	swadesh,wold,ids	3	
+81	1460	IN	in	Function word	12	0.943217665615	0.86309148265		swadesh,leipzig_jakarta,wold	3	97
+82	1417	KILL	to kill	Verb	4	0.832323232323	0.857777777778	matar	swadesh,wold,ids,northeuralex	4	
+83	1410	KNOW (SOMETHING)	to know	Verb	17	0.907841552142	0.871059013743	saber	swadesh,wold,ids,northeuralex	4	
+84	624	LAKE	the lake	Noun	1	0.923312883436	0.844580777096	lago	swadesh,wold,ids,northeuralex	4	
+85	1355	LAUGH	to laugh	Verb	16	0.90988372093	0.837209302326	rir	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	61
+86	628	LEAF	the leaf	Noun	8	0.977055449331	0.898470363289	folha	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	64
+87	244	LEFT	left	Adjective	12	0.905555555556	0.814444444444	esquerda	swadesh,wold,ids,northeuralex	4	
+88	1297	LEG	the leg	Noun	4	0.981840193705	0.908595641646	perna	swadesh,wold,ids,northeuralex	4	
+89	1411	LIE (REST)	to lie	Verb	12				swadesh,northeuralex	2	
+90	1422	BE ALIVE	to be alive	Verb	4	0.818275154004	0.843737166324		swadesh,wold,northeuralex	3	
+91	1224	LIVER	the liver	Noun	4	0.966666666667	0.895555555556	fígado	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	66
+92	1203	LONG	long	Adjective	12	0.898060442039	0.887686062246	comprido	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	78
+93	1392	LOUSE	louse	Noun	3			piolho	swadesh,leipzig_jakarta,ids,northeuralex	4	15
+94	2106	MALE PERSON	man (male human)	Noun	2				swadesh	1	
+95	1198	MANY	many	Function word	13	0.932692307692	0.805128205128	muito, muitos	swadesh,wold,ids	3	
+96	2615	FLESH OR MEAT	meat (flesh)	Noun	4				swadesh,leipzig_jakarta	2	18
+97	1216	MOTHER	the mother	Noun	2	0.94819466248	0.873783359498	mãe	swadesh,wold,ids,northeuralex	4	
+98	639	MOUNTAIN	mountain	Noun	1				swadesh,northeuralex	2	
+99	674	MOUTH	the mouth	Noun	4	0.98243559719	0.889461358314	boca	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	5
+100	1405	NAME	the name	Noun	18	0.954545454545	0.881818181818	nome	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	15
+101	1267	NARROW	narrow	Adjective	12	0.838541666667	0.791666666667	estreito	swadesh,wold,ids,northeuralex	4	
+102	1942	NEAR	near	Adverb	12	0.898148148148	0.803703703704	perto, próximo	swadesh,wold,ids,northeuralex	4	
+103	1333	NECK	the neck	Noun	4	0.964	0.8476	pescoço	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	23
+104	1231	NEW	new	Adjective	14	0.919540229885	0.850574712644	novo	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	53
+105	1233	NIGHT	the night	Noun	14	0.933908045977	0.897701149425	noite	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	20
+106	1221	NOSE	the nose	Noun	4	0.979910714286	0.892857142857	nariz	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	2
+107	1240	NOT	not	Function word	24	0.974193548387	0.932903225806		swadesh,leipzig_jakarta,wold,northeuralex	4	56
+108	1229	OLD	old	Adjective	14	0.920180722892	0.84186746988	velho	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	74
+109	1493	ONE	one	Function word	13	0.96875	0.876041666667	um, uma	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	32
+110	197	OTHER	other	Function word	24	0.901234567901	0.804938271605		swadesh,wold,northeuralex	3	
+111	683	PERSON	the person	Noun	2	0.934306569343	0.929927007299	pessoa, ser humano	swadesh,wold,ids,northeuralex	4	
+112	1413	PLAY	to play	Verb	16	0.853658536585	0.826829268293	jogar, brincar	swadesh,wold,ids,northeuralex	4	
+113	1455	PULL	to pull	Verb	9	0.936229205176	0.852495378928	puxar	swadesh,wold,ids,northeuralex	4	
+114	1452	PUSH	to push	Verb	10	0.898576512456	0.838078291815	empurrar	swadesh,wold,ids,northeuralex	4	
+115	1253	RAIN (RAINING)	to rain	Verb	1				swadesh,northeuralex	2	
+116	156	RED	red	Adjective	15	0.9	0.848235294118	vermelho	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	64
+117	1725	CORRECT (RIGHT)	right(2)	Adjective	16	0.883408071749	0.867488789238	correto	swadesh,wold,ids,northeuralex	4	
+118	1019	RIGHT	right(1)	Adjective	12	0.872983870968	0.842338709677	direita	swadesh,wold,ids,northeuralex	4	
+119	666	RIVER	river	Noun	1				swadesh,northeuralex	2	
+120	667	ROAD	the road	Noun	10	0.941704035874	0.874887892377	estrada, caminho	swadesh,wold,ids,northeuralex	4	
+121	670	ROOT	the root	Noun	8	0.972549019608	0.864705882353	raiz	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	9
+122	1218	ROPE	the rope	Noun	9	0.993339253996	0.865541740675	corda, cordel	swadesh,leipzig_jakarta,wold,ids	4	91
+123	1728	ROTTEN	rotten	Adjective	5	0.845419847328	0.831679389313	podre	swadesh,wold,ids	3	
+124	1449	RUB	to rub	Verb	9	0.894329896907	0.867010309278	esfregar	swadesh,wold,ids,northeuralex	4	
+125	1274	SALT	the salt	Noun	5	0.97619047619	0.839285714286	sal	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	91
+126	671	SAND	the sand	Noun	1	0.92817679558	0.876243093923	areia	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	59
+127	1458	SAY	to say	Verb	18	0.927911275416	0.839926062847	dizer	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	28
+128	1436	SCRATCH	to scratch	Verb	4	0.898622047244	0.806299212598		swadesh,wold	2	
+129	1474	SEA	the sea	Noun	1	0.916030534351	0.861577608142	mar	swadesh,wold,ids,northeuralex	4	
+130	1409	SEE	to see	Verb	15	0.899598393574	0.848995983936	ver	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	89
+131	714	SEED	the seed	Noun	8	0.916500994036	0.882504970179	semente	swadesh,wold,ids,northeuralex	4	
+132	1457	SEW	to sew	Verb	6	0.894736842105	0.86081871345	costurar	swadesh,wold,ids,northeuralex	4	
+133	1396	SHARP	sharp	Adjective	15	0.84375	0.815234375	agudo, afiado	swadesh,wold,ids,northeuralex	4	
+134	1645	SHORT	short	Adjective	12	0.850694444444	0.751041666667	curto	swadesh,wold,ids,northeuralex	4	
+135	1261	SING	to sing	Verb	18	0.807392996109	0.835408560311	cantar	swadesh,wold,ids,northeuralex	4	
+136	1416	SIT	to sit	Verb	12	0.892405063291	0.853164556962	sentar-se	swadesh,wold,ids,northeuralex	4	
+137	2613	SKIN (HUMAN)	skin (person's)	Noun	4				swadesh	1	
+138	1732	SKY	the sky	Noun	1	0.906576980568	0.911808669656	céu	swadesh,wold,ids,northeuralex	4	
+139	1585	SLEEP	to sleep	Verb	4	0.874045801527	0.854580152672	dormir	swadesh,wold,ids,northeuralex	4	
+140	1246	SMALL	small	Adjective	12	0.965857359636	0.854324734446	pequeno	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	91
+141	1586	SMELL (PERCEIVE)	to smell(2)	Verb	15	0.745651027939	0.790195044808	cheirar	swadesh,wold,ids,northeuralex	4	
+142	778	SMOKE (EXHAUST)	the smoke	Noun	1	0.928879310345	0.836637931034	fumaça	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	49
+143	1234	SMOOTH	smooth	Adjective	15	0.87323943662	0.828873239437	liso, macio	swadesh,wold,ids,northeuralex	4	
+144	730	SNAKE	the snake	Noun	3	0.950248756219	0.850746268657	cobra	swadesh,wold,ids,northeuralex	4	
+145	784	SNOW	the snow	Noun	1	0.933673469388	0.889795918367	neve	swadesh,wold,ids,northeuralex	4	
+146	1241	SOME	some	Function word	13	0.82967032967	0.765934065934	alguns	swadesh,wold,ids	3	
+147	1440	SPIT	to spit	Verb	4	0.794444444444	0.844444444444	cuspir	swadesh,wold,ids	3	
+148	1437	SPLIT	to split	Verb	9	0.826428845416	0.845492903721	fender, partir	swadesh,wold,ids	3	
+149	1414	SQUEEZE	to squeeze	Verb	9	0.874538745387	0.835055350554	espremer, comprimir	swadesh,wold,ids	3	
+150	1434	STAB	to stab (or stick)	Verb	9				swadesh	1	
+151	1442	STAND	to stand	Verb	12	0.888629613916	0.836656767077	estar em pé, ficar em pé	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	45
+152	1430	STAR	the star	Noun	1	0.970119521912	0.885258964143	estrela	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	97
+153	1295	STICK	stick (of wood)	Noun	1				swadesh,northeuralex	2	
+154	857	STONE	stone	Noun	1				swadesh,northeuralex	2	
+155	1404	STRAIGHT	straight	Adjective	12	0.871428571429	0.795102040816	direito, reto	swadesh,wold,ids	3	
+156	1421	SUCK	to suck	Verb	5	0.887563884157	0.840545144804	chupar, sugar	swadesh,leipzig_jakarta,wold,ids	4	67
+157	1343	SUN	the sun	Noun	1	0.871690427699	0.893279022403	sol	swadesh,wold,ids,northeuralex	4	
+158	1573	SWELL	to swell	Verb	9				swadesh	1	
+159	1439	SWIM	to swim	Verb	10	0.825787401575	0.833464566929	nadar	swadesh,wold,ids,northeuralex	4	
+160	1220	TAIL	the tail	Noun	4	0.973404255319	0.871276595745	cauda, rabo	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	84
+161	78	THAT	that	Function word	24	0.873590225564	0.796052631579		swadesh,wold,northeuralex	3	
+162	1937	THERE	there	Function word	24	0.796296296296	0.832407407407		swadesh,wold,northeuralex	3	
+163	817	THEY	they	Function word	2	0.798728813559	0.801906779661	eles, elas	swadesh,wold,ids,northeuralex	4	
+164	1244	THICK	thick	Adjective	12	0.905940594059	0.863366336634	grosso	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	76
+165	2308	THIN	thin	Adjective	12				swadesh	1	
+166	2271	THINK	to think	Verb	17				swadesh	1	
+167	1214	THIS	this	Function word	24	0.897177419355	0.843951612903		swadesh,leipzig_jakarta,wold,northeuralex	4	38
+168	1215	THOU	you (singular)	Function word	2	0.933333333333	0.841666666667	tu, você	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	9
+169	492	THREE	three	Function word	13	0.977528089888	0.892134831461	três	swadesh,wold,ids,northeuralex	4	
+170	1456	THROW	to throw	Verb	10	0.917164179104	0.829253731343	atirar, arremessar, lançar	swadesh,wold,ids,northeuralex	4	
+171	1917	TIE	to tie	Verb	9	0.948126801153	0.874639769452	amarrar, atar	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	88
+172	1205	TONGUE	the tongue	Noun	4	0.953539823009	0.876991150442	língua	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	6
+173	1380	TOOTH	the tooth	Noun	4	0.974813432836	0.92276119403	dente	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	28
+174	906	TREE	the tree	Noun	8	0.951566951567	0.789743589744	árvore	swadesh,wold,ids,northeuralex	4	
+175	1444	TURN AROUND	to turn around	Verb	10	0.690878378378	0.761148648649	voltar, dar a volta	swadesh,wold,ids	3	
+176	1498	TWO	two	Function word	13	0.977186311787	0.882509505703	dois, duas	swadesh,wold,ids,northeuralex	4	
+177	1278	VOMIT	to vomit	Verb	4	0.901253918495	0.852664576803	vomitar	swadesh,wold,ids	3	
+178	1443	WALK	to walk	Verb	10	0.818785578748	0.812903225806	andar, caminhar	swadesh,wold,ids,northeuralex	4	
+179	2110	WARM (OF WEATHER)	warm (of weather)	Adjective	1				swadesh	1	
+180	1453	WASH	to wash	Verb	9	0.883928571429	0.842857142857	lavar	swadesh,wold,ids,northeuralex	4	
+181	948	WATER	the water	Noun	1	0.986984815618	0.900650759219	água	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	4
+182	1212	WE	we	Function word	2	0.880882352941	0.9	nós	swadesh,wold,ids,northeuralex	4	
+183	1726	WET	wet	Adjective	15	0.875	0.855	molhado, úmido	swadesh,wold,ids,northeuralex	4	
+184	1236	WHAT	what?	Function word	17	0.938596491228	0.823391812865	que?	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	50
+185	1238	WHEN	when?	Function word	17	0.821052631579	0.815789473684	quando?	swadesh,wold,ids	3	
+186	1237	WHERE	where?	Function word	17	0.831578947368	0.795789473684	onde?	swadesh,wold,ids,northeuralex	4	
+187	1335	WHITE	white	Adjective	15	0.919230769231	0.853461538462	branco	swadesh,wold,ids,northeuralex	4	
+188	1235	WHO	who?	Function word	17	0.923561151079	0.847841726619	quem?	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	34
+189	1243	WIDE	wide	Adjective	12	0.885	0.835	largo	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	96
+190	1199	WIFE	the wife	Noun	2	0.844514325646	0.846610761705	esposa, mulher	swadesh,wold,ids,northeuralex	4	
+191	960	WIND	the wind	Noun	1	0.986956521739	0.909565217391	vento	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	48
+192	1257	WING	the wing	Noun	4	0.967672413793	0.880603448276	asa	swadesh,leipzig_jakarta,wold,ids,northeuralex	5	17
+193	1454	WIPE	to wipe	Verb	9	0.857142857143	0.814285714286		swadesh,wold,northeuralex	3	
+194	1340	WITH	with	Function word	24	0.952302631579	0.820723684211		swadesh,wold	2	
+195	962	WOMAN	the woman	Noun	2	0.890691114245	0.823695345557	mulher	swadesh,wold,ids,northeuralex	4	
+196	420	FOREST	the woods or forest	Noun	1	0.942136498516	0.863798219585	bosque, floresta	swadesh,wold,ids,northeuralex	4	
+197	1219	WORM	the worm	Noun	3	0.912983425414	0.856906077348	verme, lombriga	swadesh,wold,ids,northeuralex	4	
+198	1213	YOU	you (plural)	Function word	2	0.809523809524	0.789523809524	vocês, vós	swadesh,wold,ids,northeuralex	4	
+199	1226	YEAR	the year	Noun	14	0.971276595745	0.889787234043	ano	swadesh,wold,ids,northeuralex	4	
+200	1424	YELLOW	yellow	Adjective	15	0.877906976744	0.853488372093	amarelo	swadesh,wold,ids,northeuralex	4	
+201	695	GO	to go	Verb	10	0.974157303371	0.91595505618	ir	leipzig_jakarta,wold,ids,northeuralex	4	3
+202	1402	BREAST	the breast	Noun	4	0.96682464455	0.890995260664	seio, mama	leipzig_jakarta,wold,ids,northeuralex	4	12
+203	658	RAIN (PRECIPITATION)	the rain	Noun	1	0.95041322314	0.905785123967	chuva	leipzig_jakarta,wold,ids,northeuralex	4	13
+204	2121	ARM OR HAND	arm/hand	Noun	4				leipzig_jakarta	1	19
+205	1504	FLY (INSECT)	the fly	Noun	3	0.942307692308	0.866153846154	mosca	leipzig_jakarta,wold,ids,northeuralex	4	20
+206	2575	DO OR MAKE	to do/make	Verb	9			fazer	leipzig_jakarta,ids	2	25
+207	1252	HOUSE	the house	Noun	7	0.968619246862	0.867364016736	casa	leipzig_jakarta,wold,ids,northeuralex	4	26
+208	2125	STONE OR ROCK	the stone or rock	Noun	1	0.9575	0.894	pedra, calhau, rocha	leipzig_jakarta,wold,ids	3	27
+209	887	BITTER	bitter	Adjective	15	0.889240506329	0.867088607595	amargo	leipzig_jakarta,wold,ids,northeuralex	4	28
+210	262	HE OR SHE OR IT	he/she/it	Function word	2	0.955113306217	0.805926786752	ele/ela/ele (ou ela)	leipzig_jakarta,wold,ids	3	34
+211	2133	STRIKE OR BEAT	to strike or hit or beat	Verb	9	0.94693877551	0.813333333333	bater, golpear	leipzig_jakarta,wold,ids	3	36
+212	2098	FOOT OR LEG	leg/foot	Noun	4				leipzig_jakarta	1	37
+213	1393	HORN (ANATOMY)	the horn	Noun	4	0.986956521739	0.87652173913	chifre, corno	leipzig_jakarta,wold,ids,northeuralex	4	38
+214	1174	YESTERDAY	yesterday	Function word	14	0.921686746988	0.871084337349	ontem	leipzig_jakarta,wold,ids,northeuralex	4	41
+215	1838	NAVEL	the navel	Noun	4	0.981632653061	0.922857142857	umbigo	leipzig_jakarta,wold,ids,northeuralex	4	42
+216	1801	CHILD (DESCENDANT)	the child(2)	Noun	2	0.92972972973	0.878378378378	filhos, prole	leipzig_jakarta,wold,ids	3	51
+217	3626	KNOW	to know	Verb	17				leipzig_jakarta	1	58
+218	1371	KNEE	the knee	Noun	4	0.922222222222	0.844444444444	joelho	leipzig_jakarta,wold,ids,northeuralex	4	59
+219	2486	HIDE	to hide	Verb	12				leipzig_jakarta	1	67
+220	763	SKIN	the skin or hide	Noun	4	0.923627684964	0.89785202864	pele, couro	leipzig_jakarta,wold,ids,northeuralex	4	67
+221	700	CARRY	to carry	Verb	10	0.953368227857	0.873523213922	levar	leipzig_jakarta,wold,ids,northeuralex	4	70
+222	587	ANT	the ant	Noun	3	0.975	0.851	formiga	leipzig_jakarta,wold,ids,northeuralex	4	71
+223	1749	TAKE	to take	Verb	11	0.886516100179	0.876602564103	tomar	leipzig_jakarta,wold,ids,northeuralex	4	71
+224	471	UPPER LEG (THIGH)	the thigh	Noun	4	0.918103448276	0.847413793103	coxa	leipzig_jakarta,wold,ids,northeuralex	4	76
+225	1803	WOOD	the wood	Noun	1	0.940275650842	0.931087289433	madeira	leipzig_jakarta,wold,ids,northeuralex	4	80
+226	1519	RUN	to run	Verb	10	0.866935483871	0.852016129032	correr	leipzig_jakarta,wold,ids,northeuralex	4	81
+227	1839	CRY	to cry	Verb	16	0.920743639922	0.868101761252	chorar	leipzig_jakarta,wold,ids,northeuralex	4	87
+228	717	SWEET	sweet	Adjective	15	0.886904761905	0.853571428571	doce	leipzig_jakarta,wold,ids,northeuralex	4	89
+229	1388	SHADE	the shade or shadow	Noun	1	0.93137254902	0.902941176471	sombra	leipzig_jakarta,wold,ids,northeuralex	4	91
+230	1884	HARD	hard	Adjective	15	0.902743142145	0.859600997506	duro	leipzig_jakarta,wold,ids,northeuralex	4	99
+231	1033	GRIND	to crush or to grind	Verb	5	0.886018237082	0.862917933131	esmagar, moer	leipzig_jakarta,wold,ids	3	100
+232	965	WORLD	the world	Noun	1	0.858490566038	0.836981132075	mundo	wold,ids,northeuralex	3	
+233	626	LAND	the land	Noun	1	0.939256198347	0.899917355372	terreno	wold,ids	2	
+234	640	MUD	the mud	Noun	1	0.918046357616	0.841059602649	lama, lodo	wold,ids	2	
+235	2118	MOUNTAIN OR HILL	the mountain or hill	Noun	1	0.971014492754	0.892753623188	montanha, morro	wold,ids	2	
+236	618	PRECIPICE	the cliff or precipice	Noun	1	0.940217391304	0.86847826087	penhasco, precipício	wold,ids	2	
+237	652	PLAIN	the plain	Noun	1	0.788461538462	0.900732600733	campo, planície, savannah	wold,ids	2	
+238	921	VALLEY	the valley	Noun	1	0.890804597701	0.836781609195	vale	wold,ids	2	
+239	622	ISLAND	the island	Noun	1	0.896174863388	0.849726775956	ilha	wold,ids,northeuralex	3	
+240	166	MAINLAND	the mainland	Noun	1	0.748080614203	0.819961612284	terra firme	wold,ids,northeuralex	3	
+241	113	SHORE	the shore	Noun	1	0.758928571429	0.835119047619	margem, costa, praia	wold,ids	2	
+242	1155	CAVE	the cave	Noun	1	0.868131868132	0.805494505495	caverna, gruta	wold,ids,northeuralex	3	
+243	258	CALM	calm	Adjective	1	0.835294117647	0.865882352941		wold	1	
+244	259	ROUGH (OF SEA)	rough(2)	Adjective	1	0.713709677419	0.795161290323	tempestuoso	wold,ids	2	
+245	1768	FOAM	the foam	Noun	1	0.952127659574	0.840425531915	espuma	wold,ids,northeuralex	3	
+246	645	OCEAN	the ocean	Noun	1	0.78640776699	0.810355987055	oceano	wold,ids	2	
+247	663	BAY	the bay	Noun	1	0.877358490566	0.790566037736	baía	wold,ids,northeuralex	3	
+248	623	LAGOON	the lagoon	Noun	1	0.875	0.821428571429	laguna	wold,ids	2	
+249	660	REEF	the reef	Noun	1	0.797619047619	0.821428571429	recife	wold,ids	2	
+250	1662	CAPE	the cape	Noun	1	0.868421052632	0.865789473684	cabo, promontório	wold,ids	2	
+251	978	WAVE	the wave	Noun	1	0.880681818182	0.814772727273	onda	wold,ids,northeuralex	3	
+252	891	TIDE	the tide	Noun	1	0.712	0.768	maré	wold,ids	2	
+253	1026	LOW TIDE	the low tide	Noun	1	0.675	0.795	maré baixa, maré vazia	wold,ids	2	
+254	613	HIGH TIDE	the high tide	Noun	1	0.673076923077	0.707692307692	maré alta, preamar, praiamar	wold,ids	2	
+255	3311	FLOWING BODY OF WATER	the river or stream	Noun	1	0.92037302726	0.894404591105	rio, riacho, córrego	wold,ids	2	
+256	1982	WHIRLPOOL	the whirlpool	Noun	1	0.707317073171	0.770731707317	remoinho, redemoinho	wold,ids	2	
+257	2144	SPRING OR WELL	the spring or well	Noun	1	0.854651162791	0.813178294574	nascente, poço	wold,ids	2	
+258	1145	SWAMP	the swamp	Noun	1	0.854368932039	0.809708737864	pântano, pantanal	wold,ids,northeuralex	3	
+259	943	WATERFALL	the waterfall	Noun	1	0.679775280899	0.805617977528	cachoeira, cascata	wold,ids	2	
+260	6	EARTHQUAKE	the earthquake	Noun	1	0.66875	0.8075	terremoto	wold,ids	2	
+261	1313	MOON	the moon	Noun	1	0.957547169811	0.893867924528	lua	wold,ids,northeuralex	3	
+262	1654	LIGHTNING	the lightning	Noun	1	0.77	0.818666666667	relâmpago	wold,ids	2	
+263	1150	THUNDER	the thunder	Noun	1	0.823359073359	0.82972972973	trovão	wold,ids,northeuralex	3	
+264	2007	BOLT (OF LIGHTNING)	the bolt of lightning	Noun	1	0.795454545455	0.853409090909	raio	wold,ids	2	
+265	858	STORM	the storm	Noun	1	0.804744525547	0.786131386861	tempestade	wold,ids	2	
+266	1733	RAINBOW	the rainbow	Noun	1	0.789772727273	0.840909090909	arco-íris	wold,ids,northeuralex	3	
+267	630	LIGHT (RADIATION)	the light	Noun	1	0.886788384129	0.88829787234	luz	wold,ids,northeuralex	3	
+268	11	DARKNESS	the darkness	Noun	1	0.743636363636	0.868	escuridão	wold,ids	2	
+269	1977	DEW	the dew	Noun	1	0.902730375427	0.866894197952	orvalho	wold,ids	2	
+270	27	AIR	the air	Noun	1	0.941747572816	0.915048543689	ar	wold,ids,northeuralex	3	
+271	952	WEATHER	the weather	Noun	1	0.85	0.825277777778	tempo	wold,ids,northeuralex	3	
+272	889	FLAME	the flame	Noun	1	0.762002462043	0.882027082478	chama	wold,ids	2	
+273	67	EMBERS	the embers	Noun	1	0.82541322314	0.801239669421	brasas	wold,ids	2	
+274	141	BURN (SOMETHING)	to burn(1)	Verb	1	0.776824034335	0.885836909871	queimar, incendiar	wold,ids,northeuralex	3	
+275	737	LIGHT (IGNITE)	to light	Verb	1	0.768566493955	0.820207253886	acender, atear	wold,ids,northeuralex	3	
+276	127	EXTINGUISH	to extinguish	Verb	1	0.764779350541	0.88834304746	extinguir	wold,ids	2	
+277	1133	MATCH	the match	Noun	1	0.873046875	0.73828125	fósforo	wold,ids	2	
+278	10	FIREWOOD	the firewood	Noun	1	0.839961202716	0.890155189137	lenha	wold,ids	2	
+279	1188	CHARCOAL	the charcoal	Noun	1	0.879411764706	0.878823529412	carvão	wold,ids	2	
+280	1554	MAN	the man	Noun	2	0.880510440835	0.886310904872	homem	wold,ids,northeuralex	3	
+281	2261	MALE (OF PERSON)	male(1)	Adjective	2	0.829872581406	0.867862199151	macho	wold,ids	2	
+282	2260	FEMALE (OF PERSON)	female(1)	Adjective	2	0.847378898474	0.855341738553	fêmea	wold,ids	2	
+283	1366	BOY	the boy	Noun	2	0.738095238095	0.864285714286	menino, garoto	wold,ids,northeuralex	3	
+284	76	YOUNG MAN	the young man	Noun	2	0.739805825243	0.865631067961	jovem, rapaz	wold,ids	2	
+285	1646	GIRL	the girl	Noun	2	0.762013729977	0.879405034325	menina, garota	wold,ids,northeuralex	3	
+286	77	YOUNG WOMAN	the young woman	Noun	2	0.757834757835	0.851037851038	jovem, moça	wold,ids	2	
+287	1289	BABY	the baby	Noun	2	0.805914972274	0.796303142329	bebê, nenê	wold,ids	2	
+288	203	MARRY	to marry	Verb	2	0.693460490463	0.808991825613	casar	wold,ids	2	
+289	1259	WEDDING	the wedding	Noun	2	0.758426966292	0.8		wold	1	
+290	1134	DIVORCE	the divorce	Noun	2	0.649234693878	0.793367346939	divórcio	wold,ids	2	
+291	505	PARENTS	the parents	Noun	2	0.62962962963	0.844444444444	pais	wold,ids,northeuralex	3	
+292	424	MARRIED MAN	the married man	Noun	2	0.615916955017	0.798615916955	casado	wold,ids	2	
+293	426	MARRIED WOMAN	the married woman	Noun	2	0.591152815013	0.772117962466	casada	wold,ids	2	
+294	1620	SON	the son	Noun	2	0.867132867133	0.878321678322	filho	wold,ids,northeuralex	3	
+295	1357	DAUGHTER	the daughter	Noun	2	0.847826086957	0.864347826087	filha	wold,ids,northeuralex	3	
+296	1479	DOLPHIN	the porpoise or dolphin	Noun	3	0.95652173913	0.813043478261	delfim, golfinho	wold,ids	2	
+297	1262	BROTHER	the brother	Noun	2	0.808896262443	0.872941839354	irmão	wold,ids,northeuralex	3	
+298	1759	OLDER BROTHER	the older brother	Noun	2	0.786337807163	0.849933730443	irmão mais velho	wold,ids	2	
+299	1760	YOUNGER BROTHER	the younger brother	Noun	2	0.730959983695	0.843340240505	irmão mais novo	wold,ids	2	
+300	1263	SISTER	the sister	Noun	2	0.814825472648	0.809127794884	irmã	wold,ids,northeuralex	3	
+301	1758	OLDER SISTER	the older sister	Noun	2	0.712373618711	0.822171863395	irmã mais velha	wold,ids	2	
+302	1761	YOUNGER SISTER	the younger sister	Noun	2	0.680399521652	0.78906368429	irmã mais nova	wold,ids	2	
+303	1640	SIBLING	the sibling	Noun	2	0.659889440645	0.846022674037	irmão, irmã	wold,ids	2	
+304	1005	TWINS	the twins	Noun	2	0.756972111554	0.806374501992	gêmeos	wold,ids	2	
+305	1383	GRANDFATHER	the grandfather	Noun	2	0.827127659574	0.826241134752	avô	wold,ids,northeuralex	3	
+306	406	OLD MAN	the old man	Noun	2	0.753683241252	0.814917127072	velho	wold,ids	2	
+307	1496	GRANDMOTHER	the grandmother	Noun	2	0.824257425743	0.840924092409	avó	wold,ids,northeuralex	3	
+308	907	OLD WOMAN	the old woman	Noun	2	0.69298245614	0.782894736842	velha	wold,ids	2	
+309	1618	GRANDSON	the grandson	Noun	2	0.748810939358	0.848394768133	neto	wold,ids	2	
+310	1619	GRANDDAUGHTER	the granddaughter	Noun	2	0.730324711062	0.828288387452	neta	wold,ids	2	
+311	1327	UNCLE	the uncle	Noun	2	0.936901034254	0.868488471392	tio	wold,ids,northeuralex	3	
+312	2692	MATERNAL UNCLE (MOTHER'S BROTHER)	the mother's brother	Noun	2	0.910744644679	0.782216933016	irmão (da mãe)	wold,ids	2	
+313	1985	PATERNAL UNCLE (FATHER'S BROTHER)	the father's brother	Noun	2	0.788800386194	0.808512350149	irmão (do pai)	wold,ids	2	
+314	1272	AUNT	the aunt	Noun	2	0.865147834827	0.842867911885	tia	wold,ids,northeuralex	3	
+315	2693	MATERNAL AUNT (MOTHER'S SISTER)	the mother's sister	Noun	2	0.823699421965	0.78901734104	irmã (da mãe)	wold,ids	2	
+316	2691	PATERNAL AUNT (FATHER'S SISTER)	the father's sister	Noun	2	0.906658637302	0.841620784584	irmã (do pai)	wold,ids	2	
+317	1063	NEPHEW	the nephew	Noun	2	0.734762979684	0.836060948081	sobrinho	wold,ids	2	
+318	1642	NIECE	the niece	Noun	2	0.678078691875	0.824987225345	sobrinha	wold,ids	2	
+319	1643	COUSIN	the cousin	Noun	2	0.696025399812	0.8009289746	primo/prima	wold,ids	2	
+320	1669	ANCESTORS	the ancestors	Noun	2	0.696202531646	0.796202531646	antepassados, ancestrais	wold,ids	2	
+321	490	DESCENDANTS	the descendants	Noun	2	0.70303030303	0.824242424242	descendentes	wold,ids	2	
+322	2255	FATHER-IN-LAW (OF MAN)	the father-in-law (of a man)	Noun	2	0.734435797665	0.831332684825	sogro (de homem)	wold,ids	2	
+323	2254	FATHER-IN-LAW (OF WOMAN)	the father-in-law (of a woman)	Noun	2	0.755658980326	0.79216204781	sogro (de mulher)	wold,ids	2	
+324	2257	MOTHER-IN-LAW (OF MAN)	the mother-in-law (of a man)	Noun	2	0.718332272438	0.802355187778	sogra (de homem)	wold,ids	2	
+325	2256	MOTHER-IN-LAW (OF WOMAN)	the mother-in-law (of a woman)	Noun	2	0.752945026178	0.829515706806	sogra (de mulher)	wold,ids	2	
+326	2267	SON-IN-LAW (OF MAN)	the son-in-law (of a man)	Noun	2	0.847371044107	0.84545228009	genro	wold,ids	2	
+327	2266	SON-IN-LAW (OF WOMAN)	the son-in-law (of a woman)	Noun	2	0.859437751004	0.834233485667	genro	wold,ids	2	
+328	2265	DAUGHTER-IN-LAW (OF MAN)	the daughter-in-law (of a man)	Noun	2	0.804204451772	0.854328112119	nora (de homem)	wold,ids	2	
+329	2264	DAUGHTER-IN-LAW (OF WOMAN)	the daughter-in-law (of a woman)	Noun	2	0.823853989813	0.876485568761	nora (de mulher)	wold,ids	2	
+330	237	STEPFATHER	the stepfather	Noun	2	0.582152202355	0.834387265591	padrasto	wold,ids	2	
+331	236	STEPMOTHER	the stepmother	Noun	2	0.58560311284	0.833463035019	madrasta	wold,ids	2	
+332	1059	STEPSON	the stepson	Noun	2	0.6025	0.78625	enteado	wold,ids	2	
+333	1058	STEPDAUGHTER	the stepdaughter	Noun	2	0.596446700508	0.824873096447	enteada	wold,ids	2	
+334	1149	ORPHAN	the orphan	Noun	2	0.880753138075	0.819246861925	órfão/órfã	wold,ids	2	
+335	1756	WIDOW	the widow	Noun	2	0.7375	0.85625	viúva	wold,ids	2	
+336	1981	WIDOWER	the widower	Noun	2	0.723880597015	0.831343283582	viúvo	wold,ids	2	
+337	1644	RELATIVES	the relatives	Noun	2	0.841327771985	0.826416405978	parentes	wold,ids	2	
+338	194	FAMILY	the family	Noun	2	0.855691056911	0.838211382114	família	wold,ids,northeuralex	3	
+339	1131	WE (INCLUSIVE)	we (inclusive)	Function word	2	0.769553072626	0.769273743017	nós	wold,ids	2	
+340	1130	WE (EXCLUSIVE)	we (exclusive)	Function word	2	0.780104712042	0.724083769634	nós	wold,ids	2	
+341	2263	MALE (OF ANIMAL)	male(2)	Adjective	3	0.883001422475	0.934779516358	masculino	wold,ids	2	
+342	2262	FEMALE (OF ANIMAL)	female(2)	Adjective	3	0.890501319261	0.903430079156	feminino	wold,ids	2	
+343	631	LIVESTOCK	the livestock	Noun	3	0.780720338983	0.815677966102	gado	wold,ids	2	
+344	649	PASTURE	the pasture	Noun	3	0.8375	0.815416666667	pasto, pastagem	wold,ids,northeuralex	3	
+345	263	HERDSMAN	the herdsman	Noun	3	0.666666666667	0.817948717949	pastor	wold,ids	2	
+346	851	STABLE	the stable or stall	Noun	3	0.858695652174	0.834782608696	cocheira, estábulo	wold,ids	2	
+347	1153	CATTLE	the cattle	Noun	3	0.835734870317	0.853025936599	gado	wold,ids	2	
+348	1008	BULL	the bull	Noun	3	0.837579617834	0.850955414013	touro	wold,ids,northeuralex	3	
+349	1169	OX	the ox	Noun	3	0.90873015873	0.869841269841	boi	wold,ids	2	
+350	1007	COW	the cow	Noun	3	0.86143187067	0.841108545035	vaca	wold,ids,northeuralex	3	
+351	1989	CALF	the calf	Noun	3	0.761165048544	0.878834951456	bezerro	wold,ids	2	
+352	1331	SHEEP	the sheep	Noun	3	0.962063732929	0.898533131007	ovelha	wold,ids,northeuralex	3	
+353	1344	RAM	the ram	Noun	3	0.825581395349	0.855919661734	carneiro	wold,ids	2	
+354	1345	EWE	the ewe	Noun	3	0.72972972973	0.838138138138	ovelha	wold,ids	2	
+355	820	LAMB	the lamb	Noun	3	0.742710120069	0.81320754717	cordeiro	wold,ids	2	
+356	1348	BOAR (MALE PIG)	the boar	Noun	3	0.799107142857	0.847321428571	barrão/ varrão	wold,ids	2	
+357	1351	SOW (FEMALE PIG)	the sow	Noun	3	0.684210526316	0.865789473684	porca	wold,ids	2	
+358	1337	PIG	the pig	Noun	3	0.900696864111	0.849477351916	porco	wold,ids,northeuralex	3	
+359	1502	GOAT	the goat	Noun	3	0.96107266436	0.866522491349	cabra	wold,ids	2	
+360	2475	MALE GOAT	the he-goat	Noun	3	0.791907514451	0.854913294798	bode	wold,ids	2	
+361	1972	YOUNG GOAT (KID)	the kid	Noun	3	0.619289340102	0.834517766497	cabrito	wold,ids	2	
+362	615	HORSE	the horse	Noun	3	0.988047808765	0.861752988048	cavalo	wold,ids,northeuralex	3	
+363	936	STALLION	the stallion	Noun	3	0.73786407767	0.837378640777	garanhão	wold,ids	2	
+364	938	MARE	the mare	Noun	3	0.741116751269	0.852791878173	égua	wold,ids	2	
+365	1647	FOAL	the foal or colt	Noun	3	0.763157894737	0.863157894737	potro	wold,ids	2	
+366	1862	DONKEY	the donkey	Noun	3	0.936708860759	0.827848101266	asno, burro	wold,ids	2	
+367	890	MULE	the mule	Noun	3	0.8828125	0.8515625	mulo/mula	wold,ids	2	
+368	265	FOWL	the fowl	Noun	3	0.747572815534	0.820388349515	ave	wold,ids	2	
+369	1511	ROOSTER	the cock/rooster	Noun	3	0.749450549451	0.843296703297	galo	wold,ids,northeuralex	3	
+370	1514	HEN	the hen	Noun	3	0.750611246944	0.8902200489	galinha	wold,ids	2	
+371	1318	CHICKEN	the chicken	Noun	3	0.915601023018	0.888235294118	frango	wold,ids,northeuralex	3	
+372	1187	GOOSE	the goose	Noun	3	0.945205479452	0.883561643836	ganso	wold,ids,northeuralex	3	
+373	1360	DUCK	the duck	Noun	3	0.928571428571	0.86043956044	pato	wold,ids,northeuralex	3	
+374	539	NEST	the nest	Noun	3	0.89880952381	0.878571428571	ninho	wold,ids,northeuralex	3	
+375	950	SEAGULL	the seagull	Noun	3	0.91	0.76	gaivota	wold,ids	2	
+376	758	HERON	the heron	Noun	3	0.914473684211	0.797368421053	garça	wold,ids	2	
+377	1905	EAGLE	the eagle	Noun	3	0.954022988506	0.847126436782	águia	wold,ids,northeuralex	3	
+378	307	HAWK	the hawk	Noun	3	0.938144329897	0.815463917526	falcão	wold,ids	2	
+379	1185	VULTURE	the vulture	Noun	3	0.926470588235	0.814705882353	urubu, abutre	wold,ids	2	
+380	1793	BAT	the bat	Noun	3	0.902173913043	0.821739130435	morcego	wold,ids	2	
+381	882	PARROT	the parrot	Noun	3	0.926136363636	0.818181818182	papagaio	wold,ids	2	
+382	913	CROW	the crow	Noun	3	0.961538461538	0.833333333333	corvo	wold,ids,northeuralex	3	
+383	1853	DOVE	the dove	Noun	3	0.942307692308	0.864102564103	pomba	wold,ids	2	
+384	735	OWL	the owl	Noun	3	0.934210526316	0.808771929825	mocho, coruja	wold,ids,northeuralex	3	
+385	1136	RABBIT	the rabbit	Noun	3	0.954918032787	0.896721311475	coelho	wold,ids	2	
+386	1208	CAT	the cat	Noun	3	0.944186046512	0.802790697674	gato	wold,ids,northeuralex	3	
+387	309	OPOSSUM	the opossum	Noun	3	0.872093023256	0.779069767442	sarigüê, gambá	wold,ids	2	
+388	2139	MUROID (MOUSE OR RAT)	the mouse or rat	Noun	3	0.929133858268	0.815748031496	rato, camundongo, ratinho	wold,ids	2	
+389	213	FIN	the fin	Noun	3	0.856783919598	0.743216080402	barbatana	wold,ids	2	
+390	266	SCALE	the scale	Noun	3	0.895833333333	0.859722222222	escama	wold,ids	2	
+391	1916	GILL	the gill	Noun	3	0.932203389831	0.81186440678	guelra, brânquia	wold,ids	2	
+392	598	SHELL	the shell	Noun	3	0.925	0.7925	concha	wold,ids	2	
+393	1110	SHARK	the shark	Noun	3	0.885416666667	0.7875	tubarão	wold,ids	2	
+394	957	WHALE	the whale	Noun	3	0.87	0.848	baleia	wold,ids	2	
+395	1910	STINGRAY	the stingray	Noun	3	0.909090909091	0.836363636364	raia, arraia	wold,ids	2	
+396	1013	FRESHWATER EEL	the freshwater eel	Noun	3	0.8515625	0.8	enguia	wold,ids	2	
+397	522	WOLF	the wolf	Noun	3	0.881944444444	0.858333333333	lobo	wold,ids,northeuralex	3	
+398	1386	LION	the lion	Noun	3	0.933734939759	0.843373493976	leão	wold,ids	2	
+399	1820	BEAR	the bear	Noun	3	0.983870967742	0.848387096774	urso	wold,ids,northeuralex	3	
+400	1312	FOX	the fox	Noun	3	0.944444444444	0.836111111111	raposa	wold,ids,northeuralex	3	
+401	1936	DEER	the deer	Noun	3	0.952095808383	0.873053892216	veado	wold,ids	2	
+402	1350	MONKEY	the monkey	Noun	3	0.953703703704	0.790740740741	macaco	wold,ids	2	
+403	1290	ELEPHANT	the elephant	Noun	3	0.982352941176	0.788235294118	elefante	wold,ids	2	
+404	1871	CAMEL	the camel	Noun	3	0.921875	0.83125	camelo	wold,ids	2	
+405	620	INSECT	the insect	Noun	3	0.878923766816	0.860538116592	inseto	wold,ids	2	
+406	310	HEAD LOUSE	the head louse	Noun	3	0.942583732057	0.873684210526		wold	1	
+407	267	NIT	the nit	Noun	3	0.808219178082	0.834246575342	lêndea	wold,ids	2	
+408	232	FLEA	the flea	Noun	3	0.9	0.84	pulga	wold,ids	2	
+409	1974	CENTIPEDE	the centipede	Noun	3	0.833333333333	0.833333333333	centopeia	wold,ids	2	
+410	1538	SCORPION	the scorpion	Noun	3	0.905405405405	0.818918918919	escorpião	wold,ids	2	
+411	1575	COCKROACH	the cockroach	Noun	3	0.892857142857	0.797619047619	barata	wold,ids	2	
+412	843	SPIDER	the spider	Noun	3	0.923076923077	0.846153846154	aranha	wold,ids,northeuralex	3	
+413	1065	SPIDER WEB	the spider web	Noun	3	0.602564102564	0.787179487179	teia de aranha	wold,ids	2	
+414	665	BEE	the bee	Noun	3	0.875	0.805084745763	abelha	wold,ids	2	
+415	1931	BEESWAX	the beeswax	Noun	3	0.694029850746	0.864179104478	cera	wold,ids	2	
+416	88	BEEHIVE	the beehive	Noun	3	0.713375796178	0.83949044586	colmeia	wold,ids	2	
+417	1517	WASP	the wasp	Noun	3	0.923003802281	0.849429657795	vespa	wold,ids	2	
+418	95	SANDFLY	the sandfly or midge or gnat	Noun	3	0.884615384615	0.803846153846	mosquito	wold,ids	2	
+419	1509	MOSQUITO	the mosquito	Noun	3	0.931818181818	0.817045454545	mosquito	wold,ids,northeuralex	3	
+420	206	FIREFLY	the firefly	Noun	3	0.798611111111	0.786111111111	pirilampo, vaga-lume	wold,ids	2	
+421	1791	BUTTERFLY	the butterfly	Noun	3	0.893258426966	0.824719101124	borboleta	wold,ids,northeuralex	3	
+422	607	GRASSHOPPER	the grasshopper	Noun	3	0.888888888889	0.811111111111	gafanhoto	wold,ids	2	
+423	1543	SNAIL	the snail	Noun	3	0.887372013652	0.846416382253	caracol	wold,ids	2	
+424	503	FROG	the frog	Noun	3	0.978609625668	0.851336898396	rã	wold,ids	2	
+425	632	LIZARD	the lizard	Noun	3	0.980198019802	0.806930693069	lagarto	wold,ids	2	
+426	1857	CROCODILE	the crocodile or alligator	Noun	3	0.95	0.853333333333	jacaré	wold,ids	2	
+427	112	TURTLE	the turtle	Noun	3	0.947916666667	0.785416666667	tartaruga	wold,ids	2	
+428	1480	BODY	the body	Noun	4	0.935599284436	0.848300536673	corpo	wold,ids,northeuralex	3	
+429	2259	FLESH	the flesh	Noun	4	1.0	0.892219020173	carne	wold,ids	2	
+430	2648	HAIR (HEAD)	the hair	Noun	4	0.916906032007	0.879975379565	cabelo	wold,ids	2	
+431	678	BEARD	the beard	Noun	4	0.926966292135	0.826966292135	barba	wold,ids,northeuralex	3	
+432	189	HAIR (BODY)	the body hair	Noun	4	0.867672168469	0.874501992032	cabelo, pêlo	wold,ids	2	
+433	36	PUBIC HAIR	the pubic hair	Noun	4	0.801606046292	0.807982994804	pêlo púbico	wold,ids	2	
+434	576	DANDRUFF	the dandruff	Noun	4	0.825	0.7825	caspa	wold,ids	2	
+435	525	BLOOD VESSEL	the vein or artery	Noun	4	0.788528896673	0.819789842382	veia, artéria	wold,ids	2	
+436	801	RIB	the rib	Noun	4	0.803370786517	0.859550561798	costela	wold,ids	2	
+437	805	SPINE	the spine	Noun	4	0.663793103448	0.794252873563	espinha dorsal	wold,ids	2	
+438	1604	TEMPLES	the temples	Noun	4	0.82	0.813333333333	fonte, têmpora	wold,ids	2	
+439	1605	SKULL	the skull	Noun	4	0.673913043478	0.770652173913	crânio, caveira	wold,ids	2	
+440	1583	BRAIN	the brain	Noun	4	0.918918918919	0.823243243243	cérebro, miolos	wold,ids,northeuralex	3	
+441	1560	FACE	the face	Noun	4	0.9679943101	0.834637268848	rosto	wold,ids,northeuralex	3	
+442	123	FOREHEAD	the forehead	Noun	4	0.868525896414	0.83625498008	testa, fronte	wold,ids,northeuralex	3	
+443	798	JAW	the jaw	Noun	4	0.86875	0.835	maxila	wold,ids,northeuralex	3	
+444	1730	CHEEK	the cheek	Noun	4	0.922619047619	0.835714285714	bochecha	wold,ids,northeuralex	3	
+445	1510	CHIN	the chin	Noun	4	0.89156626506	0.839759036145	queixo	wold,ids,northeuralex	3	
+446	1173	EYEBROW	the eyebrow	Noun	4	0.8271484375	0.801171875	sobrancelha	wold,ids	2	
+447	17	EYELID	the eyelid	Noun	4	0.598547717842	0.745228215768	pálpebra	wold,ids	2	
+448	1540	EYELASH	the eyelash	Noun	4	0.69730941704	0.809417040359	pestana, cílio	wold,ids	2	
+449	1655	BLINK	to blink	Verb	4	0.739361702128	0.808510638298	pestanejar	wold,ids	2	
+450	18	EARLOBE	the earlobe	Noun	4	0.594202898551	0.791304347826	lóbulo	wold,ids	2	
+451	32	EARWAX	the earwax	Noun	4	0.655844155844	0.794805194805	cerume, cera	wold,ids	2	
+452	1178	NOSTRIL	the nostril	Noun	4	0.559523809524	0.761904761905	narina	wold,ids	2	
+453	208	NASAL MUCUS (SNOT)	the nasal mucus	Noun	4	0.908045977011	0.796551724138	muco	wold,ids	2	
+454	73	BEAK	the beak	Noun	4	0.857466063348	0.836199095023	bico	wold,ids	2	
+455	478	LIP	the lip	Noun	4	0.857894736842	0.864842105263	lábio	wold,ids,northeuralex	3	
+456	139	GUMS	the gums	Noun	4	0.792654028436	0.812322274882	gengiva	wold,ids	2	
+457	1049	MOLAR TOOTH	the molar tooth	Noun	4	0.784810126582	0.825316455696	molar	wold,ids	2	
+458	1347	NAPE (OF NECK)	the nape of the neck	Noun	4	0.82183908046	0.814942528736	nuca	wold,ids,northeuralex	3	
+459	1346	THROAT	the throat	Noun	4	0.932330827068	0.853759398496	garganta	wold,ids,northeuralex	3	
+460	1482	SHOULDER	the shoulder	Noun	4	0.942913385827	0.872440944882	ombro	wold,ids,northeuralex	3	
+461	172	SHOULDERBLADE	the shoulderblade	Noun	4	0.76310483871	0.75685483871	omoplata	wold,ids	2	
+462	1994	COLLARBONE	the collarbone	Noun	4	0.69875	0.697	clavícula	wold,ids	2	
+463	1673	ARM	the arm	Noun	4	0.940298507463	0.864676616915	braço	wold,ids,northeuralex	3	
+464	1886	ARMPIT	the armpit	Noun	4	0.864130434783	0.778260869565	axila, sovaco	wold,ids	2	
+465	981	ELBOW	the elbow	Noun	4	0.846590909091	0.813636363636	cotovelo	wold,ids,northeuralex	3	
+466	799	WRIST	the wrist	Noun	4	0.736734693878	0.771020408163	pulso	wold,ids	2	
+467	1183	PALM OF HAND	the palm of the hand	Noun	4	0.725274725275	0.838461538462	palma de mão	wold,ids,northeuralex	3	
+468	1303	FINGER	the finger	Noun	4	0.820276497696	0.826728110599	dedo	wold,ids,northeuralex	3	
+469	1781	THUMB	the thumb	Noun	4	0.670454545455	0.770454545455	polegar	wold,ids	2	
+470	1258	FINGERNAIL	the fingernail	Noun	4	0.872	0.8528	unha	wold,ids,northeuralex	3	
+471	72	CLAW	the claw	Noun	4	0.916455696203	0.829367088608	garra	wold,ids,northeuralex	3	
+472	498	CALF OF LEG	the calf of the leg	Noun	4	0.802631578947	0.794736842105	barriga da perna	wold,ids	2	
+473	803	ANKLE	the ankle	Noun	4	0.747191011236	0.783146067416	tornozelo	wold,ids	2	
+474	980	HEEL	the heel	Noun	4	0.810975609756	0.780894308943	calcanhar	wold,ids,northeuralex	3	
+475	318	FOOTPRINT	the footprint	Noun	4	0.738440438871	0.799373040752	pegada	wold,ids,northeuralex	3	
+476	1389	TOE	the toe	Noun	4	0.668085106383	0.804255319149	dedo do pé	wold,ids,northeuralex	3	
+477	1592	CHEST	the chest	Noun	4	0.913978494624	0.820430107527	peito	wold,ids,northeuralex	3	
+478	796	NIPPLE	the nipple or teat	Noun	4	0.714559386973	0.764367816092	mamilo, teta	wold,ids	2	
+479	154	UDDER	the udder	Noun	4	0.911602209945	0.896132596685	úbere	wold,ids	2	
+480	688	LUNG	the lung	Noun	4	0.910714285714	0.854761904762	pulmão	wold,ids	2	
+481	489	KIDNEY	the kidney	Noun	4	0.907514450867	0.852601156069	rim	wold,ids	2	
+482	1744	SPLEEN	the spleen	Noun	4	0.947368421053	0.797368421053	baço	wold,ids	2	
+483	819	STOMACH	the stomach	Noun	4	0.967248908297	0.852401746725	estômago, barriga	wold,ids,northeuralex	3	
+484	1991	INTESTINES	the intestines or guts	Noun	4	0.865	0.852	intestinos, tripas	wold,ids	2	
+485	1681	WAIST	the waist	Noun	4	0.913829787234	0.846382978723	cintura	wold,ids	2	
+486	1745	HIP	the hip	Noun	4	0.924074074074	0.834444444444	quadril, anca, cadeira	wold,ids	2	
+487	834	BUTTOCKS	the buttocks	Noun	4	0.882059800664	0.830564784053	nádegas	wold,ids	2	
+488	804	WOMB	the womb	Noun	4	0.792604501608	0.801607717042	útero, ventre	wold,ids	2	
+489	797	TESTICLES	the testicles	Noun	4	0.86546184739	0.853413654618	testículo	wold,ids	2	
+490	1222	PENIS	the penis	Noun	4	0.949191685912	0.843187066975	pênis	wold,ids	2	
+491	1028	YAWN	to yawn	Verb	4	0.761904761905	0.792857142857	bocejar	wold,ids	2	
+492	162	HICCOUGH	to hiccough	Verb	4	0.867469879518	0.786746987952	soluço	wold,ids	2	
+493	879	COUGH	to cough	Verb	4	0.851851851852	0.83950617284	tossir	wold,ids,northeuralex	3	
+494	1621	SNEEZE	to sneeze	Verb	4	0.872572815534	0.808252427184	espirrar	wold,ids	2	
+495	126	SWEAT (PERSPIRE)	to perspire	Verb	4	0.711734693878	0.797959183673	suar, transpirar	wold,ids	2	
+496	319	LICK	to lick	Verb	4	0.903614457831	0.886746987952	lamber	wold,ids,northeuralex	3	
+497	268	DRIBBLE	to dribble	Verb	4	0.705128205128	0.773076923077	babar	wold,ids	2	
+498	1983	SNORE	to snore	Verb	4	0.79	0.82	roncar, ressonar	wold,ids	2	
+499	1920	DREAM (SOMETHING)	to dream	Verb	4	0.747126436782	0.84367816092	sonhar	wold,ids	2	
+500	1602	WAKE UP	to wake up	Verb	4	0.810650887574	0.788560157791	acordar	wold,ids,northeuralex	3	
+501	1159	FART	to fart	Verb	4	0.8	0.854	peido	wold,ids	2	
+502	592	PISS	to piss	Verb	4	0.790816326531	0.836734693878	urinar	wold,ids	2	
+503	676	SHIT (DEFECATE)	to shit	Verb	4	0.785046728972	0.853271028037	defecar	wold,ids	2	
+504	549	COPULATE	to have sex	Verb	4	0.762362637363	0.841483516484	ter relações sexuais	wold,ids	2	
+505	52	SHIVER	to shiver	Verb	4	0.820388349515	0.787378640777	tiritar, tremer	wold,ids,northeuralex	3	
+506	138	BATHE	to bathe	Verb	4	0.769230769231	0.852747252747	tomar banho	wold,ids,northeuralex	3	
+507	1152	BEGET	to beget	Verb	4	0.76253298153	0.822955145119	gerar, emprenhar	wold,ids	2	
+508	1090	BE BORN	to be born	Verb	4	0.762068965517	0.857471264368	nascer	wold,ids,northeuralex	3	
+509	1123	PREGNANT	pregnant	Adjective	4	0.710144927536	0.742995169082	grávida (mulher), prenhe (fêmea)	wold,ids	2	
+510	1087	CONCEIVE	to conceive	Verb	4	0.648550724638	0.733333333333	conceber	wold,ids	2	
+511	1904	DROWN	to drown	Verb	4	0.701298701299	0.812987012987		wold	1	
+512	767	CORPSE	the corpse	Noun	4	0.896396396396	0.825675675676	cadáver	wold,ids	2	
+513	1719	BURY	to bury	Verb	4	0.831460674157	0.844943820225	enterrar	wold,ids	2	
+514	1773	GRAVE	the grave	Noun	4	0.887755102041	0.824489795918	túmulo, sepultura	wold,ids,northeuralex	3	
+515	785	STRONG	strong	Adjective	4	0.867889908257	0.820366972477		wold,northeuralex	2	
+516	1601	WEAK	weak	Adjective	4	0.803992740472	0.789836660617	débil, fraco	wold,ids,northeuralex	3	
+517	1364	HEALTHY	healthy	Adjective	4	0.778161713891	0.865653075328	bem, saúde, são	wold,ids,northeuralex	3	
+518	1847	SICK	sick/ill	Adjective	4	0.845505617978	0.811610486891	doente, doença	wold,ids,northeuralex	3	
+519	1534	FEVER	the fever	Noun	4	0.838209769402	0.798041160426	febre	wold,ids,northeuralex	3	
+520	1957	GOITER	the goitre/goiter	Noun	4	0.78125	0.828125	papo, papeira	wold,ids	2	
+521	102	COMMON COLD (DISEASE)	the cold	Noun	4	0.848249027237	0.792996108949	resfriado, gripe	wold,ids	2	
+522	1109	WOUND	the wound or sore	Noun	4	0.875432525952	0.807612456747	ferida, chaga	wold,ids,northeuralex	3	
+523	1148	BRUISE	the bruise	Noun	4	0.772373540856	0.768093385214	ferimento	wold,ids	2	
+524	1903	SWELLING	the swelling	Noun	4	0.770408163265	0.837755102041	inchação	wold,ids	2	
+525	148	ITCH	the itch	Noun	4	0.789772727273	0.843181818182	comichão, coceira	wold,ids	2	
+526	1584	BLISTER	the blister	Noun	4	0.789156626506	0.802409638554	empola, bolha	wold,ids	2	
+527	793	BOIL (OF SKIN)	the boil	Noun	4	0.877777777778	0.802222222222	furúnculo	wold,ids	2	
+528	1808	PUS	the pus	Noun	4	0.960076045627	0.885931558935	pus	wold,ids	2	
+529	497	SCAR	the scar	Noun	4	0.848404255319	0.805319148936	cicatriz	wold,ids	2	
+530	499	CURE	to cure	Verb	4	0.722222222222	0.761616161616	sarar, curar	wold,ids	2	
+531	597	PHYSICIAN	the physician	Noun	4	0.871739130435	0.790434782609	médico	wold,ids,northeuralex	3	
+532	1372	MEDICINE	the medicine	Noun	4	0.901960784314	0.835294117647	medicamento, remédio	wold,ids,northeuralex	3	
+533	655	POISON	the poison	Noun	4	0.935943060498	0.838790035587	veneno	wold,ids	2	
+534	1757	TIRED	tired	Adjective	4	0.865107913669	0.824100719424	cansado, estafado	wold,ids	2	
+535	168	REST	to rest	Verb	4	0.754646840149	0.838289962825	descansar	wold,ids,northeuralex	3	
+536	1564	LAZY	lazy	Adjective	4	0.89349112426	0.810059171598	preguiçoso	wold,ids,northeuralex	3	
+537	1125	BALD	bald	Adjective	4	0.82119205298	0.814569536424	calvo	wold,ids	2	
+538	320	LAME	lame	Adjective	4	0.876623376623	0.82987012987	coxo	wold,ids	2	
+539	996	DEAF	deaf	Adjective	4	0.804347826087	0.858695652174	surdo	wold,ids,northeuralex	3	
+540	1666	MUTE	mute	Adjective	4	0.8375	0.81625	mudo	wold,ids	2	
+541	1653	BLIND	blind	Adjective	4	0.857142857143	0.834065934066	cego	wold,ids,northeuralex	3	
+542	1463	DRUNK	drunk	Adjective	4	0.747572815534	0.808737864078	embriagado	wold,ids	2	
+543	590	NAKED	naked	Adjective	4	0.838235294118	0.826470588235	despido, nu	wold,ids,northeuralex	3	
+544	256	FOOD	the food	Noun	5	0.745624745625	0.816157916158	alimento	wold,ids,northeuralex	3	
+545	269	COOKED	cooked	Adjective	5	0.745283018868	0.837264150943	cozinhado, cozido	wold,ids	2	
+546	1959	RAW	raw	Adjective	5	0.874331550802	0.827272727273	cru	wold,ids,northeuralex	3	
+547	178	RIPE	ripe	Adjective	5	0.853658536585	0.853658536585	maduro	wold,ids,northeuralex	3	
+548	1958	UNRIPE	unripe	Adjective	5	0.786516853933	0.793258426966	verde, imaturo	wold,ids	2	
+549	1533	BE HUNGRY	to be hungry	Verb	5	0.758241758242	0.804395604396		wold,northeuralex	2	
+550	199	FAMINE	the famine	Noun	5	0.783783783784	0.847297297297	fome	wold,ids	2	
+551	3474	BE THIRSTY	to be thirsty	Verb	5	0.686046511628	0.832558139535		wold	1	
+552	321	CHEW	to chew	Verb	5	0.875	0.851136363636	mastigar, mascar	wold,ids	2	
+553	897	SWALLOW	to swallow	Verb	5	0.869047619048	0.827380952381	tragar, engolir	wold,ids,northeuralex	3	
+554	129	CHOKE	to choke	Verb	5	0.777227722772	0.762376237624	sufocar	wold,ids	2	
+555	1100	COOK (SOMETHING)	to cook	Verb	5	0.801236749117	0.82296819788	cozinhar	wold,ids,northeuralex	3	
+556	792	BOIL (OF LIQUID)	to boil	Verb	5	0.826923076923	0.81237458194	ferver	wold,ids,northeuralex	3	
+557	2146	ROAST OR FRY	to roast or fry	Verb	5	0.941605839416	0.860340632603	assar, fritar, frigir	wold,ids	2	
+558	183	BAKE	to bake	Verb	5	0.877192982456	0.839766081871	cozer no forno	wold,ids,northeuralex	3	
+559	1143	OVEN	the oven	Noun	5	0.902777777778	0.819230769231	forno	wold,ids	2	
+560	1462	POT	the pot	Noun	5	0.955805892548	0.838821490468		wold,northeuralex	2	
+561	854	KETTLE	the kettle	Noun	5	0.923240938166	0.843923240938	chaleira	wold,ids,northeuralex	3	
+562	31	PAN	the pan	Noun	5	0.85597826087	0.832608695652	panela	wold,ids	2	
+563	481	DISH	the dish	Noun	5	0.992346938776	0.801530612245	prato	wold,ids,northeuralex	3	
+564	480	PLATE	the plate	Noun	5	0.93691588785	0.760747663551	prato	wold,ids	2	
+565	1530	BOWL	the bowl	Noun	5	0.9625	0.854285714286	bacia, tigela	wold,ids	2	
+566	270	JUG	the jug/pitcher	Noun	5	0.925795053004	0.859010600707	cântaro	wold,ids	2	
+567	476	CUP	the cup	Noun	5	0.928205128205	0.798974358974	xícara, chávena, copo	wold,ids,northeuralex	3	
+568	271	SAUCER	the saucer	Noun	5	0.795081967213	0.782513661202	pires	wold,ids	2	
+569	1378	SPOON	the spoon	Noun	5	0.910891089109	0.818811881188	colher	wold,ids,northeuralex	3	
+570	3210	KNIFE (FOR EATING)	the knife(1)	Noun	5	0.909395973154	0.856375838926	faca	wold,ids	2	
+571	1302	FORK	the fork	Noun	5	0.875609756098	0.74	garfo	wold,ids,northeuralex	3	
+572	272	TONGS	the tongs	Noun	5	0.8625	0.7525	pinça	wold,ids	2	
+573	1526	MEAL	the meal	Noun	5	0.791392182697	0.827184892402	refeição	wold,ids,northeuralex	3	
+574	1322	BREAKFAST	the breakfast	Noun	5	0.662162162162	0.757985257985	café da manhã, pequeno-almoço	wold,ids	2	
+575	768	LUNCH	the lunch	Noun	5	0.724462365591	0.752688172043	almoço	wold,ids	2	
+576	1833	DINNER (SUPPER)	the dinner	Noun	5	0.589455488332	0.755834053587	jantar, ceia	wold,ids	2	
+577	275	PEEL	to peel	Verb	5	0.828651685393	0.787640449438	descascar	wold,ids	2	
+578	3448	SIEVE OR STRAIN	to sieve or to strain	Verb	5	0.86939696872	0.850370848114	peneira, coador, coar	wold,ids	2	
+579	1767	SCRAPE	to scrape	Verb	5	0.885454545455	0.858181818182	raspar	wold,ids,northeuralex	3	
+580	2017	MIX	to stir or to mix	Verb	5	0.860795454545	0.826420454545	misturar, mexer	wold,ids	2	
+581	1368	BREAD	the bread	Noun	5	0.888143176734	0.870917225951	pão	wold,ids,northeuralex	3	
+582	273	DOUGH	the dough	Noun	5	0.858024691358	0.801234567901	massa	wold,ids	2	
+583	274	KNEAD	to knead	Verb	5	0.882003069839	0.847275518035	amassar	wold,ids	2	
+584	1594	FLOUR	the flour	Noun	5	0.93932038835	0.864805825243	farinha	wold,ids	2	
+585	636	MILL	the mill	Noun	5	0.791237113402	0.862371134021	moinho	wold,ids	2	
+586	224	MORTAR	the mortar(1)	Noun	5	0.907407407407	0.843209876543	morteiro	wold,ids	2	
+587	225	PESTLE	the pestle	Noun	5	0.724358974359	0.775641025641	mão de pilão, almofariz	wold,ids	2	
+588	634	MEAT	the meat	Noun	5	0.97247706422	0.879510703364	carne	wold,ids,northeuralex	3	
+589	1874	SAUSAGE	the sausage	Noun	5	0.905797101449	0.750724637681	linguiça, chouriço	wold,ids	2	
+590	1547	SOUP	the soup	Noun	5	0.977112676056	0.834154929577	sopa, caldo	wold,ids,northeuralex	3	
+591	924	VEGETABLES	the vegetables	Noun	5	0.860270144388	0.82897065673	legumes, verduras	wold,ids	2	
+592	832	BEAN	the bean	Noun	5	0.952941176471	0.854117647059	feijão	wold,ids	2	
+593	593	POTATO	the potato	Noun	5	0.834482758621	0.780689655172	batata	wold,ids	2	
+594	1507	FRUIT	the fruit	Noun	5	0.874201277955	0.86054313099	fruta	wold,ids	2	
+595	1966	BUNCH	the bunch	Noun	5	0.905857740586	0.795815899582	ramo, cacho	wold,ids	2	
+596	322	FIG	the fig	Noun	5	0.926229508197	0.781967213115	figo	wold,ids	2	
+597	920	GRAPE	the grape	Noun	5	0.895432692308	0.811538461538	uva	wold,ids	2	
+598	191	NUT	the nut	Noun	5	0.88326848249	0.803891050584	noz	wold,ids	2	
+599	1154	OLIVE	the olive	Noun	5	0.947916666667	0.870833333333	azeitona	wold,ids	2	
+600	1484	OIL (ORGANIC SUBSTANCE)	the oil	Noun	5	0.918719211823	0.810344827586	azeite, óleo	wold,ids,northeuralex	3	
+601	1385	PEPPER	the pepper	Noun	5	0.891304347826	0.831884057971	pimenta	wold,ids	2	
+602	919	CHILI PEPPER	the chili pepper	Noun	5	0.894736842105	0.840789473684	malagueta	wold,ids	2	
+603	942	HONEY	the honey	Noun	5	0.908536585366	0.843902439024	mel	wold,ids,northeuralex	3	
+604	862	SUGAR	the sugar	Noun	5	0.9375	0.82	açúcar	wold,ids	2	
+605	635	MILK	the milk	Noun	5	0.887640449438	0.846441947566	leite	wold,ids,northeuralex	3	
+606	93	DRAW MILK	to milk	Verb	5	0.743523316062	0.815544041451	ordenhar	wold,ids,northeuralex	3	
+607	1569	CHEESE	the cheese	Noun	5	0.921052631579	0.836842105263	queijo	wold,ids	2	
+608	1245	BUTTER	the butter	Noun	5	0.892857142857	0.830803571429	manteiga	wold,ids,northeuralex	3	
+609	731	BEVERAGE	the drink	Noun	5	0.683516483516	0.867032967033	bebida	wold,ids	2	
+610	941	MEAD	the mead	Noun	5	0.763888888889	0.833333333333	mulso, hidromel	wold,ids	2	
+611	1524	WINE	the wine	Noun	5	0.96186440678	0.842372881356	vinho	wold,ids	2	
+612	1639	BEER	the beer	Noun	5	0.96449704142	0.772781065089	cerveja	wold,ids	2	
+613	404	ALCOHOL (FERMENTED DRINK)	the fermented drink	Noun	5	0.913875598086	0.778468899522	bebida fermentada	wold,ids	2	
+614	1556	YOLK	the yolk	Noun	5	0.679012345679	0.791358024691	gema (de ovo)	wold,ids	2	
+615	158	PUT ON	to put on	Verb	6	0.816561844864	0.866876310273	vestir	wold,ids,northeuralex	3	
+616	1895	CLOTHES	the clothing or clothes	Noun	6	0.804716981132	0.857358490566	roupa	wold,ids,northeuralex	3	
+617	881	TAILOR	the tailor	Noun	6	0.661764705882	0.794117647059	alfaiate	wold,ids	2	
+618	1616	CLOTH	the cloth	Noun	6	0.954545454545	0.824901185771	tecido, pano	wold,ids,northeuralex	3	
+619	964	WOOL	the wool	Noun	6	0.806930693069	0.87896039604	lã	wold,ids,northeuralex	3	
+620	916	LINEN	the linen	Noun	6	0.9	0.84		wold	1	
+621	1850	COTTON	the cotton	Noun	6	0.901408450704	0.847887323944	algodão	wold,ids	2	
+622	1641	SILK	the silk	Noun	6	0.945945945946	0.840540540541	seda	wold,ids	2	
+623	325	FELT	the felt	Noun	6	0.954545454545	0.763636363636	feltro	wold,ids	2	
+624	580	FUR	the fur	Noun	6	0.902260232132	0.861331704337	pele	wold,ids,northeuralex	3	
+625	629	LEATHER	the leather	Noun	6	0.89124668435	0.862599469496	couro	wold,ids,northeuralex	3	
+626	121	SPIN	to spin	Verb	6	0.862344582593	0.827575488455	fiar	wold,ids	2	
+627	277	SPINDLE	the spindle	Noun	6	0.85	0.791428571429	fuso	wold,ids	2	
+628	133	WEAVE	to weave	Verb	6	0.925219941349	0.902639296188	tecer	wold,ids	2	
+629	1787	LOOM	the loom	Noun	6	0.813513513514	0.847567567568	tear	wold,ids	2	
+630	1382	NEEDLE (FOR SEWING)	the needle(1)	Noun	6	0.942992874109	0.84893111639	agulha	wold,ids,northeuralex	3	
+631	278	AWL	the awl	Noun	6	0.950819672131	0.824590163934	sovela	wold,ids	2	
+632	1161	THREAD	the thread	Noun	6	0.972014925373	0.858582089552	linha, fio	wold,ids,northeuralex	3	
+633	157	DYE	to dye	Verb	6	0.802250803859	0.856591639871	corante, tingir	wold,ids,northeuralex	3	
+634	326	CLOAK	the cloak	Noun	6	0.882608695652	0.854782608696	capa, manto	wold,ids	2	
+635	327	PONCHO	the poncho	Noun	6	0.932432432432	0.802702702703	poncho, capa	wold,ids	2	
+636	1464	LADDER	the ladder	Noun	7	0.875621890547	0.811940298507	escada	wold,ids,northeuralex	3	
+637	474	DRESS	the (woman's) dress	Noun	6	0.887096774194	0.816129032258	vestido	wold,ids	2	
+638	603	COAT	the coat	Noun	6	0.881720430108	0.761290322581	casaco	wold,ids	2	
+639	1622	SHIRT	the shirt	Noun	6	0.935344827586	0.828965517241	camisa	wold,ids,northeuralex	3	
+640	2012	COLLAR	the collar	Noun	6	0.864197530864	0.805761316872	colarinho	wold,ids,northeuralex	3	
+641	1600	SKIRT	the skirt	Noun	6	0.974662162162	0.801013513514	saia	wold,ids	2	
+642	328	GRASS-SKIRT	the grass-skirt	Noun	6	0.722222222222	0.7	saia de palha/capin	wold,ids	2	
+643	809	TROUSERS	the trousers	Noun	6	0.935483870968	0.813978494624	calças	wold,ids,northeuralex	3	
+644	329	STOCKING	the sock or stocking	Noun	6	0.881147540984	0.785245901639	meia, peúga	wold,ids	2	
+645	1381	SHOE	the shoe	Noun	6	0.950690335306	0.786982248521	sapato	wold,ids,northeuralex	3	
+646	585	BOOT	the boot	Noun	6	0.921700223714	0.759507829978	bota	wold,ids,northeuralex	3	
+647	875	SHOEMAKER	the shoemaker	Noun	6	0.655172413793	0.758620689655	sapateiro	wold,ids	2	
+648	2130	HEADGEAR	the hat or cap	Noun	6	0.930769230769	0.8	chapéu, gorro, boina	wold,ids	2	
+649	772	BELT	the belt	Noun	6	0.850993377483	0.816225165563	cinto	wold,ids,northeuralex	3	
+650	867	GLOVE	the glove	Noun	6	0.6875	0.784375	luva	wold,ids	2	
+651	1151	VEIL	the veil	Noun	6	0.886486486486	0.863783783784	véu	wold,ids	2	
+652	1851	POCKET	the pocket	Noun	6	0.975903614458	0.796385542169	bolso	wold,ids	2	
+653	757	BUTTON	the button	Noun	6	0.960227272727	0.752272727273	botão	wold,ids,northeuralex	3	
+654	64	PIN	the pin	Noun	6	0.919101123596	0.789662921348	alfinete	wold,ids	2	
+655	917	ORNAMENT	the ornament or adornment	Noun	6	0.806049822064	0.781138790036	adorno, enfeite	wold,ids	2	
+656	1029	JEWEL	the jewel	Noun	6	0.805405405405	0.82	jóia	wold,ids	2	
+657	1374	RING	the ring	Noun	6	0.867816091954	0.787356321839	anel	wold,ids,northeuralex	3	
+658	1754	BRACELET	the bracelet	Noun	6	0.733870967742	0.78064516129	bracelete, pulseira	wold,ids	2	
+659	1961	NECKLACE	the necklace	Noun	6	0.88	0.7904	colar	wold,ids	2	
+660	1860	BEAD	the bead	Noun	6	0.915174363808	0.815268614515	contas, miçanga	wold,ids	2	
+661	770	EARRING	the earring	Noun	6	0.763440860215	0.744086021505	brinco	wold,ids	2	
+662	3457	HEADBAND OR HEADDRESS	the headband or headdress	Noun	6	0.824175824176	0.783516483516	fita para cabeça	wold,ids	2	
+663	68	TATTOO	the tattoo	Noun	6	0.817919075145	0.788439306358	tatuagem	wold,ids	2	
+664	332	RAG	the handkerchief or rag	Noun	6	0.841463414634	0.795426829268	lenço, trapo	wold,ids	2	
+665	1021	TOWEL	the towel	Noun	6	0.877952755906	0.76968503937	toalha	wold,ids,northeuralex	3	
+666	1475	COMB	the comb	Noun	6	0.833333333333	0.82688172043	pente	wold,ids,northeuralex	3	
+667	1821	BRUSH	the brush	Noun	6	0.879746835443	0.756962025316	escova	wold,ids	2	
+668	1043	BRAID	the plait/braid	Noun	6	0.832997987928	0.782092555332	trança	wold,ids	2	
+669	151	RAZOR	the razor	Noun	6	0.773255813953	0.781395348837	navalha de barba	wold,ids	2	
+670	1926	OINTMENT	the ointment	Noun	6	0.819277108434	0.777108433735	ungüento	wold,ids	2	
+671	788	SOAP	the soap	Noun	6	0.965909090909	0.818181818182	sabão	wold,ids	2	
+672	1171	MIRROR	the mirror	Noun	6	0.852297592998	0.835886214442	espelho	wold,ids,northeuralex	3	
+673	363	DWELL (LIVE, RESIDE)	to live	Verb	7	0.860552763819	0.892713567839	morar, residir	wold,ids,northeuralex	3	
+674	1678	HUT	the hut	Noun	7	0.892857142857	0.769327731092	cabana	wold,ids	2	
+675	403	GARDEN-HOUSE	the garden-house	Noun	7	0.770408163265	0.770408163265	casa de jardim	wold,ids	2	
+676	1316	TENT	the tent	Noun	7	0.937086092715	0.815231788079	tenda, barraca	wold,ids	2	
+677	736	YARD	the yard or court	Noun	7	0.921397379913	0.803930131004	quintal, pátio	wold,ids	2	
+678	408	MEN'S HOUSE	the men's house	Noun	7	0.651785714286	0.764285714286	casa de homens	wold,ids	2	
+679	334	COOKHOUSE	the cookhouse	Noun	7	0.694174757282	0.723300970874	cozinha	wold,ids	2	
+680	335	MEETING HOUSE	the meeting house	Noun	7	0.69298245614	0.764912280702	casa de reunião	wold,ids	2	
+681	1450	ROOM	the room	Noun	7	0.900696864111	0.822299651568	quarto, peça	wold,ids	2	
+682	1567	DOOR	the door or gate	Noun	7	0.897529069767	0.868604651163	porta, portão	wold,ids,northeuralex	3	
+683	80	DOORPOST	the doorpost	Noun	7	0.709459459459	0.786486486486	umbral, ombreira da porta	wold,ids	2	
+684	1596	LOCK	the lock	Noun	7	0.863636363636	0.822857142857	fechadura, cadeado	wold,ids,northeuralex	3	
+685	1012	LATCH	the latch or door-bolt	Noun	7	0.849604221636	0.812137203166	trinco	wold,ids	2	
+686	1472	KEY	the key	Noun	7	0.828571428571	0.78693877551	chave	wold,ids	2	
+687	1375	WINDOW	the window	Noun	7	0.905330882353	0.818382352941	janela	wold,ids,northeuralex	3	
+688	1632	FLOOR	the floor	Noun	7	0.878573723097	0.82078380983	chão, soalho	wold,ids,northeuralex	3	
+689	933	WALL (OF HOUSE)	the wall	Noun	7	0.954198473282	0.820610687023	parede	wold,ids	2	
+690	185	FIREPLACE	the fireplace	Noun	7	0.761752136752	0.789316239316	lareira	wold,ids	2	
+691	859	STOVE	the stove	Noun	7	0.904191616766	0.838323353293	fogão	wold,ids,northeuralex	3	
+692	1305	CHIMNEY	the chimney	Noun	7	0.764285714286	0.847142857143	chaminé	wold,ids	2	
+693	1663	BED	the bed	Noun	7	0.920792079208	0.835643564356	cama	wold,ids,northeuralex	3	
+694	1044	PILLOW	the pillow	Noun	7	0.904761904762	0.830952380952	almofada, travesseiro	wold,ids,northeuralex	3	
+695	806	BLANKET	the blanket	Noun	7	0.87922705314	0.782608695652	cobertor	wold,ids,northeuralex	3	
+696	1476	CHAIR	the chair	Noun	7	0.873737373737	0.784848484848	cadeira	wold,ids,northeuralex	3	
+697	1775	TABLE	the table	Noun	7	0.959143968872	0.813229571984	mesa	wold,ids,northeuralex	3	
+698	2131	TORCH OR LAMP	the lamp or torch	Noun	7	0.931980906921	0.784725536993	candeeiro, tocha	wold,ids	2	
+699	1273	CANDLE	the candle	Noun	7	0.927710843373	0.833734939759	vela	wold,ids	2	
+700	745	SHELF	the shelf	Noun	7	0.896995708155	0.775965665236	prateleira	wold,ids,northeuralex	3	
+701	205	TROUGH	the trough	Noun	7	0.917894736842	0.877473684211	gamela	wold,ids	2	
+702	769	ROOF	the roof	Noun	7	0.789108910891	0.793465346535	telhado, teto	wold,ids,northeuralex	3	
+703	279	THATCH	the thatch	Noun	7	0.707317073171	0.816463414634	palha, colmo, sapé	wold,ids	2	
+704	280	RIDGEPOLE	the ridgepole	Noun	7	0.758196721311	0.8	espinhaço, ombreira	wold,ids	2	
+705	829	RAFTER	the rafter	Noun	7	0.79845814978	0.787665198238	viga, barrote	wold,ids	2	
+706	1132	BEAM	the beam	Noun	7	0.925855513308	0.801901140684	viga, trave	wold,ids	2	
+707	281	POST	the post or pole	Noun	7	0.943609022556	0.815037593985	poste, vara	wold,ids,northeuralex	3	
+708	1227	BOARD	the board	Noun	7	0.917431192661	0.763302752294	tábua	wold,ids,northeuralex	3	
+709	876	ARCH	the arch	Noun	7	0.8984375	0.7859375	arco	wold,ids	2	
+710	877	MASON	the mason	Noun	7	0.717741935484	0.774193548387	pedreiro	wold,ids	2	
+711	1006	BRICK	the brick	Noun	7	0.927631578947	0.814473684211	tijolo	wold,ids	2	
+712	1731	MORTAR BINDER	the mortar(2)	Noun	7	0.954545454545	0.834545454545	argamassa	wold,ids	2	
+713	901	ADOBE	the adobe	Noun	7	0.813953488372	0.820930232558	adobe	wold,ids	2	
+714	979	FARMER	the farmer	Noun	8	0.728260869565	0.773913043478	lavrador, fazendeiro	wold,ids	2	
+715	212	FIELD	the field	Noun	8	0.882978723404	0.842553191489	campo	wold,ids	2	
+716	586	GARDEN	the garden	Noun	8	0.925619834711	0.82479338843	jardim, horta	wold,ids	2	
+717	1541	CULTIVATE	to cultivate	Verb	8	0.750142775557	0.790405482581	cultivar	wold,ids	2	
+718	1690	FENCE	the fence	Noun	8	0.942508710801	0.866202090592	cerca	wold,ids,northeuralex	3	
+719	2002	DITCH	the ditch	Noun	8	0.903716216216	0.861824324324	fosso, canal, vala	wold,ids	2	
+720	1921	PLOUGH	to plough/plow	Verb	8	0.817191283293	0.809685230024	arar	wold,ids	2	
+721	1794	FURROW	the furrow	Noun	8	0.889473684211	0.871578947368	sulco	wold,ids	2	
+722	1176	SPADE	the spade	Noun	8	0.929945054945	0.796703296703	pá	wold,ids,northeuralex	3	
+723	1901	SHOVEL	the shovel	Noun	8	0.96835443038	0.746835443038	pá	wold,ids,northeuralex	3	
+724	284	HOE	the hoe	Noun	8	0.889880952381	0.810714285714	enxada	wold,ids	2	
+725	337	PITCHFORK	the fork(2)/pitchfork	Noun	8	0.913294797688	0.776300578035	forcado, forquilha	wold,ids	2	
+726	338	RAKE	the rake	Noun	8	0.809210526316	0.802631578947	ancinho	wold,ids	2	
+727	748	SOW SEEDS	to sow	Verb	8	0.85775862069	0.82025862069	semear	wold,ids	2	
+728	190	MOW	to mow	Verb	8	0.85	0.803636363636	ceifar, segar	wold,ids	2	
+729	2132	SICKLE OR SCYTHE	the sickle or scythe	Noun	8	0.916666666667	0.873333333333	foice, gadanha	wold,ids	2	
+730	285	THRESH	to thresh	Verb	8	0.826388888889	0.840740740741	debulhar	wold,ids	2	
+731	223	THRESHING-FLOOR	the threshing-floor	Noun	8	0.754237288136	0.8	eira	wold,ids	2	
+732	3541	HARVEST OR HARVEST SEASON	the harvest	Noun	8	0.733996539792	0.800605536332		wold	1	
+733	605	GRAIN	the grain	Noun	8	0.906015037594	0.884962406015	grão	wold,ids,northeuralex	3	
+734	1077	WHEAT	the wheat	Noun	8	0.910344827586	0.862068965517	trigo	wold,ids	2	
+735	932	BARLEY	the barley	Noun	8	0.95871559633	0.862385321101	cevada	wold,ids	2	
+736	23	RYE	the rye	Noun	8	0.866666666667	0.762666666667	centeio	wold,ids	2	
+737	60	OAT	the oats	Noun	8	0.89010989011	0.773626373626	aveia	wold,ids	2	
+738	506	MAIZE	the maize/corn	Noun	8	0.915662650602	0.80843373494	milho	wold,ids	2	
+739	926	RICE	the rice	Noun	8	0.972222222222	0.818888888889	arroz	wold,ids	2	
+740	342	HAY	the hay	Noun	8	0.858208955224	0.772139303483	palha, feno	wold,ids,northeuralex	3	
+741	653	PLANT (VEGETATION)	the plant	Noun	8	0.753315649867	0.841114058355	planta	wold,ids	2	
+742	1486	PLANT (SOMETHING)	to plant	Verb	8	0.836633663366	0.869801980198	plantar, semear	wold,ids	2	
+743	3223	BRANCH OR TWIG	the branch	Noun	8	0.956204379562	0.877737226277	ramo, galho	wold,ids	2	
+744	644	OAK	the oak	Noun	8	0.917098445596	0.845595854922	carvalho	wold,ids	2	
+745	1950	BEECH	the beech	Noun	8	0.881188118812	0.887128712871	faia	wold,ids	2	
+746	1855	BIRCH	the birch	Noun	8	0.919463087248	0.802684563758	bétula	wold,ids,northeuralex	3	
+747	1740	PINE	the pine	Noun	8	0.880184331797	0.803686635945	pinheiro	wold,ids,northeuralex	3	
+748	1915	FIR	the fir	Noun	8	0.954887218045	0.938345864662	abeto	wold,ids,northeuralex	3	
+749	968	ACORN	the acorn	Noun	8	0.828571428571	0.897142857143	bolota	wold,ids	2	
+750	343	VINE	the vine	Noun	8	0.778277634961	0.82853470437		wold	1	
+751	974	TOBACCO	the tobacco	Noun	8	0.950440528634	0.797797356828	tabaco	wold,ids	2	
+752	1689	SMOKE (INHALE)	to smoke	Verb	8	0.725609756098	0.792682926829	fumar	wold,ids	2	
+753	1124	PIPE	the pipe	Noun	8	0.932098765432	0.811111111111	cachimbo	wold,ids	2	
+754	241	TREE STUMP	the tree stump	Noun	8	0.824368825467	0.80834248079	toco	wold,ids	2	
+755	344	TREE TRUNK	the tree trunk	Noun	8	0.810154525386	0.782119205298	tronco	wold,ids,northeuralex	3	
+756	409	FORKED BRANCH	the forked branch	Noun	8	0.757575757576	0.777272727273	rama bifurcada	wold,ids	2	
+757	345	SAP	the sap	Noun	8	0.831663326653	0.828056112224	seiva	wold,ids	2	
+758	1181	PALM TREE	the palm tree	Noun	8	0.92	0.816	palmeira	wold,ids	2	
+759	970	COCONUT	the coconut	Noun	8	0.840909090909	0.79696969697	coco	wold,ids	2	
+760	1126	CITRUS FRUIT	the citrus fruit	Noun	8	0.852272727273	0.756818181818	fruta cítrica	wold,ids	2	
+761	868	BANANA	the banana	Noun	8	0.974358974359	0.741025641026		wold	1	
+762	346	BANYAN	the banyan	Noun	8	0.913793103448	0.775862068966	baniana (figueira da India)	wold,ids	2	
+763	159	SWEET POTATO	the sweet potato	Noun	8	0.800531914894	0.79414893617	batata doce	wold,ids	2	
+764	410	YAM	the yam	Noun	8	0.798507462687	0.84552238806	inhame, cará	wold,ids	2	
+765	925	CASSAVA	the cassava/manioc	Noun	8	0.918032786885	0.808196721311	mandioca	wold,ids	2	
+766	411	GOURD	the gourd	Noun	8	0.939189189189	0.800540540541	cabaça	wold,ids	2	
+767	864	PUMPKIN	the pumpkin or squash	Noun	8	0.920886075949	0.811392405063	abóbora	wold,ids	2	
+768	1927	BAMBOO	the bamboo	Noun	8	0.960526315789	0.785526315789	bambu	wold,ids	2	
+769	146	SUGAR CANE	the sugar cane	Noun	8	0.846153846154	0.875384615385	cana de açúcar	wold,ids	2	
+770	348	FISH POISON	the fish poison	Noun	8	0.838235294118	0.788235294118	raízes venenosas	wold,ids	2	
+771	33	NETTLE	the nettle	Noun	8	0.883333333333	0.836666666667	urtiga	wold,ids	2	
+772	641	MUSHROOM	the mushroom	Noun	8	0.877777777778	0.877777777778	cogumelo	wold,ids,northeuralex	3	
+773	813	DO	to do	Verb	9	0.939423706614	0.897184020956		wold,northeuralex	2	
+774	984	WORK (LABOUR)	the work	Noun	9	0.912248628885	0.849177330896	trabalhar	wold,ids,northeuralex	3	
+775	2004	BEND	to bend	Verb	9	0.846153846154	0.799038461538	dobrar, curvar	wold,ids	2	
+776	1470	FOLD	to fold	Verb	9	0.855660377358	0.798490566038	dobrar	wold,ids	2	
+777	352	UNTIE	to untie	Verb	9	0.780126849894	0.827906976744	desatar	wold,ids	2	
+778	1627	CHAIN	the chain	Noun	9	0.922310756972	0.763346613546	cadeia	wold,ids	2	
+779	760	KNOT	the knot	Noun	9	0.927777777778	0.793333333333	nó	wold,ids,northeuralex	3	
+780	354	POUND	to pound	Verb	9	0.842105263158	0.837246963563	bater com o punho	wold,ids	2	
+781	355	CUT DOWN	to cut down	Verb	9	0.799504950495	0.819801980198	derrubar	wold,ids	2	
+782	155	CHOP	to chop	Verb	9	0.876485884101	0.817310549777	abater, cortar	wold,ids	2	
+783	3189	STAB TO DEATH	to stab	Verb	9	0.832802547771	0.781847133758	apunhalar	wold,ids	2	
+784	1352	KNIFE	the knife(2)	Noun	9	0.938235294118	0.854705882353	faca	wold,ids,northeuralex	3	
+785	356	SHEARS	the scissors or shears	Noun	9	0.88188976378	0.811811023622	tesoura	wold,ids	2	
+786	677	AXE	the axe/ax	Noun	9	0.951807228916	0.830120481928	machado	wold,ids	2	
+787	290	ADZE	the adze	Noun	9	0.865079365079	0.736507936508	enxó	wold,ids	2	
+788	680	BREAK (DESTROY OR GET DESTROYED)	to break	Verb	9	0.818430656934	0.843795620438	romper, quebrar	wold,ids,northeuralex	3	
+789	3190	BROKEN (NOT WORKING)	broken	Adjective	9	0.711148648649	0.809797297297		wold	1	
+790	1735	TEAR (SHRED)	to tear	Verb	9	0.875384615385	0.832615384615	romper, rasgar	wold,ids,northeuralex	3	
+791	1002	STATUE	the statue	Noun	9	0.801886792453	0.811320754717	estátua	wold,ids	2	
+792	291	PULL OFF (SKIN)	to skin	Verb	9	0.774163568773	0.788475836431	esfolar	wold,ids	2	
+793	214	STRETCH	to stretch	Verb	9	0.761363636364	0.852272727273	esticar	wold,ids	2	
+794	38	SPREAD OUT	to spread out	Verb	9	0.810945273632	0.831343283582	estender, espalhar	wold,ids,northeuralex	3	
+795	357	HANG UP	to hang up	Verb	9	0.864548494983	0.817056856187	pendurar	wold,ids,northeuralex	3	
+796	1913	PRESS	to press	Verb	9	0.861788617886	0.823983739837	comprimir, apertar	wold,ids,northeuralex	3	
+797	1487	POUR	to pour	Verb	9	0.927419354839	0.864193548387	verter, despejar	wold,ids,northeuralex	3	
+798	230	SWEEP	to sweep	Verb	9	0.873493975904	0.822891566265	varrer	wold,ids,northeuralex	3	
+799	245	BROOM	the broom	Noun	9	0.76582278481	0.83164556962	vassoura	wold,ids,northeuralex	3	
+800	1361	TOOL	the tool	Noun	9	0.759765625	0.823828125	ferramenta	wold,ids	2	
+801	1042	CARPENTER	the carpenter	Noun	9	0.763888888889	0.806944444444	carpinteiro	wold,ids	2	
+802	1840	BUILD	to build	Verb	9	0.812879298719	0.842043155765	construir	wold,ids,northeuralex	3	
+803	1501	BORE	to bore	Verb	9	0.832317073171	0.829268292683	perfurar	wold,ids	2	
+804	46	HOLLOW OUT	to hollow out	Verb	9	0.759146341463	0.748780487805	esburacar, cavar	wold,ids	2	
+805	1948	SAW	the saw	Noun	9	0.892857142857	0.802380952381	serra	wold,ids	2	
+806	1481	HAMMER	the hammer	Noun	9	0.927184466019	0.774757281553	martelo	wold,ids	2	
+807	502	NAIL (TOOL)	the nail	Noun	9	0.932432432432	0.837837837838	prego	wold,ids,northeuralex	3	
+808	1069	GLUE	the glue	Noun	9	0.93119266055	0.799082568807	cola	wold,ids,northeuralex	3	
+809	1001	BLACKSMITH	the blacksmith	Noun	9	0.70987654321	0.820987654321	ferreiro	wold,ids	2	
+810	288	FORGE	to forge	Verb	9	0.73178807947	0.817880794702	forja	wold,ids	2	
+811	1648	ANVIL	the anvil	Noun	9	0.798245614035	0.766666666667	bigorna	wold,ids	2	
+812	211	CAST	to cast	Verb	9	0.778169014085	0.887323943662	fundir	wold,ids	2	
+813	1369	GOLD	the gold	Noun	9	0.938144329897	0.849484536082	ouro	wold,ids,northeuralex	3	
+814	759	SILVER	the silver	Noun	9	0.902173913043	0.889565217391	prata	wold,ids,northeuralex	3	
+815	1825	COPPER	the copper	Noun	9	0.925925925926	0.867901234568		wold	1	
+816	621	IRON	the iron	Noun	9	0.985645933014	0.797607655502	ferro	wold,ids,northeuralex	3	
+817	627	LEAD (CHEMICAL ELEMENT)	the lead	Noun	9	0.971014492754	0.834782608696	chumbo	wold,ids	2	
+818	3217	TIN OR TINPLATE	the tin or tinplate	Noun	9	0.966666666667	0.77	estanho	wold,ids	2	
+819	359	POTTER	the potter	Noun	9	0.602941176471	0.823529411765	oleiro	wold,ids	2	
+820	289	MOLD	to mould/mold	Verb	9	0.813583815029	0.835838150289	moldar, amoldar	wold,ids	2	
+821	1399	CLAY	the clay	Noun	9	0.874449339207	0.838325991189	barro, argila	wold,ids,northeuralex	3	
+822	604	GLASS	the glass	Noun	9	0.943832599119	0.796475770925	vidro	wold,ids,northeuralex	3	
+823	3294	BRAID (VERB) OR WEAVE (BASKET)	to weave or plait/braid	Verb	9	0.844935296743	0.817938420348	tecer	wold,ids	2	
+824	1539	BASKET	the basket	Noun	9	0.973451327434	0.807079646018	cesto, cesta	wold,ids	2	
+825	195	MAT	the mat	Noun	9	0.924657534247	0.831506849315	tapete	wold,ids	2	
+826	292	RUG	the rug	Noun	9	0.917808219178	0.808219178082	tapete, carpete	wold,ids	2	
+827	293	NETBAG	the netbag	Noun	9	0.878048780488	0.79756097561	saco	wold,ids	2	
+828	1971	FAN (OBJECT)	the fan	Noun	9	0.779220779221	0.854545454545	ventilador	wold,ids	2	
+829	360	FAN (ACTION)	to fan	Verb	9	0.8	0.861333333333	ventilar, abanar	wold,ids	2	
+830	228	CARVE	to carve	Verb	9	0.897384305835	0.860764587525	esculpir	wold,ids	2	
+831	914	SCULPTOR	the sculptor	Noun	9	0.583333333333	0.81875	escultor	wold,ids	2	
+832	1979	CHISEL	the chisel	Noun	9	0.894366197183	0.783098591549	cinzel	wold,ids	2	
+833	647	PAINT (PIGMENTS)	the paint	Noun	9	0.895551257253	0.79497098646	tinta	wold,ids,northeuralex	3	
+834	2001	PAINTING	to paint	Verb	9	0.779158699809	0.797323135755	pintar	wold,ids,northeuralex	3	
+835	765	MOVE	to move	Verb	10	0.792553191489	0.810638297872	mover	wold,ids	2	
+836	1113	WRAP	to wrap	Verb	10	0.893229166667	0.830208333333	envolver, enrolar	wold,ids,northeuralex	3	
+837	827	ROLL	to roll	Verb	10	0.800711077844	0.80995508982	rolar	wold,ids	2	
+838	2866	DROP (SOMETHING)	to drop	Verb	10	0.676695105523	0.81679389313	deixar cair	wold,ids,northeuralex	3	
+839	3199	TWIST (AROUND)	to twist	Verb	10	0.883157894737	0.798947368421	torcer	wold,ids	2	
+840	568	RISE (MOVE UPWARDS)	to rise	Verb	10	0.758991472006	0.832777159807	subir	wold,ids,northeuralex	3	
+841	501	LIFT	to raise or lift	Verb	10	0.787781350482	0.827331189711	levantar, içar	wold,ids,northeuralex	3	
+842	2253	DRIP (EMIT LIQUID)	to drip	Verb	10	0.808139534884	0.838372093023	gotejar, escorrer	wold,ids	2	
+843	702	CATCH	to catch	Verb	10	0.873821408763	0.83749306711	apanhar, agarrar	wold,ids,northeuralex	3	
+844	1909	SHAKE	to shake	Verb	10	0.853448275862	0.821551724138	agitar	wold,ids,northeuralex	3	
+845	1088	SINK (DESCEND)	to sink	Verb	10	0.799256505576	0.863197026022	afundar	wold,ids,northeuralex	3	
+846	119	DIVE	to dive	Verb	10	0.811715481172	0.764435146444	mergulhar	wold,ids,northeuralex	3	
+847	365	SPLASH	to splash	Verb	10	0.773195876289	0.810309278351	chapinhar	wold,ids	2	
+848	787	SAIL	to sail	Verb	10	0.612299465241	0.823529411765	navegar	wold,ids	2	
+849	3456	CRAWL OR CREEP	to crawl	Verb	10	0.8375	0.8175	rastejar, arrastar-se	wold,ids	2	
+850	66	KNEEL	to kneel	Verb	10	0.658536585366	0.831707317073	ajoelhar	wold,ids	2	
+851	296	CROUCH	to crouch	Verb	10	0.806818181818	0.768181818182	agachar-se	wold,ids	2	
+852	1324	SLIP	to slide or slip	Verb	10	0.883177570093	0.828971962617	escorregar, resvalar	wold,ids	2	
+853	1829	JUMP	to jump	Verb	10	0.881967213115	0.834754098361	saltar	wold,ids,northeuralex	3	
+854	1135	KICK	to kick	Verb	10	0.854368932039	0.828737864078	dar um pontapé, chutar	wold,ids,northeuralex	3	
+855	1879	DANCE	to dance	Verb	10	0.836734693878	0.798979591837	dançar	wold,ids,northeuralex	3	
+856	366	LIMP	to limp	Verb	10	0.758241758242	0.807692307692	coxear	wold,ids	2	
+857	705	GO UP (ASCEND)	to go up	Verb	10	0.752808988764	0.826404494382	subir	wold,ids	2	
+858	1102	CLIMB	to climb	Verb	10	0.837078651685	0.816853932584	trepar	wold,ids,northeuralex	3	
+859	2014	GO DOWN (DESCEND)	to go down	Verb	10	0.785714285714	0.792664092664	descer, baixar	wold,ids	2	
+860	1107	GO OUT	to go out	Verb	10	0.767898383372	0.790762124711	sair	wold,ids	2	
+861	581	COME BACK	to come back	Verb	10	0.825381679389	0.814503816794	voltar, regressar	wold,ids,northeuralex	3	
+862	1752	LEAVE	to leave	Verb	10	0.799133517133	0.819614021268	partir, ir-se embora	wold,ids,northeuralex	3	
+863	485	DISAPPEAR	to disappear	Verb	10	0.811111111111	0.822222222222	desaparecer	wold,ids,northeuralex	3	
+864	956	FLEE	to flee	Verb	10	0.832264957265	0.820512820513	escapar, fugir	wold,ids,northeuralex	3	
+865	1085	FOLLOW	to follow	Verb	10	0.809128630705	0.809543568465	seguir	wold,ids	2	
+866	1047	PURSUE	to pursue	Verb	10	0.779835390947	0.798765432099	perseguir	wold,ids	2	
+867	1387	ARRIVE	to arrive	Verb	10	0.836973478939	0.841497659906	chegar	wold,ids,northeuralex	3	
+868	1778	APPROACH	to approach	Verb	10	0.692708333333	0.839583333333	aproximar	wold,ids	2	
+869	749	ENTER	to enter	Verb	10	0.792307692308	0.834615384615	entrar	wold,ids,northeuralex	3	
+870	412	CARRY IN HAND	to carry in hand	Verb	10	0.792208949902	0.766749866286	levar na mão	wold,ids	2	
+871	413	CARRY ON SHOULDER	to carry on shoulder	Verb	10	0.815351287061	0.827661201257	levar no ombro	wold,ids	2	
+872	414	CARRY ON HEAD	to carry on head	Verb	10	0.725150336045	0.789281924301	levar na cabeça	wold,ids	2	
+873	415	CARRY UNDER ARM	to carry under the arm	Verb	10	0.746193163667	0.80187413481	levar debaixo do braço	wold,ids	2	
+874	692	BRING	to bring	Verb	10	0.754237288136	0.831144067797	trazer	wold,ids,northeuralex	3	
+875	1127	SEND	to send	Verb	10	0.810747663551	0.855607476636	enviar, mandar	wold,ids,northeuralex	3	
+876	43	LEAD (GUIDE)	to lead	Verb	10	0.742521367521	0.842735042735	conduzir, guiar	wold,ids,northeuralex	3	
+877	741	DRIVE	to drive	Verb	10	0.804740406321	0.800225733634	dirigir	wold,ids,northeuralex	3	
+878	367	RIDE	to ride	Verb	10	0.815085158151	0.862773722628	montar	wold,ids	2	
+879	2252	PATH	the path	Noun	10	0.921161825726	0.863070539419	caminho, vereda	wold,ids,northeuralex	3	
+880	1011	BRIDGE	the bridge	Noun	10	0.94674556213	0.846153846154	ponte	wold,ids,northeuralex	3	
+881	122	CART	the cart or wagon	Noun	10	0.943509082853	0.839255649092	carruagem, carroça	wold,ids	2	
+882	710	WHEEL	the wheel	Noun	10	0.909638554217	0.834939759036	roda	wold,ids	2	
+883	1769	AXLE	the axle	Noun	10	0.938144329897	0.846907216495	eixo	wold,ids	2	
+884	14	YOKE	the yoke	Noun	10	0.943243243243	0.884864864865	jugo, canga	wold,ids	2	
+885	740	SHIP	the ship	Noun	10	0.937888198758	0.830434782609	navio	wold,ids	2	
+886	1844	BOAT	the boat	Noun	10	0.952941176471	0.845294117647	bote, barco	wold,ids,northeuralex	3	
+887	1970	CANOE	the canoe	Noun	10	0.942857142857	0.837857142857	canoa	wold,ids	2	
+888	416	OUTRIGGER	the outrigger	Noun	10	0.824324324324	0.767567567568	jangada	wold,ids	2	
+889	1664	RAFT	the raft	Noun	10	0.880341880342	0.84358974359	balsa	wold,ids	2	
+890	3137	OAR	the oar	Noun	10	0.866176470588	0.868823529412	remo	wold,ids,northeuralex	3	
+891	234	PADDLE	the paddle	Noun	10	0.884493670886	0.815189873418	remo	wold,ids	2	
+892	1849	ROW	to row	Verb	10	0.78672985782	0.827962085308	remar	wold,ids,northeuralex	3	
+893	108	RUDDER	the rudder	Noun	10	0.849431818182	0.817613636364	leme	wold,ids	2	
+894	184	MAST	the mast	Noun	10	0.839622641509	0.807547169811	mastro	wold,ids	2	
+895	786	SAILCLOTH	the sail	Noun	10	0.925531914894	0.876595744681	vela	wold,ids	2	
+896	1870	ANCHOR	the anchor	Noun	10	0.919463087248	0.830872483221	âncora	wold,ids	2	
+897	610	PORT	the port	Noun	10	0.818897637795	0.806299212598	pôrto	wold,ids	2	
+898	1922	LAND (DESCEND)	to land	Verb	10	0.706221198157	0.758525345622	desembarcar	wold,ids	2	
+899	773	HAVE	to have	Verb	11	0.899205864386	0.828649969456	ter	wold,ids	2	
+900	684	OWN	to own	Verb	11	0.826219512195	0.817987804878	possuir	wold,ids,northeuralex	3	
+901	855	SEIZE	to grasp	Verb	11	0.893015248401	0.858976881456	agarrar	wold,ids,northeuralex	3	
+902	694	GET	to get	Verb	11	0.863498483316	0.853741152679	obter, conseguir	wold,ids,northeuralex	3	
+903	1477	KEEP	to keep	Verb	11	0.805869074492	0.832054176072	guardar, conservar	wold,ids,northeuralex	3	
+904	738	THING	the thing	Noun	11	0.89900990099	0.796831683168	coisa	wold,ids,northeuralex	3	
+905	85	GIVE BACK	to give back	Verb	11	0.678431372549	0.769411764706	restituir, devolver	wold,ids	2	
+906	1997	PRESERVE	to preserve	Verb	11	0.744874715262	0.787699316629	cuidar de, preservar	wold,ids,northeuralex	3	
+907	2008	RESCUE	to rescue	Verb	11	0.811359026369	0.786612576065	salvar	wold,ids,northeuralex	3	
+908	681	DESTROY	to destroy	Verb	11	0.779807692308	0.789230769231	destruir	wold,ids,northeuralex	3	
+909	44	INJURE	to injure	Verb	11	0.741228070175	0.799298245614		wold	1	
+910	1468	LOOK FOR	to look for	Verb	11	0.883858267717	0.852362204724	buscar, procurar	wold,ids,northeuralex	3	
+911	719	FIND	to find	Verb	11	0.872823098075	0.824472960587	achar, encontrar	wold,ids,northeuralex	3	
+912	3072	MISPLACE	to lose	Verb	11	0.752066115702	0.815702479339	perder	wold,ids,northeuralex	3	
+913	1095	LET GO OR SET FREE	to let go	Verb	11	0.802786962683	0.788143599433	largar, soltar	wold,ids	2	
+914	1559	MONEY	the money	Noun	11	0.970535714286	0.865714285714	dinheiro	wold,ids,northeuralex	3	
+915	1867	COIN	the coin	Noun	11	0.816091954023	0.804214559387	moeda	wold,ids	2	
+916	712	RICH	rich	Adjective	11	0.816101694915	0.814237288136	rico	wold,ids,northeuralex	3	
+917	1674	POOR	poor	Adjective	11	0.901125401929	0.844694533762	pobre	wold,ids,northeuralex	3	
+918	1934	BEGGAR	the beggar	Noun	11	0.711089494163	0.795719844358	mendigo	wold,ids	2	
+919	1774	STINGY	stingy	Adjective	11	0.893719806763	0.770048309179	avarento	wold,ids,northeuralex	3	
+920	582	LEND	to lend	Verb	11	0.756849315068	0.837442922374	emprestar	wold,ids	2	
+921	1823	BORROW	to borrow	Verb	11	0.767841788478	0.84875322442	pedir emprestado	wold,ids	2	
+922	369	OWE	to owe	Verb	11	0.758397932817	0.78992248062	dever	wold,ids	2	
+923	1914	DEBT	the debt	Noun	11	0.887029288703	0.829288702929	dívida	wold,ids	2	
+924	718	PAY	to pay	Verb	11	0.835443037975	0.832489451477	pagar	wold,ids,northeuralex	3	
+925	1081	BILL	the bill	Noun	11	0.852112676056	0.849295774648	conta	wold,ids	2	
+926	873	TAX	the tax	Noun	11	0.927710843373	0.812048192771	imposto, taxa	wold,ids	2	
+927	856	HIRE	to hire	Verb	11	0.777777777778	0.810648148148		wold	1	
+928	1122	WAGES	the wages	Noun	11	0.832446808511	0.805319148936	salário	wold,ids	2	
+929	733	EARN	to earn	Verb	11	0.744787141616	0.849695916594	ganhar	wold,ids	2	
+930	1869	BUY	to buy	Verb	11	0.866807610994	0.874207188161	comprar	wold,ids,northeuralex	3	
+931	1571	SELL	to sell	Verb	11	0.861052631579	0.864842105263	vender	wold,ids,northeuralex	3	
+932	2135	TRADE OR BARTER	to trade or barter	Verb	11	0.75	0.865646258503	trocar	wold,ids	2	
+933	1082	MERCHANT	the merchant	Noun	11	0.647959183673	0.85306122449	negociante	wold,ids	2	
+934	633	MARKET	the market	Noun	11	0.927710843373	0.834939759036	mercado	wold,ids	2	
+935	752	STORE	the shop/store	Noun	11	0.920212765957	0.803191489362	loja	wold,ids	2	
+936	657	PRICE	the price	Noun	11	0.880901287554	0.799141630901	preço	wold,ids,northeuralex	3	
+937	1426	EXPENSIVE	expensive	Adjective	11	0.794178794179	0.805405405405	caro	wold,ids,northeuralex	3	
+938	1887	CHEAP	cheap	Adjective	11	0.812252964427	0.821343873518	barato	wold,ids,northeuralex	3	
+939	884	SHARE	to share	Verb	11	0.814861460957	0.810075566751	distribuir, compartilhar	wold,ids	2	
+940	1098	WEIGH	to weigh	Verb	11	0.796153846154	0.816923076923	pesar	wold,ids	2	
+941	1685	AFTER	after	Function word	12	0.820895522388	0.830490405117	depois	wold,ids	2	
+942	1686	BEHIND	behind	Function word	12	0.790388548057	0.772392638037	atrás	wold,ids,northeuralex	3	
+943	1816	BESIDE	beside	Function word	12	0.784412955466	0.809311740891	ao lado de	wold,ids	2	
+944	1326	DOWN	down	Function word	12	0.772251308901	0.84057591623		wold,northeuralex	2	
+945	1882	BEFORE	before	Function word	12	0.824390243902	0.831707317073	antes, perante	wold,ids,northeuralex	3	
+946	1883	IN FRONT OF	in front of	Function word	12	0.718367346939	0.796734693878	frente	wold,ids,northeuralex	3	
+947	1606	INSIDE	inside	Function word	12	0.784810126582	0.805063291139	dentro	wold,ids	2	
+948	762	OUTSIDE	outside	Function word	12	0.804780876494	0.809960159363	fora	wold,ids	2	
+949	1485	BELOW OR UNDER	under	Function word	12	0.806451612903	0.788387096774	debaixo	wold,ids,northeuralex	3	
+950	1591	UP	up	Function word	12	0.783564814815	0.842592592593	em cima, sôbre	wold,ids,northeuralex	3	
+951	723	PLACE (POSITION)	the place	Noun	12	0.960653104925	0.850107066381	espaço, lugar	wold,ids,northeuralex	3	
+952	998	PUT	to put	Verb	12	0.85924304035	0.815139192993	pôr	wold,ids	2	
+953	215	LIE DOWN	to lie down	Verb	12	0.839285714286	0.855357142857	deitar-se	wold,ids	2	
+954	987	REMAIN	to remain	Verb	12	0.915254237288	0.844444444444	ficar	wold,ids,northeuralex	3	
+955	838	REMAINS	the remains	Noun	12	0.772020725389	0.808808290155	restos	wold,ids	2	
+956	7	GATHER	to gather	Verb	12	0.863793103448	0.804137931034	colecionar, reunir	wold,ids,northeuralex	3	
+957	371	PICK UP	to pick up	Verb	12	0.803184281843	0.82310298103	captar	wold,ids,northeuralex	3	
+958	1576	PILE UP	to pile up	Verb	12	0.740816326531	0.782857142857	empilhar	wold,ids	2	
+959	1743	JOIN	to join	Verb	12	0.786852589641	0.861354581673	juntar, unir	wold,ids,northeuralex	3	
+960	1359	SEPARATE	to separate	Verb	12	0.817589002467	0.7836446951	separar	wold,ids,northeuralex	3	
+961	1119	DIVIDE	to divide	Verb	12	0.843661971831	0.83661971831	dividir	wold,ids,northeuralex	3	
+962	1156	OPEN	to open	Verb	12	0.858391608392	0.837762237762	abrir, aberto	wold,ids,northeuralex	3	
+963	1046	SHUT	to shut	Verb	12	0.853056426332	0.837304075235	fechar	wold,ids,northeuralex	3	
+964	761	COVER	to cover	Verb	12	0.851973684211	0.851480263158	cobrir	wold,ids,northeuralex	3	
+965	602	HIDE (CONCEAL)	to hide	Verb	12	0.913346613546	0.872908366534	esconder	wold,ids,northeuralex	3	
+966	1265	HIGH	high	Adjective	12	0.839899937461	0.841776110069	alto, elevado	wold,ids,northeuralex	3	
+967	721	LOW	low	Adjective	12	0.852064220183	0.818577981651	baixo	wold,ids,northeuralex	3	
+968	1753	TOP	the top	Noun	12	0.924355621965	0.843668285394	cume, topo	wold,ids	2	
+969	690	BOTTOM	the bottom	Noun	12	0.932762836186	0.817848410758	fundo	wold,ids	2	
+970	742	END (OF SPACE)	the end(1)	Noun	12	0.893097128894	0.837080024435	extremidade, fim, ponta	wold,ids,northeuralex	3	
+971	372	POINTED	pointed	Adjective	12	0.797959183673	0.81387755102	afiado, agudo	wold,ids,northeuralex	3	
+972	863	EDGE	the edge	Noun	12	0.963855421687	0.884337349398	beira, borda	wold,ids,northeuralex	3	
+973	682	SIDE	the side	Noun	12	0.916820702403	0.78595194085	lado	wold,ids,northeuralex	3	
+974	1093	MIDDLE	the middle	Noun	12	0.867647058824	0.857720588235		wold,northeuralex	2	
+975	1877	EAST	the east	Noun	12	0.788043478261	0.797826086957	leste, este	wold,ids,northeuralex	3	
+976	1817	WEST	the west	Noun	12	0.788888888889	0.773333333333	oeste	wold,ids,northeuralex	3	
+977	1598	NORTH	the north	Noun	12	0.801204819277	0.778313253012	norte	wold,ids,northeuralex	3	
+978	1595	SOUTH	the south	Noun	12	0.815476190476	0.802380952381	sul	wold,ids,northeuralex	3	
+979	479	GROW	to grow	Verb	12	0.851063829787	0.832978723404	crescer	wold,ids,northeuralex	3	
+980	1506	MEASURE	to measure	Verb	12	0.838607594937	0.80253164557	medir	wold,ids,northeuralex	3	
+981	81	FATHOM	the fathom	Noun	12	0.958333333333	0.845833333333	palmo, braça	wold,ids	2	
+982	711	TALL	tall	Adjective	12	0.835894893406	0.866137828458	alto	wold,ids	2	
+983	2249	THIN (OF SHAPE OF OBJECT)	thin	Adjective	12	0.897368421053	0.887368421053	fino, delgado	wold,ids,northeuralex	3	
+984	1593	DEEP	deep	Adjective	12	0.902760609806	0.833127317676	fundo	wold,ids	2	
+985	193	SHALLOW	shallow	Adjective	12	0.815668202765	0.798156682028	raso, baixo	wold,ids	2	
+986	1633	FLAT	flat	Adjective	12	0.884408602151	0.832258064516	plano, chato	wold,ids,northeuralex	3	
+987	297	CROOKED	crooked	Adjective	12	0.85	0.864657534247	torcido, torto	wold,ids	2	
+988	1071	HOOK	the hook	Noun	12	0.890086206897	0.809051724138	gancho	wold,ids,northeuralex	3	
+989	192	CORNER	the corner	Noun	12	0.959459459459	0.817905405405	esquina, canto	wold,ids,northeuralex	3	
+990	1367	CROSS	the cross	Noun	12	0.86875	0.78	cruz	wold,ids,northeuralex	3	
+991	850	SQUARE	the square	Noun	12	0.765625	0.75625	quadrado	wold,ids	2	
+992	1395	ROUND	round	Adjective	12	0.862132352941	0.870220588235	redondo	wold,ids,northeuralex	3	
+993	1467	CIRCLE	the circle	Noun	12	0.905956112853	0.81512539185	círculo, roda	wold,ids,northeuralex	3	
+994	1845	BALL	the ball	Noun	12	0.971608832808	0.803470031546	esfera, bola	wold,ids	2	
+995	1048	LINE	the line	Noun	12	0.988505747126	0.85938697318	linha	wold,ids,northeuralex	3	
+996	1667	HOLE	the hole	Noun	12	0.93606557377	0.82	buraco	wold,ids,northeuralex	3	
+997	1558	SIMILAR	similar	Adjective	12	0.832802547771	0.773566878981	parecido	wold,ids	2	
+998	1264	CHANGE	to change	Verb	12	0.829867674858	0.850850661626	mudar	wold,ids,northeuralex	3	
+999	1294	ZERO	zero	Function word	13	0.952755905512	0.796850393701		wold	1	
+1000	1703	SIX	six	Function word	13	0.976744186047	0.855813953488	seis	wold,ids,northeuralex	3	
+1001	1704	SEVEN	seven	Function word	13	0.977272727273	0.879545454545	sete	wold,ids,northeuralex	3	
+1002	1705	EIGHT	eight	Function word	13	0.953488372093	0.848837209302	oito	wold,ids,northeuralex	3	
+1003	1483	NINE	nine	Function word	13	0.965909090909	0.861363636364	nove	wold,ids,northeuralex	3	
+1004	1515	TEN	ten	Function word	13	0.948275862069	0.868965517241	dez	wold,ids,northeuralex	3	
+1005	1706	ELEVEN	eleven	Function word	13	0.676829268293	0.787804878049	onze	wold,ids,northeuralex	3	
+1006	1707	TWELVE	twelve	Function word	13	0.666666666667	0.776543209877	doze	wold,ids,northeuralex	3	
+1007	1709	FIFTEEN	fifteen	Function word	13	0.615853658537	0.770731707317	quinze	wold,ids	2	
+1008	1710	TWENTY	twenty	Function word	13	0.756097560976	0.821951219512	vinte	wold,ids,northeuralex	3	
+1009	1634	HUNDRED	a hundred	Function word	13	0.914772727273	0.836363636364	cento, cem	wold,ids,northeuralex	3	
+1010	1843	THOUSAND	a thousand	Function word	13	0.947674418605	0.83023255814	mil	wold,ids,northeuralex	3	
+1011	1992	MORE	more	Function word	13	0.854838709677	0.797983870968	mais	wold,ids	2	
+1012	1881	ENOUGH	enough	Function word	13	0.873161764706	0.800735294118	bastante, suficiente	wold,ids	2	
+1013	2023	CROWD	the crowd	Noun	13	0.779109589041	0.823287671233	multidão	wold,ids	2	
+1014	1429	FULL	full	Adjective	13	0.877659574468	0.874468085106	cheio	wold,ids,northeuralex	3	
+1015	1624	EMPTY	empty	Adjective	13	0.891304347826	0.821739130435	vazio	wold,ids,northeuralex	3	
+1016	779	PART	the part	Noun	13	0.844422700587	0.845009784736	parte, pedaço, peça	wold,ids,northeuralex	3	
+1017	816	HALF	the half	Noun	13	0.837598425197	0.869488188976	metade	wold,ids,northeuralex	3	
+1018	1580	ONLY	only	Function word	13	0.872549019608	0.810784313725	só, somente	wold,ids,northeuralex	3	
+1019	728	FIRST	first	Function word	13	0.73801369863	0.844178082192	primeiro	wold,ids,northeuralex	3	
+1020	1529	LAST (FINAL)	last	Function word	13	0.700085689803	0.759468723222	último	wold,ids,northeuralex	3	
+1021	1384	SECOND	second	Function word	13	0.614864864865	0.833783783784	segundo	wold,ids,northeuralex	3	
+1022	1888	PAIR	the pair	Noun	13	0.895256916996	0.863241106719	par	wold,ids	2	
+1023	1546	TWICE	twice/two times	Function word	13	0.558139534884	0.779069767442	duas vezes	wold,ids	2	
+1024	1859	THIRD	third	Function word	13	0.591549295775	0.814084507042	terceiro	wold,ids,northeuralex	3	
+1025	417	THREE TIMES	three times	Function word	13	0.544871794872	0.779487179487	três vezes	wold,ids	2	
+1026	892	TIME	the time	Noun	14	0.96456977585	0.833815377199	tempo	wold,ids,northeuralex	3	
+1027	1789	AGE	the age	Noun	14	0.873287671233	0.823287671233	idade	wold,ids,northeuralex	3	
+1028	1207	YOUNG	young	Adjective	14	0.871124031008	0.831395348837	jovem, novo	wold,ids,northeuralex	3	
+1029	672	EARLY	early	Function word	14	0.86875	0.8025	cedo	wold,ids	2	
+1030	477	LATE	late	Function word	14	0.833726415094	0.830660377358	tarde	wold,ids	2	
+1031	1376	NOW	now	Function word	14	0.874535315985	0.831598513011	agora	wold,ids,northeuralex	3	
+1032	1963	IMMEDIATELY	immediately	Function word	14	0.77265625	0.7646875	de imediato	wold,ids,northeuralex	3	
+1033	1631	FAST	fast	Adverb	14	0.915360501567	0.815987460815	rápido, ligeiro	wold,ids	2	
+1034	701	SLOW	slow	Adverb	14	0.880776340111	0.826247689464	vagaroso, devagar	wold,ids	2	
+1035	754	HURRY	to hurry	Verb	14	0.810372771475	0.810048622366	apressar	wold,ids,northeuralex	3	
+1036	425	BE LATE	to be late	Verb	14	0.7	0.781304347826	demorar, atrasar	wold,ids	2	
+1037	1806	BEGIN	to begin	Verb	14	0.855098389982	0.784615384615		wold,northeuralex	2	
+1038	1186	LAST (ENDURE)	to last	Verb	14	0.779411764706	0.820588235294	durar, suportar	wold,ids	2	
+1039	743	END (OF TIME)	the end(2)	Noun	14	0.738027501185	0.836936936937	fim	wold,ids,northeuralex	3	
+1040	1766	FINISH	to finish	Verb	14	0.789915966387	0.795258103241	completar, acabar	wold,ids,northeuralex	3	
+1041	1928	CEASE	to cease	Verb	14	0.784604519774	0.823375706215	parar, cessar	wold,ids,northeuralex	3	
+1042	790	READY	ready	Adjective	14	0.835657370518	0.842231075697	pronto	wold,ids	2	
+1043	1676	ALWAYS	always	Function word	14	0.802884615385	0.781730769231	sempre	wold,ids,northeuralex	3	
+1044	1852	OFTEN	often	Function word	14	0.787539936102	0.81214057508	amiúde	wold,ids,northeuralex	3	
+1045	1544	SOMETIMES	sometimes	Function word	14	0.639423076923	0.767307692308	às vezes	wold,ids,northeuralex	3	
+1046	703	SOON	soon	Function word	14	0.802272727273	0.785	em breve	wold,ids,northeuralex	3	
+1047	418	FOR A LONG TIME	for a long time	Function word	14	0.779816513761	0.82247706422	por muito tempo	wold,ids,northeuralex	3	
+1048	1656	NEVER	never	Function word	14	0.701923076923	0.765384615385	nunca, jamais	wold,ids,northeuralex	3	
+1049	204	AGAIN	again	Function word	14	0.838499184339	0.795921696574	outra vez, de novo	wold,ids,northeuralex	3	
+1050	1260	DAY (24 HOURS)	the day(1)	Noun	14	0.908647990256	0.887637028015		wold	1	
+1051	729	DAWN	the dawn	Noun	14	0.759090909091	0.795454545455	alvorada, amanhecer	wold,ids	2	
+1052	1339	MORNING	the morning	Noun	14	0.828947368421	0.811842105263	manhã	wold,ids,northeuralex	3	
+1053	12	MIDDAY	the midday	Noun	14	0.635869565217	0.791304347826	meio dia	wold,ids,northeuralex	3	
+1054	1807	AFTERNOON	the afternoon	Noun	14	0.73820754717	0.840094339623	tarde	wold,ids	2	
+1055	1629	EVENING	the evening	Noun	14	0.877976190476	0.833333333333	noite, tardinha	wold,ids,northeuralex	3	
+1056	1283	TODAY	today	Function word	14	0.780898876404	0.844943820225	hoje	wold,ids,northeuralex	3	
+1057	1329	TOMORROW	tomorrow	Function word	14	0.885542168675	0.815662650602	amanhã	wold,ids,northeuralex	3	
+1058	1179	DAY AFTER TOMORROW	the day after tomorrow	Function word	14	0.664556962025	0.784810126582	depois de amanhã	wold,ids	2	
+1059	1180	DAY BEFORE YESTERDAY	the day before yesterday	Function word	14	0.623456790123	0.797530864198	anteontem	wold,ids	2	
+1060	1353	HOUR	the hour	Noun	14	0.930715935335	0.813394919169	hora	wold,ids	2	
+1061	1323	CLOCK	the clock	Noun	14	0.93119266055	0.821100917431	relógio	wold,ids	2	
+1062	1469	WEEK	the week	Noun	14	0.933333333333	0.794444444444	semana	wold,ids,northeuralex	3	
+1063	1699	SUNDAY	Sunday	Noun	14	0.7625	0.82625	domingo	wold,ids,northeuralex	3	
+1064	1697	MONDAY	Monday	Noun	14	0.780487804878	0.814634146341	segunda-feira	wold,ids,northeuralex	3	
+1065	1695	TUESDAY	Tuesday	Noun	14	0.79375	0.835	terça-feira	wold,ids,northeuralex	3	
+1066	1694	WEDNESDAY	Wednesday	Noun	14	0.762195121951	0.817073170732	quarta-feira	wold,ids,northeuralex	3	
+1067	1693	THURSDAY	Thursday	Noun	14	0.80625	0.825	quinta-feira	wold,ids,northeuralex	3	
+1068	1692	FRIDAY	Friday	Noun	14	0.829268292683	0.807317073171	sexta-feira	wold,ids,northeuralex	3	
+1069	1700	SATURDAY	Saturday	Noun	14	0.839285714286	0.82619047619	sábado	wold,ids,northeuralex	3	
+1070	1370	MONTH	the month	Noun	14	0.973988439306	0.880346820809	mês	wold,ids,northeuralex	3	
+1071	1471	WINTER	the winter	Noun	14	0.826923076923	0.826923076923	inverno	wold,ids,northeuralex	3	
+1072	1537	SPRINGTIME	the spring(2)	Noun	14	0.768656716418	0.805970149254	primavera	wold,ids,northeuralex	3	
+1073	1342	SUMMER	the summer	Noun	14	0.837264150943	0.850943396226	verão	wold,ids,northeuralex	3	
+1074	1276	AUTUMN	the autumn/fall	Noun	14	0.807142857143	0.82	outono	wold,ids,northeuralex	3	
+1075	691	SEASON	the season	Noun	14	0.830434782609	0.747391304348	estação	wold,ids	2	
+1076	1587	SMELL (STINK)	to smell(1)	Verb	15	0.724156400643	0.810926620246	cheirar	wold,ids	2	
+1077	380	WRINKLED	wrinkled	Adjective	15	0.661290322581	0.755913978495	enrugado	wold,ids	2	
+1078	375	SNIFF	to sniff	Verb	15	0.77191011236	0.840898876404	fungar, farejar	wold,ids	2	
+1079	376	FRAGRANT	fragrant	Adjective	15	0.686813186813	0.824175824176	cheiroso, fragante	wold,ids	2	
+1080	42	STINKING	stinking	Adjective	15	0.719123505976	0.824302788845	fedorento, mal cheiroso	wold,ids	2	
+1081	21	TASTE (SOMETHING)	to taste	Verb	15	0.736734693878	0.775918367347	sabor, gosto	wold,ids,northeuralex	3	
+1082	1091	SALTY	salty	Adjective	15	0.770833333333	0.836111111111	salgado	wold,ids	2	
+1083	1906	SOUR	sour	Adjective	15	0.887362637363	0.813186813187	ácido, azedo	wold,ids,northeuralex	3	
+1084	70	BRACKISH	brackish	Adjective	15	0.702127659574	0.768085106383	salobre	wold,ids	2	
+1085	1608	LISTEN	to listen	Verb	15	0.782424563261	0.858125992589	escutar	wold,ids,northeuralex	3	
+1086	1811	SOUND OR NOISE	the sound or noise	Noun	15	0.902021772939	0.796889580093	ruído, barulho	wold,ids,northeuralex	3	
+1087	377	LOUD	loud	Adjective	15	0.76	0.806105263158	ruidoso, barulhento	wold,ids	2	
+1088	1314	QUIET	quiet	Adjective	15	0.891170431211	0.754825462012		wold	1	
+1089	1819	LOOK	to look	Verb	15	0.935593220339	0.797627118644	olhar para, fitar	wold,ids,northeuralex	3	
+1090	1039	SHOW	to show	Verb	15	0.724489795918	0.807606679035	mostrar	wold,ids,northeuralex	3	
+1091	708	SHINE	to shine	Verb	15	0.771523178808	0.808278145695	brilhar	wold,ids,northeuralex	3	
+1092	679	BRIGHT	bright	Adjective	15	0.822087506589	0.81233526621	claro, brilhante	wold,ids,northeuralex	3	
+1093	1613	COLOR	the colour/color	Noun	15	0.942675159236	0.75923566879	cor	wold,ids	2	
+1094	250	LIGHT (COLOR)	light(2)	Adjective	15	0.808383233533	0.813473053892	claro	wold,ids	2	
+1095	706	DARK	dark	Adjective	15	0.867647058824	0.900904977376	escuro	wold,ids,northeuralex	3	
+1096	837	BLUE	blue	Adjective	15	0.875919117647	0.813602941176	azul	wold,ids,northeuralex	3	
+1097	1892	TOUCH	to touch	Verb	15	0.843876723439	0.783454987835	tocar	wold,ids,northeuralex	3	
+1098	378	PINCH	to pinch	Verb	15	0.863636363636	0.817045454545	beliscar	wold,ids	2	
+1099	1079	FEEL	to feel	Verb	15	0.86316872428	0.813271604938	sentir	wold,ids	2	
+1100	1856	SOFT	soft	Adjective	15	0.885191347754	0.846256239601	macio, mole	wold,ids,northeuralex	3	
+1101	1923	ROUGH	rough(1)	Adjective	15	0.829181494662	0.821352313167	áspero	wold,ids	2	
+1102	1052	LIGHT (WEIGHT)	light(1)	Adjective	15	0.853448275862	0.838793103448	leve	wold,ids	2	
+1103	1286	HOT	hot	Adjective	15	0.849162011173	0.84748603352	quente	wold,ids,northeuralex	3	
+1104	1232	WARM	warm	Adjective	15	0.871244635193	0.830042918455	quente, cálido	wold,ids,northeuralex	3	
+1105	1287	COLD	cold	Adjective	15	0.877551020408	0.870408163265	frio	wold,ids,northeuralex	3	
+1106	704	CLEAN	clean	Adjective	15	0.827981651376	0.810091743119	limpo	wold,ids,northeuralex	3	
+1107	811	SOUL	the soul or spirit	Noun	16	0.935855263158	0.892434210526	alma, espírito	wold,ids	2	
+1108	1572	SURPRISED	surprised or astonished	Adjective	16	0.745098039216	0.761764705882	surpreso, espantado	wold,ids	2	
+1109	720	GOOD LUCK	the good luck	Noun	16	0.80310880829	0.779274611399	boa sorte	wold,ids	2	
+1110	56	BAD LUCK	the bad luck	Noun	16	0.689024390244	0.801219512195	infortúnio, má sorte, azar	wold,ids,northeuralex	3	
+1111	1495	HAPPY	happy	Adjective	16	0.796460176991	0.779646017699	feliz, contente, alegre	wold,ids	2	
+1112	1451	SMILE	to smile	Verb	16	0.728125	0.785	sorrir	wold,ids	2	
+1113	923	LOVE	to love	Verb	16	0.840864440079	0.837328094303	amar	wold,ids,northeuralex	3	
+1114	578	KISS	to kiss	Verb	16	0.817679558011	0.827624309392	beijar	wold,ids,northeuralex	3	
+1115	928	EMBRACE	to embrace	Verb	16	0.832706766917	0.821804511278	abraçar	wold,ids	2	
+1116	1783	PAIN	the pain	Noun	16	0.783333333333	0.808571428571	dor	wold,ids,northeuralex	3	
+1117	1668	GRIEF	the grief	Noun	16	0.787197231834	0.775778546713	tristeza, dor	wold,ids,northeuralex	3	
+1118	1000	ANXIETY	the anxiety	Noun	16	0.700692041522	0.773356401384	ansiedade, preocupação	wold,ids	2	
+1119	1875	REGRET	to regret or be sorry	Verb	16	0.738286969253	0.816251830161	ter pena	wold,ids	2	
+1120	1141	PITY	the pity	Noun	16	0.755859375	0.7890625	pena, compaixão	wold,ids	2	
+1121	1651	TEAR (OF EYE)	the tear	Noun	16	0.81875	0.8125	lágrima	wold,ids,northeuralex	3	
+1122	716	GROAN	to groan	Verb	16	0.850299401198	0.795209580838	gemer	wold,ids,northeuralex	3	
+1123	1607	HATE	to hate	Verb	16	0.777456647399	0.821965317919	odiar	wold,ids	2	
+1124	82	ANGER	the anger	Noun	16	0.821428571429	0.830827067669	raiva, ira	wold,ids	2	
+1125	40	ENVY	the envy or jealousy	Noun	16	0.804347826087	0.81652173913	inveja, ciúme	wold,ids	2	
+1126	1776	SHAME	the shame	Noun	16	0.844444444444	0.824444444444	vergonha	wold,ids	2	
+1127	174	PROUD	proud	Adjective	16	0.759036144578	0.812048192771	orgulhoso	wold,ids	2	
+1128	1779	DARE	to dare	Verb	16	0.796875	0.83125	ousar	wold,ids	2	
+1129	3	BRAVE	brave	Adjective	16	0.756024096386	0.747891566265	corajoso, bravo	wold,ids	2	
+1130	781	FEAR (FRIGHT)	the fear	Noun	16	0.848901098901	0.889010989011	medo, susto	wold,ids	2	
+1131	1810	DANGER	the danger	Noun	16	0.852870813397	0.810526315789	perigo	wold,ids	2	
+1132	1784	WANT	to want	Verb	16	0.831189710611	0.830225080386	desejo	wold,ids,northeuralex	3	
+1133	1750	CHOOSE	to choose	Verb	16	0.838709677419	0.834408602151	escolher	wold,ids,northeuralex	3	
+1134	3212	HOPE (SOMETHING)	to hope	Verb	16	0.748898678414	0.800440528634		wold	1	
+1135	100	FAITHFUL	faithful	Adjective	16	0.630379746835	0.770379746835	leal	wold,ids	2	
+1136	1657	TRUE	true	Adjective	16	0.867619047619	0.836	verdadeiro	wold,ids,northeuralex	3	
+1137	601	LIE (MISLEAD)	to lie(2)	Verb	16	0.768867924528	0.768867924528	mentir	wold,ids	2	
+1138	13	DECEIT	the deceit	Noun	16	0.740740740741	0.749382716049	engano	wold,ids	2	
+1139	1528	FORGIVE	to forgive	Verb	16	0.706790123457	0.825925925926	perdoar	wold,ids	2	
+1140	1390	WRONG	wrong	Adjective	16	0.706827309237	0.834939759036	errado	wold,ids	2	
+1141	134	FAULT	the fault	Noun	16	0.888579387187	0.787743732591	falta, culpa	wold,ids,northeuralex	3	
+1142	1293	MISTAKE	the mistake	Noun	16	0.744416873449	0.798014888337	erro	wold,ids,northeuralex	3	
+1143	381	BLAME	the blame	Noun	16	0.793565683646	0.793565683646	culpa	wold,ids	2	
+1144	1687	PRAISE	the praise	Noun	16	0.738095238095	0.794047619048	elogiar	wold,ids	2	
+1145	1427	BEAUTIFUL	beautiful	Adjective	16	0.836393989983	0.854424040067	bonito, belo	wold,ids,northeuralex	3	
+1146	1548	UGLY	ugly	Adjective	16	0.760948905109	0.81204379562	feio	wold,ids	2	
+1147	2018	GREEDY	greedy	Adjective	16	0.797687861272	0.787283236994	cobiçoso, ávido	wold,ids	2	
+1148	1310	CLEVER	clever	Adjective	16	0.844572368421	0.849013157895	esperto, hábil	wold,ids,northeuralex	3	
+1149	1562	MIND	the mind	Noun	17	0.897310513447	0.88337408313	mente	wold,ids,northeuralex	3	
+1150	1415	THINK (REFLECT)	to think(1)	Verb	17	0.783767772512	0.773301737757	pensar	wold,ids,northeuralex	3	
+1151	1513	THINK (BELIEVE)	to think(2)	Verb	17	0.838530655391	0.822938689218	achar, acreditar	wold,ids	2	
+1152	1890	BELIEVE	to believe	Verb	17	0.890306122449	0.830357142857	crer	wold,ids,northeuralex	3	
+1153	1536	UNDERSTAND	to understand	Verb	17	0.76108277756	0.845821890938	compreender	wold,ids,northeuralex	3	
+1154	1932	GUESS	to guess	Verb	17	0.793522267206	0.811740890688	adivinhar, conjeturar	wold,ids	2	
+1155	117	IMITATE	to imitate	Verb	17	0.790697674419	0.795348837209	imitar	wold,ids	2	
+1156	1521	SEEM	to seem	Verb	17	0.746062992126	0.811023622047	parecer	wold,ids,northeuralex	3	
+1157	1609	IDEA	the idea	Noun	17	0.78776290631	0.804397705545	idéia	wold,ids	2	
+1158	698	WISE	wise	Adjective	17	0.732352941176	0.825882352941	sábio	wold,ids	2	
+1159	1518	STUPID	stupid	Adjective	17	0.926991150442	0.805309734513	tolo	wold,ids,northeuralex	3	
+1160	1899	MAD	mad	Adjective	17	0.820175438596	0.810526315789	louco, maluco	wold,ids	2	
+1161	504	LEARN	to learn	Verb	17	0.845804988662	0.820181405896	aprender	wold,ids,northeuralex	3	
+1162	1929	STUDY	to study	Verb	17	0.747875354108	0.740226628895	estudar	wold,ids	2	
+1163	709	TEACH	to teach	Verb	17	0.766924564797	0.844294003868	ensinar	wold,ids,northeuralex	3	
+1164	753	PUPIL (STUDENT)	the pupil	Noun	17	0.661111111111	0.764444444444	aluno	wold,ids	2	
+1165	1038	TEACHER	the teacher	Noun	17	0.780172413793	0.798275862069	professor	wold,ids,northeuralex	3	
+1166	673	SCHOOL	the school	Noun	17	0.836177474403	0.80409556314	escola	wold,ids	2	
+1167	707	REMEMBER	to remember	Verb	17	0.662995594714	0.76872246696	lembrar-se	wold,ids,northeuralex	3	
+1168	1523	FORGET	to forget	Verb	17	0.772637795276	0.868503937008	esquecer-se	wold,ids,northeuralex	3	
+1169	989	CLEAR	clear	Adjective	17	0.828125	0.802083333333	claro, evidente	wold,ids	2	
+1170	1764	OBSCURE	obscure	Adjective	17	0.6775	0.7555	obscuro	wold,ids	2	
+1171	1121	SECRET	secret	Adjective	17	0.76875	0.805	segredo	wold,ids	2	
+1172	509	CERTAIN	certain	Adjective	17	0.836225596529	0.820607375271	seguro, certo	wold,ids	2	
+1173	1626	EXPLAIN	to explain	Verb	17	0.743243243243	0.821621621622	explicar	wold,ids	2	
+1174	1162	INTENTION	the intention	Noun	17	0.78293135436	0.792393320965	intenção	wold,ids	2	
+1175	860	CAUSE	the cause	Noun	17	0.867758186398	0.793450881612	causa	wold,ids	2	
+1176	1308	DOUBT	the doubt	Noun	17	0.771428571429	0.791428571429	duvidar	wold,ids	2	
+1177	1841	SUSPECT	to suspect	Verb	17	0.763157894737	0.760526315789	suspeitar	wold,ids	2	
+1178	1902	BETRAY	to betray	Verb	17	0.696120689655	0.802586206897	trair	wold,ids	2	
+1179	4181	NEED OR NECESSITY	the need or necessity	Noun	17	0.765454545455	0.841090909091		wold	1	
+1180	686	EASY	easy	Adjective	17	0.796680497925	0.836099585062	fácil	wold,ids	2	
+1181	584	DIFFICULT	difficult	Adjective	17	0.85	0.844375	difícil	wold,ids	2	
+1182	1812	TRY	to try	Verb	17	0.828282828283	0.812121212121	tentar, provar	wold,ids,northeuralex	3	
+1183	488	MANNER	the manner	Noun	17	0.946808510638	0.834042553191	maneira	wold,ids	2	
+1184	1014	OR	or	Function word	17	0.969072164948	0.787628865979	ou	wold,ids,northeuralex	3	
+1185	1268	YES	yes	Function word	17	0.982954545455	0.829166666667	sim, afirmativo	wold,ids	2	
+1186	1269	NO	no	Function word	17	0.960227272727	0.840909090909	não, negativo	wold,ids	2	
+1187	3450	HOW MANY PIECES	how many?	Function word	17	0.805405405405	0.867027027027	quantos?	wold,ids	2	
+1188	531	HOW MUCH	how much?	Function word	17	0.8	0.833333333333	quanto?	wold,ids	2	
+1189	727	WHICH	which?	Function word	17	0.832335329341	0.816766467066	qual?	wold,ids	2	
+1190	1270	WHY	why?	Function word	17	0.704310344828	0.776551724138	por quê?	wold,ids,northeuralex	3	
+1191	1363	VOICE	the voice	Noun	18	0.972295514512	0.859102902375	voz	wold,ids,northeuralex	3	
+1192	715	SHOUT	to shout	Verb	18	0.873062015504	0.78992248062	gritar	wold,ids,northeuralex	3	
+1193	55	WHISPER	to whisper	Verb	18	0.763157894737	0.809210526316	cochichar	wold,ids	2	
+1194	128	MUMBLE	to mumble	Verb	18	0.837837837838	0.771621621622	murmurar	wold,ids	2	
+1195	1025	WHISTLE	to whistle	Verb	18	0.826315789474	0.801052631579	assobiar	wold,ids,northeuralex	3	
+1196	298	SHRIEK	to shriek	Verb	18	0.859338061466	0.757919621749	guinchar	wold,ids	2	
+1197	526	HOWL	to howl	Verb	18	0.849367088608	0.85164556962	uivar	wold,ids,northeuralex	3	
+1198	1623	SPEAK	to speak or talk	Verb	18	0.764925373134	0.805671641791	falar	wold,ids,northeuralex	3	
+1199	1866	STUTTER	to stutter or stammer	Verb	18	0.78021978022	0.794505494505	gaguejar	wold,ids	2	
+1200	1711	TELL	to tell	Verb	18	0.770240700219	0.785557986871	contar, relatar	wold,ids,northeuralex	3	
+1201	1115	SPEECH	the speech	Noun	18	0.75	0.806617647059	discursar	wold,ids,northeuralex	3	
+1202	48	BE SILENT	to be silent	Verb	18	0.744419642857	0.740178571429	ficar em silêncio	wold,ids	2	
+1203	1307	LANGUAGE	the language	Noun	18	0.867897727273	0.842613636364	língua	wold,ids,northeuralex	3	
+1204	1599	WORD	the word	Noun	18	0.937346437346	0.835380835381	palavra	wold,ids,northeuralex	3	
+1205	1309	ASK (INQUIRE)	to ask(1)	Verb	18	0.889795918367	0.82612244898	perguntar	wold,ids,northeuralex	3	
+1206	1275	ANSWER	to answer	Verb	18	0.761755485893	0.84670846395	responder	wold,ids	2	
+1207	2022	ADMIT	to admit	Verb	18	0.695606694561	0.816736401674	admitir, confessar	wold,ids	2	
+1208	755	DENY	to deny	Verb	18	0.806896551724	0.834482758621	negar	wold,ids	2	
+1209	1828	ASK (REQUEST)	to ask(2)	Verb	18	0.882608695652	0.844782608696	pedir	wold,ids,northeuralex	3	
+1210	1675	PROMISE	to promise	Verb	18	0.701298701299	0.815584415584	prometer	wold,ids,northeuralex	3	
+1211	49	REFUSE	to refuse	Verb	18	0.740875912409	0.81897810219	recusar	wold,ids	2	
+1212	83	FORBID	to forbid	Verb	18	0.775204359673	0.792370572207	proibir	wold,ids	2	
+1213	299	SCOLD	to scold	Verb	18	0.814285714286	0.839047619048	repreender	wold,ids	2	
+1214	1084	CALL	to call(1)	Verb	18	0.819575471698	0.819811320755	chamar	wold,ids,northeuralex	3	
+1215	180	CALL BY NAME	to call(2)	Verb	18	0.693702290076	0.796183206107	nomear, chamar-se	wold,ids,northeuralex	3	
+1216	9	ANNOUNCE	to announce	Verb	18	0.730401529637	0.802676864245	anunciar	wold,ids	2	
+1217	1192	THREATEN	to threaten	Verb	18	0.748979591837	0.81387755102	ameaçar	wold,ids	2	
+1218	101	BOAST	to boast	Verb	18	0.653846153846	0.796153846154	jactar-se, gabar-se	wold,ids,northeuralex	3	
+1219	1672	WRITE	to write	Verb	18	0.893842887473	0.825690021231	escrever	wold,ids,northeuralex	3	
+1220	724	READ	to read	Verb	18	0.870253164557	0.825316455696	ler	wold,ids,northeuralex	3	
+1221	648	PAPER	the paper	Noun	18	0.995246179966	0.847470288625	papel	wold,ids	2	
+1222	794	PEN	the pen	Noun	18	0.896907216495	0.815463917526	caneta	wold,ids	2	
+1223	963	BOOK	the book	Noun	18	0.982710713183	0.857425131213	livro	wold,ids,northeuralex	3	
+1224	1045	POET	the poet	Noun	18	0.7109375	0.803125	poeta	wold,ids	2	
+1225	777	FLUTE	the flute	Noun	18	0.947826086957	0.844782608696	flauta	wold,ids	2	
+1226	908	DRUM	the drum	Noun	18	0.972222222222	0.806666666667	tambor	wold,ids	2	
+1227	2136	BRASS INSTRUMENT (HORN OR TRUMPET)	the horn or trumpet	Noun	18	0.916996047431	0.786956521739	corneta, trombeta	wold,ids	2	
+1228	300	RATTLE	the rattle	Noun	18	0.856060606061	0.79696969697	guizo, matraca	wold,ids	2	
+1229	1300	COUNTRY	the country	Noun	19	0.911970190964	0.833069399162	país	wold,ids,northeuralex	3	
+1230	89	NATIVE COUNTRY	the native country	Noun	19	0.583333333333	0.736666666667	pátria	wold,ids	2	
+1231	1391	TOWN	the town	Noun	19	0.902702702703	0.817297297297	cidade	wold,ids,northeuralex	3	
+1232	930	VILLAGE	the village	Noun	19	0.891013384321	0.844741873805	aldeia	wold,ids,northeuralex	3	
+1233	1010	BOUNDARY	the boundary	Noun	19	0.861213915618	0.766765358993	fronteira	wold,ids	2	
+1234	789	PEOPLE	the people	Noun	19	0.820717131474	0.820717131474	povo	wold,ids,northeuralex	3	
+1235	302	CLAN	the clan	Noun	19	0.891489361702	0.794468085106	tribo, clã	wold,ids	2	
+1236	301	CHIEFTAIN	the chieftain	Noun	19	0.777466937945	0.821719226857	chefe, cacique	wold,ids	2	
+1237	1296	WALKING STICK	the walking stick	Noun	19	0.885869565217	0.807608695652	bastão, bengala	wold,ids	2	
+1238	1846	RULE	to rule or govern	Verb	19	0.703619909502	0.838914027149	governar	wold,ids,northeuralex	3	
+1239	1508	KING	the king	Noun	19	0.930516165627	0.810720363018	rei, governante	wold,ids,northeuralex	3	
+1240	1306	QUEEN	the queen	Noun	19	0.714061272584	0.812647289866	rainha	wold,ids	2	
+1241	482	NOBLE	the noble	Noun	19	0.714285714286	0.801680672269	nobre	wold,ids	2	
+1242	1032	CITIZEN	the citizen	Noun	19	0.697368421053	0.8125	cidadão, súdito	wold,ids	2	
+1243	383	MASTER	the master	Noun	19	0.908653846154	0.878846153846	senhor, patrão, dono	wold,ids	2	
+1244	812	SLAVE	the slave	Noun	19	0.857142857143	0.822857142857	escravo	wold,ids	2	
+1245	255	SERVANT	the servant	Noun	19	0.788461538462	0.7875	criado, servo	wold,ids	2	
+1246	384	FREEMAN	the freeman	Noun	19	0.620879120879	0.752747252747	homem livre	wold,ids	2	
+1247	1998	COMMAND	to command or order	Verb	19	0.764598540146	0.811313868613	mandar, dar ordem	wold,ids	2	
+1248	1635	OBEY	to obey	Verb	19	0.63548539114	0.799717247879	obedecer	wold,ids	2	
+1249	1003	PERMIT	to permit	Verb	19	0.731150793651	0.807738095238		wold	1	
+1250	1325	FRIEND	the friend	Noun	19	0.929133858268	0.813385826772	amigo, companheiro	wold,ids,northeuralex	3	
+1251	1358	ENEMY	the enemy	Noun	19	0.847826086957	0.826086956522	inimigo	wold,ids,northeuralex	3	
+1252	1332	NEIGHBOUR	the neighbour	Noun	19	0.769230769231	0.805128205128	vizinho	wold,ids	2	
+1253	791	STRANGER	the stranger	Noun	19	0.706	0.784	estranho, forasteiro	wold,ids	2	
+1254	1782	GUEST	the guest	Noun	19	0.875576036866	0.864516129032	convidado, hóspede	wold,ids,northeuralex	3	
+1255	1545	HOST	the host	Noun	19	0.661931818182	0.734659090909	hospedeiro, anfitrião	wold,ids	2	
+1256	1897	HELP	to help	Verb	19	0.814207650273	0.814207650273	ajudar	wold,ids	2	
+1257	1550	PREVENT	to prevent	Verb	19	0.755611875453	0.777986965967		wold	1	
+1258	1747	CUSTOM	the custom	Noun	19	0.842696629213	0.796629213483	costume, hábito	wold,ids	2	
+1259	1848	QUARREL	the quarrel	Noun	19	0.728813559322	0.81186440678	disputa, luta	wold,ids	2	
+1260	2024	PLOT	the plot	Noun	19	0.714285714286	0.834920634921	conspiração	wold,ids	2	
+1261	1831	MEET	to meet	Verb	19	0.742924528302	0.773270440252	encontrar	wold,ids,northeuralex	3	
+1262	1610	PROSTITUTE	the prostitute	Noun	19	0.803278688525	0.785245901639	prostituta	wold,ids	2	
+1263	579	BATTLE	the war or battle	Noun	20	0.882736156352	0.793811074919	guerra, batalha	wold,ids	2	
+1264	1338	PEACE	the peace	Noun	20	0.798701298701	0.866233766234	paz	wold,ids	2	
+1265	1561	ARMY	the army	Noun	20	0.846808510638	0.803829787234	exército	wold,ids	2	
+1266	1941	SOLDIER	the soldier	Noun	20	0.869127516779	0.785906040268	soldado	wold,ids	2	
+1267	951	WEAPONS	the weapons	Noun	20	0.79012345679	0.801234567901	armas	wold,ids	2	
+1268	1763	CLUB	the club	Noun	20	0.945330296128	0.762870159453	porrete, cacete	wold,ids	2	
+1269	386	BATTLE-AXE	the battle-axe	Noun	20	0.677419354839	0.816129032258	machado, acha	wold,ids	2	
+1270	387	SLING	the sling	Noun	20	0.826923076923	0.789743589744	funda, estilingue	wold,ids	2	
+1271	994	BOW	the bow	Noun	20	0.91095890411	0.861643835616	arco	wold,ids,northeuralex	3	
+1272	977	ARROW	the arrow	Noun	20	0.913580246914	0.820987654321	flecha	wold,ids,northeuralex	3	
+1273	945	SPEAR	the spear	Noun	20	0.963414634146	0.784146341463	lança	wold,ids	2	
+1274	1535	SWORD	the sword	Noun	20	0.939189189189	0.832432432432	espada	wold,ids	2	
+1275	1566	GUN	the gun	Noun	20	0.949494949495	0.834343434343		wold,northeuralex	2	
+1276	1061	ARMOUR	the armour	Noun	20	0.79	0.856	armadura	wold,ids	2	
+1277	1680	HELMET	the helmet	Noun	20	0.871212121212	0.806060606061	elmo, capacete	wold,ids	2	
+1278	1064	SHIELD	the shield	Noun	20	0.922413793103	0.815517241379	escudo	wold,ids	2	
+1279	1938	FORTRESS	the fortress	Noun	20	0.833333333333	0.793333333333	fortaleza	wold,ids	2	
+1280	1671	TOWER	the tower	Noun	20	0.879032258065	0.783870967742	torre	wold,ids	2	
+1281	783	VICTORY	the victory	Noun	20	0.74358974359	0.835897435897	vitória	wold,ids	2	
+1282	782	DEFEAT	the defeat	Noun	20	0.716417910448	0.837313432836	derrota	wold,ids	2	
+1283	722	ATTACK	the attack	Noun	20	0.722222222222	0.809722222222	atacar	wold,ids	2	
+1284	1330	DEFEND	to defend	Verb	20	0.755056179775	0.814831460674	defender	wold,ids,northeuralex	3	
+1285	421	RETREAT	to retreat	Verb	20	0.708937198068	0.826086956522	retirar-se	wold,ids	2	
+1286	1696	SURRENDER	to surrender	Verb	20	0.625	0.845588235294	capitular, render-se	wold,ids	2	
+1287	1072	PRISONER	the captive or prisoner	Noun	20	0.704761904762	0.818095238095	cativo, prisioneiro	wold,ids	2	
+1288	1940	GUARD	the guard	Noun	20	0.755208333333	0.7625	guarda, sentinela	wold,ids	2	
+1289	1022	BOOTY	the booty	Noun	20	0.761363636364	0.818181818182	pilhagem	wold,ids	2	
+1290	65	AMBUSH	the ambush	Noun	20	0.758064516129	0.770967741935	emboscada	wold,ids	2	
+1291	1858	FISHERMAN	the fisherman	Noun	20	0.589285714286	0.764285714286	pescador	wold,ids	2	
+1292	1074	FISHHOOK	the fishhook	Noun	20	0.821917808219	0.806849315068	anzol	wold,ids	2	
+1293	19	FISHING LINE	the fishing line	Noun	20	0.702586206897	0.740948275862	linha de pesca, corda	wold,ids	2	
+1294	388	FISHNET	the fishnet	Noun	20	0.842105263158	0.826315789474	rede	wold,ids	2	
+1295	389	FISH TRAP	the fish trap	Noun	20	0.854166666667	0.791666666667	nassa, armadilha de peixa	wold,ids	2	
+1296	2013	BAIT	the bait	Noun	20	0.883720930233	0.801860465116	isca	wold,ids	2	
+1297	1172	SHOOT	to shoot	Verb	20	0.805418719212	0.813957307061	disparar, fuzilar	wold,ids,northeuralex	3	
+1298	161	MISS (A TARGET)	to miss	Verb	20	0.780666125102	0.832250203087	falhar, errar, não acertar	wold,ids	2	
+1299	1075	TRAP (PITFALL)	the trap	Noun	20	0.933447098976	0.843003412969	cilada, armadilha	wold,ids,northeuralex	3	
+1300	1170	TRAP (CATCH)	to trap	Verb	20	0.754549808429	0.802825670498	armar uma cilada, pegar em armadilha	wold,ids	2	
+1301	1062	LAW	the law	Noun	21	0.917808219178	0.820547945205	lei	wold,ids	2	
+1302	1068	COURT	the court	Noun	21	0.835836909871	0.782832618026	tribunal	wold,ids	2	
+1303	1818	ADJUDICATE	to adjudicate	Verb	21	0.709150326797	0.797385620915	julgar	wold,ids	2	
+1304	1067	JUDGMENT	the judgment	Noun	21	0.691135734072	0.756786703601	julgamento	wold,ids	2	
+1305	861	JUDGE	the judge	Noun	21	0.788461538462	0.774358974359	juiz	wold,ids	2	
+1306	2020	PLAINTIFF	the plaintiff	Noun	21	0.588709677419	0.777419354839	queixoso	wold,ids	2	
+1307	1034	DEFENDANT	the defendant	Noun	21	0.565217391304	0.740579710145	réu, acusado	wold,ids	2	
+1308	1144	WITNESS	the witness	Noun	21	0.770833333333	0.808333333333	testemunha	wold,ids	2	
+1309	1939	SWEAR	to swear	Verb	21	0.767605633803	0.807042253521	jurar	wold,ids	2	
+1310	1712	OATH	the oath	Noun	21	0.777777777778	0.827777777778	juramento	wold,ids	2	
+1311	1814	ACCUSE	to accuse	Verb	21	0.713483146067	0.796629213483	acusar	wold,ids	2	
+1312	484	CONDEMN	to condemn	Verb	21	0.713178294574	0.881395348837	condenar	wold,ids	2	
+1313	983	CONVICT	to convict	Verb	21	0.58813559322	0.809491525424	sentenciar, condenar	wold,ids	2	
+1314	988	ACQUIT	to acquit	Verb	21	0.709030100334	0.752508361204	absolver	wold,ids	2	
+1315	1682	GUILTY	guilty	Adjective	21	0.669230769231	0.845128205128	culpado	wold,ids	2	
+1316	90	INNOCENT	innocent	Adjective	21	0.621387283237	0.775144508671	inocente	wold,ids	2	
+1317	390	PUNISHMENT	the penalty or punishment	Noun	21	0.832713754647	0.83717472119	punição, castigo	wold,ids	2	
+1318	218	FINE (PENALTY)	the fine	Noun	21	0.847826086957	0.784057971014	multa	wold,ids	2	
+1319	1281	PRISON	the prison	Noun	21	0.836734693878	0.783673469388	prisão	wold,ids	2	
+1320	845	MURDER	the murder	Noun	21	0.634042553191	0.805957446809	assassinar	wold,ids	2	
+1321	902	ADULTERY	the adultery	Noun	21	0.739130434783	0.85652173913	adultério	wold,ids	2	
+1322	953	RAPE	the rape	Noun	21	0.657534246575	0.78904109589	violação, estupro	wold,ids	2	
+1323	1889	ARSON	the arson	Noun	21	0.592465753425	0.787671232877	incêndio culposo	wold,ids	2	
+1324	1792	PERJURY	the perjury	Noun	21	0.612244897959	0.74693877551	perjúrio	wold,ids	2	
+1325	713	STEAL	to steal	Verb	21	0.864696734059	0.848367029549	roubar	wold,ids,northeuralex	3	
+1326	1160	THIEF	the thief	Noun	21	0.742574257426	0.823762376238	ladrão	wold,ids	2	
+1327	661	RELIGION	the religion	Noun	22	0.833333333333	0.822666666667	religião	wold,ids	2	
+1328	3231	DEITY	the god	Noun	22	0.905923344948	0.871428571429		wold,northeuralex	2	
+1329	911	TEMPLE	the temple	Noun	22	0.849315068493	0.853424657534	templo, igreja	wold,ids	2	
+1330	853	ALTAR	the altar	Noun	22	0.881355932203	0.822033898305	altar	wold,ids	2	
+1331	1103	SACRIFICE	the sacrifice	Noun	22	0.755952380952	0.754761904762	sacrifício, oferenda	wold,ids	2	
+1332	257	WORSHIP	to worship	Verb	22	0.674157303371	0.761797752809	adorar	wold,ids	2	
+1333	24	PRAY	to pray	Verb	22	0.790229885057	0.811494252874	orar, rezar	wold,ids	2	
+1334	852	PRIEST	the priest	Noun	22	0.859813084112	0.804672897196	sacerdote	wold,ids	2	
+1335	1702	HOLY	holy	Adjective	22	0.768240343348	0.836480686695	santo, sagrado	wold,ids	2	
+1336	304	PREACH	to preach	Verb	22	0.792307692308	0.82	pregar	wold,ids	2	
+1337	391	BLESS	to bless	Verb	22	0.736842105263	0.760526315789	abençoar	wold,ids	2	
+1338	8	CURSE	to curse	Verb	22	0.767441860465	0.76511627907	amaldiçoar	wold,ids	2	
+1339	303	ABSTAIN FROM FOOD	to fast	Verb	22	0.616141732283	0.756692913386	jejuar	wold,ids	2	
+1340	1565	HEAVEN	the heaven	Noun	22	0.765732659623	0.802480477722	céu	wold,ids	2	
+1341	878	HELL	the hell	Noun	22	0.835723598435	0.802868318123	inferno	wold,ids	2	
+1342	1973	DEMON	the demon	Noun	22	0.87323943662	0.839436619718	demônio	wold,ids	2	
+1343	1945	IDOL	the idol	Noun	22	0.822916666667	0.802083333333	ídolo	wold,ids,northeuralex	3	
+1344	392	MAGIC	the magic	Noun	22	0.768817204301	0.824731182796	magia, feitiçaria	wold,ids	2	
+1345	2137	MAGICIAN	the sorcerer or witch	Noun	22	0.699088145897	0.807598784195	feiticeiro, bruxo/bruxa	wold,ids	2	
+1346	3206	ELF OR FAIRY	the fairy or elf	Noun	22	0.8125	0.845	fada	wold,ids	2	
+1347	1175	GHOST	the ghost	Noun	22	0.856543624161	0.807718120805	fantasma	wold,ids	2	
+1348	107	OMEN	the omen	Noun	22	0.813432835821	0.841791044776	agouro, presságio	wold,ids	2	
+1349	1315	RADIO	the radio	Noun	23	0.892857142857	0.704761904762		wold	1	
+1350	1788	TELEVISION	the television	Noun	23	0.917808219178	0.727397260274		wold	1	
+1351	1379	TELEPHONE	the telephone	Noun	23	0.863636363636	0.710743801653		wold	1	
+1352	638	MOTORCYCLE	the motorcycle	Noun	23	0.84693877551	0.710204081633		wold	1	
+1353	1111	CAR	the car	Noun	23	0.855205047319	0.732744479495		wold	1	
+1354	1070	BUS	the bus	Noun	23	0.890106449593	0.66975579211		wold	1	
+1355	1597	AIRPLANE	the airplane	Noun	23	0.780952380952	0.739047619048		wold	1	
+1356	59	ELECTRICITY	the electricity	Noun	23	0.882015306122	0.764668367347		wold	1	
+1357	662	BATTERY	the battery	Noun	23	0.881578947368	0.715789473684		wold	1	
+1358	616	HOSPITAL	the hospital	Noun	23	0.761627906977	0.746511627907		wold	1	
+1359	1104	NURSE	the nurse	Noun	23	0.72577092511	0.781938325991		wold	1	
+1360	395	PILL	the pill or tablet	Noun	23	0.852112676056	0.774647887324		wold	1	
+1361	1805	INJECTION	the injection	Noun	23	0.836820083682	0.7589958159		wold	1	
+1362	1488	FAUCET	the tap/faucet	Noun	23	0.878787878788	0.781818181818		wold	1	
+1363	915	SINK (BASIN)	the sink	Noun	23	0.730769230769	0.705128205128		wold	1	
+1364	219	TOILET	the toilet	Noun	23	0.809917355372	0.803305785124		wold	1	
+1365	105	MATTRESS	the mattress	Noun	23	0.908450704225	0.802816901408		wold	1	
+1366	815	GOVERNMENT	the government	Noun	23	0.825121443442	0.800485773768		wold	1	
+1367	899	PRESIDENT	the president	Noun	23	0.85881104034	0.746001415428		wold	1	
+1368	486	MINISTER	the minister	Noun	23	0.903669724771	0.793577981651		wold	1	
+1369	656	POLICE	the police	Noun	23	0.877551020408	0.767755102041		wold	1	
+1370	599	DRIVER'S LICENSE	the driver's license	Noun	23	0.75	0.72		wold	1	
+1371	1066	CRIME	the crime	Noun	23	0.791569086651	0.829976580796		wold	1	
+1372	240	ELECTION	the election	Noun	23	0.735294117647	0.826470588235		wold	1	
+1373	167	MAIL	the post/mail	Noun	23	0.901639344262	0.773770491803		wold	1	
+1374	596	POSTAGE STAMP	the postage stamp	Noun	23	0.880281690141	0.776056338028		wold	1	
+1375	1612	LETTER	the letter	Noun	23	0.911103874959	0.79218495604		wold,northeuralex	2	
+1376	1284	BANK	the bank	Noun	23	0.9	0.748571428571		wold	1	
+1377	1051	CAN	the tin/can	Noun	23	0.943396226415	0.789937106918		wold	1	
+1378	1802	SCREW	the screw	Noun	23	0.912162162162	0.77972972973		wold	1	
+1379	836	SCREWDRIVER	the screwdriver	Noun	23	0.736585365854	0.756585365854		wold	1	
+1380	1321	BOTTLE	the bottle	Noun	23	0.988636363636	0.810227272727		wold	1	
+1381	874	CANDY	the candy/sweets	Noun	23	0.839805825243	0.826213592233		wold	1	
+1382	1898	SPECTACLES	the spectacles/glasses	Noun	23	0.784782608696	0.792608695652		wold	1	
+1383	654	PLASTIC	the plastic	Noun	23	0.948529411765	0.714705882353		wold	1	
+1384	1804	BOMB	the bomb	Noun	23	0.9375	0.721875		wold	1	
+1385	1677	WORKSHOP	the workshop	Noun	23	0.770491803279	0.788524590164		wold	1	
+1386	969	CIGARETTE	the cigarette	Noun	23	0.903925619835	0.759504132231		wold	1	
+1387	1967	CALENDAR	the calendar	Noun	23	0.916666666667	0.819444444444		wold	1	
+1388	216	MOVIE	the film/movie	Noun	23	0.912162162162	0.714864864865		wold	1	
+1389	642	MUSIC	the music	Noun	23	0.912946428571	0.827232142857		wold	1	
+1390	1096	SONG	the song	Noun	23	0.875939849624	0.854511278195		wold,northeuralex	2	
+1391	1298	NEWSPAPER	the newspaper	Noun	23	0.846569250318	0.772808132147		wold,northeuralex	2	
+1392	591	ADDRESS	the address	Noun	23	0.863636363636	0.739772727273		wold	1	
+1393	1356	NUMBER	the number	Noun	23	0.939759036145	0.756626506024		wold	1	
+1394	900	TRAIN	the train	Noun	23	0.792207792208	0.757142857143		wold	1	
+1395	397	BIRTH CERTIFICATE	the birth certificate	Noun	23	0.641213389121	0.779916317992		wold	1	
+1396	966	BRAKE	to brake	Verb	23	0.78125	0.775		wold	1	
+1397	650	PETROLEUM	the petroleum	Noun	23	0.861842105263	0.755263157895		wold	1	
+1398	110	MOTOR	the motor	Noun	23	0.958139534884	0.739069767442		wold	1	
+1399	144	MACHINE	the machine	Noun	23	0.900402414487	0.783903420523		wold	1	
+1400	747	BICYCLE	the bicycle	Noun	23	0.847826086957	0.744565217391		wold	1	
+1401	1362	STREET	the street	Noun	23	0.917061611374	0.803791469194		wold	1	
+1402	37	LIBERATE	to liberate	Verb	19	0.680296377607	0.778540065862		wold	1	
+1403	1611	INVITE	to invite	Verb	19	0.823886639676	0.799190283401		wold,northeuralex	2	
+1404	1790	LICENSE PLATE	the license plate	Noun	23	0.655172413793	0.71724137931		wold	1	
+1405	1497	POSTCARD	the postcard	Noun	23	0.699441820524	0.7506225848		wold	1	
+1406	1579	BE	to be	Verb	24	0.9475	0.86225		wold	1	
+1407	1990	BECOME	to become	Verb	24	0.842298288509	0.833251833741		wold,northeuralex	2	
+1408	1478	WITHOUT	without	Function word	24	0.870503597122	0.831654676259		wold	1	
+1409	97	THROUGH	through	Function word	24	0.92443324937	0.856423173804		wold,northeuralex	2	
+1410	200	SAME	same	Function word	24	0.735632183908	0.749425287356		wold	1	
+1411	1836	VAGINA	the vagina	Noun	4	0.908620689655	0.760689655172		wold	1	
+1412	1373	TEA	the tea	Noun	23	0.957831325301	0.810843373494		wold,northeuralex	2	
+1413	1299	COFFEE	the coffee	Noun	23	0.96130952381	0.77380952381		wold	1	
+1414	1354	NEXT	next	Function word	24	0.713333333333	0.805333333333		wold	1	
+1415	912	COYOTE	the coyote	Noun	3	0.896551724138	0.868965517241		wold	1	
+1416	1190	HARE	the hare	Noun	3	0.845833333333	0.803333333333		wold,northeuralex	2	
+1417	1893	QUAIL	the quail	Noun	3	0.9296875	0.83125		wold	1	
+1418	828	RACCOON	the raccoon	Noun	3	0.821428571429	0.785714285714		wold	1	
+1419	1628	SQUIRREL	the squirrel	Noun	3	0.881578947368	0.810526315789		wold,northeuralex	2	
+1420	1876	REINDEER	the reindeer/caribou	Noun	3	0.9	0.846666666667		wold	1	
+1421	1772	ELK	the elk/moose	Noun	3	0.847222222222	0.827777777778		wold,northeuralex	2	
+1422	1194	BEAVER	the beaver	Noun	3	0.90625	0.80625		wold	1	
+1423	16	SLED	the sledge/sled	Noun	10	0.909090909091	0.836363636364		wold,northeuralex	2	
+1424	340	LASSO	the lasso	Noun	8	0.840909090909	0.829545454545		wold	1	
+1425	116	LARCH	the larch	Noun	8	0.818181818182	0.872727272727		wold	1	
+1426	286	NEEDLE TREE	the needle(2)	Noun	8	0.857414448669	0.800380228137		wold	1	
+1427	261	ARCTIC LIGHTS	the arctic lights	Noun	1	0.5625	0.71875		wold	1	
+1428	1137	TENDON	the sinew or tendon	Noun	4	0.962589073634	0.852494061758		wold,northeuralex	2	
+1429	247	TAN	to tan	Verb	7	0.730538922156	0.840119760479		wold	1	
+1430	233	SNOWSHOE	the snowshoe	Noun	6	0.696428571429	0.764285714286		wold	1	
+1431	393	CIRCUMCISION	the circumcision	Noun	22	0.783018867925	0.81320754717		wold	1	
+1432	1946	INITIATION CEREMONY	the initiation ceremony	Noun	22	0.684210526316	0.707894736842		wold	1	
+1433	287	CONE	the cone	Noun	8	0.805555555556	0.781481481481		wold	1	
+1434	311	BODY LOUSE	the body louse	Noun	3	0.950657894737	0.859868421053		wold	1	
+1435	1837	VULVA	the vulva	Noun	4	0.87875	0.8345		wold	1	
+1436	312	TAPIR	the tapir	Noun	3	0.900943396226	0.790566037736		wold	1	
+1437	295	WHETSTONE	the whetstone	Noun	9	0.68115942029	0.811594202899		wold	1	
+1438	294	TUMPLINE	the tumpline	Noun	9	0.875	0.7875		wold	1	
+1439	1105	CAMP	the camp	Noun	7	0.821428571429	0.783333333333		wold	1	
+1440	339	DIGGING STICK	the digging stick (=yamstick)	Noun	8	0.762790697674	0.766976744186		wold	1	
+1441	840	CORMORANT	the cormorant	Noun	3	0.921052631579	0.805263157895		wold	1	
+1442	2686	CRUSTACEANS (PRAWNS OR SHRIMP)	the prawns or shrimp	Noun	3	0.969696969697	0.830303030303		wold	1	
+1443	883	TERMITE	the termites	Noun	3	0.913793103448	0.83275862069		wold	1	
+1444	1527	TICK	the tick	Noun	3	0.931818181818	0.831818181818		wold	1	
+1445	135	BOOMERANG	the boomerang	Noun	9	0.95	0.773333333333		wold	1	
+1446	164	KANGAROO	the kangaroo	Noun	3	0.973684210526	0.721052631579		wold	1	
+1447	181	ANTEATER	the anteater	Noun	3	0.760416666667	0.75		wold	1	
+1448	308	TOUCAN	the toucan	Noun	3	0.866666666667	0.753333333333		wold	1	
+1449	1250	JAGUAR	the jaguar	Noun	3	0.896226415094	0.833962264151		wold	1	
+1450	407	MANIOC BREAD	the manioc bread	Noun	5	0.8	0.7		wold	1	
+1451	2019	HAMMOCK	the hammock	Noun	7	0.817307692308	0.792307692308		wold	1	
+1452	931	MILLET	the millet or sorghum	Noun	8	0.949367088608	0.86835443038		wold	1	
+1453	1555	CHAMELEON	the chameleon	Noun	3	0.9	0.750909090909		wold	1	
+1454	1911	DRAW (WATER)	to draw water	Verb	9	0.753521126761	0.79014084507		wold	1	
+1455	361	PEG	the peg	Noun	9	0.95652173913	0.849275362319		wold	1	
+1456	142	RETURN HOME	to go or return home	Verb	10	0.700721153846	0.767788461538		wold	1	
+1457	934	BUFFALO	the buffalo	Noun	3	0.902173913043	0.747282608696		wold	1	
+1458	260	SAVANNA	the savanna	Noun	1	0.946428571429	0.755714285714		wold	1	
+1459	1193	STEAM	the steam	Noun	1	0.879492600423	0.831501057082		wold	1	
+1460	405	OLDER SIBLING	the older sibling	Noun	2	0.767836782223	0.853497003954		wold	1	
+1461	427	YOUNGER SIBLING	the younger sibling	Noun	2	0.806294722719	0.864406305903		wold	1	
+1462	305	GRANDPARENTS	the grandparents	Noun	2	0.65306122449	0.828571428571		wold	1	
+1463	1617	GRANDCHILD	the grandchild	Noun	2	0.856418918919	0.831756756757		wold	1	
+1464	173	SIBLING'S CHILD	the sibling’s child	Noun	2	0.812554489974	0.837401918047		wold	1	
+1465	306	PARENTS-IN-LAW	the parents-in-law	Noun	2	0.722576530612	0.890816326531		wold	1	
+1466	1060	CHILD-IN-LAW	the child-in-law	Noun	2	0.800724637681	0.921497584541		wold	1	
+1467	1832	SIBLING-IN-LAW	the sibling-in-law	Noun	2	0.851668726823	0.906056860321		wold	1	
+1468	1834	SHE	she	Function word	2	0.927533664068	0.894401133948		wold	1	
+1469	169	IT	it	Function word	2	0.91049382716	0.879910213244		wold	1	
+1470	210	LIFE	the life	Noun	4	0.801886792453	0.819245283019		wold,northeuralex	2	
+1471	1770	CARCASS	the carcass	Noun	4	0.823218997361	0.749340369393		wold	1	
+1472	1986	DISEASE	the disease	Noun	4	0.779411764706	0.803781512605		wold,northeuralex	2	
+1473	336	PADLOCK	the padlock	Noun	7	0.792134831461	0.778277153558		wold	1	
+1474	140	PADDY FIELD	the paddy	Noun	8	0.741935483871	0.867741935484		wold	1	
+1475	1116	DAMAGE	to damage	Verb	11	0.778125	0.8		wold,northeuralex	2	
+1476	1741	ABOVE	above	Function word	12	0.822269303202	0.813653483992		wold	1	
+1477	594	PIECE	the piece	Noun	13	0.808571428571	0.864		wold,northeuralex	2	
+1478	1964	ALONE	alone	Adjective	13	0.771084337349	0.802409638554		wold,northeuralex	2	
+1479	1557	BEGINNING	the beginning	Noun	14	0.724264705882	0.781985294118		wold	1	
+1480	1349	CHURCH	the church	Noun	22	0.832589285714	0.769196428571		wold,northeuralex	2	
+1481	1603	MOSQUE	the mosque	Noun	22	0.876712328767	0.898630136986		wold	1	
+1482	687	NOTHING	nothing	Function word	24	0.709219858156	0.848226950355		wold	1	
+1483	1625	DEAD	dead	Adjective	4	0.782805429864	0.866968325792		wold	1	
+1484	734	MAKE	to make	Verb	9	0.895896197948	0.869643934822		wold,northeuralex	2	
+1485	3447	BEGIN OR START	to begin, beginning	Verb	14			começar	ids	1	
+1486	3198	NOTHING OR ZERO	zero, nothing	Function word	24			zero, nada	ids	1	
+1487	3208	CENTER OR MIDDLE	middle, center	Noun	12			meio, centro	ids	1	
+1488	2094	DOWN OR BELOW	down, below	Function word	12			debaixo, abaixo	ids	1	
+1489	3213	HIRE OR RENT	to hire	Verb	19			alugar	ids	1	
+1490	3195	DAMAGE OR INJURE	to harm, injure, damage	Verb	11			danificar, ferir, estragar	ids	1	
+1491	1445	TURN (SOMETHING)	to turn over	Verb	10			virar	ids,northeuralex	2	
+1492	3192	BRONZE OR COPPER	copper, bronze	Noun	1			cobre, bronze	ids	1	
+1493	588	BROKEN	broken	Adjective	9			partido, quebrado	ids	1	
+1494	1795	BANANA TREE	banana tree	Noun	8			bananeira	ids	1	
+1495	3769	GRAPEVINE	vine	Noun	8			vinha	ids	1	
+1496	611	HARVEST	crop, harvest	Noun	8			colheita	ids	1	
+1497	3462	FLAX OR LINEN	linen, flax	Noun	8			linho	ids	1	
+1498	3653	COOKING POT	pot, cooking vessel	Noun	5			panela	ids	1	
+1499	848	THIRST	thirst	Noun	5			sede	ids	1	
+1500	1864	HUNGER	hunger	Noun	5			estar com fome	ids,northeuralex	2	
+1501	3188	MIGHTY OR POWERFUL OR STRONG	strong, mighty, powerful	Adjective	16			forte, poderoso	ids	1	
+1502	3187	DROWNED	drowned	Adjective	4			afogado	ids	1	
+1503	2101	BE DEAD OR DIE	to die, dead	Verb	14			morrer, morto	ids	1	
+1504	3184	BE ALIVE OR LIFE	live, living, life	Function word	4			viver, vivo/a, vida	ids	1	
+1505	3183	BREATH OR BREATHE	breathe, breath	Function word	4			respirar, respiração	ids	1	
+1506	3182	MARRIAGE OR WEDDING	marriage, wedding	Noun	2			matrimônio, casamento	ids	1	
+1507	3820	CALM (OF SEA)	calm (of sea)	Adjective	1			calma, calmaria	ids	1	
+1508	3458	SILENCE	quiet, silence	Noun	15			quieto	ids,northeuralex	2	
+1509	1092	HOPE	to hope	Verb	16			esperança	ids	1	
+1510	643	NEED (NOUN)	need, necessity	Noun	17			precisar, necessidade	ids	1	
+1511	3237	ALLOW OR PERMIT	to let, permit	Verb	19			deixar, permitir	ids	1	
+1512	3201	HINDER OR PREVENT	to hinder, prevent	Verb	19			impedir, estorvar	ids	1	
+1513	3203	CANNON OR GUN	gun, cannon	Noun	20			arma, pistola, canhão	ids	1	
+1514	1944	GOD	God	Noun	22			Deus	ids	1	
+1515	1165	MOUSTACHE	moustache	Noun	4				northeuralex	1	
+1516	1896	FINGERNAIL OR TOENAIL	nail	Noun	4				northeuralex	1	
+1517	1924	VEIN	vein	Noun	4				northeuralex	1	
+1518	870	BREATH	breath	Noun	4				northeuralex	1	
+1519	2190	TASTE	flavour	Noun	5				northeuralex	1	
+1520	3704	ODOR (SMELL)	odour	Noun	15				northeuralex	1	
+1521	2972	SLEEP (STATE)	sleep	Noun	9				northeuralex	1	
+1522	2374	DREAM	dream	Noun	4				northeuralex	1	
+1523	2159	GROUND	ground	Noun	1				northeuralex	1	
+1524	518	SPARK	spark	Noun	1				northeuralex	1	
+1525	2034	FROST	frost	Noun	15				northeuralex	1	
+1526	2932	COLD (CHILL)	chill	Noun	15				northeuralex	1	
+1527	612	HEAT	heat	Noun	1				northeuralex	1	
+1528	2942	HOARFROST	hoarfrost	Noun	15				northeuralex	1	
+1529	2935	CURRENT (STREAM)	current	Noun	1				northeuralex	1	
+1530	3748	DROP (OF A LIQUID)	drop	Noun	1				northeuralex	1	
+1531	25	DIRT	dirt	Noun	15				northeuralex	1	
+1532	2962	MOORLAND	moor	Noun	1				northeuralex	1	
+1533	2819	GRASSLAND	meadow	Noun	8				northeuralex	1	
+1534	614	HILL	hill	Noun	1				northeuralex	1	
+1535	2936	ELEVATION	elevation	Noun	1				northeuralex	1	
+1536	1614	SUMMIT	summit	Noun	1				northeuralex	1	
+1537	3076	SLOPE	slope	Noun	1				northeuralex	1	
+1538	849	SPRING (OF WATER)	source	Noun	1				northeuralex	1	
+1539	3821	BROOK	brook	Noun	1				northeuralex	1	
+1540	3464	SHORE OF LAKE	shore	Noun	1				northeuralex	1	
+1541	1525	COAST	coast	Noun	1				northeuralex	1	
+1542	1531	BRANCH	limb	Noun	8				northeuralex	1	
+1543	3222	TWIG	twig	Noun	8				northeuralex	1	
+1544	818	WILLOW	willow	Noun	8				northeuralex	1	
+1545	2965	PAW	paw	Noun	3				northeuralex	1	
+1546	2949	LAIR	lair	Noun	3				northeuralex	1	
+1547	2939	FLOCK (OF ANIMALS)	flock	Noun	3				northeuralex	1	
+1548	1491	MOUSE	mouse	Noun	3				northeuralex	1	
+1549	2974	SWARM (OF BIRDS)	swarm	Noun	3				northeuralex	1	
+1550	1830	CRANE	crane	Noun	3				northeuralex	1	
+1551	2934	CUCKOO	cuckoo	Noun	3				northeuralex	1	
+1552	2837	SWAN	swan	Noun	3				northeuralex	1	
+1553	2966	PERCH (FISH)	perch	Noun	3				northeuralex	1	
+1554	2967	PIKE (FISH)	pike	Noun	3				northeuralex	1	
+1555	1320	APPLE	apple	Noun	8				northeuralex	1	
+1556	2366	ONION	onion	Noun	8				northeuralex	1	
+1557	2373	SKIN (OF FRUIT)	peel, husk	Noun	8				northeuralex	1	
+1558	2539	PIT (POTHOLE)	pit	Noun	1				northeuralex	1	
+1559	2604	NOOSE	noose	Noun	9				northeuralex	1	
+1560	4124	FILTH	filth	Noun	1				northeuralex	1	
+1561	2658	COAL	coal	Noun	1				northeuralex	1	
+1562	2524	JOY	joy	Noun	16				northeuralex	1	
+1563	2958	LAUGHTER	laughter	Noun	16				northeuralex	1	
+1564	2941	HAPPINESS	happiness	Noun	16				northeuralex	1	
+1565	2960	LONGING (WISH)	desire	Noun	16				northeuralex	1	
+1566	53	SPIRIT	spirit	Noun	22				northeuralex	1	
+1567	2975	THOUGHT	thought	Noun	17				northeuralex	1	
+1568	1018	MEMORY	memory	Noun	17				northeuralex	1	
+1569	2950	MEANING	meaning	Noun	18				northeuralex	1	
+1570	2968	REASON	reason	Noun	16				northeuralex	1	
+1571	1638	TRUTH	truth	Noun	16				northeuralex	1	
+1572	2933	CONVERSATION	talk	Noun	18				northeuralex	1	
+1573	2937	FAIRY TALE	fairy tale	Noun	23				northeuralex	1	
+1574	2060	STORY	story	Noun	18				northeuralex	1	
+1575	2961	MESSAGE	message	Noun	18				northeuralex	1	
+1576	2964	NEWS	news	Noun	9				northeuralex	1	
+1577	2970	RIDDLE	puzzle	Noun	16				northeuralex	1	
+1578	1720	SIGN	sign	Noun	18				northeuralex	1	
+1579	2944	CALL (APPEAL)	call	Noun	18				northeuralex	1	
+1580	1182	NOISE	noise	Noun	15				northeuralex	1	
+1581	2995	TONE (MUSIC)	tone	Noun	15				northeuralex	1	
+1582	2982	GIFT	gift	Noun	9				northeuralex	1	
+1583	2467	GAME	game	Noun	19				northeuralex	1	
+1584	2983	COMPANIONSHIP	company	Noun	23				northeuralex	1	
+1585	3467	HELP (ASSISTANCE)	help	Noun	19				northeuralex	1	
+1586	3978	COMPANION	companion	Noun	19				northeuralex	1	
+1587	2214	AFFAIR	matter	Noun	11				northeuralex	1	
+1588	2945	COUNT (QUANTITY)	count	Noun	13				northeuralex	1	
+1589	844	KIND (THING)	sort	Noun	17				northeuralex	1	
+1590	2993	STROKE (OF PEN)	stroke	Noun	23				northeuralex	1	
+1591	2948	GAP (DISTANCE)	gap	Noun	12				northeuralex	1	
+1592	2978	DISTANCE	distance	Noun	12				northeuralex	1	
+1593	2980	AREA	area	Noun	1				northeuralex	1	
+1594	3006	SPACE (AVAILABLE)	space	Noun	12				northeuralex	1	
+1595	2981	ITEM	item	Noun	1				northeuralex	1	
+1596	2989	FRINGE	fringe	Noun	12				northeuralex	1	
+1597	2992	TIP (OF OBJECT)	tip	Noun	12				northeuralex	1	
+1598	2988	PATTERN	pattern	Noun	1				northeuralex	1	
+1599	2845	SIZE (OF OBJECT)	size	Noun	12				northeuralex	1	
+1600	2537	LENGTH	length	Noun	12				northeuralex	1	
+1601	2985	HEIGHT	height	Noun	12				northeuralex	1	
+1602	2466	WEIGHT	weight	Noun	15				northeuralex	1	
+1603	2987	AMOUNT	amount	Noun	13				northeuralex	1	
+1604	2984	HEAP	heap	Noun	9				northeuralex	1	
+1605	2991	SKI	ski	Noun	23				northeuralex	1	
+1606	2986	CAMPFIRE	campfire	Noun	9				northeuralex	1	
+1607	1679	LOAD	load	Noun	9				northeuralex	1	
+1608	2979	WALK (MANNER)	walk	Noun	9				northeuralex	1	
+1609	2952	SLAB	slab	Noun	23				northeuralex	1	
+1610	2994	SUPPORT (OF OBJECT)	support, rest	Noun	12				northeuralex	1	
+1611	2956	TUBE	pipe	Noun	23				northeuralex	1	
+1612	2406	HOME	home	Noun	7				northeuralex	1	
+1613	2946	CRADLE	cradle	Noun	23				northeuralex	1	
+1614	1465	BOX	box	Noun	23				northeuralex	1	
+1615	2940	GATE	gate	Noun	7				northeuralex	1	
+1616	2963	NET	net	Noun	9				northeuralex	1	
+1617	1254	HANDLE	handle	Noun	9				northeuralex	1	
+1618	3303	PICTURE (PAINTING)	picture	Noun	9				northeuralex	1	
+1619	1659	DOLL	doll	Noun	23				northeuralex	1	
+1620	2951	POUCH	pouch	Noun	9				northeuralex	1	
+1621	2943	BUNDLE	bundle	Noun	9				northeuralex	1	
+1622	2468	BAG	bag	Noun	9				northeuralex	1	
+1623	2052	BUCKET	bucket	Noun	9				northeuralex	1	
+1624	2319	LID (COVER, CAP)	cover, lid	Noun	9				northeuralex	1	
+1625	2990	SACK	sack	Noun	9				northeuralex	1	
+1626	3651	MUSH (FOOD)	mush	Noun	5				northeuralex	1	
+1627	2954	SLICE	slice	Noun	23				northeuralex	1	
+1628	2953	SLEEVE	sleeve	Noun	6				northeuralex	1	
+1629	1288	CAP	cap	Noun	6				northeuralex	1	
+1630	2969	RIBBON	ribbon	Noun	9				northeuralex	1	
+1631	2973	STRAP	strap	Noun	9				northeuralex	1	
+1632	362	STRING	string	Noun	9				northeuralex	1	
+1633	2959	LEASH	leash	Noun	9				northeuralex	1	
+1634	202	STRENGTH	strength	Noun	4				northeuralex	1	
+1635	954	WELL	well	Noun	1				northeuralex	1	
+1636	2457	PATH OR ROAD	way	Noun	10				northeuralex	1	
+1637	1024	CHARACTER	character	Noun	18				northeuralex	1	
+1638	910	DEATH	death	Noun	4				northeuralex	1	
+1639	2971	SIN	sin	Noun	22				northeuralex	1	
+1640	2977	WORKER	worker	Noun	23				northeuralex	1	
+1641	2930	BOSS	boss	Noun	23				northeuralex	1	
+1642	2931	BUSINESS	business	Noun	23				northeuralex	1	
+1643	746	SHOP	shop	Noun	11				northeuralex	1	
+1644	2957	WARE	ware	Noun	23				northeuralex	1	
+1645	2929	BENEFIT	benefit	Noun	23				northeuralex	1	
+1646	2996	WEALTH	wealth	Noun	23				northeuralex	1	
+1647	2955	STATE (POLITICS)	state	Noun	23				northeuralex	1	
+1648	2526	POWER	power	Noun	19				northeuralex	1	
+1649	2546	BORDER	border	Noun	19				northeuralex	1	
+1650	935	WAR	war	Noun	20				northeuralex	1	
+1651	2976	VIOLENCE	violence	Noun	16				northeuralex	1	
+1652	2826	LIE (FALSEHOOD)	lie	Noun	16				northeuralex	1	
+1653	2947	DAMAGE (INJURY)	damage	Noun	23				northeuralex	1	
+1654	2036	JANUARY	January	Noun	14				northeuralex	1	
+1655	2037	FEBRUARY	February	Noun	14				northeuralex	1	
+1656	2846	MARCH	March	Noun	14				northeuralex	1	
+1657	2847	APRIL	April	Noun	14				northeuralex	1	
+1658	2848	MAY (MONTH)	May	Noun	14				northeuralex	1	
+1659	2849	JUNE	June	Noun	14				northeuralex	1	
+1660	2850	JULY	July	Noun	14				northeuralex	1	
+1661	2851	AUGUST	August	Noun	14				northeuralex	1	
+1662	2852	SEPTEMBER	September	Noun	14				northeuralex	1	
+1663	2853	OCTOBER	October	Noun	14				northeuralex	1	
+1664	2854	NOVEMBER	November	Noun	14				northeuralex	1	
+1665	2855	DECEMBER	December	Noun	14				northeuralex	1	
+1666	2239	DENSE	dense	Adjective	12				northeuralex	1	
+1667	2157	FINE OR THIN	delicate, fine	Adjective	12				northeuralex	1	
+1668	3003	SOLID	firm, solid	Adjective	15				northeuralex	1	
+1669	243	FRESH	fresh	Adjective	1				northeuralex	1	
+1670	2998	DAMP	damp	Adjective	15				northeuralex	1	
+1671	3235	OPEN (STATE)	open	Adjective	9				northeuralex	1	
+1672	589	CLOSED	closed	Adjective	12				northeuralex	1	
+1673	1813	TASTY	delicious	Adjective	5				northeuralex	1	
+1674	153	GREY	grey	Adjective	15				northeuralex	1	
+1675	2997	COLORFUL	colourful	Adjective	15				northeuralex	1	
+1676	3002	PRECIOUS	precious	Adjective	16				northeuralex	1	
+1677	3001	POWERFUL	powerful	Adjective	9				northeuralex	1	
+1678	1279	FAT (OBESE)	fat	Adjective	12				northeuralex	1	
+1679	1400	THIN (SLIM)	slim	Adjective	12				northeuralex	1	
+1680	2410	GOOD-LOOKING	pretty	Adjective	15				northeuralex	1	
+1681	45	EVIL	evil	Adjective	16				northeuralex	1	
+1682	2077	DILIGENT	diligent	Adjective	16				northeuralex	1	
+1683	1824	DEXTEROUS	skilful	Adjective	9				northeuralex	1	
+1684	2470	DEAR	dear	Adjective	16				northeuralex	1	
+1685	1976	MERRY	merry	Adjective	16				northeuralex	1	
+1686	1954	GENTLE	gentle	Adjective	16				northeuralex	1	
+1687	699	SAD	sad	Adjective	16				northeuralex	1	
+1688	419	SEVERE	nasty, dire	Adjective	24				northeuralex	1	
+1689	3004	FORMER	former	Adjective	14				northeuralex	1	
+1690	2112	OLD (AGED)	aged, old	Adjective	14				northeuralex	1	
+1691	3005	FAMILIAR	familiar	Adjective	16				northeuralex	1	
+1692	109	FOREIGN	foreign	Adjective	17				northeuralex	1	
+1693	2504	DIFFERENT	different	Adjective	19				northeuralex	1	
+1694	2482	TOGETHER	together	Adverb	12				northeuralex	1	
+1695	2920	SUDDENLY	suddenly	Adverb	14				northeuralex	1	
+1696	2916	INSTANTLY (IMMEDIATELY)	instantly	Adverb	14				northeuralex	1	
+1697	2921	THEN	then	Adverb	14				northeuralex	1	
+1698	2914	ONCE (IN THE PAST)	once	Adverb	14				northeuralex	1	
+1699	2922	AT THAT TIME	at that time	Adverb	14				northeuralex	1	
+1700	2093	AFTERWARDS	afterwards	Adverb	14				northeuralex	1	
+1701	2915	AT FIRST	at first	Adverb	14				northeuralex	1	
+1702	374	ONE TIME	once	Adverb	14				northeuralex	1	
+1703	2925	HITHER (HERE TO)	hither	Adverb	12				northeuralex	1	
+1704	2927	FROM HERE	hence	Adverb	12				northeuralex	1	
+1705	2923	THITHER (THERE TO)	thither	Adverb	12				northeuralex	1	
+1706	2912	FORWARD	forward	Adverb	12				northeuralex	1	
+1707	2911	BACKWARD	backward	Adverb	12				northeuralex	1	
+1708	2910	BACK (DIRECTION)	back	Adverb	12				northeuralex	1	
+1709	2999	EVERYWHERE	everywhere	Adverb	12				northeuralex	1	
+1710	2924	A LITTLE	a little	Adverb	9				northeuralex	1	
+1711	2926	HARDLY	hardly	Adverb	9				northeuralex	1	
+1712	1311	VERY	very	Adverb	24				northeuralex	1	
+1713	2336	OF THIS KIND (SUCH)	so	Adverb	24				northeuralex	1	
+1714	2919	STILL (CONTINUING)	still	Adverb	14				northeuralex	1	
+1715	2576	ALREADY	already	Adverb	14				northeuralex	1	
+1716	1765	IN VAIN	in vain	Adverb	24				northeuralex	1	
+1717	2917	NEXT TO	next to	Function word	12				northeuralex	1	
+1718	689	BETWEEN	between	Function word	12				northeuralex	1	
+1719	2918	BECAUSE OF	because of	Function word	9				northeuralex	1	
+1720	2928	WHITHER (WHERE TO)	where to	Function word	12				northeuralex	1	
+1721	822	HOW MANY	how much	Function word	17				northeuralex	1	
+1722	1715	THIRTY	thirty	Function word	13				northeuralex	1	
+1723	1716	FORTY	forty	Function word	13				northeuralex	1	
+1724	1717	FIFTY	fifty	Function word	13				northeuralex	1	
+1725	1718	SIXTY	sixty	Function word	13				northeuralex	1	
+1726	1721	SEVENTY	seventy	Function word	13				northeuralex	1	
+1727	1722	EIGHTY	eighty	Function word	13				northeuralex	1	
+1728	1724	NINETY	ninety	Function word	13				northeuralex	1	
+1729	2884	HANG	to hang	Verb	9				northeuralex	1	
+1730	248	HAPPEN	to happen	Verb	9				northeuralex	1	
+1731	2857	CHANGE (BECOME DIFFERENT)	to change	Verb	12				northeuralex	1	
+1732	160	SET (HEAVENLY BODIES)	to set	Verb	1				northeuralex	1	
+1733	2378	THUNDER (VERB)	to thunder	Verb	1				northeuralex	1	
+1734	2858	STREAM (FLOW CONTINUOUSLY)	to stream	Verb	12				northeuralex	1	
+1735	573	SWAY	to sway	Verb	10				northeuralex	1	
+1736	2871	SWING (MOVEMENT)	to swing	Verb	9				northeuralex	1	
+1737	2859	SMOKE (EMIT SMOKE)	to smoke	Verb	9				northeuralex	1	
+1738	2887	THAW (DEW)	to thaw	Verb	9				northeuralex	1	
+1739	2334	MELT	to melt	Verb	1				northeuralex	1	
+1740	1786	DRY UP	to dry	Verb	9				northeuralex	1	
+1741	569	SPOIL (BECOME SPOILED)	to rot	Verb	5				northeuralex	1	
+1742	2907	ROT	to decay	Verb	9				northeuralex	1	
+1743	460	BREAK (OF ROPE)	to snap	Verb	9				northeuralex	1	
+1744	1951	PASS	to pass	Verb	14				northeuralex	1	
+1745	1076	EMERGE (APPEAR)	to appear	Verb	9				northeuralex	1	
+1746	2864	DECREASE	to decrease	Verb	9				northeuralex	1	
+1747	1041	INCREASE	to increase	Verb	9				northeuralex	1	
+1748	2889	TWINKLE	to sparkle, twinkle	Verb	9				northeuralex	1	
+1749	2897	CHIME (ACTION)	to chime	Verb	23				northeuralex	1	
+1750	2875	RING (MAKE SOUND)	to ring	Verb	9				northeuralex	1	
+1751	2888	TINKLE	to tinkle	Verb	9				northeuralex	1	
+1752	2876	ROAR (OF SEA)	to roar	Verb	9				northeuralex	1	
+1753	2877	RUSTLE (OF LEAVES)	to rustle	Verb	9				northeuralex	1	
+1754	2879	SOUND (OF INSTRUMENT OR VOICE)	to sound	Verb	9				northeuralex	1	
+1755	1206	BARKING	to bark	Verb	3				northeuralex	1	
+1756	176	BLOW (WITH MOUTH)	to blow	Verb	9				northeuralex	1	
+1757	1996	GET TIRED	to get tired	Verb	4				northeuralex	1	
+1758	1106	FALL ASLEEP	to fall asleep	Verb	4				northeuralex	1	
+1759	2327	BECOME SICK	to fall ill	Verb	9				northeuralex	1	
+1760	1815	ACHE	to ache	Verb	4				northeuralex	1	
+1761	1978	RECOVER	to recover	Verb	4				northeuralex	1	
+1762	2865	DIE (FROM ACCIDENT)	to perish	Verb	9				northeuralex	1	
+1763	2874	MOVE (ONESELF)	to move	Verb	9				northeuralex	1	
+1764	2861	BUDGE (ONESELF)	to budge	Verb	10				northeuralex	1	
+1765	570	STAND UP	to stand up	Verb	10				northeuralex	1	
+1766	1649	SIT DOWN	to sit down	Verb	10				northeuralex	1	
+1767	2894	TUMBLE (FALL DOWN)	to tumble	Verb	9				northeuralex	1	
+1768	2065	STEP (VERB)	to step	Verb	9				northeuralex	1	
+1769	2890	WALK (TAKE A WALK)	to take a walk	Verb	9				northeuralex	1	
+1770	2860	BOLT (MOVE IN HASTE)	to rush	Verb	10				northeuralex	1	
+1771	2863	DASH (OF VEHICLE)	to dash	Verb	10				northeuralex	1	
+1772	3215	CREEP	to creep	Verb	10				northeuralex	1	
+1773	2880	HALT (STOP)	to stop	Verb	9				northeuralex	1	
+1774	1590	WAIT (FOR)	to wait	Verb	10				northeuralex	1	
+1775	2909	PREPARE	to prepare	Verb	9				northeuralex	1	
+1776	1117	LIKE	to like	Verb	16				northeuralex	1	
+1777	2873	MOVE (AFFECT EMOTIONALLY)	to move	Verb	9				northeuralex	1	
+1778	2223	BE ANGRY	to be annoyed	Verb	16				northeuralex	1	
+1779	1615	ESCAPE	to escape	Verb	9				northeuralex	1	
+1780	1650	WATCH	to watch	Verb	9				northeuralex	1	
+1781	2559	FEEL (TACTUALLY)	to feel	Verb	9				northeuralex	1	
+1782	1868	VISIBLE	to show	Verb	15				northeuralex	1	
+1783	972	BE ABLE	to can	Verb	9				northeuralex	1	
+1784	1112	SUCCEED	to succeed	Verb	17				northeuralex	1	
+1785	1723	RESULT IN	to turn out	Verb	17				northeuralex	1	
+1786	2071	LAY (VERB)	to lay	Verb	9				northeuralex	1	
+1787	2862	CONNECT	to connect	Verb	10				northeuralex	1	
+1788	2886	PRODUCE	to produce	Verb	23				northeuralex	1	
+1789	2243	REPAIR	to repair, mend	Verb	9				northeuralex	1	
+1790	2872	IMPROVE (SOMETHING)	to improve	Verb	9				northeuralex	1	
+1791	2224	BEND (SOMETHING)	to bend	Verb	9				northeuralex	1	
+1792	2396	KNOCK	to knock	Verb	10				northeuralex	1	
+1793	3309	STRIKE (SOMETHING)	to hit	Verb	9				northeuralex	1	
+1794	251	SHARPEN (SOMETHING)	to sharpen	Verb	9				northeuralex	1	
+1795	2899	JOG (SOMETHING)	to jog	Verb	9				northeuralex	1	
+1796	2901	SWING (SOMETHING)	to swing	Verb	9				northeuralex	1	
+1797	2006	FILL	to fill	Verb	13				northeuralex	1	
+1798	2030	DRAG	to drag	Verb	9				northeuralex	1	
+1799	2485	HIDE (ONESELF)	to hide	Verb	12				northeuralex	1	
+1800	2882	ADD	to add	Verb	9				northeuralex	1	
+1801	554	HINDER	to hinder	Verb	1				northeuralex	1	
+1802	92	SPOIL (SOMEBODY OR SOMETHING)	to spoil	Verb	19				northeuralex	1	
+1803	2558	BREAK (CLEAVE)	to break	Verb	9				northeuralex	1	
+1804	196	DONATE	to give	Verb	19				northeuralex	1	
+1805	3455	COMMEND	to praise	Verb	16				northeuralex	1	
+1806	3174	WAKE UP (SOMEONE)	to wake	Verb	4				northeuralex	1	
+1807	2134	RAISE (BRING UP)	to bring up	Verb	9				northeuralex	1	
+1808	2881	URGE (SOMEONE)	to urge	Verb	16				northeuralex	1	
+1809	2896	CAUSE TO (LET)	to let	Verb	9				northeuralex	1	
+1810	1377	VISIT	to visit	Verb	19				northeuralex	1	
+1811	3638	ASSEMBLE (GET TOGETHER)	to assemble	Verb	19				northeuralex	1	
+1812	2900	PROTECT	to protect	Verb	9				northeuralex	1	
+1813	2902	BRAWL (FIGHT)	to brawl	Verb	9				northeuralex	1	
+1814	866	WIN	to win	Verb	19				northeuralex	1	
+1815	2892	MAKE ANGRY (ANNOY)	to annoy	Verb	16				northeuralex	1	
+1816	3308	STRIKE (SOMEONE)	to beat	Verb	9				northeuralex	1	
+1817	571	STING	to sting	Verb	4				northeuralex	1	
+1818	2883	DISTURB	to disturb	Verb	16				northeuralex	1	
+1819	2869	BOTHER (HARASS)	to bother	Verb	16				northeuralex	1	
+1820	3230	DECEIVE	to deceive	Verb	17				northeuralex	1	
+1821	3055	SWINDLE	to cheat	Verb	21				northeuralex	1	
+1822	1086	WORK (ACTIVITY)	to work	Verb	9				northeuralex	1	
+1823	2148	PICK	to pick	Verb	9				northeuralex	1	
+1824	2638	FISHING	to fish	Verb	9				northeuralex	1	
+1825	2885	HERD (SOMETHING)	to herd	Verb	9				northeuralex	1	
+1826	2868	DRIVE (CATTLE)	to drive	Verb	3				northeuralex	1	
+1827	2891	TIE UP (TETHER)	to tie up	Verb	9				northeuralex	1	
+1828	739	FEED	to feed	Verb	5				northeuralex	1	
+1829	2149	CHOP (INTO PIECES)	to chop	Verb	9				northeuralex	1	
+1830	3078	IRRIGATE	to water	Verb	8				northeuralex	1	
+1831	179	RIPEN	to ripen	Verb	8				northeuralex	1	
+1832	2492	BOIL (SOMETHING)	to boil	Verb	5				northeuralex	1	
+1833	991	FRY	to fry	Verb	5				northeuralex	1	
+1834	696	STIR	to stir	Verb	5				northeuralex	1	
+1835	2905	KNIT	to knit	Verb	9				northeuralex	1	
+1836	2235	CLEAN (SOMETHING)	to clean	Verb	10				northeuralex	1	
+1837	2904	RINSE	to rinse	Verb	9				northeuralex	1	
+1838	3371	WASH (ONESELF)	to wash	Verb	9				northeuralex	1	
+1839	1755	UNDRESS	to take off	Verb	6				northeuralex	1	
+1840	814	DRESS UP	to get dressed	Verb	6				northeuralex	1	
+1841	2070	COMB (VERB)	to comb	Verb	6				northeuralex	1	
+1842	1739	DECORATE	to decorate	Verb	6				northeuralex	1	
+1843	2708	TALK	to talk	Verb	9				northeuralex	1	
+1844	2903	CHAT (WITH SOMEBODY)	to chat	Verb	9				northeuralex	1	
+1845	2898	CONVEY (A MESSAGE)	to convey	Verb	9				northeuralex	1	
+1846	2906	TRANSLATE	to translate	Verb	9				northeuralex	1	
+1847	2893	NOTICE (SOMETHING)	to notice	Verb	9				northeuralex	1	
+1848	2870	RECOGNIZE (SOMEBODY)	to recognize	Verb	9				northeuralex	1	
+1849	2867	CALCULATE	to calculate	Verb	23				northeuralex	1	
+1850	833	ENDURE	to endure	Verb	9				northeuralex	1	

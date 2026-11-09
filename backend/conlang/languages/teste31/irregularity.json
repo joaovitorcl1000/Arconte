@@ -1,0 +1,280 @@
+{
+  "irregulars": [
+    {
+      "gloss": "GO",
+      "label": "go",
+      "pos": "verb",
+      "citation": "senka",
+      "type": "ablaut",
+      "features": {
+        "tense": "past"
+      },
+      "label_gloss": "go-PST",
+      "regular": {
+        "written": "senkapu",
+        "ipa": "senkapu",
+        "pronunciation": "ˈsenkapu"
+      },
+      "irregular": {
+        "written": "senke",
+        "ipa": "senke",
+        "pronunciation": "ˈsenke"
+      },
+      "root": [
+        "s",
+        "e",
+        "n",
+        "k",
+        "e"
+      ],
+      "replaces_affix": true
+    },
+    {
+      "gloss": "PERSON",
+      "label": "person",
+      "pos": "noun",
+      "citation": "kwuɲtwu",
+      "type": "zero",
+      "features": {
+        "number": "plural"
+      },
+      "label_gloss": "person-PL",
+      "regular": {
+        "written": "kwunytwumi",
+        "ipa": "kwuɲtwumi",
+        "pronunciation": "ˈkwuɲtwumi"
+      },
+      "irregular": {
+        "written": "kwunytwu",
+        "ipa": "kwuɲtwu",
+        "pronunciation": "ˈkwuɲtwu"
+      }
+    }
+  ],
+  "alternations": [
+    {
+      "gloss": "BLOOD",
+      "label": "blood",
+      "pos": "noun",
+      "category": "number",
+      "forms": [
+        {
+          "value": "singular",
+          "underlying": "e",
+          "phonetic": "i",
+          "rules": [
+            2
+          ],
+          "written": "e"
+        },
+        {
+          "value": "plural",
+          "underlying": "emi",
+          "phonetic": "emi",
+          "rules": [],
+          "written": "emi"
+        }
+      ]
+    },
+    {
+      "gloss": "ROOT",
+      "label": "root",
+      "pos": "noun",
+      "category": "number",
+      "forms": [
+        {
+          "value": "singular",
+          "underlying": "le",
+          "phonetic": "li",
+          "rules": [
+            2
+          ],
+          "written": "le"
+        },
+        {
+          "value": "plural",
+          "underlying": "lemi",
+          "phonetic": "lemi",
+          "rules": [],
+          "written": "lemi"
+        }
+      ]
+    },
+    {
+      "gloss": "BREAST",
+      "label": "breast",
+      "pos": "noun",
+      "category": "number",
+      "forms": [
+        {
+          "value": "singular",
+          "underlying": "he",
+          "phonetic": "hi",
+          "rules": [
+            2
+          ],
+          "written": "he"
+        },
+        {
+          "value": "plural",
+          "underlying": "hemi",
+          "phonetic": "hemi",
+          "rules": [],
+          "written": "hemi"
+        }
+      ]
+    },
+    {
+      "gloss": "EAR",
+      "label": "ear",
+      "pos": "noun",
+      "category": "number",
+      "forms": [
+        {
+          "value": "singular",
+          "underlying": "ke",
+          "phonetic": "ki",
+          "rules": [
+            2
+          ],
+          "written": "ke"
+        },
+        {
+          "value": "plural",
+          "underlying": "kemi",
+          "phonetic": "kemi",
+          "rules": [],
+          "written": "kemi"
+        }
+      ]
+    },
+    {
+      "gloss": "TAKE",
+      "label": "take",
+      "pos": "verb",
+      "category": "tense",
+      "forms": [
+        {
+          "value": "present",
+          "underlying": "jake",
+          "phonetic": "jaɣi",
+          "rules": [
+            0,
+            1,
+            2
+          ],
+          "written": "yake"
+        },
+        {
+          "value": "past",
+          "underlying": "jakepu",
+          "phonetic": "jaɣeβu",
+          "rules": [
+            0,
+            1
+          ],
+          "written": "yakepu"
+        }
+      ]
+    },
+    {
+      "gloss": "RUN",
+      "label": "run",
+      "pos": "verb",
+      "category": "tense",
+      "forms": [
+        {
+          "value": "present",
+          "underlying": "bjaːe",
+          "phonetic": "bjaːi",
+          "rules": [
+            2
+          ],
+          "written": "byaae"
+        },
+        {
+          "value": "past",
+          "underlying": "bjaːepu",
+          "phonetic": "bjaːeβu",
+          "rules": [
+            0,
+            1
+          ],
+          "written": "byaaepu"
+        }
+      ]
+    },
+    {
+      "gloss": "CRY",
+      "label": "cry",
+      "pos": "verb",
+      "category": "tense",
+      "forms": [
+        {
+          "value": "present",
+          "underlying": "soɲʃĩɡe",
+          "phonetic": "soɲʃĩɣi",
+          "rules": [
+            1,
+            2
+          ],
+          "written": "sonyxĩge"
+        },
+        {
+          "value": "past",
+          "underlying": "soɲʃĩɡepu",
+          "phonetic": "soɲʃĩɣeβu",
+          "rules": [
+            0,
+            1
+          ],
+          "written": "sonyxĩgepu"
+        }
+      ]
+    },
+    {
+      "gloss": "KNOW (SOMETHING)",
+      "label": "know (something)",
+      "pos": "verb",
+      "category": "tense",
+      "forms": [
+        {
+          "value": "present",
+          "underlying": "ɡwiːnke",
+          "phonetic": "ɡwiːnki",
+          "rules": [
+            2
+          ],
+          "written": "gwiinke"
+        },
+        {
+          "value": "past",
+          "underlying": "ɡwiːnkepu",
+          "phonetic": "ɡwiːnkeβu",
+          "rules": [
+            0,
+            1
+          ],
+          "written": "gwiinkepu"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "target": 2,
+    "verb_feature": [
+      "tense",
+      "past"
+    ],
+    "noun_feature": [
+      "number",
+      "plural"
+    ]
+  },
+  "metadata": {
+    "seed": 1421026700,
+    "notes": [],
+    "irregular_count": 2,
+    "alternation_count": 8
+  }
+}

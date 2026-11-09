@@ -1,0 +1,525 @@
+{
+  "settings": {
+    "patronymic": {
+      "strategy": "suffix",
+      "morpheme": [
+        "a",
+        "k"
+      ]
+    },
+    "settlement_suffix": [
+      "l",
+      "a"
+    ],
+    "locative_case": "locative"
+  },
+  "people": [
+    {
+      "given": {
+        "name": "Umniqa",
+        "ipa": "umniŋa",
+        "pronunciation": "ˈumniŋa",
+        "meaning": "red snake",
+        "etymology": "red + snake",
+        "gender": "any"
+      },
+      "family": {
+        "name": "Howariak",
+        "ipa": "howariak",
+        "pronunciation": "hoˈwariak",
+        "meaning": "child of Howari",
+        "type": "patronymic"
+      },
+      "full": "Umniqa Howariak"
+    },
+    {
+      "given": {
+        "name": "Anya",
+        "ipa": "aɲa",
+        "pronunciation": "ˈaɲa",
+        "meaning": null,
+        "etymology": null,
+        "gender": "any"
+      },
+      "family": {
+        "name": "Kana·ak",
+        "ipa": "kanaak",
+        "pronunciation": "ˈkanaak",
+        "meaning": "child of Kana",
+        "type": "patronymic"
+      },
+      "full": "Anya Kana·ak"
+    },
+    {
+      "given": {
+        "name": "Umnidyun",
+        "ipa": "umnidjun",
+        "pronunciation": "ˈumnidjun",
+        "meaning": "red river",
+        "etymology": "red + river",
+        "gender": "any"
+      },
+      "family": {
+        "name": "Yawuak",
+        "ipa": "jawuak",
+        "pronunciation": "ˈjawuak",
+        "meaning": "child of Yawu",
+        "type": "patronymic"
+      },
+      "full": "Umnidyun Yawuak"
+    },
+    {
+      "given": {
+        "name": "Emani",
+        "ipa": "emani",
+        "pronunciation": "ˈemani",
+        "meaning": null,
+        "etymology": null,
+        "gender": "any"
+      },
+      "family": {
+        "name": "Wina·ak",
+        "ipa": "winaak",
+        "pronunciation": "ˈwinaak",
+        "meaning": "child of Wina",
+        "type": "patronymic"
+      },
+      "full": "Emani Wina·ak"
+    },
+    {
+      "given": {
+        "name": "Wupanul",
+        "ipa": "wupanul",
+        "pronunciation": "ˈwupanul",
+        "meaning": null,
+        "etymology": null,
+        "gender": "any"
+      },
+      "family": {
+        "name": "Ola·ak",
+        "ipa": "olaak",
+        "pronunciation": "ˈolaak",
+        "meaning": "child of Ola",
+        "type": "patronymic"
+      },
+      "full": "Wupanul Ola·ak"
+    },
+    {
+      "given": {
+        "name": "Wĩnu",
+        "ipa": "wĩnu",
+        "pronunciation": "ˈwĩnu",
+        "meaning": null,
+        "etymology": null,
+        "gender": "any"
+      },
+      "family": {
+        "name": "Tusuuwoqak",
+        "ipa": "tusuːwoŋak",
+        "pronunciation": "tuˈsuːwoŋak",
+        "meaning": "child of Tusuuwoq",
+        "type": "patronymic"
+      },
+      "full": "Wĩnu Tusuuwoqak"
+    },
+    {
+      "given": {
+        "name": "Sewiq",
+        "ipa": "sewiŋ",
+        "pronunciation": "ˈsewiŋ",
+        "meaning": null,
+        "etymology": null,
+        "gender": "any"
+      },
+      "family": {
+        "name": "Omeak",
+        "ipa": "omeak",
+        "pronunciation": "ˈomeak",
+        "meaning": "child of Ome",
+        "type": "patronymic"
+      },
+      "full": "Sewiq Omeak"
+    },
+    {
+      "given": {
+        "name": "Iyaa",
+        "ipa": "ijaː",
+        "pronunciation": "ˈijaː",
+        "meaning": null,
+        "etymology": null,
+        "gender": "any"
+      },
+      "family": {
+        "name": "Anuak",
+        "ipa": "anuak",
+        "pronunciation": "ˈanuak",
+        "meaning": "child of Anu",
+        "type": "patronymic"
+      },
+      "full": "Iyaa Anuak"
+    },
+    {
+      "given": {
+        "name": "Qime",
+        "ipa": "ŋime",
+        "pronunciation": "ˈŋime",
+        "meaning": null,
+        "etymology": null,
+        "gender": "any"
+      },
+      "family": {
+        "name": "Wiwiiak",
+        "ipa": "wiwiːak",
+        "pronunciation": "ˈwiwiːak",
+        "meaning": "child of Wiwii",
+        "type": "patronymic"
+      },
+      "full": "Qime Wiwiiak"
+    },
+    {
+      "given": {
+        "name": "Weruu",
+        "ipa": "weruː",
+        "pronunciation": "ˈweruː",
+        "meaning": null,
+        "etymology": null,
+        "gender": "any"
+      },
+      "family": {
+        "name": "Unileak",
+        "ipa": "unileak",
+        "pronunciation": "uˈnileak",
+        "meaning": "child of Unile",
+        "type": "patronymic"
+      },
+      "full": "Weruu Unileak"
+    },
+    {
+      "given": {
+        "name": "Lonyino",
+        "ipa": "loɲino",
+        "pronunciation": "ˈloɲino",
+        "meaning": null,
+        "etymology": null,
+        "gender": "any"
+      },
+      "family": {
+        "name": "Muyoak",
+        "ipa": "mujoak",
+        "pronunciation": "ˈmujoak",
+        "meaning": "child of Muyo",
+        "type": "patronymic"
+      },
+      "full": "Lonyino Muyoak"
+    },
+    {
+      "given": {
+        "name": "Miri",
+        "ipa": "miri",
+        "pronunciation": "ˈmiri",
+        "meaning": null,
+        "etymology": null,
+        "gender": "any"
+      },
+      "family": {
+        "name": "Dyubiak",
+        "ipa": "djubiak",
+        "pronunciation": "ˈdjubiak",
+        "meaning": "child of Dyubi",
+        "type": "patronymic"
+      },
+      "full": "Miri Dyubiak"
+    },
+    {
+      "given": {
+        "name": "Yuqal",
+        "ipa": "juŋal",
+        "pronunciation": "ˈjuŋal",
+        "meaning": null,
+        "etymology": null,
+        "gender": "any"
+      },
+      "family": {
+        "name": "Yageak",
+        "ipa": "jaɡeak",
+        "pronunciation": "ˈjaɡeak",
+        "meaning": "child of Yage",
+        "type": "patronymic"
+      },
+      "full": "Yuqal Yageak"
+    },
+    {
+      "given": {
+        "name": "Innyatihĩm",
+        "ipa": "inɲatihĩm",
+        "pronunciation": "inˈɲatihĩm",
+        "meaning": "new feather",
+        "etymology": "new + feather",
+        "gender": "any"
+      },
+      "family": {
+        "name": "Layirak",
+        "ipa": "lajirak",
+        "pronunciation": "ˈlajirak",
+        "meaning": "child of Layir",
+        "type": "patronymic"
+      },
+      "full": "Innyatihĩm Layirak"
+    },
+    {
+      "given": {
+        "name": "Ulaa",
+        "ipa": "ulaː",
+        "pronunciation": "ˈulaː",
+        "meaning": null,
+        "etymology": null,
+        "gender": "any"
+      },
+      "family": {
+        "name": "Nyemeak",
+        "ipa": "ɲemeak",
+        "pronunciation": "ˈɲemeak",
+        "meaning": "child of Nyeme",
+        "type": "patronymic"
+      },
+      "full": "Ulaa Nyemeak"
+    },
+    {
+      "given": {
+        "name": "Niita",
+        "ipa": "niːta",
+        "pronunciation": "ˈniːta",
+        "meaning": null,
+        "etymology": null,
+        "gender": "any"
+      },
+      "family": {
+        "name": "Nyonunak",
+        "ipa": "ɲonunak",
+        "pronunciation": "ˈɲonunak",
+        "meaning": "child of Nyonun",
+        "type": "patronymic"
+      },
+      "full": "Niita Nyonunak"
+    },
+    {
+      "given": {
+        "name": "Ili",
+        "ipa": "ili",
+        "pronunciation": "ˈili",
+        "meaning": null,
+        "etymology": null,
+        "gender": "any"
+      },
+      "family": {
+        "name": "Yewuak",
+        "ipa": "jewuak",
+        "pronunciation": "ˈjewuak",
+        "meaning": "child of Yewu",
+        "type": "patronymic"
+      },
+      "full": "Ili Yewuak"
+    },
+    {
+      "given": {
+        "name": "Yaapyir",
+        "ipa": "jaːpjir",
+        "pronunciation": "ˈjaːpjir",
+        "meaning": "big sea",
+        "etymology": "big + sea",
+        "gender": "any"
+      },
+      "family": {
+        "name": "Laleak",
+        "ipa": "laleak",
+        "pronunciation": "ˈlaleak",
+        "meaning": "child of Lale",
+        "type": "patronymic"
+      },
+      "full": "Yaapyir Laleak"
+    },
+    {
+      "given": {
+        "name": "Dyuyuul",
+        "ipa": "djujuːl",
+        "pronunciation": "ˈdjujuːl",
+        "meaning": "yellow sun",
+        "etymology": "yellow + sun",
+        "gender": "any"
+      },
+      "family": {
+        "name": "Nuukrelak",
+        "ipa": "nuːkrelak",
+        "pronunciation": "ˈnuːkrelak",
+        "meaning": "child of Nuukrel",
+        "type": "patronymic"
+      },
+      "full": "Dyuyuul Nuukrelak"
+    },
+    {
+      "given": {
+        "name": "Nuubi",
+        "ipa": "nuːbi",
+        "pronunciation": "ˈnuːbi",
+        "meaning": "sweet fish",
+        "etymology": "sweet + fish",
+        "gender": "any"
+      },
+      "family": {
+        "name": "Dyuqimak",
+        "ipa": "djuŋimak",
+        "pronunciation": "ˈdjuŋimak",
+        "meaning": "child of Dyuqim",
+        "type": "patronymic"
+      },
+      "full": "Nuubi Dyuqimak"
+    }
+  ],
+  "places": [
+    {
+      "name": "Pitla",
+      "ipa": "pitla",
+      "pronunciation": "ˈpitla",
+      "meaning": "snow-town",
+      "template": "settlement"
+    },
+    {
+      "name": "Yir Umni",
+      "ipa": "jir umni",
+      "pronunciation": "jir ˈumni",
+      "meaning": "red sea",
+      "template": "phrase"
+    },
+    {
+      "name": "Nama",
+      "ipa": "nama",
+      "pronunciation": "ˈnama",
+      "meaning": null,
+      "template": "opaque"
+    },
+    {
+      "name": "Uskim",
+      "ipa": "uskim",
+      "pronunciation": "ˈuskim",
+      "meaning": "far water",
+      "template": "compound"
+    },
+    {
+      "name": "Imi",
+      "ipa": "imi",
+      "pronunciation": "ˈimi",
+      "meaning": null,
+      "template": "opaque"
+    },
+    {
+      "name": "Yirun",
+      "ipa": "jirun",
+      "pronunciation": "ˈjirun",
+      "meaning": "at the lake",
+      "template": "locative"
+    },
+    {
+      "name": "Miyi",
+      "ipa": "miji",
+      "pronunciation": "ˈmiji",
+      "meaning": null,
+      "template": "opaque"
+    },
+    {
+      "name": "Qama",
+      "ipa": "ŋama",
+      "pronunciation": "ˈŋama",
+      "meaning": null,
+      "template": "opaque"
+    },
+    {
+      "name": "Amdyun",
+      "ipa": "amdjun",
+      "pronunciation": "ˈamdjun",
+      "meaning": "wet river",
+      "template": "compound"
+    },
+    {
+      "name": "Ayu",
+      "ipa": "aju",
+      "pronunciation": "ˈaju",
+      "meaning": null,
+      "template": "opaque"
+    },
+    {
+      "name": "Bila",
+      "ipa": "bila",
+      "pronunciation": "ˈbila",
+      "meaning": "fish-town",
+      "template": "settlement"
+    },
+    {
+      "name": "Innyagwa",
+      "ipa": "inɲaɡwa",
+      "pronunciation": "ˈinɲaɡwa",
+      "meaning": "new grass",
+      "template": "compound"
+    },
+    {
+      "name": "Amyir",
+      "ipa": "amjir",
+      "pronunciation": "ˈamjir",
+      "meaning": "wet sea",
+      "template": "compound"
+    },
+    {
+      "name": "Qimun",
+      "ipa": "ŋimun",
+      "pronunciation": "ˈŋimun",
+      "meaning": "at the stone",
+      "template": "locative"
+    },
+    {
+      "name": "Pitkim",
+      "ipa": "pitkim",
+      "pronunciation": "ˈpitkim",
+      "meaning": "snow water",
+      "template": "compound"
+    },
+    {
+      "name": "Logla",
+      "ipa": "loɡla",
+      "pronunciation": "ˈloɡla",
+      "meaning": "bird-town",
+      "template": "settlement"
+    },
+    {
+      "name": "Puun·yir",
+      "ipa": "puːnjir",
+      "pronunciation": "ˈpuːnjir",
+      "meaning": "fog sea",
+      "template": "compound"
+    },
+    {
+      "name": "Qunyu",
+      "ipa": "ŋuɲu",
+      "pronunciation": "ˈŋuɲu",
+      "meaning": null,
+      "template": "opaque"
+    },
+    {
+      "name": "Wunya",
+      "ipa": "wuɲa",
+      "pronunciation": "ˈwuɲa",
+      "meaning": null,
+      "template": "opaque"
+    },
+    {
+      "name": "Memi",
+      "ipa": "memi",
+      "pronunciation": "ˈmemi",
+      "meaning": null,
+      "template": "opaque"
+    }
+  ],
+  "metadata": {
+    "seed": 3759128726,
+    "spelled": true,
+    "stressed": true
+  }
+}

@@ -1,0 +1,525 @@
+{
+  "settings": {
+    "patronymic": {
+      "strategy": "suffix",
+      "morpheme": [
+        "a",
+        "m"
+      ]
+    },
+    "settlement_suffix": [
+      "l",
+      "a"
+    ],
+    "locative_case": "locative"
+  },
+  "people": [
+    {
+      "given": {
+        "name": "Etwiqa",
+        "ipa": "etwiŋa",
+        "pronunciation": "ˈetwiŋa",
+        "meaning": "red snake",
+        "etymology": "red + snake",
+        "gender": "any"
+      },
+      "family": {
+        "name": "Azemam",
+        "ipa": "azemam",
+        "pronunciation": "ˈazemam",
+        "meaning": "child of Azem",
+        "type": "patronymic"
+      },
+      "full": "Etwiqa Azemam"
+    },
+    {
+      "given": {
+        "name": "Nowo",
+        "ipa": "nowo",
+        "pronunciation": "ˈnowo",
+        "meaning": null,
+        "etymology": null,
+        "gender": "any"
+      },
+      "family": {
+        "name": "Liyoam",
+        "ipa": "lijoam",
+        "pronunciation": "ˈlijoam",
+        "meaning": "child of Liyo",
+        "type": "patronymic"
+      },
+      "full": "Nowo Liyoam"
+    },
+    {
+      "given": {
+        "name": "Miyum",
+        "ipa": "mijum",
+        "pronunciation": "ˈmijum",
+        "meaning": null,
+        "etymology": null,
+        "gender": "any"
+      },
+      "family": {
+        "name": "Neduam",
+        "ipa": "neduam",
+        "pronunciation": "ˈneduam",
+        "meaning": "child of Nedu",
+        "type": "patronymic"
+      },
+      "full": "Miyum Neduam"
+    },
+    {
+      "given": {
+        "name": "Ayaamqem",
+        "ipa": "ajaːmŋem",
+        "pronunciation": "aˈjaːmŋem",
+        "meaning": null,
+        "etymology": null,
+        "gender": "any"
+      },
+      "family": {
+        "name": "Yinyeam",
+        "ipa": "jiɲeam",
+        "pronunciation": "ˈjiɲeam",
+        "meaning": "child of Yinye",
+        "type": "patronymic"
+      },
+      "full": "Ayaamqem Yinyeam"
+    },
+    {
+      "given": {
+        "name": "Nuupita",
+        "ipa": "nuːpita",
+        "pronunciation": "ˈnuːpita",
+        "meaning": "sweet snow",
+        "etymology": "sweet + snow",
+        "gender": "any"
+      },
+      "family": {
+        "name": "Uprubiam",
+        "ipa": "uprubiam",
+        "pronunciation": "uˈprubiam",
+        "meaning": "child of Uprubi",
+        "type": "patronymic"
+      },
+      "full": "Nuupita Uprubiam"
+    },
+    {
+      "given": {
+        "name": "Puyaamu",
+        "ipa": "pujaːmu",
+        "pronunciation": "ˈpujaːmu",
+        "meaning": null,
+        "etymology": null,
+        "gender": "any"
+      },
+      "family": {
+        "name": "Latwoam",
+        "ipa": "latwoam",
+        "pronunciation": "ˈlatwoam",
+        "meaning": "child of Latwo",
+        "type": "patronymic"
+      },
+      "full": "Puyaamu Latwoam"
+    },
+    {
+      "given": {
+        "name": "Niwum",
+        "ipa": "niwum",
+        "pronunciation": "ˈniwum",
+        "meaning": null,
+        "etymology": null,
+        "gender": "any"
+      },
+      "family": {
+        "name": "Woneam",
+        "ipa": "woneam",
+        "pronunciation": "ˈwoneam",
+        "meaning": "child of Wone",
+        "type": "patronymic"
+      },
+      "full": "Niwum Woneam"
+    },
+    {
+      "given": {
+        "name": "Ayii",
+        "ipa": "ajiː",
+        "pronunciation": "ˈajiː",
+        "meaning": null,
+        "etymology": null,
+        "gender": "any"
+      },
+      "family": {
+        "name": "Lewamekuuam",
+        "ipa": "lewamekuːam",
+        "pronunciation": "ˌlewaˈmekuːam",
+        "meaning": "child of Lewamekuu",
+        "type": "patronymic"
+      },
+      "full": "Ayii Lewamekuuam"
+    },
+    {
+      "given": {
+        "name": "Nuri",
+        "ipa": "nuri",
+        "pronunciation": "ˈnuri",
+        "meaning": null,
+        "etymology": null,
+        "gender": "any"
+      },
+      "family": {
+        "name": "Wiiriimam",
+        "ipa": "wiːriːmam",
+        "pronunciation": "ˈwiːriːmam",
+        "meaning": "child of Wiiriim",
+        "type": "patronymic"
+      },
+      "full": "Nuri Wiiriimam"
+    },
+    {
+      "given": {
+        "name": "Huumal",
+        "ipa": "huːmal",
+        "pronunciation": "ˈhuːmal",
+        "meaning": null,
+        "etymology": null,
+        "gender": "any"
+      },
+      "family": {
+        "name": "Qiiwuam",
+        "ipa": "ŋiːwuam",
+        "pronunciation": "ˈŋiːwuam",
+        "meaning": "child of Qiiwu",
+        "type": "patronymic"
+      },
+      "full": "Huumal Qiiwuam"
+    },
+    {
+      "given": {
+        "name": "Dyuyir",
+        "ipa": "djujir",
+        "pronunciation": "ˈdjujir",
+        "meaning": "yellow sea",
+        "etymology": "yellow + sea",
+        "gender": "any"
+      },
+      "family": {
+        "name": "Bunqa·am",
+        "ipa": "bunŋaam",
+        "pronunciation": "ˈbunŋaam",
+        "meaning": "child of Bunqa",
+        "type": "patronymic"
+      },
+      "full": "Dyuyir Bunqa·am"
+    },
+    {
+      "given": {
+        "name": "Luxyubu",
+        "ipa": "luʃjubu",
+        "pronunciation": "ˈluʃjubu",
+        "meaning": "long river",
+        "etymology": "long + river",
+        "gender": "any"
+      },
+      "family": {
+        "name": "Umuyeam",
+        "ipa": "umujeam",
+        "pronunciation": "uˈmujeam",
+        "meaning": "child of Umuye",
+        "type": "patronymic"
+      },
+      "full": "Luxyubu Umuyeam"
+    },
+    {
+      "given": {
+        "name": "Tutwo",
+        "ipa": "tutwo",
+        "pronunciation": "ˈtutwo",
+        "meaning": "white hand",
+        "etymology": "white + hand",
+        "gender": "any"
+      },
+      "family": {
+        "name": "Uprumekuuam",
+        "ipa": "uprumekuːam",
+        "pronunciation": "ˌupruˈmekuːam",
+        "meaning": "child of Uprumekuu",
+        "type": "patronymic"
+      },
+      "full": "Tutwo Uprumekuuam"
+    },
+    {
+      "given": {
+        "name": "Innyayir",
+        "ipa": "inɲajir",
+        "pronunciation": "ˈinɲajir",
+        "meaning": "new sea",
+        "etymology": "new + sea",
+        "gender": "any"
+      },
+      "family": {
+        "name": "Nilepaqam",
+        "ipa": "nilepaŋam",
+        "pronunciation": "niˈlepaŋam",
+        "meaning": "child of Nilepaq",
+        "type": "patronymic"
+      },
+      "full": "Innyayir Nilepaqam"
+    },
+    {
+      "given": {
+        "name": "Anim",
+        "ipa": "anim",
+        "pronunciation": "ˈanim",
+        "meaning": null,
+        "etymology": null,
+        "gender": "any"
+      },
+      "family": {
+        "name": "Iwiiqam",
+        "ipa": "iwiːŋam",
+        "pronunciation": "ˈiwiːŋam",
+        "meaning": "child of Iwiiq",
+        "type": "patronymic"
+      },
+      "full": "Anim Iwiiqam"
+    },
+    {
+      "given": {
+        "name": "Ipanii",
+        "ipa": "ipaniː",
+        "pronunciation": "ˈipaniː",
+        "meaning": null,
+        "etymology": null,
+        "gender": "any"
+      },
+      "family": {
+        "name": "Yomuuam",
+        "ipa": "jomuːam",
+        "pronunciation": "ˈjomuːam",
+        "meaning": "child of Yomuu",
+        "type": "patronymic"
+      },
+      "full": "Ipanii Yomuuam"
+    },
+    {
+      "given": {
+        "name": "Aru",
+        "ipa": "aru",
+        "pronunciation": "ˈaru",
+        "meaning": null,
+        "etymology": null,
+        "gender": "any"
+      },
+      "family": {
+        "name": "Puqĩnyanam",
+        "ipa": "puŋĩɲanam",
+        "pronunciation": "puˈŋĩɲanam",
+        "meaning": "child of Puqĩnyan",
+        "type": "patronymic"
+      },
+      "full": "Aru Puqĩnyanam"
+    },
+    {
+      "given": {
+        "name": "Qiwim",
+        "ipa": "ŋiwim",
+        "pronunciation": "ˈŋiwim",
+        "meaning": null,
+        "etymology": null,
+        "gender": "any"
+      },
+      "family": {
+        "name": "Qeqiam",
+        "ipa": "ŋeŋiam",
+        "pronunciation": "ˈŋeŋiam",
+        "meaning": "child of Qeqi",
+        "type": "patronymic"
+      },
+      "full": "Qiwim Qeqiam"
+    },
+    {
+      "given": {
+        "name": "Uniyum",
+        "ipa": "unijum",
+        "pronunciation": "ˈunijum",
+        "meaning": null,
+        "etymology": null,
+        "gender": "any"
+      },
+      "family": {
+        "name": "Tuyiram",
+        "ipa": "tujiram",
+        "pronunciation": "ˈtujiram",
+        "meaning": "child of Tuyir",
+        "type": "patronymic"
+      },
+      "full": "Uniyum Tuyiram"
+    },
+    {
+      "given": {
+        "name": "Omitil",
+        "ipa": "omitil",
+        "pronunciation": "ˈomitil",
+        "meaning": null,
+        "etymology": null,
+        "gender": "any"
+      },
+      "family": {
+        "name": "Etwimekuuam",
+        "ipa": "etwimekuːam",
+        "pronunciation": "ˌetwiˈmekuːam",
+        "meaning": "child of Etwimekuu",
+        "type": "patronymic"
+      },
+      "full": "Omitil Etwimekuuam"
+    }
+  ],
+  "places": [
+    {
+      "name": "Tyu·un",
+      "ipa": "tjuun",
+      "pronunciation": "ˈtjuun",
+      "meaning": "at the stone",
+      "template": "locative"
+    },
+    {
+      "name": "Bila",
+      "ipa": "bila",
+      "pronunciation": "ˈbila",
+      "meaning": "fish-town",
+      "template": "settlement"
+    },
+    {
+      "name": "Mina",
+      "ipa": "mina",
+      "pronunciation": "ˈmina",
+      "meaning": null,
+      "template": "opaque"
+    },
+    {
+      "name": "Maqma",
+      "ipa": "maŋma",
+      "pronunciation": "ˈmaŋma",
+      "meaning": null,
+      "template": "opaque"
+    },
+    {
+      "name": "Innyabu",
+      "ipa": "inɲabu",
+      "pronunciation": "ˈinɲabu",
+      "meaning": "new river",
+      "template": "compound"
+    },
+    {
+      "name": "Pitayir",
+      "ipa": "pitajir",
+      "pronunciation": "ˈpitajir",
+      "meaning": "snow sea",
+      "template": "compound"
+    },
+    {
+      "name": "Pitabu",
+      "ipa": "pitabu",
+      "pronunciation": "ˈpitabu",
+      "meaning": "snow river",
+      "template": "compound"
+    },
+    {
+      "name": "Ani",
+      "ipa": "ani",
+      "pronunciation": "ˈani",
+      "meaning": null,
+      "template": "opaque"
+    },
+    {
+      "name": "Gwapalqi",
+      "ipa": "ɡwapalŋi",
+      "pronunciation": "ɡwaˈpalŋi",
+      "meaning": "grass stone",
+      "template": "compound"
+    },
+    {
+      "name": "Etwityu",
+      "ipa": "etwitju",
+      "pronunciation": "ˈetwitju",
+      "meaning": "red stone",
+      "template": "compound"
+    },
+    {
+      "name": "Tyumaq",
+      "ipa": "tjumaŋ",
+      "pronunciation": "ˈtjumaŋ",
+      "meaning": "stone soil",
+      "template": "compound"
+    },
+    {
+      "name": "Miima",
+      "ipa": "miːma",
+      "pronunciation": "ˈmiːma",
+      "meaning": null,
+      "template": "opaque"
+    },
+    {
+      "name": "Kimla",
+      "ipa": "kimla",
+      "pronunciation": "ˈkimla",
+      "meaning": "water-town",
+      "template": "settlement"
+    },
+    {
+      "name": "Maqun",
+      "ipa": "maŋun",
+      "pronunciation": "ˈmaŋun",
+      "meaning": "at the soil",
+      "template": "locative"
+    },
+    {
+      "name": "Pitala",
+      "ipa": "pitala",
+      "pronunciation": "ˈpitala",
+      "meaning": "snow-town",
+      "template": "settlement"
+    },
+    {
+      "name": "Wiiyir",
+      "ipa": "wiːjir",
+      "pronunciation": "ˈwiːjir",
+      "meaning": "bone sea",
+      "template": "compound"
+    },
+    {
+      "name": "Qala",
+      "ipa": "ŋala",
+      "pronunciation": "ˈŋala",
+      "meaning": "snake-town",
+      "template": "settlement"
+    },
+    {
+      "name": "Gwaun",
+      "ipa": "ɡwaun",
+      "pronunciation": "ˈɡwaun",
+      "meaning": "at the grass",
+      "template": "locative"
+    },
+    {
+      "name": "Bu·un",
+      "ipa": "buun",
+      "pronunciation": "ˈbuun",
+      "meaning": "at the river",
+      "template": "locative"
+    },
+    {
+      "name": "Usemal",
+      "ipa": "usemal",
+      "pronunciation": "ˈusemal",
+      "meaning": null,
+      "template": "opaque"
+    }
+  ],
+  "metadata": {
+    "seed": 3759128726,
+    "spelled": true,
+    "stressed": true
+  }
+}

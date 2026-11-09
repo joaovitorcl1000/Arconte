@@ -1,0 +1,220 @@
+{
+  "categories": {
+    "number": {
+      "grammaticalized": true,
+      "values": [
+        "singular",
+        "paucal",
+        "plural"
+      ],
+      "default": "singular",
+      "zero": [
+        "singular"
+      ],
+      "realization": "affix",
+      "position": "suffix",
+      "scope": "human_nouns",
+      "obligatory": false,
+      "source": "WALS 34A (embutido); WALS 33A (embutido); dual/trial/paucal: aproximação (Corbett 2000)"
+    },
+    "case": {
+      "grammaticalized": true,
+      "alignment": "neutral",
+      "values": [
+        "direct",
+        "genitive",
+        "locative",
+        "instrumental",
+        "ablative",
+        "allative",
+        "essive"
+      ],
+      "default": "direct",
+      "zero": [
+        "direct"
+      ],
+      "realization": "affix",
+      "position": "suffix",
+      "source": "WALS 49A|26A=2 (embutido); WALS 98A|com caso (embutido); WALS 51A (embutido)"
+    },
+    "gender": {
+      "grammaticalized": false,
+      "source": "WALS 30A (embutido)"
+    },
+    "definiteness": {
+      "grammaticalized": false,
+      "source": "WALS 37A (embutido)"
+    },
+    "classifiers": {
+      "grammaticalized": false,
+      "source": "WALS 55A (embutido)"
+    },
+    "tense": {
+      "grammaticalized": true,
+      "values": [
+        "present",
+        "past",
+        "future"
+      ],
+      "default": "present",
+      "zero": [
+        "present"
+      ],
+      "realization": "affix",
+      "position": "suffix",
+      "source": "WALS 66A (embutido); WALS 67A (embutido)"
+    },
+    "aspect": {
+      "grammaticalized": true,
+      "values": [
+        "perfective",
+        "imperfective",
+        "progressive"
+      ],
+      "default": "perfective",
+      "zero": [
+        "perfective"
+      ],
+      "realization": "affix",
+      "position": "suffix",
+      "source": "WALS 65A (embutido); valores além de perf/imperf: aproximação"
+    },
+    "mood": {
+      "grammaticalized": true,
+      "values": [
+        "indicative",
+        "imperative",
+        "potential"
+      ],
+      "default": "indicative",
+      "zero": [
+        "indicative"
+      ],
+      "imperative_number": "singular_and_plural",
+      "realization": "affix",
+      "position": "suffix",
+      "source": "WALS 70A (embutido); WALS 73A (embutido); WALS 74A (embutido); irrealis: aproximação (Palmer 2001)"
+    },
+    "evidentiality": {
+      "grammaticalized": true,
+      "type": "indirect_only",
+      "values": [
+        "direct",
+        "inferential",
+        "reportative"
+      ],
+      "default": "direct",
+      "zero": [
+        "direct"
+      ],
+      "realization": "clitic",
+      "position": "suffix",
+      "source": "WALS 77A (embutido); realização: aproximação (Aikhenvald 2004)"
+    },
+    "negation": {
+      "grammaticalized": true,
+      "values": [
+        "affirmative",
+        "negative"
+      ],
+      "default": "affirmative",
+      "zero": [
+        "affirmative"
+      ],
+      "realization": "affix",
+      "position": "suffix",
+      "slot": "inner",
+      "source": "WALS 112A (embutido)"
+    },
+    "agreement": {
+      "grammaticalized": false,
+      "source": "WALS 102A|26A=2 (embutido)"
+    }
+  },
+  "cumulation": {
+    "noun": [],
+    "verb": []
+  },
+  "slots": {
+    "noun": {
+      "prefixes": [],
+      "suffixes": [
+        {
+          "name": "number",
+          "categories": [
+            "number"
+          ],
+          "realization": "affix"
+        },
+        {
+          "name": "case",
+          "categories": [
+            "case"
+          ],
+          "realization": "affix"
+        }
+      ],
+      "template": "ROOT-number-case",
+      "nonlinear": [],
+      "free_markers": []
+    },
+    "verb": {
+      "prefixes": [],
+      "suffixes": [
+        {
+          "name": "negation",
+          "categories": [
+            "negation"
+          ],
+          "realization": "affix"
+        },
+        {
+          "name": "aspect",
+          "categories": [
+            "aspect"
+          ],
+          "realization": "affix"
+        },
+        {
+          "name": "tense",
+          "categories": [
+            "tense"
+          ],
+          "realization": "affix"
+        },
+        {
+          "name": "mood",
+          "categories": [
+            "mood"
+          ],
+          "realization": "affix"
+        },
+        {
+          "name": "evidentiality",
+          "categories": [
+            "evidentiality"
+          ],
+          "realization": "clitic"
+        }
+      ],
+      "template": "ROOT-negation-aspect-tense-mood-evidentiality",
+      "nonlinear": [],
+      "free_markers": []
+    }
+  },
+  "inflection_classes": {
+    "noun": 1,
+    "verb": 1
+  },
+  "metadata": {
+    "seed": 80514485,
+    "typology": {
+      "synthesis": "synthetic",
+      "fusion": "agglutinative",
+      "locus": "dependent_marking",
+      "affix_position": "strongly_suffixing"
+    },
+    "wals": "embutido",
+    "notes": []
+  }
+}

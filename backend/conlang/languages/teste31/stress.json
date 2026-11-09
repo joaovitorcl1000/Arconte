@@ -1,0 +1,99 @@
+{
+  "system": "weight_sensitive",
+  "rule": "right_oriented",
+  "heavy": "coda",
+  "rhythm": "trochaic",
+  "description": "Acento na penúltima se ela for pesada; senão, na antepenúltima (regra do latim); sílaba pesada = sílaba com consoante em coda; ritmo trocaico (acentos secundários a cada duas sílabas, da tônica para o início).",
+  "metadata": {
+    "seed": 2053801548,
+    "sources": {
+      "14A": "WALS 14A (embutido)",
+      "15A": "WALS 15A (embutido)",
+      "16A": "WALS 16A (embutido)",
+      "17A": "WALS 17A (embutido)"
+    },
+    "notes": []
+  },
+  "examples": [
+    {
+      "ipa": "buiː",
+      "stressed": "ˈbuiː"
+    },
+    {
+      "ipa": "senka",
+      "stressed": "ˈsenka"
+    },
+    {
+      "ipa": "lapjiŋ",
+      "stressed": "ˈlapjiŋ"
+    },
+    {
+      "ipa": "ŋumkjĩ",
+      "stressed": "ˈŋumkjĩ"
+    },
+    {
+      "ipa": "japil",
+      "stressed": "ˈjapil"
+    },
+    {
+      "ipa": "zempja",
+      "stressed": "ˈzempja"
+    },
+    {
+      "ipa": "iːam",
+      "stressed": "ˈiːam"
+    },
+    {
+      "ipa": "kworzi",
+      "stressed": "ˈkworzi"
+    },
+    {
+      "ipa": "usi",
+      "stressed": "ˈusi"
+    },
+    {
+      "ipa": "papjam",
+      "stressed": "ˈpapjam"
+    },
+    {
+      "ipa": "ɡwaːŋum",
+      "stressed": "ˈɡwaːŋum"
+    },
+    {
+      "ipa": "palŋi",
+      "stressed": "ˈpalŋi"
+    },
+    {
+      "ipa": "ʃejin",
+      "stressed": "ˈʃejin"
+    },
+    {
+      "ipa": "aːmbram",
+      "stressed": "ˈaːmbram"
+    },
+    {
+      "ipa": "hukla",
+      "stressed": "ˈhukla"
+    },
+    {
+      "ipa": "mempjum",
+      "stressed": "ˈmempjum"
+    },
+    {
+      "ipa": "bjiːnu",
+      "stressed": "ˈbjiːnu"
+    },
+    {
+      "ipa": "jintar",
+      "stressed": "ˈjintar"
+    },
+    {
+      "ipa": "matwaː",
+      "stressed": "ˈmatwaː"
+    },
+    {
+      "ipa": "sasaɲ",
+      "stressed": "ˈsasaɲ"
+    }
+  ]
+}
